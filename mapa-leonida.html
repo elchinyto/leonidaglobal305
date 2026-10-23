@@ -61,6 +61,12 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.lang select{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:5px 8px;cursor:pointer}
+.lang select:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+#gt{position:absolute;left:-9999px;top:0}
+iframe.skiptranslate,.goog-te-banner-frame,#goog-gt-tt,.goog-te-balloon-frame,.VIpgJd-ZVi9od-ORHb-OEVmcd{display:none!important}
+body{top:0!important}
+.goog-text-highlight{background:none!important;box-shadow:none!important}
 .picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:16px 0}
 .pick{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--surface);border:1px solid var(--line);min-width:0}
 .pick-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
@@ -72,8 +78,14 @@ footer p{margin:.3em 0;max-width:70ch}
 .disclosure{font-size:.85rem;color:var(--muted)}
 </style></head><body>
 <header class="top"><div class="wrap">
-  <a class="logo" href="index.html">Leonida Global <span>305</span></a>
+  <a class="logo notranslate" href="index.html">Leonida Global <span>305</span></a>
   <nav class="main" aria-label="Guías"><a href="index.html">Inicio</a><a href="fecha-precio-ediciones.html">Fecha y precio</a><a href="mapa-leonida.html" aria-current="page">Mapa</a><a href="personajes.html">Personajes</a><a href="todo-lo-confirmado.html">Lo confirmado</a><a href="leaks-cyberleek.html">Leaks</a><a href="equipo-gta-6.html">Equipo</a></nav>
+  <div class="lang notranslate">
+    <select id="lang-sel" aria-label="Idioma / Language">
+      <option value="es">🌐 Español</option><option value="en">English</option><option value="pt">Português</option>
+      <option value="fr">Français</option><option value="it">Italiano</option><option value="de">Deutsch</option>
+    </select>
+  </div>
 </div></header>
 <main class="wrap">
 <span class="mile">Mapa</span>
@@ -106,4 +118,19 @@ footer p{margin:.3em 0;max-width:70ch}
 <footer><div class="wrap">
   <p>Leonida Global 305 es un sitio de fans en español. No está afiliado a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto es marca de sus dueños.</p>
   <p>Algunos enlaces son de afiliado: si compras a través de ellos, el sitio recibe una pequeña comisión sin costo extra para ti.</p>
-</div></footer></body></html>
+</div></footer>
+<div id="gt" aria-hidden="true"></div>
+<script>
+function gtInit(){new google.translate.TranslateElement({pageLanguage:"es",autoDisplay:false},"gt");}
+(function(){
+  var s=document.getElementById("lang-sel"),h=location.hostname;
+  var m=document.cookie.match(/googtrans=\/es\/([a-z-]+)/i); if(m) s.value=m[1];
+  s.addEventListener("change",function(){
+    var v=s.value,x=";expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    ["",";domain="+h,";domain=."+h].forEach(function(d){document.cookie="googtrans=;path=/"+x+d;});
+    if(v!=="es"){document.cookie="googtrans=/es/"+v+";path=/";document.cookie="googtrans=/es/"+v+";path=/;domain=."+h;}
+    location.reload();
+  });
+})();
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=gtInit" async></script></body></html>
