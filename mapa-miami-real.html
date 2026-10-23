@@ -67,10 +67,13 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
 .radios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
-.radio{background:var(--surface);border:1px solid var(--line);padding:14px 16px;min-width:0}
+.radio{background:var(--surface);border:1px solid var(--line);padding:0 0 14px;min-width:0;overflow:hidden}
+.radio>*:not(.radio-img){margin-left:16px;margin-right:16px}
+.radio-img{display:block;width:100%;height:auto;aspect-ratio:8/5;margin-bottom:12px}
+.credito-img{font-size:.8rem;color:var(--muted);margin:-4px 0 12px}
 .radio h3{margin:0;font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:1.35rem;letter-spacing:.02em}
-.radio .hosts{margin:6px 0;font-weight:600;font-size:.95rem}
-.radio ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:.93rem}
+.radio .hosts{margin:6px 16px;font-weight:600;font-size:.95rem}
+.radio ul{margin:0 16px;padding-left:1.1em;color:var(--muted);font-size:.93rem}
 .creditos{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:28px}
 .filtros{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
 .f{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}

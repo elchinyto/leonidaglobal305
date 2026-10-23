@@ -80,10 +80,13 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
 .radios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
-.radio{background:var(--surface);border:1px solid var(--line);padding:14px 16px;min-width:0}
+.radio{background:var(--surface);border:1px solid var(--line);padding:0 0 14px;min-width:0;overflow:hidden}
+.radio>*:not(.radio-img){margin-left:16px;margin-right:16px}
+.radio-img{display:block;width:100%;height:auto;aspect-ratio:8/5;margin-bottom:12px}
+.credito-img{font-size:.8rem;color:var(--muted);margin:-4px 0 12px}
 .radio h3{margin:0;font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:1.35rem;letter-spacing:.02em}
-.radio .hosts{margin:6px 0;font-weight:600;font-size:.95rem}
-.radio ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:.93rem}
+.radio .hosts{margin:6px 16px;font-weight:600;font-size:.95rem}
+.radio ul{margin:0 16px;padding-left:1.1em;color:var(--muted);font-size:.93rem}
 .creditos{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:28px}
 .filtros{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
 .f{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
@@ -721,8 +724,10 @@ SINGLES = [
   ("Rauw Alejandro", "Macacoa 2000"),
   ("Keith Richards", "Bright Lights, Big City"),
 ]
+import re as _re
+def _slug(n): return _re.sub(r"[^a-z0-9]+", "-", n.lower()).strip("-")
 _radios = "".join(
-    f'<article class="radio"><div class="pick-top"><h3>{n}</h3><span class="tag no">{g}</span></div>'
+    f'<article class="radio"><img class="radio-img" src="img/radios/{_slug(n)}.jpg" width="800" height="500" loading="lazy" alt="Logo oficial de {n} en GTA 6"><div class="pick-top"><h3>{n}</h3><span class="tag no">{g}</span></div>'
     f'<p class="hosts">Locutores: {h}</p><ul>' + "".join(f"<li>{c.strip()}</li>" for c in s.split("·")) + '</ul></article>'
     for n, g, h, s in RADIOS)
 _singles = "".join(f'<tr><td>{a}</td><td><strong>{t}</strong></td></tr>' for a, t in SINGLES)
@@ -736,6 +741,7 @@ musica = f"""
 <h2>Las radios confirmadas</h2>
 <p>Estas son las emisoras que Rockstar presentó el 8 de octubre en su web oficial. Es solo un adelanto: el juego tendrá más.</p>
 <div class="radios">{_radios}</div>
+<p class="credito-img">Logos de las emisoras: Rockstar Games.</p>
 <div class="note"><strong>Novedad en la saga.</strong> Por primera vez la radio se puede escuchar caminando: Jason y Lucia la oyen en el teléfono con audífonos. También hay pódcast a la carta, a pie o en el auto.</div>
 
 {AD}
