@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leonidaglobal305.com/sitemap.xml

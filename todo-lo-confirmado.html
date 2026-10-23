@@ -1,0 +1,252 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>GTA 6: todo lo confirmado | Leonida Global 305</title><meta name="claude:viewport-fit-sides" content="cover"><meta name="description" content="Todos los detalles de GTA 6 confirmados por Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE, Bloomberg y en el Extended Look."><link rel="canonical" href="https://leonidaglobal305.com/todo-lo-confirmado.html"><meta property="og:title" content="GTA 6: todo lo confirmado | Leonida Global 305"><meta property="og:description" content="Todos los detalles de GTA 6 confirmados por Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE, Bloomberg y en el Extended Look."><meta property="og:type" content="website"><meta property="og:locale" content="es_ES"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap"><style>
+/* Layout: cartel de carretera de Florida — titulares tipo billboard, columna de lectura estrecha, franja de "millas" para datos */
+:root{
+  --bg:#fbf6f1; --surface:#ffffff; --fg:#1d1a22; --muted:#5f5966;
+  --accent:#d7265f; --teal:#0b7d77; --line:#eadfd6; --sun:#ffb347;
+  --f-display:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#16131b; --surface:#201c27; --fg:#f3edf5; --muted:#b4abbb;
+  --accent:#ff4f87; --teal:#3cc7bd; --line:#352e3e; --sun:#ffb347; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#16131b; --surface:#201c27; --fg:#f3edf5; --muted:#b4abbb;
+  --accent:#ff4f87; --teal:#3cc7bd; --line:#352e3e; --sun:#ffb347; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:1.06rem;line-height:1.65;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{border-bottom:3px solid var(--fg)}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline;justify-content:space-between;padding-block:14px}
+.logo{font-family:var(--f-display);font-size:1.6rem;letter-spacing:.02em;color:var(--fg);text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--accent)}
+nav.main{display:flex;flex-wrap:wrap;gap:4px 16px;font-weight:600;font-size:.95rem}
+nav.main a{color:var(--muted);text-decoration:none}
+nav.main a:hover,nav.main a:focus-visible,nav.main a[aria-current]{color:var(--accent)}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.mile{display:inline-block;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--teal);color:var(--bg);padding:2px 8px;border-radius:3px}
+h1,h2{font-family:var(--f-display);font-weight:400;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance;line-height:1.05}
+h1{font-size:clamp(2.3rem,7vw,3.6rem);margin:.4em 0 .25em}
+h2{font-size:1.7rem;margin:1.6em 0 .4em;border-top:1px solid var(--line);padding-top:.8em}
+h3{font-size:1.15rem;margin:1.2em 0 .2em}
+.lede{font-size:1.2rem;color:var(--muted);max-width:60ch}
+.updated{font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+main{padding-block:12px 40px}
+main p,main li{max-width:65ch}
+.count{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.count div{flex:1 1 120px;border:2px solid var(--fg);padding:10px 12px;background:var(--surface)}
+.count b{display:block;font-family:var(--f-display);font-size:2.2rem;font-weight:400;line-height:1;font-variant-numeric:tabular-nums;color:var(--accent)}
+.count small{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0;padding:0;list-style:none}
+.guides a{display:block;height:100%;padding:16px;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:var(--fg)}
+.guides a:hover{border-color:var(--accent)}
+.guides h3{margin:6px 0 4px;font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:1.3rem}
+.guides p{margin:0;color:var(--muted);font-size:.95rem}
+.tbl{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;min-width:420px;font-size:.98rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--f-mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.tag{font-family:var(--f-mono);font-size:.7rem;padding:1px 6px;border-radius:3px;white-space:nowrap}
+.ok{background:var(--teal);color:var(--bg)}
+.no{border:1px solid var(--muted);color:var(--muted)}
+.note{border-left:4px solid var(--sun);padding:8px 14px;background:var(--surface);margin:16px 0}
+.aff{border:2px dashed var(--teal);padding:14px 16px;margin:22px 0;background:var(--surface)}
+.aff strong{font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:1.2rem;letter-spacing:.02em}
+.aff ul{margin:6px 0 0;padding-left:1.1em}
+.ad{font-family:var(--f-mono);font-size:.7rem;color:var(--muted);text-align:center;border:1px solid var(--line);padding:18px;margin:22px 0;text-transform:uppercase;letter-spacing:.1em}
+.faq dt{font-weight:700;margin-top:12px}
+.faq dd{margin:2px 0 0;color:var(--fg)}
+footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
+footer p{margin:.3em 0;max-width:70ch}
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:16px 0}
+.pick{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--surface);border:1px solid var(--line);min-width:0}
+.pick-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.price{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.pick h3{margin:2px 0 0;font-size:1.08rem}
+.pick p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.buy{align-self:flex-start;margin-top:6px;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none;padding:8px 14px;border-radius:4px;font-size:.92rem}
+.buy:hover{filter:brightness(1.08)}
+.disclosure{font-size:.85rem;color:var(--muted)}
+</style></head><body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="index.html">Leonida Global <span>305</span></a>
+  <nav class="main" aria-label="Guías"><a href="index.html">Inicio</a><a href="fecha-precio-ediciones.html">Fecha y precio</a><a href="mapa-leonida.html">Mapa</a><a href="personajes.html">Personajes</a><a href="todo-lo-confirmado.html" aria-current="page">Lo confirmado</a><a href="leaks-cyberleek.html">Leaks</a><a href="equipo-gta-6.html">Equipo</a></nav>
+</div></header>
+<main class="wrap">
+<span class="mile">Entrevistas y prensa</span>
+<h1>GTA 6: todo lo confirmado por Rockstar</h1>
+<p class="updated">Actualizado: 23 de octubre de 2026</p>
+<p class="lede">Todo lo que Rockstar ha contado a IGN, Famitsu, Kinda Funny, Game Informer, Dazed, LOVE y Bloomberg, más lo que se vio en el Extended Look, ordenado por tema.</p>
+<div class="note"><strong>Cómo leer esta guía.</strong> Todo lo que aparece aquí lo dijo Rockstar o se vio en el Extended Look del 27 de agosto. Lo que solo contaron creadores que vieron demos sin jugar va aparte, al final, marcado como reportado.</div>
+
+<h2>La historia y la pareja</h2>
+<ul>
+  <li>Jason y Lucia necesitan dinero después de que un trabajo sencillo sale mal, y varios grupos van tras ellos.</li>
+  <li>La historia empieza en los Cayos de Leonida, donde está la primera casa de Jason.</li>
+  <li>Tú decides si actúan como pareja o solo como cómplices. El romance es opcional y no da ventajas, pero cambia cómo se desarrolla la historia.</li>
+  <li>La relación sube haciendo cosas juntos: kayak, buceo, paracaídas, zoológico, minigolf, playa o robos. Si la descuidas, se pierden detalles como tomarse de la mano o besarse, aunque se puede recuperar.</li>
+  <li>Se pueden llamar o mandar mensajes en cualquier momento. Ignorar un mensaje de buenas noches puede afectar la relación.</li>
+  <li>Las decisiones grandes y pequeñas cambian el desenlace.</li>
+</ul>
+
+<h2>Cambiar entre Jason y Lucia</h2>
+<ul>
+  <li>El personaje que no controlas sigue su propia rutina: puede estar en la casa segura o en otro sitio.</li>
+  <li>Si están lejos, el cambio usa una vista aérea rápida; si están cerca, es casi instantáneo.</li>
+  <li>En algunas misiones el cambio está bloqueado o es automático, como una persecución tras robar un banco donde Jason dispara y Lucia maneja.</li>
+</ul>
+
+<h2>Perfil Criminal</h2>
+<ul>
+  <li>Un sistema nuevo registra qué tipo de criminal eres y cómo reacciona el mundo. No es bueno contra malo como el honor de RDR2 y no da descuentos en tiendas.</li>
+  <li>Lo que exige una misión o defenderte de quien te ataca no cuenta en tu contra. Pasarte de lo necesario de forma constante sí lo cambia.</li>
+  <li>No es lo mismo dejar a alguien fuera de combate que ejecutarlo.</li>
+</ul>
+
+<h2>Policía, estrellas y "heat"</h2>
+<ul>
+  <li>Un crimen solo se reporta si hay testigos o salta una alarma. Las estrellas suben con menos facilidad que antes.</li>
+  <li>La policía busca tu ropa, tu apariencia y tu auto. Cambiarte de ropa en una tienda, quitarte la máscara o cambiar de auto te ayuda a escapar.</li>
+  <li>Puedes separar a Jason y Lucia para perder a la policía, o que uno maneje mientras el otro dispara.</li>
+  <li>Nuevo fuego de supresión: disparas cerca para abrirte paso sin matar a nadie.</li>
+  <li>Las patrullas ya no aparecen en el minimapa como en GTA 5. Con tres estrellas, escapar en auto es difícil sin algo muy rápido o una moto deportiva.</li>
+  <li>El dinero en efectivo que cargas se pierde si mueres o te arrestan, así que conviene depositarlo en cajeros.</li>
+</ul>
+
+<div class="ad" aria-hidden="true">Espacio publicitario</div>
+
+<h2>Robos</h2>
+<ul>
+  <li>Los robos son parte central del juego entre misiones, y se puede robar casi cualquier negocio.</li>
+  <li>Puedes entrar por atrás, abrir cerraduras con una snap gun, romper cámaras y borrar las grabaciones de seguridad.</li>
+  <li>Las cajas fuertes se abren con la combinación o con explosivos, aunque los explosivos pueden dañar lo de adentro.</li>
+  <li>El mapa marca escondites de pandillas con cuánto efectivo y droga guardan. La droga se vende a "fences".</li>
+  <li>Joyerías y bancos pequeños se pueden robar solo o en pareja.</li>
+  <li>Algunas partes de la historia piden juntar dinero antes de avanzar: las misiones solas no alcanzan.</li>
+</ul>
+
+<h2>Autos y robo de vehículos</h2>
+<ul>
+  <li>Se acabó el robo de un botón. Los autos viejos se abren con ganzúa y los nuevos o de lujo necesitan un clonador de llaves que consigues más adelante. A un conductor siempre lo puedes sacar del auto.</li>
+  <li>El escáner del teléfono muestra si el auto está cerrado, si tiene alarma o rastreador, cuánto pagan por él y cuánto cuesta registrarlo.</li>
+  <li>Los autos con rastreador avisan a la policía si vas despacio. Los "fences" quitan el rastreador, y uno llamado Randy pide modelos concretos.</li>
+  <li>Pay 'n' Spray registra autos robados a tu nombre, los repara y les cambia el color. Un auto dañado vale menos.</li>
+  <li>Al principio puedes tener tres vehículos; para más, compras garajes. Si abandonas un auto registrado tras un crimen, la policía lo puede incautar.</li>
+  <li>Hay sistema de combustible: un auto robado puede venir casi vacío.</li>
+  <li>Calles más estrechas y más tráfico, incluidos embotellamientos.</li>
+</ul>
+
+<h2>Armas</h2>
+<ul>
+  <li>Las armas largas ya no caben en el bolsillo: van en el maletero del auto o en un casillero de Ammu-Nation. Las que compras vuelven a tu auto personal.</li>
+  <li>Ammu-Nation tiene armas exclusivas por tienda y más personalización.</li>
+  <li>La gente reacciona si caminas con un arma a la vista.</li>
+</ul>
+
+<h2>Vida diaria, gimnasio y aspecto</h2>
+<ul>
+  <li>Las casas seguras funcionan como los campamentos de RDR2 y cambian con cada capítulo.</li>
+  <li>El gimnasio tiene minijuego: entrenar tres días seguidos sube salud y fuerza. Si comes de más, engordas. La comida y las bebidas dan mejoras temporales.</li>
+  <li>Dormir es opcional, pero sin dormir te cansas y la salud y la resistencia se recuperan más lento.</li>
+  <li>Miles de conjuntos de ropa. Tiendas y peluquerías tienen artículos según la zona; en la casa segura solo puedes cortarte o raparte.</li>
+  <li>Algunas tiendas cierran de noche y se puede entrar a muchos más edificios que en GTA 5.</li>
+</ul>
+
+<h2>Teléfono, apps y transporte</h2>
+<ul>
+  <li>El teléfono es un objeto físico dentro del juego, ya no una pantalla superpuesta.</li>
+  <li>En Snapmatic puedes seguir cuentas y ver publicaciones, pero no subir nada, porque Jason y Lucia están escondidos. Las fotos se le pueden mandar a la pareja.</li>
+  <li>Ryde Me (el Uber del juego) y los autobuses sirven como viaje rápido.</li>
+  <li>Manteniendo pulsada la cruceta marcas un destino sin abrir el mapa.</li>
+</ul>
+
+<h2>El mundo de Leonida</h2>
+<ul>
+  <li>La gente tiene alturas y cuerpos mucho más variados que en cualquier GTA anterior.</li>
+  <li>Hay eventos aleatorios que pueden interrumpirte, como otro ladrón que entra a la tienda mientras la estás robando.</li>
+  <li>Más anuncios de radio y TV que nunca, y en la tele del juego hay una serie animada para adultos hecha con un estudio externo.</li>
+  <li>Se pueden estudiar animales como colección, igual que en RDR2, y hay pesca.</li>
+  <li>Si mueres, reapareces cerca en lugar de salir del hospital.</li>
+</ul>
+
+<h2>Lo técnico</h2>
+<ul>
+  <li>Sin microtransacciones en el modo historia. Esto no aplica al futuro modo online.</li>
+  <li>Rockstar dice que no usó IA generativa en el desarrollo.</li>
+  <li>La demo corría en una PS5 base a 30 FPS. No hay modo a 60 FPS confirmado ni detalles de mejoras para PS5 Pro.</li>
+  <li>La interfaz se puede personalizar para mostrar muy poca información en pantalla.</li>
+</ul>
+
+<h2>Clima y fauna (Game Informer)</h2>
+<p>Game Informer dedicó su portada y 14 páginas a Leonida, con entrevistas a diseñadores de Rockstar y 12 capturas nuevas.</p>
+<ul>
+  <li>Hay huracanes y tormentas tropicales con nubes densas, viento fuerte y mucha lluvia. El clima es local: puede llover en una zona y no en otra.</li>
+  <li>El viento se simula con detalle, incluida la brisa del mar al atardecer y cómo los edificios lo bloquean.</li>
+  <li>Más de 170 especies de animales, según el reportaje: más de 60 tipos de aves y más de 30 mamíferos terrestres, además de peces y reptiles. Hay manatíes, flamencos, pelícanos y caimanes.</li>
+  <li>También hay especies invasoras reales de Florida, como iguanas verdes, sapos de caña y macacos.</li>
+  <li>Los animales se clasifican como raros, descubribles y legendarios.</li>
+  <li>Aaron Garbut, de Rockstar North, dijo que es el mapa más grande que ha hecho el estudio, con mucho margen.</li>
+  <li>Actividades mencionadas: base jumping, billar, gimnasio, kayak, minigolf, buceo, carreras callejeras y todoterreno, zoológicos, hidrodeslizadores, motos de agua y senderismo.</li>
+</ul>
+
+<h2>Jason, Lucia y Vice City (Dazed y LOVE)</h2>
+<ul>
+  <li>Jason es un ex militar que terminó transportando droga y robando bancos. Lucia acaba de salir de prisión y es de Liberty City.</li>
+  <li>Lucia es la que empuja la relación y Jason es el contrapeso. Rockstar la define como la primera protagonista femenina desarrollada a fondo en un GTA principal.</li>
+  <li>Raul Bautista es el mentor mayor que les enseña a hacer golpes grandes y conoce el mundo criminal de Vice City.</li>
+  <li>El sueño americano del juego es modesto: una casa para la familia y deudas pagadas, no hacerse millonarios.</li>
+  <li>El "Florida Man" de las noticias existe en el juego como "Leonida Man".</li>
+  <li>La música bebe del Miami bass. Se puede seguir el ascenso del dúo Real Dimez por sus posts virales en las redes del juego.</li>
+  <li>Más de 50 artistas callejeros reales pintaron murales en Stockyard, el barrio inspirado en Wynwood.</li>
+  <li>Hay elecciones, carteles de campaña, llamadas automáticas y programas de radio sobre la política de Leonida, pero sin políticos reales.</li>
+  <li>Ambrosia está inspirada en Clewiston y el lago Okeechobee.</li>
+  <li>El equipo de manejo de vehículos incluye pilotos de carreras reales.</li>
+</ul>
+
+<h2>Detrás del desarrollo (Bloomberg)</h2>
+<p>Jason Schreier, de Bloomberg, visitó Rockstar North a finales de septiembre y publicó el 14 de octubre un reportaje sobre cómo se hizo el juego.</p>
+<ul>
+  <li>El proyecto empezó con el nombre en clave Project Americas y la idea de cubrir zonas de Norteamérica y Sudamérica. Luego se recortó.</li>
+  <li>El primer viaje de investigación a Miami fue en 2015, y la historia de Jason y Lucia estaba definida a finales de 2019.</li>
+  <li>La plantilla de Rockstar pasó de 2,441 a 4,711 empleados en 12 oficinas desde RDR2. Montaron un estudio en Los Ángeles solo para los NPC.</li>
+  <li>El juego tiene tres directores: Rob Nelson, Aaron Garbut y Phil Hooker.</li>
+  <li>Rockstar no reveló el presupuesto, pero negó el rumor de que superó los $1,500 millones.</li>
+  <li>En septiembre el equipo ya estaba corrigiendo errores, y Schreier ve el 19 de noviembre como fecha firme.</li>
+  <li>Rockstar dice que la tecnología creada para GTA 6 le permitirá sacar su próximo juego mucho antes que en ocho años.</li>
+</ul>
+
+<h2>Reportado por creadores (sin confirmación oficial)</h2>
+<p>Rockstar invitó a TGG, elrubius, Davy Jones y Mike ShowSha a ver gameplay en Edimburgo sin jugarlo. Estos detalles salen de lo que contaron ellos:</p>
+<ul>
+  <li>Desmembramiento en combate.</li>
+  <li>Se pueden meter cuerpos en el maletero.</li>
+  <li>Fumar llena un medidor de Focus, parecido a la Dead Eye de RDR2, que resalta policías cercanos.</li>
+  <li>Hoteles y edificios explorables piso por piso con ascensores y sin pantallas de carga.</li>
+  <li>Antes de acariciar un perro, el juego pide permiso al dueño.</li>
+</ul>
+
+<aside class="aff" aria-label="Recomendados">
+  <strong>Prepárate para el 19 de noviembre</strong>
+  <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
+</aside>
+
+<h2>Fuentes</h2>
+<ul>
+  <li><a href="https://www.invenglobal.com/articles/26913/gta-6-full-interview-with-rockstars-rob-nelson-reveals-new-details" rel="nofollow">Entrevista completa de IGN con Rob Nelson (vía Inven Global)</a></li>
+  <li><a href="https://www.gtavice.net/news/igns-full-gta-6-interview-reveals-even-more-gameplay-details" rel="nofollow">GTAVice.net sobre la entrevista de IGN</a></li>
+  <li><a href="https://www.igrandtheftauto.com/gta6/news/gta-6-famitsus-full-rob-nelson-interview-translated-into-english" rel="nofollow">Entrevista de Famitsu traducida (iGrandTheftAuto)</a></li>
+  <li><a href="https://www.igrandtheftauto.com/gta6/news/kinda-funnys-gta-6-preview-reveals-dozens-of-new-gameplay-details" rel="nofollow">Preview de Kinda Funny (iGrandTheftAuto)</a></li>
+  <li><a href="https://www.svg.com/2246094/gta-6-extended-look-gameplay-rockstar-confirmed/" rel="nofollow">Extended Look (SVG)</a></li>
+  <li><a href="https://gtasix.org/en/news/gta6-rockstar-preview-gameplay-details/" rel="nofollow">Lo que vio elrubius (gtasix.org)</a></li>
+  <li><a href="https://gtaintel.com/news/gta-6-game-informer-cover-story-new-details" rel="nofollow">Portada de Game Informer (GTA Intel)</a></li>
+  <li><a href="https://gta.guide/article/rockstar-dazed-interview" rel="nofollow">Entrevista de Dazed (gta.guide)</a></li>
+  <li><a href="https://www.gtavice.net/news/love-magazine-new-gta-6-details-on-jason-lucia-raul-npcs-satire-and-the-making-of-leonida" rel="nofollow">Entrevista de LOVE (GTAVice.net)</a></li>
+  <li><a href="https://vgtimes.com/articles/171078-key-takeaways-from-bloomberg-gta6.html" rel="nofollow">Reportaje de Bloomberg (VGTimes)</a></li>
+</ul></main>
+<footer><div class="wrap">
+  <p>Leonida Global 305 es un sitio de fans en español. No está afiliado a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto es marca de sus dueños.</p>
+  <p>Algunos enlaces son de afiliado: si compras a través de ellos, el sitio recibe una pequeña comisión sin costo extra para ti.</p>
+</div></footer></body></html>
