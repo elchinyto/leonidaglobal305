@@ -74,6 +74,24 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
+.f{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.f.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.f:focus-visible,.lugar:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+#mapa{height:min(62vh,520px);min-height:340px;border:2px solid var(--fg);background:var(--surface);z-index:0}
+.mapa-error{padding:20px;color:var(--muted)}
+.pin{border-radius:50%;border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.45)}
+.pin-juego{background:var(--teal)}
+.pin-marketing{background:var(--accent)}
+.tag.mk{background:var(--accent);color:var(--bg)}
+.lugares{list-style:none;padding:0;margin:14px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
+.lugar{width:100%;height:100%;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:3px;background:var(--surface);border:1px solid var(--line);padding:10px 12px;cursor:pointer;font:inherit;color:var(--fg)}
+.lugar:hover{border-color:var(--accent)}
+.lugar strong{font-size:1rem;line-height:1.3}
+.lugar .real{font-size:.85rem;color:var(--muted);line-height:1.35}
+.pop{display:flex;flex-direction:column;gap:2px;font-family:var(--f-body);max-width:240px}
+.pop-t{font-family:var(--f-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:#0b7d77}
+.pop b{font-size:1rem}.pop i{font-style:normal;font-weight:600}.pop small{color:#5f5966}.pop p{margin:4px 0 0!important;font-size:.88rem;line-height:1.4}
 .lang select{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:5px 8px;cursor:pointer}
 .lang select:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 #gt{position:absolute;left:-9999px;top:0}
@@ -92,7 +110,7 @@ body{top:0!important}
 """
 
 NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"),
-       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("equipo-gta-6.html", "Equipo")]
+       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("equipo-gta-6.html", "Equipo")]
 
 def shell(slug, title, desc, body, full_doc=True):
     nav = "".join(
@@ -164,6 +182,7 @@ index = f"""
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
+  <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
   <li><a href="equipo-gta-6.html"><span class="mile">Equipo</span><h3>Equipo para GTA 6</h3><p>Teles, monitores y SSD económicos y de gama alta.</p></a></li>
   <li><a href="personajes.html"><span class="mile">Historia</span><h3>Personajes</h3><p>Jason, Lucia y el reparto confirmado por Rockstar.</p></a></li>
@@ -574,7 +593,105 @@ equipo = f"""
   <li><a href="https://www.eneba.com/hub/gaming-gear/best-tv-for-ps5/" rel="nofollow">Mejores teles para PS5 (Eneba)</a></li>
 </ul>"""
 
+# ---------- Mapa real de Miami ----------
+import json as _json
+LUGARES = [
+  # tipo: juego | marketing
+  ("juego", "Sahara Arena", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7814, -80.1870, "La arena de los Miami Heat aparece en el juego como Sahara Arena, en la orilla de la bahía."),
+  ("juego", "Galina Ballet Opera House y Vice City Concert Hall", "Adrienne Arsht Center (Knight Concert Hall)", "1300 Biscayne Blvd, Miami", 25.7873, -80.1897, "El centro de artes escénicas de Miami tiene su versión en el juego, con todo y sala de conciertos."),
+  ("juego", "Megamundo", "One Biscayne Tower", "2 S Biscayne Blvd, Miami", 25.7741, -80.1872, "Rascacielos del downtown recreado en el juego como Megamundo."),
+  ("juego", "Heath Tower", "Miami Tower", "100 SE 2nd St, Miami", 25.7726, -80.1916, "El rascacielos que cambia de color por la noche, uno de los más reconocibles del skyline."),
+  ("juego", "Arcadia Towers", "Vizcayne", "244 Biscayne Blvd, Miami", 25.7766, -80.1878, "Las torres gemelas de condos frente al Bayside, en pleno downtown."),
+  ("juego", "NINE1NINE", "E11EVEN Miami", "29 NE 11th St, Miami", 25.7849, -80.1919, "La discoteca 24 horas más famosa de Miami. En el juego se llama NINE1NINE."),
+  ("juego", "The Sumerian", "Marriott Miami Biscayne Bay", "1633 N Bayshore Dr, Miami", 25.7920, -80.1866, "El hotel de la bahía recreado como The Sumerian."),
+  ("juego", "Sahara HQ", "Brickell Arch", "1395 Brickell Ave, Miami", 25.7593, -80.1925, "El edificio de arco en Brickell, el distrito financiero."),
+  ("juego", "Torre de Brickell en el tráiler", "Brickell on the River", "31 SE 5th St, Miami", 25.7697, -80.1913, "Las torres junto al río Miami que se ven en el tráiler."),
+  ("juego", "Fleeca Field", "loanDepot park", "501 Marlins Way, Miami", 25.7781, -80.2196, "El estadio de los Marlins, rebautizado con el banco Fleeca de la saga."),
+  ("juego", "Stockyard", "Wynwood Walls", "2516 NW 2nd Ave, Miami", 25.8010, -80.1994, "Wynwood inspira el barrio de Stockyard. Rockstar contrató a más de 50 artistas callejeros reales para pintar sus murales."),
+  ("juego", "Comisaría de Vice City", "Miami Police Department", "400 NW 2nd Ave, Miami", 25.7787, -80.1972, "La sede de la policía de Miami tiene su versión en el juego."),
+  ("juego", "Aeropuerto de Vice City (VCIA)", "Aeropuerto Internacional de Miami", "2100 NW 42nd Ave, Miami", 25.7959, -80.2870, "La torre de control, la estación del metro y hasta el edificio de Signature Flight Support están recreados."),
+  ("juego", "Edificio de Lucia", "Bayshore Drive, frente a Quantum on the Bay", "N Bayshore Dr, Miami", 25.7951, -80.1871, "Un fan ubicó aquí el edificio de Lucia. El edificio real fue demolido en 2023."),
+  ("juego", "Hotel Dixon", "Hotel Victor", "1144 Ocean Dr, Miami Beach", 25.7811, -80.1302, "Hotel art déco de Ocean Drive, recreado como Hotel Dixon."),
+  ("juego", "Hotel Boardwalk", "Hotel Breakwater", "940 Ocean Dr, Miami Beach", 25.7794, -80.1309, "Su letrero art déco es uno de los iconos de Ocean Drive."),
+  ("juego", "Hotel del tráiler en South Pointe", "Hilton Bentley Miami/South Beach", "101 Ocean Dr, Miami Beach", 25.7686, -80.1336, "Hotel del extremo sur de Miami Beach que aparece en el tráiler."),
+  ("juego", "Hotel de Collins Avenue", "Loews Miami Beach Hotel", "1601 Collins Ave, Miami Beach", 25.7881, -80.1291, "Hotel de Collins Avenue identificado en el juego."),
+  ("juego", "Effluvia (comparación de fans)", "Juvia (cerrado)", "1111 Lincoln Rd, Miami Beach", 25.7908, -80.1405, "El rooftop bar de Effluvia que se vio en el Extended Look recuerda a Juvia, el rooftop de Lincoln Road que ya cerró."),
+  ("juego", "Puente de los Cayos de Leonida", "Seven Mile Bridge", "Overseas Hwy, Cayos de Florida", 24.7039, -81.1530, "El puente que une los Cayos sale en el tráiler y es la entrada a los Cayos de Leonida."),
+  ("marketing", "Letrero \"Welcome to Vice City\"", "Techo del Kaseya Center", "601 Biscayne Blvd, Miami", 25.7818, -80.1865, "Letrero iluminado en rosa sobre el techo de la arena. Según reportes, el acuerdo ronda los $975,000."),
+  ("marketing", "A Night in Vice City", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7810, -80.1875, "El 18 de noviembre, Heat vs. Bucks con cancha y uniformes de Vice City. Dentro de la arena se han visto puestos de Burger Shot y Cluckin' Bell."),
+  ("marketing", "Sombrillas y tumbonas de Vice City", "Playa de Miami Beach", "South Beach, Miami Beach", 25.7838, -80.1283, "Desde el 15 de octubre y hasta el 31 de diciembre, el equipo de playa lleva marca de Vice City y VI."),
+  ("marketing", "Banners de GTA 6", "Zona de eventos del downtown", "Downtown Miami (zona aproximada)", 25.7752, -80.1920, "Desde el 15 de octubre, la ciudad permite banners de GTA 6 en una zona del downtown, por un máximo de 56 días."),
+  ("marketing", "Pantallas y \"In for VI\"", "Hard Rock Stadium", "347 Don Shula Dr, Miami Gardens", 25.9580, -80.2389, "En el Dolphins vs. Bengals del 11 de octubre hubo anuncios de GTA 6 y un gráfico \"In for VI\" en los touchdowns."),
+]
+_lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
+
+def _item(i, l):
+    t, g, r, a, la, ln, d = l
+    tag = '<span class="tag ok">En el juego</span>' if t == "juego" else '<span class="tag mk">Marketing</span>'
+    return (f'<li data-t="{t}"><button type="button" class="lugar" data-i="{i}">'
+            f'{tag}<strong>{g}</strong><span class="real">{r} · {a}</span></button></li>')
+
+mapa_real = f"""
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<span class="mile">Miami real</span>
+<h1>Mapa de Vice City en el Miami real</h1>
+{UPD}
+<p class="lede">Los lugares reales de Miami y Florida que inspiraron Vice City y los Cayos de Leonida, más todo el marketing de GTA 6 que Rockstar está montando en la ciudad.</p>
+<div class="filtros" role="group" aria-label="Filtrar lugares">
+  <button type="button" class="f on" data-f="todos">Todos</button>
+  <button type="button" class="f" data-f="juego">En el juego</button>
+  <button type="button" class="f" data-f="marketing">Marketing de GTA 6</button>
+</div>
+<div id="mapa" role="region" aria-label="Mapa interactivo de Miami"></div>
+<p class="updated">Ubicaciones aproximadas. Toca un punto o un lugar de la lista para ver los detalles.</p>
+<ul class="lugares" id="lista">{''.join(_item(i, l) for i, l in enumerate(LUGARES))}</ul>
+<div class="note"><strong>De dónde salen estos datos.</strong> Las comparaciones vienen de los tráilers, el Extended Look y del mapeo de la comunidad. Algunas son de fans y Rockstar no las ha confirmado una por una. El marketing sale de anuncios de las ciudades de Miami y Miami Beach y de lo que han reportado medios y gente en la calle.</div>
+{AD}
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Vice City es Miami?</dt><dd>Sí. Vice City es la versión de Rockstar de Miami, y Leonida es su versión de Florida. Muchos edificios reales aparecen recreados con otros nombres.</dd>
+  <dt>¿Dónde está el letrero de Vice City en Miami?</dt><dd>En el techo del Kaseya Center, la arena de los Miami Heat en Biscayne Boulevard.</dd>
+  <dt>¿Qué pasa el 18 de noviembre en Miami?</dt><dd>Los Heat juegan "A Night in Vice City" contra los Bucks en el Kaseya Center, con cancha y uniformes temáticos, la noche antes del lanzamiento.</dd>
+</dl>
+{AFF}
+<h2>Fuentes</h2>
+<ul>
+  <li><a href="https://www.gtaboom.com/real-miami-locations-in-gta-6-vice-city-d370" rel="nofollow">20 lugares reales de Miami en Vice City (GTA BOOM)</a></li>
+  <li><a href="https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/" rel="nofollow">Lugares de Miami en GTA 6 (Miami New Times)</a></li>
+  <li><a href="https://kotaku.com/gta-6-grand-theft-auto-lucia-jason-apartment-miami-vice-city-real-location-2000729948" rel="nofollow">El edificio de Lucia (Kotaku)</a></li>
+  <li><a href="https://www.videogameschronicle.com/news/rockstar-is-quietly-transforming-the-real-miami-into-gta-6s-vice-city/" rel="nofollow">Rockstar transforma Miami en Vice City (VGC)</a></li>
+  <li><a href="https://www.gamenguide.com/articles/109079/20261014/rockstar-ramps-gta-6-marketing-miami-blimp-nfl-promotions.htm" rel="nofollow">Marketing de GTA 6 en Miami (GamenGuide)</a></li>
+  <li><a href="https://www.gtaboom.com/the-official-gta-6-beach-and-banner-ads-in-miami-begin-on-october-15-7436" rel="nofollow">Anuncios en playas y banners (GTA BOOM)</a></li>
+</ul>
+<script>
+(function(){{
+  var L_=window.L, data={_lugares_js};
+  var lista=document.getElementById("lista"), btns=lista.querySelectorAll(".lugar");
+  if(!L_){{document.getElementById("mapa").innerHTML='<p class="mapa-error">No se pudo cargar el mapa. La lista de lugares está abajo.</p>';return;}}
+  var map=L_.map("mapa",{{scrollWheelZoom:false}}).setView([25.785,-80.19],12);
+  L_.tileLayer("https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png",{{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}}).addTo(map);
+  function icon(t){{return L_.divIcon({{className:"pin pin-"+t,iconSize:[18,18],iconAnchor:[9,9],popupAnchor:[0,-8]}});}}
+  function esc(s){{var e=document.createElement("span");e.textContent=s;return e.innerHTML;}}
+  var marks=data.map(function(p){{
+    var m=L_.marker([p.lat,p.lng],{{icon:icon(p.t),title:p.g}}).bindPopup(
+      '<div class="pop"><span class="pop-t">'+(p.t==="juego"?"En el juego":"Marketing de GTA 6")+'</span><b>'+esc(p.g)+'</b><i>'+esc(p.r)+'</i><small>'+esc(p.a)+'</small><p>'+esc(p.d)+'</p></div>');
+    m.addTo(map); return m;
+  }});
+  btns.forEach(function(b){{b.addEventListener("click",function(){{
+    var i=+b.dataset.i,p=data[i]; map.flyTo([p.lat,p.lng],p.lat<25?10:16,{{duration:.8}}); marks[i].openPopup();
+    document.getElementById("mapa").scrollIntoView({{behavior:"smooth",block:"center"}});
+  }});}});
+  document.querySelectorAll(".f").forEach(function(f){{f.addEventListener("click",function(){{
+    var v=f.dataset.f; document.querySelectorAll(".f").forEach(function(x){{x.classList.toggle("on",x===f);}});
+    data.forEach(function(p,i){{var show=v==="todos"||p.t===v; if(show)marks[i].addTo(map); else map.removeLayer(marks[i]);
+      lista.children[i].hidden=!show;}});
+  }});}});
+}})();
+</script>"""
+
 pages = {
+    "mapa-miami-real.html": (mapa_real, "Mapa de Vice City en el Miami real | Leonida Global 305", "Mapa interactivo con los lugares reales de Miami y Florida que aparecen en GTA 6 y todo el marketing de Vice City en la ciudad.", True),
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
     "leaks-cyberleek.html": (leaks, "Leaks de GTA 6 de CyberLeek | Leonida Global 305", "Cronología de los leaks de GTA 6 de CyberLeek, qué detalles confirmó Rockstar después y cómo terminó la filtración.", True),
     "todo-lo-confirmado.html": (conf, "GTA 6: todo lo confirmado | Leonida Global 305", "Todos los detalles de GTA 6 confirmados por Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE, Bloomberg y en el Extended Look.", True),

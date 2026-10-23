@@ -61,6 +61,24 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
+.f{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.f.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.f:focus-visible,.lugar:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+#mapa{height:min(62vh,520px);min-height:340px;border:2px solid var(--fg);background:var(--surface);z-index:0}
+.mapa-error{padding:20px;color:var(--muted)}
+.pin{border-radius:50%;border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.45)}
+.pin-juego{background:var(--teal)}
+.pin-marketing{background:var(--accent)}
+.tag.mk{background:var(--accent);color:var(--bg)}
+.lugares{list-style:none;padding:0;margin:14px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px}
+.lugar{width:100%;height:100%;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:3px;background:var(--surface);border:1px solid var(--line);padding:10px 12px;cursor:pointer;font:inherit;color:var(--fg)}
+.lugar:hover{border-color:var(--accent)}
+.lugar strong{font-size:1rem;line-height:1.3}
+.lugar .real{font-size:.85rem;color:var(--muted);line-height:1.35}
+.pop{display:flex;flex-direction:column;gap:2px;font-family:var(--f-body);max-width:240px}
+.pop-t{font-family:var(--f-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:#0b7d77}
+.pop b{font-size:1rem}.pop i{font-style:normal;font-weight:600}.pop small{color:#5f5966}.pop p{margin:4px 0 0!important;font-size:.88rem;line-height:1.4}
 .lang select{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:5px 8px;cursor:pointer}
 .lang select:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 #gt{position:absolute;left:-9999px;top:0}
@@ -79,7 +97,7 @@ body{top:0!important}
 </style></head><body>
 <header class="top"><div class="wrap">
   <a class="logo notranslate" href="index.html">Leonida Global <span>305</span></a>
-  <nav class="main" aria-label="Guías"><a href="index.html">Inicio</a><a href="fecha-precio-ediciones.html">Fecha y precio</a><a href="mapa-leonida.html">Mapa</a><a href="personajes.html">Personajes</a><a href="todo-lo-confirmado.html" aria-current="page">Lo confirmado</a><a href="leaks-cyberleek.html">Leaks</a><a href="equipo-gta-6.html">Equipo</a></nav>
+  <nav class="main" aria-label="Guías"><a href="index.html">Inicio</a><a href="fecha-precio-ediciones.html">Fecha y precio</a><a href="mapa-leonida.html">Mapa</a><a href="personajes.html">Personajes</a><a href="todo-lo-confirmado.html" aria-current="page">Lo confirmado</a><a href="leaks-cyberleek.html">Leaks</a><a href="mapa-miami-real.html">Miami real</a><a href="equipo-gta-6.html">Equipo</a></nav>
   <div class="lang notranslate">
     <select id="lang-sel" aria-label="Idioma / Language">
       <option value="es">🌐 Español</option><option value="en">English</option><option value="pt">Português</option>
