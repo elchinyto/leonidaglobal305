@@ -618,10 +618,16 @@ LUGARES = [
   ("juego", "Effluvia (comparación de fans)", "Juvia (cerrado)", "1111 Lincoln Rd, Miami Beach", 25.7908, -80.1405, "El rooftop bar de Effluvia que se vio en el Extended Look recuerda a Juvia, el rooftop de Lincoln Road que ya cerró."),
   ("juego", "Puente de los Cayos de Leonida", "Seven Mile Bridge", "Overseas Hwy, Cayos de Florida", 24.7039, -81.1530, "El puente que une los Cayos sale en el tráiler y es la entrada a los Cayos de Leonida."),
   ("marketing", "Letrero \"Welcome to Vice City\"", "Techo del Kaseya Center", "601 Biscayne Blvd, Miami", 25.7818, -80.1865, "Letrero iluminado en rosa sobre el techo de la arena. Según reportes, el acuerdo ronda los $975,000."),
-  ("marketing", "A Night in Vice City", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7810, -80.1875, "El 18 de noviembre, Heat vs. Bucks con cancha y uniformes de Vice City. Dentro de la arena se han visto puestos de Burger Shot y Cluckin' Bell."),
-  ("marketing", "Sombrillas y tumbonas de Vice City", "Playa de Miami Beach", "South Beach, Miami Beach", 25.7838, -80.1283, "Desde el 15 de octubre y hasta el 31 de diciembre, el equipo de playa lleva marca de Vice City y VI."),
-  ("marketing", "Banners de GTA 6", "Zona de eventos del downtown", "Downtown Miami (zona aproximada)", 25.7752, -80.1920, "Desde el 15 de octubre, la ciudad permite banners de GTA 6 en una zona del downtown, por un máximo de 56 días."),
+  ("marketing", "A Night in Vice City", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7810, -80.1875, "El 18 de noviembre, Heat vs. Bucks con cancha y uniformes de Vice City. Dentro de la arena ya hay un mostrador de Burger Shot con su fachada roja y menús del juego, y la tienda de los Heat vende camisetas y gorras de Vice City."),
+  ("marketing", "Sombrillas y tumbonas de Vice City", "Playa de Miami Beach", "South Beach, Miami Beach", 25.7838, -80.1283, "Desde el 15 de octubre y hasta el 31 de diciembre, las sillas, sombrillas y cabañas de Boucher Brothers en la playa llevan la marca de Vice City."),
+  ("marketing", "Banners de GTA 6", "Zona de eventos del downtown", "Downtown Miami (zona aproximada)", 25.7752, -80.1920, "Desde el 15 de octubre, la ciudad permite banners de GTA 6 en una zona del downtown, por un máximo de 56 días. Por estas calles también circulan autobuses con \"I ♥ Vice City\"."),
   ("marketing", "Pantallas y \"In for VI\"", "Hard Rock Stadium", "347 Don Shula Dr, Miami Gardens", 25.9580, -80.2389, "En el Dolphins vs. Bengals del 11 de octubre hubo anuncios de GTA 6 y un gráfico \"In for VI\" en los touchdowns."),
+  ("marketing", "Banner doble de GTA 6", "Hotel YVE", "146 Biscayne Blvd, Miami", 25.7747, -80.1876, "Desde el 19 de octubre, la fachada del hotel tiene un banner doble de GTA 6 frente a Biscayne Boulevard."),
+  ("marketing", "Mural \"Good Idea\" de Ron English", "Wynwood", "Wynwood Arts District, Miami", 25.802404, -80.202064, "Uno de los murales de Vice City pintados en Wynwood en octubre. Por la zona también están \"We ♥ Vice City\" de Queen Andrea, \"Eyes\" de Enjoy Denial y uno de un caimán con una mujer y una bolsa de dinero."),
+  ("marketing", "Murales de Tatiana Suarez y \"Camouflage\"", "Wynwood", "Wynwood Arts District, Miami", 25.800089, -80.202225, "Dos murales más de la campaña de Vice City, pintados a mediados de octubre."),
+  ("marketing", "Pantallas de Vice City", "NW 26th St", "NW 26th St, Wynwood (zona aproximada)", 25.8007, -80.2010, "Pantallas digitales de la calle con anuncios de Vice City."),
+  ("marketing", "Carrito \"Welcome to Vice City\"", "Collins Ave y 5th St", "Collins Ave & 5th St, Miami Beach", 25.7737, -80.1336, "Un carrito con el mensaje \"Welcome to Vice City\" en plena South Beach."),
+  ("marketing", "Columnas del Metrorail", "Metrorail de Miami", "Downtown Miami (zona aproximada)", 25.7740, -80.1962, "Columnas del Metrorail forradas con los colores de GTA 6."),
 ]
 _lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
 
@@ -663,6 +669,7 @@ mapa_real = f"""
   <li><a href="https://www.videogameschronicle.com/news/rockstar-is-quietly-transforming-the-real-miami-into-gta-6s-vice-city/" rel="nofollow">Rockstar transforma Miami en Vice City (VGC)</a></li>
   <li><a href="https://www.gamenguide.com/articles/109079/20261014/rockstar-ramps-gta-6-marketing-miami-blimp-nfl-promotions.htm" rel="nofollow">Marketing de GTA 6 en Miami (GamenGuide)</a></li>
   <li><a href="https://www.gtaboom.com/the-official-gta-6-beach-and-banner-ads-in-miami-begin-on-october-15-7436" rel="nofollow">Anuncios en playas y banners (GTA BOOM)</a></li>
+  <li><a href="https://viciados.net/gta-6/miami/en/" rel="nofollow">Guía del marketing de GTA 6 en Miami (Portal Viciados y @samchrme)</a></li>
 </ul>
 <script>
 (function(){{
