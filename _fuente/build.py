@@ -532,8 +532,10 @@ equipo = f"""
 </div>
 
 <h2>Accesorios</h2>
+<p>Ojo con los mandos de otras marcas: en PS5, la mayoría no sirven para jugar juegos de PS5. Por eso los recomendamos solo para Xbox o PC.</p>
 <div class="picks">
-  {pick("Mando", "", "DualSense o mando de Xbox extra", "Para sesiones largas sin quedarte sin batería. La PS5 tiene la vibración háptica ajustada para los autos de GTA 6.", "DualSense controller PS5")}
+  {pick("Mando PS5", "", "DualSense extra", "Para sesiones largas sin quedarte sin batería. Rockstar ajustó la vibración háptica y los gatillos del DualSense para manejar en GTA 6.", "DualSense controller PS5")}
+  {pick("Mando Xbox económico", "menos de $50", "GameSir G7 SE", "Mando con licencia oficial de Xbox, con sticks Hall Effect que no sufren drift y botones traseros programables. Es con cable. Funciona en Xbox Series X|S y PC, no en PS5.", "GameSir G7 SE Xbox controller")}
   {pick("Audio", "", "Audífonos gaming", "Para escuchar la radio de Vice City y los diálogos de los NPC sin molestar a nadie en casa.", "PS5 Xbox gaming headset wireless")}
   {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargar el 12 de noviembre.", "PlayStation Store gift card")}
 </div>
