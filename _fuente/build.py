@@ -79,6 +79,8 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+footer .autor{font-size:1rem;color:var(--fg);margin-bottom:.6em}
+footer .autor a{font-weight:700}
 .radios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
 .radio{background:var(--surface);border:1px solid var(--line);padding:0 0 14px;min-width:0;overflow:hidden}
 .radio>*:not(.radio-img){margin-left:16px;margin-right:16px}
@@ -155,6 +157,7 @@ def shell(slug, title, desc, body, full_doc=True):
 </div></header>
 <main class="wrap">{body}</main>
 <footer><div class="wrap">
+  <p class="autor">Creado por <strong>Ernesto</strong> · Síguelo en X: <a href="https://x.com/elchinyto_tech" target="_blank" rel="me noopener">@elchinyto_tech</a></p>
   <p>{SITE} es un sitio de fans en español. No está afiliado a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto es marca de sus dueños.</p>
   <p>Algunos enlaces son de afiliado: si compras a través de ellos, el sitio recibe una pequeña comisión sin costo extra para ti.</p>
 </div></footer>
