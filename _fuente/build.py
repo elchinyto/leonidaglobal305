@@ -79,6 +79,11 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.radios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
+.radio{background:var(--surface);border:1px solid var(--line);padding:14px 16px;min-width:0}
+.radio h3{margin:0;font-family:var(--f-display);font-weight:400;text-transform:uppercase;font-size:1.35rem;letter-spacing:.02em}
+.radio .hosts{margin:6px 0;font-weight:600;font-size:.95rem}
+.radio ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:.93rem}
 .creditos{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:28px}
 .filtros{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
 .f{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
@@ -116,7 +121,7 @@ body{top:0!important}
 """
 
 NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"),
-       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("equipo-gta-6.html", "Equipo")]
+       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 def shell(slug, title, desc, body, full_doc=True):
     nav = "".join(
@@ -178,6 +183,31 @@ AFF = """<aside class="aff" aria-label="Recomendados">
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
 UPD = '<p class="updated">Actualizado: 23 de octubre de 2026</p>'
 
+COLECCIONISTA = """
+<h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
+<p>Rockstar vende una caja de coleccionista oficial por <strong>$399.99</strong> en EE.UU., solo en la Rockstar Store. <strong>No incluye el juego</strong>: se compra aparte.</p>
+<div class="tbl"><table>
+  <thead><tr><th>Qué trae</th></tr></thead>
+  <tbody>
+    <tr><td>Figura de Macca the Gator (unos 15 cm, con escondite en la base)</td></tr>
+    <tr><td>Gafas Oakley Frogskins</td></tr>
+    <tr><td>Gorra New Era 9FORTY</td></tr>
+    <tr><td>Bolso cruzado de los Cayos de Leonida</td></tr>
+    <tr><td>Espejo magnético de Macca the Gator</td></tr>
+    <tr><td>Vaso de chupito de Chunkee the Manatee</td></tr>
+    <tr><td>Cucharilla de Vice City y llavero</td></tr>
+    <tr><td>Nueve pines en una lata y nueve pegatinas</td></tr>
+    <tr><td>Póster doble de 36 × 26 pulgadas con el mapa de Leonida detrás</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li>Reservas abiertas desde el 24 de septiembre. Se envía a partir del 19 de noviembre.</li>
+  <li>Una por persona, con cuenta de Rockstar Games y para mayores de 18 años.</li>
+  <li>Se envía a 23 países, entre ellos EE.UU., Canadá, Reino Unido y buena parte de Europa. Latinoamérica todavía no está en la lista.</li>
+  <li>Es de stock limitado: en Reino Unido se agotó en dos días.</li>
+</ul>
+"""
+
 # ---------- Inicio ----------
 index = f"""
 <span class="mile">Guías de GTA 6 en español</span>
@@ -194,6 +224,7 @@ index = f"""
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
+  <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, y el álbum oficial.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
   <li><a href="equipo-gta-6.html"><span class="mile">Equipo</span><h3>Equipo para GTA 6</h3><p>Teles, monitores y SSD económicos y de gama alta.</p></a></li>
@@ -241,9 +272,11 @@ fecha = f"""
   </tbody>
 </table></div>
 <div class="note"><strong>Ojo con la edición física.</strong> La caja de tienda trae un código de descarga, no un disco con el juego. Si lo que quieres es jugar el primer día, la compra digital te deja precargar desde el 12 de noviembre sin depender del envío.</div>
+{COLECCIONISTA}
 {AD}
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
+  <dt>¿Hay edición de coleccionista de GTA 6?</dt><dd>Hay una caja de coleccionista de $399.99 en la Rockstar Store, pero no incluye el juego. Las ediciones del juego son solo la estándar y la Ultimate.</dd>
   <dt>¿GTA 6 sale en PS4 o Xbox One?</dt><dd>No. Solo se ha anunciado para PS5 y Xbox Series X|S.</dd>
   <dt>¿A qué hora se desbloquea?</dt><dd>Rockstar no ha confirmado la hora para cada región. Actualizaremos esta guía en cuanto se anuncie.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
@@ -671,7 +704,72 @@ mapa_real = f"""
 }})();
 </script>"""
 
+# ---------- Música y radios ----------
+RADIOS = [
+  ("Flash FM", "Pop", "Robyn y Alex Consani", "Charli xcx, \"Good Ones\" · MGMT, \"Electric Feel\" · Zara Larsson y PinkPantheress, \"Midnight Sun (Girls Trip)\""),
+  ("Cocoteo FM", "Latino actual", "Bad Bunny (El Martillo) y RaiNao (La Gata)", "Bad Bunny, \"EoO\" · Axel Rulay con Farruko y El Alfa, \"Si Es Trucho Es Trucho (Remix)\" · Romeo Santos y El Chaval de la Bachata, \"Canalla\""),
+  ("Back Country Radio", "Country clásico y outlaw", "Morgan Wallen, Lana Del Rey (Delta Dawne) y Jeremy Dufrene (Mud Dog Mike)", "David Allan Coe, \"Need a Little Time Off for Bad Behavior\" · Loretta Lynn, \"Don't Come Home A-Drinkin'\" · Hank Williams Jr. y Waylon Jennings, \"The Conversation\""),
+  ("The Chamber 106.6", "Metal y hard rock", "Kerry King y Tom Araya, de Slayer", "Black Sabbath, \"I\" · Pantera, \"I'm Broken\" · Slayer, \"Raining Blood\""),
+  ("AfroBank FM", "Afrobeats y amapiano", "Burna Boy y Palms Trax", "Asake, \"Joha\" · Pat Thomas con Ebo Taylor, \"Gye Wani\" · DJ Lag y Robot Boii con Kamo Mphela, \"Shay'sana\""),
+  ("Dirty South Classics", "Rap y hip hop del sur", "Trick Daddy y Trina", "David Banner con Lil' Flip, \"Like A Pimp\" · JT Money con Solé, \"Who Dat\" · DJ Khaled con Trick Daddy, Rick Ross y Pitbull, \"Born N Raised\""),
+]
+SINGLES = [
+  ("Yung Lean con Future y Metro Boomin", "That's It"),
+  ("Travis Scott", "RHYNO"),
+  ("CA7RIEL y Paco Amoroso, PinkPantheress, Fred again.. y Etienne de Crécy", "Sexy Magic"),
+  ("Morgan Wallen", "Last Thing You Need"),
+  ("Rauw Alejandro", "Macacoa 2000"),
+  ("Keith Richards", "Bright Lights, Big City"),
+]
+_radios = "".join(
+    f'<article class="radio"><div class="pick-top"><h3>{n}</h3><span class="tag no">{g}</span></div>'
+    f'<p class="hosts">Locutores: {h}</p><ul>' + "".join(f"<li>{c.strip()}</li>" for c in s.split("·")) + '</ul></article>'
+    for n, g, h, s in RADIOS)
+_singles = "".join(f'<tr><td>{a}</td><td><strong>{t}</strong></td></tr>' for a, t in SINGLES)
+
+musica = f"""
+<span class="mile">Música</span>
+<h1>GTA 6: radios, canciones y GTA VI: The Album</h1>
+{UPD}
+<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, el 19 de noviembre sale <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales.</p>
+
+<h2>Las radios confirmadas</h2>
+<p>Estas son las emisoras que Rockstar presentó el 8 de octubre en su web oficial. Es solo un adelanto: el juego tendrá más.</p>
+<div class="radios">{_radios}</div>
+<div class="note"><strong>Novedad en la saga.</strong> Por primera vez la radio se puede escuchar caminando: Jason y Lucia la oyen en el teléfono con audífonos. También hay pódcast a la carta, a pie o en el auto.</div>
+
+{AD}
+
+<h2>GTA VI: The Album</h2>
+<ul>
+  <li><strong>Sale el 19 de noviembre de 2026</strong>, el mismo día que el juego.</li>
+  <li><strong>34 canciones originales</strong> hechas para GTA 6.</li>
+  <li>Se puede reservar en <strong>vinilo</strong> (normal y edición limitada) y <strong>CD</strong>, y guardar en las plataformas de streaming.</li>
+  <li>La canción de Travis Scott la produjo Guy-Manuel de Homem-Christo, de Daft Punk.</li>
+</ul>
+<h3>Los 6 sencillos que ya están en streaming</h3>
+<div class="tbl"><table>
+  <thead><tr><th>Artista</th><th>Canción</th></tr></thead>
+  <tbody>{_singles}</tbody>
+</table></div>
+
+<div class="picks">
+  {pick("Vinilo", "", "GTA VI: The Album en vinilo", "Para coleccionistas: el disco oficial con las 34 canciones originales del juego.", "Grand Theft Auto VI The Album vinyl")}
+  {pick("CD", "", "GTA VI: The Album en CD", "La opción más económica en físico para tener la banda sonora.", "Grand Theft Auto VI The Album CD")}
+  {pick("Audio", "", "Audífonos para escuchar Leonida", "Ahora que la radio suena hasta caminando, unos buenos audífonos marcan la diferencia.", "PS5 Xbox gaming headset wireless")}
+</div>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
+  <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
+  <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Seis canciones ya están en streaming.</dd>
+</dl>
+{AFF}"""
+
+
 pages = {
+    "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
     "mapa-miami-real.html": (mapa_real, "Mapa de Vice City en el Miami real | Leonida Global 305", "Mapa interactivo con los lugares reales de Miami y Florida que aparecen en GTA 6 y todo el marketing de Vice City en la ciudad.", True),
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
     "leaks-cyberleek.html": (leaks, "Leaks de GTA 6 de CyberLeek | Leonida Global 305", "Cronología de los leaks de GTA 6 de CyberLeek, qué detalles confirmó Rockstar después y cómo terminó la filtración.", True),
@@ -683,12 +781,13 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
 }
 def creditos(slug):
