@@ -575,7 +575,7 @@ equipo = f"""
 <span class="mile">Equipo</span>
 <h1>Todo lo que necesitas para jugar GTA 6</h1>
 {UPD}
-<p class="lede">Tele, monitor, almacenamiento y accesorios para tener todo listo antes del 19 de noviembre, con opciones económicas y de gama alta.</p>
+<p class="lede">Tele, monitor, almacenamiento, sillas y accesorios para tener todo listo antes del 19 de noviembre, con opciones económicas y de gama alta.</p>
 <p class="disclosure">Como afiliado de Amazon, este sitio gana una comisión por compras que califiquen, sin costo extra para ti. Los precios cambian a menudo: revisa el precio final en la tienda.</p>
 
 <div class="note"><strong>Antes de comprar, esto importa.</strong> En la demo de prensa GTA 6 corría a 30 FPS en una PS5 normal, y Rockstar no ha confirmado un modo a 60 FPS. Por eso, para este juego pesa más una buena imagen (HDR, contraste, colores) que una tasa de refresco altísima. Aun así, busca HDMI 2.1 y VRR: son los que te dejan aprovechar un posible modo rendimiento o la PS5 Pro.</div>
@@ -602,6 +602,15 @@ equipo = f"""
 <div class="picks">
   {pick("PS5", "1 a 2 TB", "SSD M.2 PCIe 4.0 con disipador", "Sony pide un SSD Gen4 con disipador. Modelos como el WD_BLACK SN850X o el Samsung 990 Pro con disipador se instalan en minutos.", "WD_BLACK SN850X heatsink PS5 2TB")}
   {pick("Xbox Series X|S", "1 a 2 TB", "Tarjeta de expansión de almacenamiento", "La forma oficial de ampliar la memoria rápida de Xbox: se conecta atrás y listo.", "Xbox Series X storage expansion card 2TB")}
+</div>
+
+<h2>Sillas gaming</h2>
+<p>GTA 6 se va a jugar en sesiones largas. Una buena silla se nota en la espalda después de tres horas en Vice City.</p>
+<div class="picks">
+  {pick("Económica", "unos $200 a $270", "Corsair TC100 Relaxed", "Acolchado cómodo y diseño discreto a buen precio. Es de las mejores económicas, aunque armarla lleva un rato.", "Corsair TC100 Relaxed gaming chair")}
+  {pick("Media", "unos $450 a $550", "Secretlab Titan Evo", "La silla gaming más recomendada: soporte lumbar ajustable, cojín magnético para la cabeza y reposabrazos 4D. Viene en varias tallas.", "Secretlab Titan Evo gaming chair")}
+  {pick("Para personas grandes", "unos $500", "AndaSeat Kaiser 4 XL", "Asiento amplio para personas altas o corpulentas, con cojín lumbar cómodo.", "AndaSeat Kaiser 4 XL gaming chair")}
+  {pick("Gama alta", "unos $2,400", "Herman Miller x Logitech Embody", "Ergonomía de primer nivel y 12 años de garantía. Llega armada. Es carísima y no trae reposacabezas.", "Herman Miller Logitech Embody gaming chair")}
 </div>
 
 <h2>Accesorios</h2>
@@ -792,7 +801,7 @@ CREDITOS = {
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
-    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach"],
+    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
 }
