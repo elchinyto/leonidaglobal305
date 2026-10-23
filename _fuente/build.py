@@ -488,7 +488,7 @@ leaks = f"""
 </ul>"""
 
 # ---------- Equipo para GTA 6 ----------
-AFF_TAG = "TUID-20"  # reemplazar por el ID real de Amazon Associates
+AFF_TAG = "leonida305-20"
 from urllib.parse import quote_plus
 def amz(q):
     return f"https://www.amazon.com/s?k={quote_plus(q)}&tag={AFF_TAG}"
