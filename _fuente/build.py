@@ -572,6 +572,7 @@ equipo = f"""
 <div class="picks">
   {pick("Mando PS5", "", "DualSense extra", "Para sesiones largas sin quedarte sin batería. Rockstar ajustó la vibración háptica y los gatillos del DualSense para manejar en GTA 6.", "DualSense controller PS5")}
   {pick("Mando Xbox económico", "menos de $50", "GameSir G7 SE", "Mando con licencia oficial de Xbox, con sticks Hall Effect que no sufren drift y botones traseros programables. Funciona en Xbox Series X|S y PC.", "GameSir G7 SE Xbox controller")}
+  {pick("Mando Xbox con estilo", "unos $90", "Turtle Beach Pacific Skyline", "Inalámbrico, con palmeras y colores pastel muy a tono con Vice City, luces RGB, sticks TMR sin drift y dos botones traseros. Funciona en Xbox Series X|S, Xbox One y PC.", "Turtle Beach Pacific Skyline wireless controller")}
   {pick("Audio", "", "Audífonos gaming", "Para escuchar la radio de Vice City y los diálogos de los NPC sin molestar a nadie en casa.", "PS5 Xbox gaming headset wireless")}
   {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargar el 12 de noviembre.", "PlayStation Store gift card")}
 </div>"""
@@ -687,7 +688,7 @@ CREDITOS = {
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
-    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central"],
+    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
 }
 def creditos(slug):
