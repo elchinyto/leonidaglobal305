@@ -74,6 +74,7 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.creditos{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:28px}
 .filtros{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
 .f{font:600 .9rem var(--f-body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
 .f.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
@@ -668,7 +669,22 @@ pages = {
     "mapa-leonida.html": (mapa, "Mapa de GTA 6: regiones de Leonida | Leonida Global 305", "Las seis regiones confirmadas del mapa de GTA 6 y su inspiración real en Florida.", True),
     "personajes.html": (pers, "Personajes de GTA 6 | Leonida Global 305", "Jason Duval, Lucia Caminos y todos los personajes confirmados de GTA 6.", True),
 }
+# Medios consultados por página: se muestran como mención, sin enlace.
+CREDITOS = {
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG"],
+    "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
+    "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
+    "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
+    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central"],
+    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
+}
+def creditos(slug):
+    c = CREDITOS.get(slug)
+    return f'<p class="creditos">Información basada en: {", ".join(c)}.</p>' if c else ""
+
 for slug, (body, title, desc, full) in pages.items():
+    body = body + creditos(slug)
     with open(os.path.join(OUT, slug), "w", encoding="utf-8") as f:
         f.write(shell(slug, title, desc, body, full))
 print("ok", sorted(os.listdir(OUT)))
