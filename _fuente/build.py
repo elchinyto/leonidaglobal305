@@ -33,6 +33,11 @@ header.top{border-bottom:3px solid var(--fg)}
 header.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline;justify-content:space-between;padding-block:14px}
 .logo{font-family:var(--f-display);font-size:1.6rem;letter-spacing:.02em;color:var(--fg);text-decoration:none;text-transform:uppercase}
 .logo span{color:var(--accent)}
+.logo{display:inline-flex;align-items:center;gap:10px}
+.logo img{width:48px;height:48px;flex:none}
+.hero{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.hero-logo{width:min(200px,45vw);height:auto;flex:none}
+.hero-txt{flex:1 1 300px;min-width:0}
 nav.main{display:flex;flex-wrap:wrap;gap:4px 16px;font-weight:600;font-size:.95rem}
 nav.main a{color:var(--muted);text-decoration:none}
 nav.main a:hover,nav.main a:focus-visible,nav.main a[aria-current]{color:var(--accent)}
@@ -122,10 +127,16 @@ def shell(slug, title, desc, body, full_doc=True):
             f'<link rel="canonical" href="{DOMAIN}/{"" if slug == "index.html" else slug}">'
             f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
             f'<meta property="og:type" content="website"><meta property="og:locale" content="es_ES">'
+            f'<meta property="og:image" content="{DOMAIN}/img/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+            f'<meta property="og:site_name" content="Leonida Global 305"><meta property="og:url" content="{DOMAIN}/{"" if slug == "index.html" else slug}">'
+            '<meta name="twitter:card" content="summary_large_image">'
+            f'<meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{desc}"><meta name="twitter:image" content="{DOMAIN}/img/og-image.jpg">'
+            '<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">'
+            '<link rel="apple-touch-icon" href="img/apple-touch-icon.png"><meta name="theme-color" content="#d7265f">'
             f'{FONTS}<style>{CSS}</style>')
     page = f"""
 <header class="top"><div class="wrap">
-  <a class="logo notranslate" href="index.html">Leonida Global <span>305</span></a>
+  <a class="logo notranslate" href="index.html"><img src="img/logo-96.png" srcset="img/logo-96.png 1x, img/logo-192.png 2x" width="48" height="48" alt="">Leonida Global <span>305</span></a>
   <nav class="main" aria-label="Guías">{nav}</nav>
   <div class="lang notranslate">
     <select id="lang-sel" aria-label="Idioma / Language">
@@ -169,9 +180,14 @@ UPD = '<p class="updated">Actualizado: 23 de octubre de 2026</p>'
 
 # ---------- Inicio ----------
 index = f"""
+<div class="hero">
+<img class="hero-logo" src="img/logo-320.png" srcset="img/logo-192.png 192w, img/logo-320.png 320w, img/logo.png 512w" sizes="200px" width="200" height="200" alt="Logo de Leonida Global 305: Miami con palmeras, rascacielos y la bahía">
+<div class="hero-txt">
 <span class="mile">Guías de GTA 6 en español</span>
-<h1>Todo GTA 6, claro y en español</h1>
+<h1>Todo GTA&nbsp;6, claro y en español</h1>
 <p class="lede">Fecha, precio, mapa de Leonida, personajes y, desde el día del lanzamiento, guías de misiones, robos, autos y secretos.</p>
+</div>
+</div>
 <div class="count" id="count" aria-live="polite">
   <div><b id="d">--</b><small>días</small></div>
   <div><b id="h">--</b><small>horas</small></div>
