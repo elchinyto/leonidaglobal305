@@ -158,7 +158,7 @@ def shell(slug, title, desc, body, full_doc=True):
 <main class="wrap">{body}</main>
 <footer><div class="wrap">
   <p class="autor">Creado por <strong>Ernesto</strong> · Síguelo en X: <a href="https://x.com/elchinyto_tech" target="_blank" rel="me noopener">@elchinyto_tech</a></p>
-  <p>{SITE} es un sitio de fans en español. No está afiliado a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto es marca de sus dueños.</p>
+  <p>{SITE} es un sitio de fans. No está afiliado a Rockstar Games ni a Take-Two Interactive. Grand Theft Auto es marca de sus dueños.</p>
   <p>Algunos enlaces son de afiliado: si compras a través de ellos, el sitio recibe una pequeña comisión sin costo extra para ti.</p>
 </div></footer>
 <div id="gt" aria-hidden="true"></div>
@@ -216,8 +216,8 @@ COLECCIONISTA = """
 
 # ---------- Inicio ----------
 index = f"""
-<span class="mile">Guías de GTA 6 en español</span>
-<h1>Todo GTA&nbsp;6, claro y en español</h1>
+<span class="mile">Guías de GTA 6</span>
+<h1>Todo GTA&nbsp;6, claro y al día</h1>
 <p class="lede">Fecha, precio, mapa de Leonida, personajes y, desde el día del lanzamiento, guías de misiones, robos, autos y secretos.</p>
 <div class="count" id="count" aria-live="polite">
   <div><b id="d">--</b><small>días</small></div>
@@ -792,7 +792,7 @@ pages = {
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
     "leaks-cyberleek.html": (leaks, "Leaks de GTA 6 de CyberLeek | Leonida Global 305", "Cronología de los leaks de GTA 6 de CyberLeek, qué detalles confirmó Rockstar después y cómo terminó la filtración.", True),
     "todo-lo-confirmado.html": (conf, "GTA 6: todo lo confirmado | Leonida Global 305", "Todos los detalles de GTA 6 confirmados por Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE, Bloomberg y en el Extended Look.", True),
-    "index.html": (index, "Leonida Global 305", "Guías de GTA 6 en español: fecha, precio, mapa de Leonida y personajes.", False),
+    "index.html": (index, "Leonida Global 305", "Guías de GTA 6: fecha, precio, mapa de Leonida, personajes, música y Vice City en el Miami real.", False),
     "fecha-precio-ediciones.html": (fecha, "GTA 6: fecha, precio y ediciones | Leonida Global 305", "GTA 6 sale el 19 de noviembre de 2026. Precio de la edición estándar y Ultimate, precarga y qué incluye cada una.", True),
     "mapa-leonida.html": (mapa, "Mapa de GTA 6: regiones de Leonida | Leonida Global 305", "Las seis regiones confirmadas del mapa de GTA 6 y su inspiración real en Florida.", True),
     "personajes.html": (pers, "Personajes de GTA 6 | Leonida Global 305", "Jason Duval, Lucia Caminos y todos los personajes confirmados de GTA 6.", True),
