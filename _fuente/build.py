@@ -451,21 +451,7 @@ conf = f"""
   <li>Antes de acariciar un perro, el juego pide permiso al dueño.</li>
 </ul>
 
-{AFF}
-
-<h2>Fuentes</h2>
-<ul>
-  <li><a href="https://www.invenglobal.com/articles/26913/gta-6-full-interview-with-rockstars-rob-nelson-reveals-new-details" rel="nofollow">Entrevista completa de IGN con Rob Nelson (vía Inven Global)</a></li>
-  <li><a href="https://www.gtavice.net/news/igns-full-gta-6-interview-reveals-even-more-gameplay-details" rel="nofollow">GTAVice.net sobre la entrevista de IGN</a></li>
-  <li><a href="https://www.igrandtheftauto.com/gta6/news/gta-6-famitsus-full-rob-nelson-interview-translated-into-english" rel="nofollow">Entrevista de Famitsu traducida (iGrandTheftAuto)</a></li>
-  <li><a href="https://www.igrandtheftauto.com/gta6/news/kinda-funnys-gta-6-preview-reveals-dozens-of-new-gameplay-details" rel="nofollow">Preview de Kinda Funny (iGrandTheftAuto)</a></li>
-  <li><a href="https://www.svg.com/2246094/gta-6-extended-look-gameplay-rockstar-confirmed/" rel="nofollow">Extended Look (SVG)</a></li>
-  <li><a href="https://gtasix.org/en/news/gta6-rockstar-preview-gameplay-details/" rel="nofollow">Lo que vio elrubius (gtasix.org)</a></li>
-  <li><a href="https://gtaintel.com/news/gta-6-game-informer-cover-story-new-details" rel="nofollow">Portada de Game Informer (GTA Intel)</a></li>
-  <li><a href="https://gta.guide/article/rockstar-dazed-interview" rel="nofollow">Entrevista de Dazed (gta.guide)</a></li>
-  <li><a href="https://www.gtavice.net/news/love-magazine-new-gta-6-details-on-jason-lucia-raul-npcs-satire-and-the-making-of-leonida" rel="nofollow">Entrevista de LOVE (GTAVice.net)</a></li>
-  <li><a href="https://vgtimes.com/articles/171078-key-takeaways-from-bloomberg-gta6.html" rel="nofollow">Reportaje de Bloomberg (VGTimes)</a></li>
-</ul>"""
+{AFF}"""
 
 # ---------- Leaks CyberLeek ----------
 leaks = f"""
@@ -524,14 +510,7 @@ leaks = f"""
   <li>Hasta ahora nadie ha sido identificado ni acusado públicamente.</li>
 </ul>
 
-{AFF}
-
-<h2>Fuentes</h2>
-<ul>
-  <li><a href="https://www.igeeksblog.com/gta-6-leaks-timeline/" rel="nofollow">Cronología de los leaks (iGeeksBlog)</a></li>
-  <li><a href="https://www.dexerto.com/gta/gta-6-leaker-cyberleek-returns-with-massive-25-minute-gameplay-leak-3416630/" rel="nofollow">El regreso con "Extended Leek" (Dexerto)</a></li>
-  <li><a href="https://tech-insider.org/cyberleek-gta-6-extended-leek-367mb-2026/" rel="nofollow">La amenaza y el final de CyberLeek (Tech Insider)</a></li>
-</ul>"""
+{AFF}"""
 
 # ---------- Equipo para GTA 6 ----------
 AFF_TAG = "leonida305-20"
@@ -583,15 +562,7 @@ equipo = f"""
   {pick("Mando Xbox económico", "menos de $50", "GameSir G7 SE", "Mando con licencia oficial de Xbox, con sticks Hall Effect que no sufren drift y botones traseros programables. Funciona en Xbox Series X|S y PC.", "GameSir G7 SE Xbox controller")}
   {pick("Audio", "", "Audífonos gaming", "Para escuchar la radio de Vice City y los diálogos de los NPC sin molestar a nadie en casa.", "PS5 Xbox gaming headset wireless")}
   {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargar el 12 de noviembre.", "PlayStation Store gift card")}
-</div>
-
-<h2>Fuentes</h2>
-<ul>
-  <li><a href="https://www.rtings.com/tv/reviews/best/ps5" rel="nofollow">Mejores teles para PS5 (RTINGS)</a></li>
-  <li><a href="https://www.rtings.com/monitor/reviews/best/ps5" rel="nofollow">Mejores monitores para PS5 (RTINGS)</a></li>
-  <li><a href="https://www.techradar.com/best/best-monitors-for-ps5" rel="nofollow">Mejores monitores para PS5 (TechRadar)</a></li>
-  <li><a href="https://www.eneba.com/hub/gaming-gear/best-tv-for-ps5/" rel="nofollow">Mejores teles para PS5 (Eneba)</a></li>
-</ul>"""
+</div>"""
 
 # ---------- Mapa real de Miami ----------
 import json as _json
@@ -661,16 +632,6 @@ mapa_real = f"""
   <dt>¿Qué pasa el 18 de noviembre en Miami?</dt><dd>Los Heat juegan "A Night in Vice City" contra los Bucks en el Kaseya Center, con cancha y uniformes temáticos, la noche antes del lanzamiento.</dd>
 </dl>
 {AFF}
-<h2>Fuentes</h2>
-<ul>
-  <li><a href="https://www.gtaboom.com/real-miami-locations-in-gta-6-vice-city-d370" rel="nofollow">20 lugares reales de Miami en Vice City (GTA BOOM)</a></li>
-  <li><a href="https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/" rel="nofollow">Lugares de Miami en GTA 6 (Miami New Times)</a></li>
-  <li><a href="https://kotaku.com/gta-6-grand-theft-auto-lucia-jason-apartment-miami-vice-city-real-location-2000729948" rel="nofollow">El edificio de Lucia (Kotaku)</a></li>
-  <li><a href="https://www.videogameschronicle.com/news/rockstar-is-quietly-transforming-the-real-miami-into-gta-6s-vice-city/" rel="nofollow">Rockstar transforma Miami en Vice City (VGC)</a></li>
-  <li><a href="https://www.gamenguide.com/articles/109079/20261014/rockstar-ramps-gta-6-marketing-miami-blimp-nfl-promotions.htm" rel="nofollow">Marketing de GTA 6 en Miami (GamenGuide)</a></li>
-  <li><a href="https://www.gtaboom.com/the-official-gta-6-beach-and-banner-ads-in-miami-begin-on-october-15-7436" rel="nofollow">Anuncios en playas y banners (GTA BOOM)</a></li>
-  <li><a href="https://viciados.net/gta-6/miami/en/" rel="nofollow">Guía del marketing de GTA 6 en Miami (Portal Viciados y @samchrme)</a></li>
-</ul>
 <script>
 (function(){{
   var L_=window.L, data={_lugares_js};
