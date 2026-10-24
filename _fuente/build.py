@@ -622,7 +622,7 @@ equipo = f"""
 <span class="mile">Equipo</span>
 <h1>Todo lo que necesitas para jugar GTA 6</h1>
 {UPD}
-<p class="lede">Tele, monitor, almacenamiento, sillas y accesorios para tener todo listo antes del 19 de noviembre, con opciones económicas y de gama alta.</p>
+<p class="lede">Tele, monitor, almacenamiento, sillas, accesorios, libros y merch para tener todo listo antes del 19 de noviembre, con opciones económicas y de gama alta.</p>
 <p class="disclosure">Como afiliado de Amazon, este sitio gana una comisión por compras que califiquen, sin costo extra para ti. Los precios cambian a menudo: revisa el precio final en la tienda.</p>
 
 <div class="note"><strong>Antes de comprar, esto importa.</strong> En la demo de prensa GTA 6 corría a 30 FPS en una PS5 normal, y Rockstar no ha confirmado un modo a 60 FPS. Por eso, para este juego pesa más una buena imagen (HDR, contraste, colores) que una tasa de refresco altísima. Aun así, busca HDMI 2.1 y VRR: son los que te dejan aprovechar un posible modo rendimiento o la PS5 Pro.</div>
@@ -667,6 +667,18 @@ equipo = f"""
   {pick("Mando Xbox con estilo", "unos $90", "Turtle Beach Pacific Skyline", "Inalámbrico, con palmeras y colores pastel muy a tono con Vice City, luces RGB, sticks TMR sin drift y dos botones traseros. Funciona en Xbox Series X|S, Xbox One y PC.", "Turtle Beach Pacific Skyline wireless controller")}
   {pick("Audio", "", "Audífonos gaming", "Para escuchar la radio de Vice City y los diálogos de los NPC sin molestar a nadie en casa.", "PS5 Xbox gaming headset wireless")}
   {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargar el 12 de noviembre.", "PlayStation Store gift card")}
+</div>
+<h2>Libros y cómics</h2>
+<div class="picks">
+  {pick("Cómic", "", "American Caper, volumen 1: Red-Pilled Blues", "El cómic de Dan Houser, cofundador de Rockstar y guionista de GTA y Red Dead. Una historia de crimen y sátira de Estados Unidos con el humor que hizo famosa a la saga.", "American Caper Volume 1 Red-Pilled Blues Dan Houser")}
+  {pick("Cómic", "", "American Caper, volumen 2: Cowboys and Conspiracies", "La continuación de la serie de Dan Houser. Para leer después del primero.", "American Caper Volume 2 Cowboys and Conspiracies")}
+  {pick("Humor", "", "Life Before GTA 6", "Libro de humor no oficial sobre todo lo que nos pasó mientras esperábamos GTA 6. Buen regalo para el amigo que lleva años contando los días.", "Life Before GTA 6 Zane Ark")}
+</div>
+
+<h2>Merch y decoración</h2>
+<div class="picks">
+  {pick("Decoración", "", "Imanes estilo GTA (12 piezas)", "Doce imanes de vinilo con el \"Wasted\", autos, billetes y el minimapa. Para la nevera, el casillero o el auto. Producto no oficial.", "Babymiu Wasted car adventure game fridge magnet 12 pack")}
+  {pick("Parche", "", "Parche bordado \"Wasted\"", "El mensaje más famoso de la saga en un parche con velcro, para la mochila, la gorra o la chaqueta. Producto no oficial.", "Artistry Bloom Wasted patch hook and loop")}
 </div>"""
 
 # ---------- Mapa real de Miami ----------
