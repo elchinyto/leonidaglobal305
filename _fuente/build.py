@@ -79,6 +79,15 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.yt{position:relative;aspect-ratio:16/9;max-width:100%;background:#000;margin:12px 0;border:2px solid var(--fg)}
+.yt iframe,.yt-btn{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt-btn{padding:0;cursor:pointer;background:#000;display:block}
+.yt-btn img{width:100%;height:100%;object-fit:cover;display:block}
+.yt-play{position:absolute;left:50%;top:50%;width:76px;height:54px;margin:-27px 0 0 -38px;background:var(--accent);border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.45)}
+.yt-play::after{content:"";position:absolute;left:30px;top:15px;border-style:solid;border-width:12px 0 12px 21px;border-color:transparent transparent transparent #fff}
+.yt-btn:hover .yt-play,.yt-btn:focus-visible .yt-play{filter:brightness(1.12)}
+.yt-btn:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.trailer h2{margin-bottom:.1em}
 footer .autor{font-size:1rem;color:var(--fg);margin-bottom:.6em}
 footer .autor a{font-weight:700}
 .radios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
@@ -126,7 +135,7 @@ body{top:0!important}
 """
 
 NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"),
-       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
+       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 def shell(slug, title, desc, body, full_doc=True):
     nav = "".join(
@@ -214,6 +223,26 @@ COLECCIONISTA = """
 </ul>
 """
 
+
+# ---------- Videos de YouTube (carga al tocar) ----------
+def video(vid, titulo):
+    return (f'<div class="yt"><button type="button" class="yt-btn" data-id="{vid}" data-title="{titulo}" aria-label="Ver {titulo}">'
+            f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">'
+            f'<span class="yt-play" aria-hidden="true"></span></button></div>')
+YT_JS = """<script>
+document.querySelectorAll(".yt-btn").forEach(function(b){b.addEventListener("click",function(){
+  var f=document.createElement("iframe");
+  f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.id+"?autoplay=1&rel=0";
+  f.title=b.dataset.title; f.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"; f.allowFullscreen=true;
+  b.parentNode.replaceChild(f,b);
+});});
+</script>"""
+TRAILERS = [
+    ("rz1B4B2yBZY", "Tráiler de lanzamiento", "15 de octubre de 2026", "Grabado dentro del juego en PS5. Un golpe fácil sale mal y Jason y Lucia terminan metidos en una conspiración que cruza todo Leonida. Suena \"Flower in a Hurricane\", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard."),
+    ("VQRLujxTm3c", "Tráiler 2", "6 de mayo de 2025", "Presentó por su nombre a Jason Duval y Lucia Caminos, y al reparto: Cal Hampton, Brian Heder, Boobie Ike, Dre'Quan Priest, Real Dimez y Raul Bautista."),
+    ("QdBZY2fkU-0", "Tráiler 1", "5 de diciembre de 2023", "El primer vistazo: Lucia en prisión, Vice City de vuelta, los Cayos y el estado de Leonida. Con \"Love Is a Long Road\" de Tom Petty."),
+]
+
 # ---------- Inicio ----------
 index = f"""
 <span class="mile">Guías de GTA 6</span>
@@ -225,11 +254,16 @@ index = f"""
   <div><b id="m">--</b><small>minutos</small></div>
 </div>
 <p class="updated">Cuenta regresiva al 19 de noviembre de 2026, 00:00 (hora de Miami). La hora exacta de desbloqueo puede variar por región.</p>
+<h2>Tráiler de lanzamiento</h2>
+{video("rz1B4B2yBZY", "Tráiler de lanzamiento de GTA 6")}
+<p><a href="trailers-gta-6.html">Ver los tres tráilers oficiales</a></p>
+{YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
+  <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales, incluido el de lanzamiento.</p></a></li>
   <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, y el álbum oficial.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
@@ -481,6 +515,7 @@ conf = f"""
 </ul>
 
 <h2>Tráiler de lanzamiento (15 de octubre)</h2>
+<p><a href="trailers-gta-6.html">Ver el tráiler y los anteriores</a></p>
 <p>Rockstar publicó sin aviso previo el tráiler de lanzamiento, de alrededor de minuto y medio y grabado íntegramente dentro del juego en una PS5.</p>
 <ul>
   <li>La descripción oficial resume la historia: un golpe fácil sale mal y Jason y Lucia acaban metidos en una conspiración criminal que se extiende por todo Leonida.</li>
@@ -798,7 +833,27 @@ musica = f"""
 {AFF}"""
 
 
+# ---------- Tráilers ----------
+_tr = "".join(f'<section class="trailer"><h2>{t}</h2><p class="updated">{d}</p>{video(v, t + " de GTA 6")}<p>{x}</p></section>' for v, t, d, x in TRAILERS)
+trailers = f"""
+<span class="mile">Videos</span>
+<h1>Todos los tráilers de GTA 6</h1>
+{UPD}
+<p class="lede">Los tres tráilers oficiales que ha publicado Rockstar, del más nuevo al más antiguo. Toca uno para verlo aquí mismo.</p>
+{_tr}
+<div class="note"><strong>¿Y el Extended Look?</strong> El 27 de agosto Rockstar estrenó en Netflix y luego en YouTube un video más largo con gameplay. No es un tráiler como tal; todo lo que se vio está resumido en <a href="todo-lo-confirmado.html">Todo lo confirmado</a>.</div>
+{AD}
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuántos tráilers tiene GTA 6?</dt><dd>Tres oficiales: el tráiler 1 (diciembre de 2023), el tráiler 2 (mayo de 2025) y el tráiler de lanzamiento (15 de octubre de 2026).</dd>
+  <dt>¿Qué canción suena en el tráiler de lanzamiento?</dt><dd>"Flower in a Hurricane", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard. Justice también compuso la banda sonora original del juego.</dd>
+  <dt>¿Los tráilers están grabados en el juego?</dt><dd>Sí. Rockstar indica que el tráiler 2 y el de lanzamiento se capturaron dentro del juego en una PS5.</dd>
+</dl>
+{YT_JS}
+{AFF}"""
+
 pages = {
+    "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6: el tráiler 1, el tráiler 2 y el tráiler de lanzamiento, con lo que muestra cada uno.", True),
     "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
     "mapa-miami-real.html": (mapa_real, "Mapa de Vice City en el Miami real | Leonida Global 305", "Mapa interactivo con los lugares reales de Miami y Florida que aparecen en GTA 6 y todo el marketing de Vice City en la ciudad.", True),
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
@@ -818,6 +873,7 @@ CREDITOS = {
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
+    "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
 }
 def creditos(slug):

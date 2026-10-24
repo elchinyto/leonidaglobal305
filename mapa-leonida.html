@@ -66,6 +66,15 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.yt{position:relative;aspect-ratio:16/9;max-width:100%;background:#000;margin:12px 0;border:2px solid var(--fg)}
+.yt iframe,.yt-btn{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt-btn{padding:0;cursor:pointer;background:#000;display:block}
+.yt-btn img{width:100%;height:100%;object-fit:cover;display:block}
+.yt-play{position:absolute;left:50%;top:50%;width:76px;height:54px;margin:-27px 0 0 -38px;background:var(--accent);border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.45)}
+.yt-play::after{content:"";position:absolute;left:30px;top:15px;border-style:solid;border-width:12px 0 12px 21px;border-color:transparent transparent transparent #fff}
+.yt-btn:hover .yt-play,.yt-btn:focus-visible .yt-play{filter:brightness(1.12)}
+.yt-btn:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.trailer h2{margin-bottom:.1em}
 footer .autor{font-size:1rem;color:var(--fg);margin-bottom:.6em}
 footer .autor a{font-weight:700}
 .radios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
@@ -113,7 +122,7 @@ body{top:0!important}
 </style></head><body>
 <header class="top"><div class="wrap">
   <a class="logo notranslate" href="index.html"><img src="img/logo-96.png" srcset="img/logo-96.png 1x, img/logo-192.png 2x" width="48" height="48" alt="">Leonida Global <span>305</span></a>
-  <nav class="main" aria-label="Guías"><a href="index.html">Inicio</a><a href="fecha-precio-ediciones.html">Fecha y precio</a><a href="mapa-leonida.html" aria-current="page">Mapa</a><a href="personajes.html">Personajes</a><a href="todo-lo-confirmado.html">Lo confirmado</a><a href="leaks-cyberleek.html">Leaks</a><a href="mapa-miami-real.html">Miami real</a><a href="musica-radios-gta-6.html">Música</a><a href="equipo-gta-6.html">Equipo</a></nav>
+  <nav class="main" aria-label="Guías"><a href="index.html">Inicio</a><a href="fecha-precio-ediciones.html">Fecha y precio</a><a href="mapa-leonida.html" aria-current="page">Mapa</a><a href="personajes.html">Personajes</a><a href="todo-lo-confirmado.html">Lo confirmado</a><a href="leaks-cyberleek.html">Leaks</a><a href="mapa-miami-real.html">Miami real</a><a href="trailers-gta-6.html">Tráilers</a><a href="musica-radios-gta-6.html">Música</a><a href="equipo-gta-6.html">Equipo</a></nav>
   <div class="lang notranslate">
     <select id="lang-sel" aria-label="Idioma / Language">
       <option value="es">🌐 Español</option><option value="en">English</option><option value="pt">Português</option>
