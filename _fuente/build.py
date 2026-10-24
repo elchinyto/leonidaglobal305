@@ -187,7 +187,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 23 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 24 de octubre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -353,7 +353,7 @@ conf = f"""
 <span class="mile">Entrevistas y prensa</span>
 <h1>GTA 6: todo lo confirmado por Rockstar</h1>
 {UPD}
-<p class="lede">Todo lo que Rockstar ha contado a IGN, Famitsu, Kinda Funny, Game Informer, Dazed, LOVE y Bloomberg, más lo que se vio en el Extended Look, ordenado por tema.</p>
+<p class="lede">Todo lo que Rockstar ha contado a IGN, Famitsu, Kinda Funny, Game Informer, Dazed, LOVE y Bloomberg, más lo que se vio en el Extended Look y el tráiler de lanzamiento, ordenado por tema.</p>
 <div class="note"><strong>Cómo leer esta guía.</strong> Todo lo que aparece aquí lo dijo Rockstar o se vio en el Extended Look del 27 de agosto. Lo que solo contaron creadores que vieron demos sin jugar va aparte, al final, marcado como reportado.</div>
 
 <h2>La historia y la pareja</h2>
@@ -478,6 +478,15 @@ conf = f"""
   <li>Hay elecciones, carteles de campaña, llamadas automáticas y programas de radio sobre la política de Leonida, pero sin políticos reales.</li>
   <li>Ambrosia está inspirada en Clewiston y el lago Okeechobee.</li>
   <li>El equipo de manejo de vehículos incluye pilotos de carreras reales.</li>
+</ul>
+
+<h2>Tráiler de lanzamiento (15 de octubre)</h2>
+<p>Rockstar publicó sin aviso previo el tráiler de lanzamiento, de alrededor de minuto y medio y grabado íntegramente dentro del juego en una PS5.</p>
+<ul>
+  <li>La descripción oficial resume la historia: un golpe fácil sale mal y Jason y Lucia acaban metidos en una conspiración criminal que se extiende por todo Leonida.</li>
+  <li>Jason cuenta que se metió en problemas en el ejército, lo que explica cómo terminó en el crimen.</li>
+  <li>Se ven robos a bancos, tiroteos y persecuciones con la policía, y una escena íntima entre los dos que confirma que están juntos.</li>
+  <li>La música es "Flower in a Hurricane", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard. Justice es también el compositor de la banda sonora original del juego.</li>
 </ul>
 
 <h2>Detrás del desarrollo (Bloomberg)</h2>
@@ -735,6 +744,7 @@ SINGLES = [
   ("Morgan Wallen", "Last Thing You Need"),
   ("Rauw Alejandro", "Macacoa 2000"),
   ("Keith Richards", "Bright Lights, Big City"),
+  ("Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard", "Flower in a Hurricane"),
 ]
 import re as _re
 def _slug(n): return _re.sub(r"[^a-z0-9]+", "-", n.lower()).strip("-")
@@ -748,7 +758,7 @@ musica = f"""
 <span class="mile">Música</span>
 <h1>GTA 6: radios, canciones y GTA VI: The Album</h1>
 {UPD}
-<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, el 19 de noviembre sale <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales.</p>
+<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, el 19 de noviembre sale <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales, y la banda sonora original del juego es obra del dúo francés Justice.</p>
 
 <h2>Las radios confirmadas</h2>
 <p>Estas son las emisoras que Rockstar presentó el 8 de octubre en su web oficial. Es solo un adelanto: el juego tendrá más.</p>
@@ -764,8 +774,9 @@ musica = f"""
   <li><strong>34 canciones originales</strong> hechas para GTA 6.</li>
   <li>Se puede reservar en <strong>vinilo</strong> (normal y edición limitada) y <strong>CD</strong>, y guardar en las plataformas de streaming.</li>
   <li>La canción de Travis Scott la produjo Guy-Manuel de Homem-Christo, de Daft Punk.</li>
+  <li><strong>Justice</strong> compuso la banda sonora original (el score) del juego. Su sencillo "Flower in a Hurricane", con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard, suena en el tráiler de lanzamiento del 15 de octubre y está incluido en el álbum.</li>
 </ul>
-<h3>Los 6 sencillos que ya están en streaming</h3>
+<h3>Los 7 sencillos que ya están en streaming</h3>
 <div class="tbl"><table>
   <thead><tr><th>Artista</th><th>Canción</th></tr></thead>
   <tbody>{_singles}</tbody>
@@ -781,7 +792,8 @@ musica = f"""
 <dl class="faq">
   <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
   <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
-  <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Seis canciones ya están en streaming.</dd>
+  <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Siete canciones ya están en streaming.</dd>
+  <dt>¿Quién hace la música original de GTA 6?</dt><dd>El dúo electrónico Justice compuso la banda sonora original. Rockstar lo dio a conocer con el tráiler de lanzamiento.</dd>
 </dl>
 {AFF}"""
 
@@ -802,10 +814,10 @@ CREDITOS = {
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer"],
-    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
 }
 def creditos(slug):
