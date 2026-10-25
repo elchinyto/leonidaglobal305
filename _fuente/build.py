@@ -1027,15 +1027,20 @@ revistas = f"""
   </div>
 </section>
 
-<h2>LOVE Magazine, número 27</h2>
-<p class="updated">5 de octubre de 2026</p>
-<p>Esta edición se agotó en minutos. Trae capturas nuevas y la entrevista más profunda sobre la historia:</p>
-<ul>
-  <li>Lucia es de Liberty City, y Raul Bautista es el mentor que les enseña a dar golpes grandes.</li>
-  <li>Ambrosia está inspirada en Clewiston y el lago Okeechobee.</li>
-  <li>El sueño americano del juego es modesto: una casa para la familia y deudas pagadas.</li>
-  <li>Hay sátira política con elecciones y anuncios de campaña, pero sin políticos reales.</li>
-</ul>
+<section class="revista">
+  <figure><img src="img/revistas/love-gta-6.jpg" width="687" height="860" loading="lazy" alt="Portada de LOVE Magazine número 27 con Lucia y Jason y el lema America's Most Wanted"><figcaption>Portada: LOVE Magazine / Rockstar Games.</figcaption></figure>
+  <div class="revista-txt">
+    <h2>LOVE Magazine, número 27</h2>
+    <p class="updated">5 de octubre de 2026</p>
+    <p>Portada <strong>"America's Most Wanted"</strong> con Lucia y Jason. Se agotó en minutos y trae capturas nuevas y la entrevista más profunda sobre la historia:</p>
+    <ul>
+      <li>Lucia es de Liberty City, y Raul Bautista es el mentor que les enseña a dar golpes grandes.</li>
+      <li>Ambrosia está inspirada en Clewiston y el lago Okeechobee.</li>
+      <li>El sueño americano del juego es modesto: una casa para la familia y deudas pagadas.</li>
+      <li>Hay sátira política con elecciones y anuncios de campaña, pero sin políticos reales.</li>
+    </ul>
+  </div>
+</section>
 
 {AD}
 
