@@ -1022,12 +1022,6 @@ revistas = f"""
 
 {AD}
 
-<div class="picks">
-  {pick("Revista", "", "Game Informer de GTA 6", "La edición 382, con la portada de Jason y Lucia y 12 capturas exclusivas.", "Game Informer Grand Theft Auto VI issue 382")}
-  {pick("Revista", "", "Dazed de GTA 6", "La edición de otoño de 2026 con la portada “New Idols”.", "Dazed magazine autumn 2026 GTA VI")}
-  {pick("Revista", "", "LOVE Magazine de GTA 6", "El número 27, el que se agotó en minutos.", "LOVE magazine issue 27 GTA VI")}
-</div>
-<p class="disclosure">Los precios de reventa cambian mucho. Compara antes de comprar y desconfía de ofertas demasiado baratas.</p>
 
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
