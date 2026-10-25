@@ -137,6 +137,28 @@ body{top:0!important}
 NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
+# Datos estructurados para Google (JSON-LD)
+import json as _jsonld, datetime as _dt
+PUBLICADO = {"trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+def jsonld(slug, title, desc):
+    url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
+    hoy = _dt.date.today().isoformat()
+    autor = {"@type": "Person", "name": "Ernesto", "url": "https://x.com/elchinyto_tech"}
+    pub = {"@type": "Organization", "name": "Leonida Global 305", "url": DOMAIN + "/",
+           "logo": {"@type": "ImageObject", "url": DOMAIN + "/img/logo-192.png"}, "sameAs": ["https://x.com/elchinyto_tech"]}
+    if slug == "index.html":
+        data = [{"@context": "https://schema.org", "@type": "WebSite", "name": "Leonida Global 305", "url": DOMAIN + "/",
+                 "inLanguage": "es", "description": desc, "publisher": pub}, dict({"@context": "https://schema.org"}, **pub)]
+    else:
+        data = [{"@context": "https://schema.org", "@type": "Article", "headline": title.split(" | ")[0][:110],
+                 "description": desc, "inLanguage": "es", "mainEntityOfPage": url,
+                 "image": DOMAIN + "/img/og-image.jpg", "datePublished": PUBLICADO.get(slug, "2026-10-23"),
+                 "dateModified": hoy, "author": autor, "publisher": pub},
+                {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                 {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMAIN + "/"},
+                 {"@type": "ListItem", "position": 2, "name": title.split(" | ")[0], "item": url}]}]
+    return '<script type="application/ld+json">' + _jsonld.dumps(data, ensure_ascii=False).replace("</", "<\\/") + '</script>'
+
 def shell(slug, title, desc, body, full_doc=True):
     nav = "".join(
         f'<a href="{h}"{" aria-current=\"page\"" if h == slug else ""}>{t}</a>' for h, t in NAV)
@@ -152,6 +174,7 @@ def shell(slug, title, desc, body, full_doc=True):
             f'<meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{desc}"><meta name="twitter:image" content="{DOMAIN}/img/og-image.jpg">'
             '<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">'
             '<link rel="apple-touch-icon" href="img/apple-touch-icon.png"><meta name="theme-color" content="#d7265f">'
+            + jsonld(slug, title, desc) +
             f'{FONTS}<style>{CSS}</style>')
     page = f"""
 <header class="top"><div class="wrap">
@@ -948,7 +971,7 @@ pages = {
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
     "leaks-cyberleek.html": (leaks, "Leaks de GTA 6 de CyberLeek | Leonida Global 305", "Cronología de los leaks de GTA 6 de CyberLeek, qué detalles confirmó Rockstar después y cómo terminó la filtración.", True),
     "todo-lo-confirmado.html": (conf, "GTA 6: todo lo confirmado | Leonida Global 305", "Todos los detalles de GTA 6 confirmados por Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE, Bloomberg y en el Extended Look.", True),
-    "index.html": (index, "Leonida Global 305", "Guías de GTA 6: fecha, precio, mapa de Leonida, personajes, música y Vice City en el Miami real.", False),
+    "index.html": (index, "GTA 6: guías, fecha, mapa y tráilers | Leonida Global 305", "Guías de GTA 6: fecha, precio, mapa de Leonida, personajes, música y Vice City en el Miami real.", False),
     "fecha-precio-ediciones.html": (fecha, "GTA 6: fecha, precio y ediciones | Leonida Global 305", "GTA 6 sale el 19 de noviembre de 2026. Precio de la edición estándar y Ultimate, precarga y qué incluye cada una.", True),
     "mapa-leonida.html": (mapa, "Mapa de GTA 6: regiones de Leonida | Leonida Global 305", "Las seis regiones confirmadas del mapa de GTA 6 y su inspiración real en Florida.", True),
     "personajes.html": (pers, "Personajes de GTA 6 | Leonida Global 305", "Jason Duval, Lucia Caminos y todos los personajes confirmados de GTA 6.", True),
