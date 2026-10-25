@@ -79,6 +79,12 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.revista{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;margin:26px 0;padding-top:18px;border-top:1px solid var(--line)}
+.revista figure{margin:0;flex:0 1 260px;min-width:0}
+.revista figure img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.revista figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
+.revista-txt{flex:1 1 300px;min-width:0}
+.revista-txt h2{margin-top:0;border-top:0;padding-top:0}
 .yt{position:relative;aspect-ratio:16/9;max-width:100%;background:#000;margin:12px 0;border:2px solid var(--fg)}
 .yt iframe,.yt-btn{position:absolute;inset:0;width:100%;height:100%;border:0}
 .yt-btn{padding:0;cursor:pointer;background:#000;display:block}
@@ -135,11 +141,11 @@ body{top:0!important}
 """
 
 NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"),
-       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
+       ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -288,6 +294,7 @@ index = f"""
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
   <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales, incluido el de lanzamiento.</p></a></li>
+  <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Game Informer, Dazed y LOVE: fotos, qué trae cada una y cómo conseguirlas.</p></a></li>
   <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, y el álbum oficial.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
@@ -513,6 +520,7 @@ conf = f"""
 </ul>
 
 <h2>Clima y fauna (Game Informer)</h2>
+<p><a href="revistas-gta-6.html">Mira nuestro ejemplar de Game Informer y las otras revistas</a></p>
 <p>Game Informer dedicó su portada y 14 páginas a Leonida, con entrevistas a diseñadores de Rockstar y 12 capturas nuevas.</p>
 <ul>
   <li>Hay huracanes y tormentas tropicales con nubes densas, viento fuerte y mucha lluvia. El clima es local: puede llover en una zona y no en otra.</li>
@@ -963,7 +971,74 @@ trailers = f"""
 {YT_JS}
 {AFF}"""
 
+# ---------- Revistas ----------
+revistas = f"""
+<span class="mile">Revistas</span>
+<h1>Las revistas de GTA 6: Game Informer, Dazed y LOVE</h1>
+{UPD}
+<p class="lede">Tres revistas le dedicaron portada y entrevistas a GTA 6 antes del lanzamiento. Estas son las ediciones, lo que trae cada una y cómo conseguirlas. Las fotos son de nuestros propios ejemplares.</p>
+
+<section class="revista">
+  <figure><img src="img/revistas/game-informer-gta-6.jpg" width="900" height="1200" loading="lazy" alt="Ejemplar físico de Game Informer con Jason y Lucia en un convertible rojo frente al skyline de Vice City"><figcaption>Nuestro ejemplar de Game Informer.</figcaption></figure>
+  <div class="revista-txt">
+    <h2>Game Informer, número 382</h2>
+    <p class="updated">Edición digital: 29 de septiembre de 2026</p>
+    <p>En la portada salen Jason y Lucia armados en un convertible rojo, con el dinero escondido en la puerta y Vice City al fondo.</p>
+    <ul>
+      <li>Reportaje de <strong>14 páginas</strong> con entrevistas a diseñadores de Rockstar.</li>
+      <li><strong>12 capturas exclusivas</strong>: el downtown de noche, los pantanos de Grassrivers, los Cayos con tormenta y más.</li>
+      <li>Lo más comentado: <strong>huracanes</strong>, clima por zonas, más de <strong>170 especies de animales</strong> y que es el mapa más grande que ha hecho Rockstar.</li>
+      <li>Lo escribió Marcus Stewart, que se crio en el sur de Florida.</li>
+    </ul>
+    <p><strong>Cómo conseguirla:</strong> la versión digital está en la app de Game Informer. La impresa llega a los suscriptores; si no lo eres, toca buscarla de reventa.</p>
+  </div>
+</section>
+
+<section class="revista">
+  <figure><img src="img/revistas/dazed-gta-6.jpg" width="900" height="1067" loading="lazy" alt="Ejemplar físico de Dazed con Lucia Caminos y Jason Duval en la portada New Idols"><figcaption>Nuestro ejemplar de Dazed.</figcaption></figure>
+  <div class="revista-txt">
+    <h2>Dazed, otoño de 2026</h2>
+    <p class="updated">Volumen VI · £7.99 en Reino Unido</p>
+    <p>Portada <strong>"New Idols"</strong> con Lucia Caminos y Jason Duval frente a hoteles art déco de Vice City.</p>
+    <ul>
+      <li>Rockstar presenta a Jason como ex militar metido en el tráfico de droga, y a Lucia recién salida de prisión.</li>
+      <li>Cuenta cómo el estudio lleva cerca de diez años investigando Miami y sale el "Leonida Man", la versión del juego del famoso "Florida Man".</li>
+      <li>Más de 50 artistas callejeros reales pintaron los murales de Stockyard, el barrio inspirado en Wynwood.</li>
+      <li>La música del juego bebe del Miami bass.</li>
+    </ul>
+    <p><strong>Cómo conseguirla:</strong> se vendió en tiendas y en la web de Dazed. Se agotó y luego volvió a haber ejemplares, así que vale la pena revisar antes de pagar precio de reventa.</p>
+  </div>
+</section>
+
+<h2>LOVE Magazine, número 27</h2>
+<p class="updated">5 de octubre de 2026</p>
+<p>La tercera revista con GTA 6 se agotó en minutos. Trae capturas nuevas y la entrevista más profunda sobre la historia:</p>
+<ul>
+  <li>Lucia es de Liberty City, y Raul Bautista es el mentor que les enseña a dar golpes grandes.</li>
+  <li>Ambrosia está inspirada en Clewiston y el lago Okeechobee.</li>
+  <li>El sueño americano del juego es modesto: una casa para la familia y deudas pagadas.</li>
+  <li>Hay sátira política con elecciones y anuncios de campaña, pero sin políticos reales.</li>
+</ul>
+
+{AD}
+
+<div class="picks">
+  {pick("Revista", "", "Game Informer de GTA 6", "La edición 382, con la portada de Jason y Lucia y 12 capturas exclusivas.", "Game Informer Grand Theft Auto VI issue 382")}
+  {pick("Revista", "", "Dazed de GTA 6", "La edición de otoño de 2026 con la portada “New Idols”.", "Dazed magazine autumn 2026 GTA VI")}
+  {pick("Revista", "", "LOVE Magazine de GTA 6", "El número 27, el que se agotó en minutos.", "LOVE magazine issue 27 GTA VI")}
+</div>
+<p class="disclosure">Los precios de reventa cambian mucho. Compara antes de comprar y desconfía de ofertas demasiado baratas.</p>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Qué revistas sacaron portada de GTA 6?</dt><dd>Game Informer (número 382), Dazed (otoño de 2026) y LOVE Magazine (número 27).</dd>
+  <dt>¿Dónde se lee gratis la Game Informer de GTA 6?</dt><dd>La edición digital se puede leer en la app de Game Informer.</dd>
+  <dt>¿Qué se sabe de GTA 6 por las revistas?</dt><dd>Todo lo que contaron está resumido en <a href="todo-lo-confirmado.html">Todo lo confirmado</a>.</dd>
+</dl>
+{AFF}"""
+
 pages = {
+    "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Game Informer, Dazed y LOVE | Leonida Global 305", "Las ediciones de Game Informer, Dazed y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
     "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
     "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6: el tráiler 1, el tráiler 2 y el tráiler de lanzamiento, con lo que muestra cada uno.", True),
     "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
@@ -987,6 +1062,7 @@ CREDITOS = {
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How"],
+    "revistas-gta-6.html": ["Game Informer", "Dazed", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom"],
 }
 def creditos(slug):
