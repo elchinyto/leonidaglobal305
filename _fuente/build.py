@@ -134,7 +134,7 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 def shell(slug, title, desc, body, full_doc=True):
@@ -196,7 +196,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 24 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 25 de octubre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -261,6 +261,7 @@ index = f"""
 <h2>Guías disponibles</h2>
 <ul class="guides">
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
+  <li><a href="hora-de-salida-gta-6.html"><span class="mile">Nuevo</span><h3>Hora de salida por país</h3><p>A qué hora se desbloquea GTA 6 en tu país según la PlayStation Store.</p></a></li>
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
   <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales, incluido el de lanzamiento.</p></a></li>
@@ -318,7 +319,7 @@ fecha = f"""
 <dl class="faq">
   <dt>¿Hay edición de coleccionista de GTA 6?</dt><dd>Hay una caja de coleccionista de $399.99 en la Rockstar Store, pero no incluye el juego. Las ediciones del juego son solo la estándar y la Ultimate.</dd>
   <dt>¿GTA 6 sale en PS4 o Xbox One?</dt><dd>No. Solo se ha anunciado para PS5 y Xbox Series X|S.</dd>
-  <dt>¿A qué hora se desbloquea?</dt><dd>Rockstar no ha confirmado la hora para cada región. Actualizaremos esta guía en cuanto se anuncie.</dd>
+  <dt>¿A qué hora se desbloquea?</dt><dd>Según las fichas de la PlayStation Store, a medianoche del 19 de noviembre en la hora de cada tienda: en Miami y Nueva York a las 00:00, en España a las 00:00 y en México a las 00:00. Rockstar no lo ha anunciado de forma oficial. Tienes la tabla completa en <a href="hora-de-salida-gta-6.html">hora de salida por país</a>.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
   <dt>¿Viene GTA Online incluido?</dt><dd>Rockstar no ha anunciado un modo online para el día del lanzamiento. El lanzamiento confirmado es de un jugador.</dd>
 </dl>
@@ -715,6 +716,9 @@ LUGARES = [
   ("marketing", "Murales de Tatiana Suarez y \"Camouflage\"", "Wynwood", "Wynwood Arts District, Miami", 25.800089, -80.202225, "Dos murales más de la campaña de Vice City, pintados a mediados de octubre."),
   ("marketing", "Pantallas de Vice City", "NW 26th St", "NW 26th St, Wynwood (zona aproximada)", 25.8007, -80.2010, "Pantallas digitales de la calle con anuncios de Vice City."),
   ("marketing", "Carrito \"Welcome to Vice City\"", "Collins Ave y 5th St", "Collins Ave & 5th St, Miami Beach", 25.7737, -80.1336, "Un carrito con el mensaje \"Welcome to Vice City\" en plena South Beach."),
+  ("marketing", "Y Hotel (planeado)", "W South Beach", "2201 Collins Ave, Miami Beach", 25.7969, -80.1279, "Según documentos de la ciudad de Miami Beach, el hotel W se convierte en el Y Hotel del juego: lona en la fachada y una \"Y\" gigante en lugar de la \"W\" de la terraza del spa, hasta el 31 de diciembre. El acuerdo es de $650,000 y depende de los permisos de la ciudad."),
+  ("marketing", "Letrero \"Vice Beach\" (planeado)", "Lummus Park", "1130 Ocean Dr, Miami Beach", 25.7812, -80.1294, "Un letrero rosa de unos 10 metros de ancho, como el del techo del Kaseya Center. Según los planos presentados a la ciudad, se instala del 26 al 31 de octubre y queda a la vista desde el 1 de noviembre hasta mediados de enero."),
+  ("marketing", "Muscle Beach en rosa (planeado)", "Muscle Beach South Beach", "873 Ocean Dr, Miami Beach", 25.7779, -80.1297, "Los planes incluyen pintar de rosa los aparatos del gimnasio al aire libre y poner la marca Vice Beach. Las obras son del 26 al 31 de octubre, de noche, y debería verse así desde el 1 de noviembre."),
   ("marketing", "Columnas del Metrorail", "Metrorail de Miami", "Downtown Miami (zona aproximada)", 25.7740, -80.1962, "Columnas del Metrorail forradas con los colores de GTA 6."),
 ]
 _lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
@@ -746,6 +750,7 @@ mapa_real = f"""
 <dl class="faq">
   <dt>¿Vice City es Miami?</dt><dd>Sí. Vice City es la versión de Rockstar de Miami, y Leonida es su versión de Florida. Muchos edificios reales aparecen recreados con otros nombres.</dd>
   <dt>¿Dónde está el letrero de Vice City en Miami?</dt><dd>En el techo del Kaseya Center, la arena de los Miami Heat en Biscayne Boulevard.</dd>
+  <dt>¿Dónde va a estar el letrero de Vice Beach?</dt><dd>En Lummus Park, frente al 1130 de Ocean Drive, en Miami Beach. Según los planos presentados a la ciudad, se instala a finales de octubre y estaría listo el 1 de noviembre, siempre que la ciudad dé los permisos.</dd>
   <dt>¿Qué pasa el 18 de noviembre en Miami?</dt><dd>Los Heat juegan "A Night in Vice City" contra los Bucks en el Kaseya Center, con cancha y uniformes temáticos, la noche antes del lanzamiento.</dd>
 </dl>
 {AFF}
@@ -845,6 +850,77 @@ musica = f"""
 {AFF}"""
 
 
+# ---------- Hora de salida ----------
+HORAS = [
+  # (UTC, países)
+  ("11:00 · 18 nov", "Nueva Zelanda"),
+  ("13:00 · 18 nov", "Australia"),
+  ("15:00 · 18 nov", "Japón y Corea del Sur"),
+  ("16:00 · 18 nov", "Hong Kong, Malasia, Singapur y Taiwán"),
+  ("17:00 · 18 nov", "Indonesia y Tailandia"),
+  ("18:30 · 18 nov", "India"),
+  ("20:00 · 18 nov", "Emiratos Árabes Unidos"),
+  ("21:00 · 18 nov", "Arabia Saudita y Turquía"),
+  ("22:00 · 18 nov", "Bulgaria, Chipre, Finlandia, Grecia, Israel, Rumanía, Sudáfrica y Ucrania"),
+  ("23:00 · 18 nov", "España, Francia, Alemania, Italia, Países Bajos, Bélgica, Polonia, Suecia, Suiza y el resto de Europa central"),
+  ("00:00 · 19 nov", "Reino Unido, Irlanda, Portugal e Islandia"),
+  ("03:00 · 19 nov", "Argentina, Brasil, Chile, Paraguay y Uruguay"),
+  ("04:00 · 19 nov", "Bolivia"),
+  ("05:00 · 19 nov", "Estados Unidos, Canadá, Colombia, Ecuador, Panamá y Perú"),
+  ("06:00 · 19 nov", "México, Costa Rica, El Salvador, Guatemala, Honduras y Nicaragua"),
+]
+_horas = "".join(f'<tr><td class="num">{u}</td><td>{p}</td></tr>' for u, p in HORAS)
+hora = f"""
+<span class="mile">Lanzamiento</span>
+<h1>¿A qué hora sale GTA 6 en tu país?</h1>
+{UPD}
+<p class="lede">GTA 6 se desbloquea a la <strong>medianoche del 19 de noviembre</strong> en la hora de cada tienda, según las fichas de la PlayStation Store. Nueva Zelanda es el primer país en jugarlo y México y Centroamérica, los últimos.</p>
+<div class="note"><strong>Ojo: no es un anuncio oficial.</strong> Estos horarios salen de las fichas de GTA 6 en la PlayStation Store de cada país. Rockstar y Sony no han publicado un horario por país y lo pueden cambiar antes del lanzamiento. Si cambia, lo actualizamos aquí.</div>
+
+<h2>Hora de salida en Latinoamérica, España y EE.UU.</h2>
+<div class="tbl"><table>
+  <thead><tr><th>País</th><th>Hora local</th></tr></thead>
+  <tbody>
+    <tr><td>España (península y Baleares)</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>Islas Canarias</td><td class="num">23:00 · 18 nov</td></tr>
+    <tr><td>Argentina, Chile, Uruguay, Paraguay y Brasil</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>Bolivia</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>Colombia, Perú, Ecuador y Panamá</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>México, Guatemala, Honduras, El Salvador, Nicaragua y Costa Rica</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>EE.UU. costa este (Miami, Nueva York)</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>EE.UU. hora del centro (Texas, Chicago)</td><td class="num">23:00 · 18 nov</td></tr>
+    <tr><td>EE.UU. costa oeste (Los Ángeles)</td><td class="num">21:00 · 18 nov</td></tr>
+  </tbody>
+</table></div>
+<p>En EE.UU. la tienda abre a la vez en todo el país, a medianoche de la costa este. Por eso en el centro y en el oeste se puede jugar desde la noche del 18. Lo mismo pasa en las zonas de Canadá y Brasil que van por detrás de la hora de la tienda.</p>
+
+{AD}
+
+<h2>Todos los países, en hora UTC</h2>
+<p>Para comparar países, aquí está cada apertura en hora UTC. En todos los casos es la medianoche en la hora de esa tienda.</p>
+<div class="tbl"><table>
+  <thead><tr><th>Hora UTC</th><th>Países</th></tr></thead>
+  <tbody>{_horas}</tbody>
+</table></div>
+
+<h2>Precarga, Xbox y edición en caja</h2>
+<ul>
+  <li><strong>Precarga:</strong> si compraste la versión digital o la caja con código, puedes descargar el juego desde el 12 de noviembre. El día del lanzamiento solo esperas a que se desbloquee.</li>
+  <li><strong>Xbox:</strong> la Microsoft Store confirma el 19 de noviembre, pero todavía no muestra un horario por país. Lo normal es que se parezca al de PlayStation, aunque no está confirmado.</li>
+  <li><strong>Caja de tienda:</strong> trae un código de descarga, no el juego en disco, así que se desbloquea a la misma hora que la versión digital y necesitas internet para bajarlo.</li>
+  <li><strong>Espacio:</strong> Rockstar no ha dicho cuánto pesa. Deja espacio libre de sobra antes del 12 de noviembre.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿A qué hora sale GTA 6 en México?</dt><dd>A las 00:00 del 19 de noviembre, hora del centro de México, según la PlayStation Store.</dd>
+  <dt>¿A qué hora sale GTA 6 en España?</dt><dd>A las 00:00 del 19 de noviembre en la península; en Canarias, a las 23:00 del 18.</dd>
+  <dt>¿A qué hora sale GTA 6 en Argentina, Colombia o Chile?</dt><dd>A las 00:00 del 19 de noviembre, hora local, según la PlayStation Store.</dd>
+  <dt>¿Se puede jugar antes cambiando la región a Nueva Zelanda?</dt><dd>El juego se desbloquea según la región de la cuenta y de la tienda donde lo compraste. Cambiar de región no está garantizado que funcione y puede darte problemas con la compra, así que no lo recomendamos.</dd>
+  <dt>¿Rockstar confirmó estos horarios?</dt><dd>No. Rockstar solo ha confirmado la fecha del 19 de noviembre. Los horarios son los que aparecen en la PlayStation Store y pueden cambiar.</dd>
+</dl>
+{AFF}"""
+
 # ---------- Tráilers ----------
 _tr = "".join(f'<section class="trailer"><h2>{t}</h2><p class="updated">{d}</p>{video(v, t + " de GTA 6")}<p>{x}</p></section>' for v, t, d, x in TRAILERS)
 trailers = f"""
@@ -865,6 +941,7 @@ trailers = f"""
 {AFF}"""
 
 pages = {
+    "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
     "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6: el tráiler 1, el tráiler 2 y el tráiler de lanzamiento, con lo que muestra cada uno.", True),
     "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
     "mapa-miami-real.html": (mapa_real, "Mapa de Vice City en el Miami real | Leonida Global 305", "Mapa interactivo con los lugares reales de Miami y Florida que aparecen en GTA 6 y todo el marketing de Vice City en la ciudad.", True),
@@ -886,7 +963,8 @@ CREDITOS = {
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox"],
-    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme"],
+    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How"],
+    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom"],
 }
 def creditos(slug):
     c = CREDITOS.get(slug)
