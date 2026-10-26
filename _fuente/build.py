@@ -225,7 +225,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 25 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 26 de octubre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -330,7 +330,7 @@ fecha = f"""
     <tr><td>Preventas</td><td class="num">25 jun 2026</td><td><span class="tag ok">Abiertas</span></td></tr>
     <tr><td>Precarga (digital y caja con código)</td><td class="num">12 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
-    <tr><td>Versión de PC</td><td class="num">Sin fecha</td><td><span class="tag no">No anunciado</span></td></tr>
+    <tr><td>Versión de PC</td><td class="num">Sin fecha (reportado: primer trimestre de 2027)</td><td><span class="tag no">No anunciado</span></td></tr>
     <tr><td>Nuevo GTA Online</td><td class="num">Sin fecha</td><td><span class="tag no">No anunciado</span></td></tr>
   </tbody>
 </table></div>
@@ -351,6 +351,8 @@ fecha = f"""
   <dt>¿GTA 6 sale en PS4 o Xbox One?</dt><dd>No. Solo se ha anunciado para PS5 y Xbox Series X|S.</dd>
   <dt>¿A qué hora se desbloquea?</dt><dd>Según las fichas de la PlayStation Store, a medianoche del 19 de noviembre en la hora de cada tienda: en Miami y Nueva York a las 00:00, en España a las 00:00 y en México a las 00:00. Rockstar no lo ha anunciado de forma oficial. Tienes la tabla completa en <a href="hora-de-salida-gta-6.html">hora de salida por país</a>.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
+  <dt>¿Cuándo sale GTA 6 en PC?</dt><dd>Rockstar no lo ha anunciado. GamesBeat reportó, citando fuentes propias, que la versión de PC llegaría en el primer trimestre de 2027, pero no está confirmado.</dd>
+  <dt>¿Habrá reseñas antes del lanzamiento?</dt><dd>Rockstar no ha anunciado cuándo se publican las reseñas. Insider Gaming reportó que llegarían antes del 19 de noviembre y otras fuentes hablan del 18 de noviembre, pero nada de eso es oficial.</dd>
   <dt>¿Viene GTA Online incluido?</dt><dd>Rockstar no ha anunciado un modo online para el día del lanzamiento. El lanzamiento confirmado es de un jugador.</dd>
 </dl>
 {AFF}"""
@@ -700,6 +702,7 @@ equipo = f"""
   {pick("Audio", "", "Audífonos gaming", "Para escuchar la radio de Vice City y los diálogos de los NPC sin molestar a nadie en casa.", "PS5 Xbox gaming headset wireless")}
   {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargar el 12 de noviembre.", "PlayStation Store gift card")}
 </div>
+<div class="note"><strong>Mandos oficiales de edición limitada.</strong> Sony vende dos DualSense de GTA VI, uno negro (la noche de Vice City) y otro blanco (el amanecer), con acabado tornasolado, palmeras en relieve y el logo del juego. Cuestan $84.99 (€84.99, £74.99) y salen a partir del 19 de noviembre. Son de stock limitado: el blanco se vende en PlayStation Direct y tiendas participantes, y el negro sobre todo en PlayStation Direct.</div>
 <h2>Libros y cómics</h2>
 <div class="picks">
   {pick("Cómic", "", "American Caper, volumen 1: Red-Pilled Blues", "El cómic de Dan Houser, cofundador de Rockstar y guionista de GTA y Red Dead. Una historia de crimen y sátira de Estados Unidos con el humor que hizo famosa a la saga.", "American Caper Volume 1 Red-Pilled Blues Dan Houser")}
@@ -1069,12 +1072,12 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
-    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer"],
+    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How"],
