@@ -225,7 +225,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 27 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 28 de octubre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -329,6 +329,7 @@ fecha = f"""
   <tbody>
     <tr><td>Preventas</td><td class="num">25 jun 2026</td><td><span class="tag ok">Abiertas</span></td></tr>
     <tr><td>Precarga (digital y caja con código)</td><td class="num">12 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Tamaño de descarga (PS5)</td><td class="num">Unos 210 GB, sin parche del primer día</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Reseñas de la prensa</td><td class="num">18 nov 2026</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
@@ -402,7 +403,7 @@ pers = f"""
   <thead><tr><th>Personaje</th><th>Quién es</th></tr></thead>
   <tbody>
     <tr><td><strong>Cal Hampton</strong></td><td>Amigo de Jason. Le encanta espiar las comunicaciones de la Guardia Costera.</td></tr>
-    <tr><td><strong>Brian Heder</strong></td><td>Jefe de Jason, con negocio legal por fuera y criminal por dentro. Le deja a Jason vivir en una de sus casas.</td></tr>
+    <tr><td><strong>Brian Heder</strong></td><td>Jefe de Jason, con negocio legal por fuera y criminal por dentro. Le deja a Jason vivir en una de sus casas. El actor Stephen Root (<em>King of the Hill</em>) le confirmó a la agencia AP que está en el juego y dio a entender que es este personaje; Rockstar no ha publicado el reparto.</td></tr>
     <tr><td><strong>Raul Bautista</strong></td><td>Ladrón de bancos veterano y mentor de la pareja: les enseña a planear los golpes grandes.</td></tr>
     <tr><td><strong>Boobie Ike</strong></td><td>Figura local de Vice City con negocios en la música y otros terrenos.</td></tr>
     <tr><td><strong>Dre'Quan Priest</strong></td><td>Socio de Boobie en el sello musical Only Raw Records.</td></tr>
@@ -681,7 +682,7 @@ equipo = f"""
 </div>
 
 <h2>Almacenamiento</h2>
-<p>Rockstar no ha dicho cuánto pesa el juego. Las filtraciones hablan de cerca de 200 GB, así que conviene tener espacio de sobra antes de la precarga del 12 de noviembre.</p>
+<p>Rockstar no ha dicho oficialmente cuánto pesa el juego, pero se reporta que la versión de PS5 ocupa unos <strong>210 GB</strong>, sin contar el parche del primer día. Con una PS5 de 1 TB casi llena, vas a necesitar más espacio antes de la precarga del 12 de noviembre.</p>
 <div class="picks">
   {pick("PS5", "1 a 2 TB", "SSD M.2 PCIe 4.0 con disipador", "Sony pide un SSD Gen4 con disipador. Modelos como el WD_BLACK SN850X o el Samsung 990 Pro con disipador se instalan en minutos.", "WD_BLACK SN850X heatsink PS5 2TB")}
   {pick("Xbox Series X|S", "1 a 2 TB", "Tarjeta de expansión de almacenamiento", "La forma oficial de ampliar la memoria rápida de Xbox: se conecta atrás y listo.", "Xbox Series X storage expansion card 2TB")}
@@ -743,7 +744,7 @@ LUGARES = [
   ("juego", "Effluvia (comparación de fans)", "Juvia (cerrado)", "1111 Lincoln Rd, Miami Beach", 25.7908, -80.1405, "El rooftop bar de Effluvia que se vio en el Extended Look recuerda a Juvia, el rooftop de Lincoln Road que ya cerró."),
   ("juego", "Puente de los Cayos de Leonida", "Seven Mile Bridge", "Overseas Hwy, Cayos de Florida", 24.7039, -81.1530, "El puente que une los Cayos sale en el tráiler y es la entrada a los Cayos de Leonida."),
   ("marketing", "Letrero \"Welcome to Vice City\"", "Techo del Kaseya Center", "601 Biscayne Blvd, Miami", 25.7818, -80.1865, "Letrero iluminado en rosa sobre el techo de la arena. Según reportes, el acuerdo ronda los $975,000."),
-  ("marketing", "A Night in Vice City", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7810, -80.1875, "El 18 de noviembre, Heat vs. Bucks con cancha y uniformes de Vice City. Dentro de la arena ya hay un mostrador de Burger Shot con su fachada roja y menús del juego, y la tienda de los Heat vende camisetas y gorras de Vice City."),
+  ("marketing", "A Night in Vice City", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7810, -80.1875, "El 18 de noviembre, Heat vs. Bucks con cancha y uniformes de Vice City. Dentro de la arena ya funcionan un Burger Shot y un Cluckin' Bell que sirven comida de verdad (el Burger Shot ocupa el puesto que antes era de Skinny Louie), y la tienda de los Heat vende camisetas y gorras de Vice City."),
   ("marketing", "Sombrillas y tumbonas de Vice City", "Playa de Miami Beach", "South Beach, Miami Beach", 25.7838, -80.1283, "Desde el 15 de octubre y hasta el 31 de diciembre, las sillas, sombrillas y cabañas de Boucher Brothers en la playa llevan la marca de Vice City."),
   ("marketing", "Banners de GTA 6", "Zona de eventos del downtown", "Downtown Miami (zona aproximada)", 25.7752, -80.1920, "Desde el 15 de octubre, la ciudad permite banners de GTA 6 en una zona del downtown, por un máximo de 56 días. Por estas calles también circulan autobuses con \"I ♥ Vice City\"."),
   ("marketing", "Pantallas y \"In for VI\"", "Hard Rock Stadium", "347 Don Shula Dr, Miami Gardens", 25.9580, -80.2389, "En el Dolphins vs. Bengals del 11 de octubre hubo anuncios de GTA 6 y un gráfico \"In for VI\" en los touchdowns."),
@@ -944,7 +945,7 @@ hora = f"""
   <li><strong>Precarga:</strong> si compraste la versión digital o la caja con código, puedes descargar el juego desde el 12 de noviembre. El día del lanzamiento solo esperas a que se desbloquee.</li>
   <li><strong>Xbox:</strong> la Microsoft Store confirma el 19 de noviembre, pero todavía no muestra un horario por país. Lo normal es que se parezca al de PlayStation, aunque no está confirmado.</li>
   <li><strong>Caja de tienda:</strong> trae un código de descarga, no el juego en disco, así que se desbloquea a la misma hora que la versión digital y necesitas internet para bajarlo.</li>
-  <li><strong>Espacio:</strong> Rockstar no ha dicho cuánto pesa. Deja espacio libre de sobra antes del 12 de noviembre.</li>
+  <li><strong>Espacio:</strong> se reporta que el juego ocupa unos 210 GB en PS5, sin contar el parche del primer día. Rockstar no lo ha confirmado. Deja libre bastante más que eso antes del 12 de noviembre.</li>
 </ul>
 
 <h2>Preguntas frecuentes</h2>
@@ -1074,17 +1075,17 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
-    "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE"],
+    "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
-    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog"],
+    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox"],
-    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How"],
+    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming"],
     "revistas-gta-6.html": ["Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
-    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom"],
+    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever"],
 }
 def creditos(slug):
     c = CREDITOS.get(slug)
