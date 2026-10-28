@@ -66,6 +66,10 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.share-x{display:inline-flex;align-items:center;gap:6px;margin:2px 0 6px;padding:7px 14px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:700;font-size:.88rem;text-decoration:none}
+.share-x::before{content:"𝕏";font-weight:700}
+.share-x:hover{filter:brightness(1.15)}
+.share-x:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 .cd-label{margin:16px 0 -8px;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);font-weight:500}
 .cd-done{font-family:var(--f-display);font-size:1.8rem;text-transform:uppercase;color:var(--accent);margin:14px 0}
 .cd .count{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
@@ -150,7 +154,7 @@ body{top:0!important}
 <span class="mile">Guías de GTA 6</span>
 <h1>Todo GTA&nbsp;6, claro y al día</h1>
 <p class="lede">Fecha, precio, mapa de Leonida, personajes y, desde el día del lanzamiento, guías de misiones, robos, autos y secretos.</p>
-<div class="cd" data-t="2026-11-19T05:00:00Z">
+<div class="cd" id="lanzamiento" data-t="2026-11-19T05:00:00Z" data-q="para que salga GTA 6" data-y="¡GTA 6 ya salió!">
   <p class="cd-label">Lanzamiento en Miami</p>
   <div class="count">
     <div><b data-u="d">--</b><small>días</small></div>
@@ -158,10 +162,11 @@ body{top:0!important}
     <div><b data-u="m">--</b><small>minutos</small></div>
   </div>
   <p class="cd-done" hidden>¡GTA 6 ya está disponible!</p>
+    <a class="share-x" href="https://x.com/intent/post" target="_blank" rel="noopener">Compartir en X</a>
   <p class="updated">19 de noviembre de 2026, 00:00 (hora de Miami).</p>
 </div>
 <div class="cd-row">
-  <div class="cd cd-sm" data-t="2026-11-12T05:00:00Z">
+  <div class="cd cd-sm" id="precarga" data-t="2026-11-12T05:00:00Z" data-q="para la precarga de GTA 6" data-y="¡Ya se puede precargar GTA 6!">
     <p class="cd-label">Precarga</p>
     <div class="count">
       <div><b data-u="d">--</b><small>días</small></div>
@@ -169,9 +174,10 @@ body{top:0!important}
       <div><b data-u="m">--</b><small>min</small></div>
     </div>
     <p class="cd-done" hidden>¡Ya puedes precargar!</p>
+    <a class="share-x" href="https://x.com/intent/post" target="_blank" rel="noopener">Compartir en X</a>
     <p class="updated">12 de noviembre. Rockstar confirmó el día pero no la hora; contamos hasta la medianoche de Miami.</p>
   </div>
-  <div class="cd cd-sm" data-t="2026-11-18T11:00:00Z">
+  <div class="cd cd-sm" id="nueva-zelanda" data-t="2026-11-18T11:00:00Z" data-q="para que Nueva Zelanda sea el primer país en jugar GTA 6" data-y="¡Nueva Zelanda ya está jugando GTA 6!">
     <p class="cd-label">Primero en jugar: Nueva Zelanda</p>
     <div class="count">
       <div><b data-u="d">--</b><small>días</small></div>
@@ -179,6 +185,7 @@ body{top:0!important}
       <div><b data-u="m">--</b><small>min</small></div>
     </div>
     <p class="cd-done" hidden>¡Ya se juega en Nueva Zelanda!</p>
+    <a class="share-x" href="https://x.com/intent/post" target="_blank" rel="noopener">Compartir en X</a>
     <p class="updated">19 de noviembre, 00:00 en Nueva Zelanda (18 de noviembre, 6:00 a.&nbsp;m. en Miami), según la PlayStation Store. <a href="hora-de-salida-gta-6.html">Horas por país</a></p>
   </div>
 </div>
@@ -222,6 +229,9 @@ document.querySelectorAll(".yt-btn").forEach(function(b){b.addEventListener("cli
       v={d:Math.floor(s/864e5),h:Math.floor(s%864e5/36e5),m:Math.floor(s%36e5/6e4)};
     c.querySelectorAll("[data-u]").forEach(function(b){b.textContent=v[b.dataset.u];});
     var done=s===0; c.querySelector(".count").hidden=done; c.querySelector(".cd-done").hidden=!done;
+    var txt=done?c.dataset.y:("⏳ Faltan "+v.d+" días y "+v.h+" horas "+c.dataset.q+". Cuenta regresiva en vivo 👇");
+    var url="https://leonidaglobal305.com/#"+c.id;
+    c.querySelector(".share-x").href="https://x.com/intent/post?text="+encodeURIComponent(txt)+"&url="+encodeURIComponent(url)+"&hashtags=GTA6,GTAVI&via=elchinyto_tech";
   });}
   tick(); setInterval(tick,30000);
 })();

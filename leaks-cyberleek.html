@@ -66,6 +66,10 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.share-x{display:inline-flex;align-items:center;gap:6px;margin:2px 0 6px;padding:7px 14px;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:700;font-size:.88rem;text-decoration:none}
+.share-x::before{content:"𝕏";font-weight:700}
+.share-x:hover{filter:brightness(1.15)}
+.share-x:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 .cd-label{margin:16px 0 -8px;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);font-weight:500}
 .cd-done{font-family:var(--f-display);font-size:1.8rem;text-transform:uppercase;color:var(--accent);margin:14px 0}
 .cd .count{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
