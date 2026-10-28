@@ -107,6 +107,8 @@ footer p{margin:.3em 0;max-width:70ch}
 .yt-play::after{content:"";position:absolute;left:30px;top:15px;border-style:solid;border-width:12px 0 12px 21px;border-color:transparent transparent transparent #fff}
 .yt-btn:hover .yt-play,.yt-btn:focus-visible .yt-play{filter:brightness(1.12)}
 .yt-btn:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.yt-edad{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.78);color:#fff;font:600 .8rem var(--f-body);padding:5px 10px;border-radius:4px}
+.yt-nota{font-size:.85rem;color:var(--muted);margin:-4px 0 10px}
 .trailer h2{margin-bottom:.1em}
 footer .autor{font-size:1rem;color:var(--fg);margin-bottom:.6em}
 footer .autor a{font-weight:700}
@@ -268,7 +270,13 @@ COLECCIONISTA = """
 
 
 # ---------- Videos de YouTube (carga al tocar) ----------
+YT_EDAD = {"tJbzMqJGH4k"}  # videos con restricción de edad: YouTube no deja verlos incrustados
 def video(vid, titulo):
+    if vid in YT_EDAD:
+        return (f'<div class="yt"><a class="yt-btn" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener" aria-label="Ver {titulo} en YouTube">'
+                f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">'
+                f'<span class="yt-play" aria-hidden="true"></span><span class="yt-edad">+18 · Se abre en YouTube</span></a></div>'
+                '<p class="yt-nota">Rockstar le puso restricción de edad, así que YouTube solo deja verlo en su web o app, con la sesión iniciada.</p>')
     return (f'<div class="yt"><button type="button" class="yt-btn" data-id="{vid}" data-title="{titulo}" aria-label="Ver {titulo}">'
             f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">'
             f'<span class="yt-play" aria-hidden="true"></span></button></div>')
