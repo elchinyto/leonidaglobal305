@@ -66,6 +66,16 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.cd-label{margin:16px 0 -8px;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);font-weight:500}
+.cd-done{font-family:var(--f-display);font-size:1.8rem;text-transform:uppercase;color:var(--accent);margin:14px 0}
+.cd .count{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.cd .count div{min-width:0}
+@media (max-width:480px){.cd .count b{font-size:1.8rem}.cd-sm .count b{font-size:1.4rem}.cd .count small{font-size:.62rem;letter-spacing:.03em}}
+.cd-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:6px}
+.cd-sm .count{margin:14px 0 8px}
+.cd-sm .count div{padding:8px 10px;border-width:1px}
+.cd-sm .count b{font-size:1.6rem}
+.cd-sm .cd-done{font-size:1.3rem}
 .revista{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;margin:26px 0;padding-top:18px;border-top:1px solid var(--line)}
 .revista figure{margin:0;flex:0 1 260px;min-width:0}
 .revista figure img{width:100%;height:auto;display:block;border:1px solid var(--line)}

@@ -79,6 +79,16 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.cd-label{margin:16px 0 -8px;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);font-weight:500}
+.cd-done{font-family:var(--f-display);font-size:1.8rem;text-transform:uppercase;color:var(--accent);margin:14px 0}
+.cd .count{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.cd .count div{min-width:0}
+@media (max-width:480px){.cd .count b{font-size:1.8rem}.cd-sm .count b{font-size:1.4rem}.cd .count small{font-size:.62rem;letter-spacing:.03em}}
+.cd-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:6px}
+.cd-sm .count{margin:14px 0 8px}
+.cd-sm .count div{padding:8px 10px;border-width:1px}
+.cd-sm .count b{font-size:1.6rem}
+.cd-sm .cd-done{font-size:1.3rem}
 .revista{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;margin:26px 0;padding-top:18px;border-top:1px solid var(--line)}
 .revista figure{margin:0;flex:0 1 260px;min-width:0}
 .revista figure img{width:100%;height:auto;display:block;border:1px solid var(--line)}
@@ -277,12 +287,38 @@ index = f"""
 <span class="mile">Guías de GTA 6</span>
 <h1>Todo GTA&nbsp;6, claro y al día</h1>
 <p class="lede">Fecha, precio, mapa de Leonida, personajes y, desde el día del lanzamiento, guías de misiones, robos, autos y secretos.</p>
-<div class="count" id="count" aria-live="polite">
-  <div><b id="d">--</b><small>días</small></div>
-  <div><b id="h">--</b><small>horas</small></div>
-  <div><b id="m">--</b><small>minutos</small></div>
+<div class="cd" data-t="2026-11-19T05:00:00Z">
+  <p class="cd-label">Lanzamiento en Miami</p>
+  <div class="count">
+    <div><b data-u="d">--</b><small>días</small></div>
+    <div><b data-u="h">--</b><small>horas</small></div>
+    <div><b data-u="m">--</b><small>minutos</small></div>
+  </div>
+  <p class="cd-done" hidden>¡GTA 6 ya está disponible!</p>
+  <p class="updated">19 de noviembre de 2026, 00:00 (hora de Miami).</p>
 </div>
-<p class="updated">Cuenta regresiva al 19 de noviembre de 2026, 00:00 (hora de Miami). La hora exacta de desbloqueo puede variar por región.</p>
+<div class="cd-row">
+  <div class="cd cd-sm" data-t="2026-11-12T05:00:00Z">
+    <p class="cd-label">Precarga</p>
+    <div class="count">
+      <div><b data-u="d">--</b><small>días</small></div>
+      <div><b data-u="h">--</b><small>horas</small></div>
+      <div><b data-u="m">--</b><small>min</small></div>
+    </div>
+    <p class="cd-done" hidden>¡Ya puedes precargar!</p>
+    <p class="updated">12 de noviembre. Rockstar confirmó el día pero no la hora; contamos hasta la medianoche de Miami.</p>
+  </div>
+  <div class="cd cd-sm" data-t="2026-11-18T11:00:00Z">
+    <p class="cd-label">Primero en jugar: Nueva Zelanda</p>
+    <div class="count">
+      <div><b data-u="d">--</b><small>días</small></div>
+      <div><b data-u="h">--</b><small>horas</small></div>
+      <div><b data-u="m">--</b><small>min</small></div>
+    </div>
+    <p class="cd-done" hidden>¡Ya se juega en Nueva Zelanda!</p>
+    <p class="updated">19 de noviembre, 00:00 en Nueva Zelanda (18 de noviembre, 6:00 a.&nbsp;m. en Miami), según la PlayStation Store. <a href="hora-de-salida-gta-6.html">Horas por país</a></p>
+  </div>
+</div>
 <h2>Tráiler de lanzamiento</h2>
 {video("rz1B4B2yBZY", "Tráiler de lanzamiento de GTA 6")}
 <p><a href="trailers-gta-6.html">Ver los tres tráilers oficiales</a></p>
@@ -307,12 +343,13 @@ index = f"""
 {AFF}
 <script>
 (function(){{
-  var t=new Date("2026-11-19T00:00:00-05:00").getTime();
-  function tick(){{var s=Math.max(0,t-Date.now()),
-    d=Math.floor(s/864e5),h=Math.floor(s%864e5/36e5),m=Math.floor(s%36e5/6e4);
-    document.getElementById("d").textContent=d;
-    document.getElementById("h").textContent=h;
-    document.getElementById("m").textContent=m;}}
+  var cds=document.querySelectorAll(".cd");
+  function tick(){{cds.forEach(function(c){{
+    var s=Math.max(0,new Date(c.dataset.t).getTime()-Date.now()),
+      v={{d:Math.floor(s/864e5),h:Math.floor(s%864e5/36e5),m:Math.floor(s%36e5/6e4)}};
+    c.querySelectorAll("[data-u]").forEach(function(b){{b.textContent=v[b.dataset.u];}});
+    var done=s===0; c.querySelector(".count").hidden=done; c.querySelector(".cd-done").hidden=!done;
+  }});}}
   tick(); setInterval(tick,30000);
 }})();
 </script>"""
