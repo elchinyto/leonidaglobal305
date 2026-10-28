@@ -282,6 +282,7 @@ document.querySelectorAll(".yt-btn").forEach(function(b){b.addEventListener("cli
 </script>"""
 TRAILERS = [
     ("rz1B4B2yBZY", "Tráiler de lanzamiento", "15 de octubre de 2026", "Grabado dentro del juego en PS5. Un golpe fácil sale mal y Jason y Lucia terminan metidos en una conspiración que cruza todo Leonida. Suena \"Flower in a Hurricane\", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard."),
+    ("tJbzMqJGH4k", "An Extended Look", "27 de agosto de 2026", "Unos 27 minutos de juego y escenas sin cortes, estrenados primero en Netflix. Jason y Lucia escapan de una redada con la droga, cenan con Brian Heder, hacen de conductores de fuga para Raul Bautista y trabajan de seguridad en una fiesta. Todo lo que se vio está en <a href=\"todo-lo-confirmado.html\">Todo lo confirmado</a>."),
     ("VQRLujxTm3c", "Tráiler 2", "6 de mayo de 2025", "Presentó por su nombre a Jason Duval y Lucia Caminos, y al reparto: Cal Hampton, Brian Heder, Boobie Ike, Dre'Quan Priest, Real Dimez y Raul Bautista."),
     ("QdBZY2fkU-0", "Tráiler 1", "5 de diciembre de 2023", "El primer vistazo: Lucia en prisión, Vice City de vuelta, los Cayos y el estado de Leonida. Con \"Love Is a Long Road\" de Tom Petty."),
 ]
@@ -328,7 +329,7 @@ index = f"""
 </div>
 <h2>Tráiler de lanzamiento</h2>
 {video("rz1B4B2yBZY", "Tráiler de lanzamiento de GTA 6")}
-<p><a href="trailers-gta-6.html">Ver los tres tráilers oficiales</a></p>
+<p><a href="trailers-gta-6.html">Ver todos los tráilers y el Extended Look</a></p>
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
@@ -336,7 +337,7 @@ index = f"""
   <li><a href="hora-de-salida-gta-6.html"><span class="mile">Nuevo</span><h3>Hora de salida por país</h3><p>A qué hora se desbloquea GTA 6 en tu país según la PlayStation Store.</p></a></li>
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
-  <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales, incluido el de lanzamiento.</p></a></li>
+  <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales y el Extended Look.</p></a></li>
   <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Game Informer, Dazed, TROISCOULEURS y LOVE: qué trae cada una y cómo conseguirlas.</p></a></li>
   <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, y el álbum oficial.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
@@ -1009,15 +1010,15 @@ hora = f"""
 _tr = "".join(f'<section class="trailer"><h2>{t}</h2><p class="updated">{d}</p>{video(v, t + " de GTA 6")}<p>{x}</p></section>' for v, t, d, x in TRAILERS)
 trailers = f"""
 <span class="mile">Videos</span>
-<h1>Todos los tráilers de GTA 6</h1>
+<h1>Todos los tráilers de GTA 6 y el Extended Look</h1>
 {UPD}
-<p class="lede">Los tres tráilers oficiales que ha publicado Rockstar, del más nuevo al más antiguo. Toca uno para verlo aquí mismo.</p>
+<p class="lede">Los tres tráilers oficiales de Rockstar y el Extended Look, el video de casi media hora con gameplay, del más nuevo al más antiguo. Toca uno para verlo aquí mismo.</p>
 {_tr}
-<div class="note"><strong>¿Y el Extended Look?</strong> El 27 de agosto Rockstar estrenó en Netflix y luego en YouTube un video más largo con gameplay. No es un tráiler como tal; todo lo que se vio está resumido en <a href="todo-lo-confirmado.html">Todo lo confirmado</a>.</div>
 {AD}
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
-  <dt>¿Cuántos tráilers tiene GTA 6?</dt><dd>Tres oficiales: el tráiler 1 (diciembre de 2023), el tráiler 2 (mayo de 2025) y el tráiler de lanzamiento (15 de octubre de 2026).</dd>
+  <dt>¿Cuántos tráilers tiene GTA 6?</dt><dd>Tres oficiales: el tráiler 1 (diciembre de 2023), el tráiler 2 (mayo de 2025) y el tráiler de lanzamiento (15 de octubre de 2026). Además está el Extended Look (27 de agosto de 2026), un video más largo con gameplay.</dd>
+  <dt>¿Dónde ver el Extended Look de GTA 6?</dt><dd>Se estrenó en Netflix y seis horas después llegó gratis al canal de YouTube de Rockstar. Lo puedes ver en esta misma página.</dd>
   <dt>¿Qué canción suena en el tráiler de lanzamiento?</dt><dd>"Flower in a Hurricane", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard. Justice también compuso la banda sonora original del juego.</dd>
   <dt>¿Los tráilers están grabados en el juego?</dt><dd>Sí. Rockstar indica que el tráiler 2 y el de lanzamiento se capturaron dentro del juego en una PS5.</dd>
 </dl>
@@ -1109,7 +1110,7 @@ revistas = f"""
 pages = {
     "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Game Informer, Dazed, TROISCOULEURS y LOVE | Leonida Global 305", "Las ediciones de Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
     "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
-    "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6: el tráiler 1, el tráiler 2 y el tráiler de lanzamiento, con lo que muestra cada uno.", True),
+    "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 y el Extended Look | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6 y el Extended Look de 27 minutos, con lo que muestra cada uno.", True),
     "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
     "mapa-miami-real.html": (mapa_real, "Mapa de Vice City en el Miami real | Leonida Global 305", "Mapa interactivo con los lugares reales de Miami y Florida que aparecen en GTA 6 y todo el marketing de Vice City en la ciudad.", True),
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
@@ -1129,7 +1130,7 @@ CREDITOS = {
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
-    "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox"],
+    "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming"],
     "revistas-gta-6.html": ["Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever"],
