@@ -347,7 +347,7 @@ index = f"""
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
   <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales y el Extended Look.</p></a></li>
   <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Edge, Game Informer, Dazed, TROISCOULEURS y LOVE: qué trae cada una y cómo conseguirlas.</p></a></li>
-  <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, y el álbum oficial.</p></a></li>
+  <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, The Album y el Original Score de Justice.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
   <li><a href="equipo-gta-6.html"><span class="mile">Equipo</span><h3>Equipo para GTA 6</h3><p>Teles, monitores y SSD económicos y de gama alta.</p></a></li>
@@ -927,9 +927,9 @@ _singles = "".join(f'<tr><td>{a}</td><td><strong>{t}</strong></td></tr>' for a, 
 
 musica = f"""
 <span class="mile">Música</span>
-<h1>GTA 6: radios, canciones y GTA VI: The Album</h1>
+<h1>GTA 6: radios, canciones, The Album y Original Score</h1>
 {UPD}
-<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, el 19 de noviembre sale <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales, y la banda sonora original del juego es obra del dúo francés Justice.</p>
+<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, el 19 de noviembre sale <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales, y la banda sonora original del juego es obra del dúo francés Justice, que la lanza el 11 de diciembre.</p>
 
 <h2>Las radios confirmadas</h2>
 <p>Estas son las emisoras que Rockstar presentó el 8 de octubre en su web oficial. Es solo un adelanto: el juego tendrá más.</p>
@@ -959,12 +959,32 @@ musica = f"""
   {pick("Audio", "", "Audífonos para escuchar Leonida", "Ahora que la radio suena hasta caminando, unos buenos audífonos marcan la diferencia.", "PS5 Xbox gaming headset wireless")}
 </div>
 
+<h2>GTA VI: Original Score, de Justice</h2>
+<p>Es la música original que suena en el juego durante las misiones y las persecuciones, aparte de las radios y de The Album. La compuso el dúo francés <strong>Justice</strong>.</p>
+<ul>
+  <li><strong>Sale el 11 de diciembre de 2026</strong>, unas semanas después del juego.</li>
+  <li><strong>30 temas</strong>, más temas extra en las versiones digitales.</li>
+  <li>Desde el 29 de octubre ya está en streaming <strong>"Pusher"</strong>, con el DJ francés Gesaffelstein. También forma parte "Flower in a Hurricane", el tema del tráiler de lanzamiento.</li>
+  <li>Se puede reservar en <strong>CD doble</strong> y en <strong>vinilo triple</strong>, normal o en edición limitada transparente.</li>
+</ul>
+<div class="tbl"><table>
+  <thead><tr><th>Formato</th><th>Precio en EE.UU.</th></tr></thead>
+  <tbody>
+    <tr><td>Vinilo triple transparente (edición limitada)</td><td class="num">$59.99</td></tr>
+    <tr><td>Vinilo triple negro</td><td class="num">$54.99</td></tr>
+    <tr><td>CD doble</td><td class="num">$21.99</td></tr>
+  </tbody>
+</table></div>
+<p class="disclosure">Precios de la tienda Rough Trade. Pueden variar en otras tiendas.</p>
+
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
   <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
   <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
   <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Siete canciones ya están en streaming.</dd>
   <dt>¿Quién hace la música original de GTA 6?</dt><dd>El dúo electrónico Justice compuso la banda sonora original. Rockstar lo dio a conocer con el tráiler de lanzamiento.</dd>
+  <dt>¿Cuándo sale el Original Score de GTA 6?</dt><dd>El 11 de diciembre de 2026, en streaming, CD y vinilo. El tema "Pusher", con Gesaffelstein, ya se puede escuchar.</dd>
+  <dt>¿Qué diferencia hay entre The Album y el Original Score?</dt><dd>The Album trae 34 canciones de artistas como Travis Scott o Rauw Alejandro y sale el 19 de noviembre. El Original Score es la música instrumental del juego hecha por Justice y sale el 11 de diciembre.</dd>
 </dl>
 {AFF}"""
 
@@ -1161,7 +1181,7 @@ pages = {
     "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Edge, Game Informer, Dazed y más | Leonida Global 305", "Las ediciones de Edge, Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
     "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
     "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 y el Extended Look | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6 y el Extended Look de 27 minutos, con lo que muestra cada uno.", True),
-    "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
+    "musica-radios-gta-6.html": (musica, "Radios, canciones y música de GTA 6: The Album y Original Score | Leonida Global 305", "Las radios confirmadas de GTA 6 con sus locutores y canciones, GTA VI: The Album y el Original Score de Justice: fechas, formatos y precios.", True),
     "mapa-miami-real.html": (mapa_real, "Mapa de Vice City en el Miami real | Leonida Global 305", "Mapa interactivo con los lugares reales de Miami y Florida que aparecen en GTA 6 y todo el marketing de Vice City en la ciudad.", True),
     "equipo-gta-6.html": (equipo, "Equipo para GTA 6: teles, monitores y SSD | Leonida Global 305", "Las mejores teles, monitores, SSD y accesorios para jugar GTA 6, con opciones económicas y de gama alta.", True),
     "leaks-cyberleek.html": (leaks, "Leaks de GTA 6 de CyberLeek | Leonida Global 305", "Cronología de los leaks de GTA 6 de CyberLeek, qué detalles confirmó Rockstar después y cómo terminó la filtración.", True),
@@ -1179,7 +1199,7 @@ CREDITOS = {
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
-    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
