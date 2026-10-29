@@ -241,7 +241,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 28 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 29 de octubre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -645,6 +645,14 @@ conf = f"""
   <li><strong>Autos:</strong> todos tienen indicador de gasolina y de estado del motor. Los autos de lujo que pide un fence avisan a la policía, y el pago depende de cómo llegue el auto.</li>
   <li><strong>Cómo se hizo:</strong> unas 900 personas en Rockstar North. Toronto se encarga de poblar el mundo y San Diego de los eventos aleatorios. Sam Houser revisa con Nelson cada etapa del desarrollo.</li>
   <li>Edge no trae novedades sobre GTA Online, la versión de PC ni el precio.</li>
+</ul>
+
+<h2>Gameplay nuevo en South Park (28 de octubre)</h2>
+<p>El episodio "Guinea Pig on a Stick" (temporada 29, episodio 4) de South Park mostró unos 17 segundos de gameplay de GTA 6 que no se habían visto. Rockstar Games aparece en los créditos del episodio, así que es material oficial.</p>
+<ul>
+  <li>Jason y Lucia caminan por una playa de Vice City, con el minimapa en pantalla.</li>
+  <li>Un perro hace sus necesidades en la arena y Jason recoge la bolsa con el excremento para lanzársela a un NPC. Es la primera vez que se ve en acción esta mecánica.</li>
+  <li>Si la persona se defiende, la bolsa sirve como arma improvisada.</li>
 </ul>
 
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
@@ -1168,7 +1176,7 @@ CREDITOS = {
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
