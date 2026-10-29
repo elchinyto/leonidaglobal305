@@ -346,7 +346,7 @@ index = f"""
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
   <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales y el Extended Look.</p></a></li>
-  <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Game Informer, Dazed, TROISCOULEURS y LOVE: qué trae cada una y cómo conseguirlas.</p></a></li>
+  <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Edge, Game Informer, Dazed, TROISCOULEURS y LOVE: qué trae cada una y cómo conseguirlas.</p></a></li>
   <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, y el álbum oficial.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
@@ -479,7 +479,7 @@ conf = f"""
 <span class="mile">Entrevistas y prensa</span>
 <h1>GTA 6: todo lo confirmado por Rockstar</h1>
 {UPD}
-<p class="lede">Todo lo que Rockstar ha contado a IGN, Famitsu, Kinda Funny, Game Informer, Dazed, LOVE y Bloomberg, más lo que se vio en el Extended Look y el tráiler de lanzamiento, ordenado por tema.</p>
+<p class="lede">Todo lo que Rockstar ha contado a IGN, Famitsu, Kinda Funny, Game Informer, Edge, Dazed, LOVE y Bloomberg, más lo que se vio en el Extended Look y el tráiler de lanzamiento, ordenado por tema.</p>
 <div class="note"><strong>Cómo leer esta guía.</strong> Todo lo que aparece aquí lo dijo Rockstar o se vio en el Extended Look del 27 de agosto. Lo que solo contaron creadores que vieron demos sin jugar va aparte, al final, marcado como reportado.</div>
 
 <h2>La historia y la pareja</h2>
@@ -627,6 +627,24 @@ conf = f"""
   <li>Rockstar no reveló el presupuesto, pero negó el rumor de que superó los $1,500 millones.</li>
   <li>En septiembre el equipo ya estaba corrigiendo errores, y Schreier ve el 19 de noviembre como fecha firme.</li>
   <li>Rockstar dice que la tecnología creada para GTA 6 le permitirá sacar su próximo juego mucho antes que en ocho años.</li>
+</ul>
+
+<h2>Lo nuevo de Edge (29 de octubre)</h2>
+<p>Edge visitó Rockstar North en Edimburgo y vio a Rob Nelson jugar unos 90 minutos sin guion. Hablaron también Aaron Garbut y Phil Hooker. <a href="revistas-gta-6.html">Ver la revista</a></p>
+<ul>
+  <li><strong>Mapa:</strong> según Rockstar, la superficie total de Leonida es "casi tan grande como los mapas jugables de GTA IV, GTA V y RDR2 juntos". Edge lo resume como unas dos veces el mapa de GTA 5.</li>
+  <li><strong>Interiores:</strong> Garbut dice que hay "un orden de magnitud más" lugares con interior que en los juegos anteriores.</li>
+  <li><strong>Transporte:</strong> autobuses y trenes funcionan de verdad. Hooker cuenta que está "obsesionado" con que siempre lleguen a su hora.</li>
+  <li><strong>Días más largos:</strong> el ciclo de día y noche dura más que en GTA 5; los atardeceres y las noches se alargan.</li>
+  <li><strong>Clima:</strong> las nubes se mueven con el viento y la humedad, las tormentas se ven formarse a lo lejos, las calles se mojan y se secan a distinto ritmo, y el mal tiempo sacude a los aviones.</li>
+  <li><strong>Lo que sabe la policía:</strong> unos iconos arriba en la pantalla muestran el reporte policial: tu descripción, si vas solo o en pareja, la ropa, las cámaras de seguridad y el arma. Separarse, cambiarse o soltar el arma lo reduce.</li>
+  <li><strong>Persecuciones:</strong> la policía se comunica por radio, pone bandas de clavos y tiene perros K9 que te pueden derribar.</li>
+  <li><strong>Perfil Criminal:</strong> va de "Profesional" a "Irredimible", con iconos de ángel y diablo, y cambia cómo se desarrolla la historia.</li>
+  <li><strong>La pareja:</strong> la cercanía entre Jason y Lucia tiene cuatro niveles. Sube con paseos por la playa, bici, gimnasio o simplemente manejando juntos. No se pueden separar del todo, y Nelson no quiso confirmar si se pueden casar.</li>
+  <li><strong>Gente más viva:</strong> unas 600,000 animaciones, cada barrio con su tipo de gente, y un sistema de asco: Jason pone cara de asco al entrar en una casa que un perro dejó destrozada, sin que sea una escena preparada.</li>
+  <li><strong>Autos:</strong> todos tienen indicador de gasolina y de estado del motor. Los autos de lujo que pide un fence avisan a la policía, y el pago depende de cómo llegue el auto.</li>
+  <li><strong>Cómo se hizo:</strong> unas 900 personas en Rockstar North. Toronto se encarga de poblar el mundo y San Diego de los eventos aleatorios. Sam Houser revisa con Nelson cada etapa del desarrollo.</li>
+  <li>Edge no trae novedades sobre GTA Online, la versión de PC ni el precio.</li>
 </ul>
 
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
@@ -1036,9 +1054,24 @@ trailers = f"""
 # ---------- Revistas ----------
 revistas = f"""
 <span class="mile">Revistas</span>
-<h1>Las revistas de GTA 6: Game Informer, Dazed, TROISCOULEURS y LOVE</h1>
+<h1>Las revistas de GTA 6: Edge, Game Informer, Dazed, TROISCOULEURS y LOVE</h1>
 {UPD}
-<p class="lede">Cuatro revistas le dedicaron portada y entrevistas a GTA 6 antes del lanzamiento. Estas son las ediciones, lo que trae cada una y cómo conseguirlas. Las fotos de Game Informer y Dazed son de nuestros propios ejemplares.</p>
+<p class="lede">Cinco revistas le dedicaron portada y entrevistas a GTA 6 antes del lanzamiento. Estas son las ediciones, lo que trae cada una y cómo conseguirlas. Las fotos de Game Informer y Dazed son de nuestros propios ejemplares.</p>
+
+<section class="revista">
+  <div class="revista-txt">
+    <h2>Edge, número 430</h2>
+    <p class="updated">29 de octubre de 2026 · especial de Navidad · Reino Unido</p>
+    <p>La revista británica de videojuegos más veterana le dedicó a GTA 6 una <strong>portada desplegable de doble cara</strong> con Jason y Lucia, y un <strong>reportaje de 16 páginas</strong> firmado por Simon Parkin desde Rockstar North.</p>
+    <ul>
+      <li>Rob Nelson jugó unos 90 minutos sin guion delante de la revista. También hablan Aaron Garbut y Phil Hooker.</li>
+      <li>El dato estrella: Leonida es casi tan grande como los mapas de GTA IV, GTA V y RDR2 juntos.</li>
+      <li>Más de diez capturas nuevas hechas para el reportaje.</li>
+      <li>Todo lo que cuenta está resumido en <a href="todo-lo-confirmado.html">Todo lo confirmado</a>.</li>
+    </ul>
+    <p><strong>Cómo conseguirla:</strong> el reportaje completo se puede leer gratis en la web de GamesRadar+ desde el 29 de octubre. La revista impresa está en quioscos de Reino Unido, y los suscriptores nuevos fuera de Reino Unido reciben gratis la edición digital.</p>
+  </div>
+</section>
 
 <section class="revista">
   <figure><img src="img/revistas/game-informer-gta-6.jpg" width="900" height="1200" loading="lazy" alt="Ejemplar físico de Game Informer con Jason y Lucia en un convertible rojo frente al skyline de Vice City"><figcaption>Nuestro ejemplar de Game Informer.</figcaption></figure>
@@ -1109,14 +1142,15 @@ revistas = f"""
 
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
-  <dt>¿Qué revistas sacaron portada de GTA 6?</dt><dd>Game Informer (número 382), Dazed (otoño de 2026), TROISCOULEURS (número 227, Francia) y LOVE Magazine (número 27).</dd>
+  <dt>¿Qué revistas sacaron portada de GTA 6?</dt><dd>Edge (número 430), Game Informer (número 382), Dazed (otoño de 2026), TROISCOULEURS (número 227, Francia) y LOVE Magazine (número 27).</dd>
+  <dt>¿Dónde leer gratis el reportaje de Edge sobre GTA 6?</dt><dd>Edge lo publicó completo y gratis en la web de GamesRadar+ el 29 de octubre de 2026, el mismo día que salió la revista impresa.</dd>
   <dt>¿Dónde se lee gratis la Game Informer de GTA 6?</dt><dd>La edición digital se puede leer en la app de Game Informer.</dd>
   <dt>¿Qué se sabe de GTA 6 por las revistas?</dt><dd>Todo lo que contaron está resumido en <a href="todo-lo-confirmado.html">Todo lo confirmado</a>.</dd>
 </dl>
 {AFF}"""
 
 pages = {
-    "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Game Informer, Dazed, TROISCOULEURS y LOVE | Leonida Global 305", "Las ediciones de Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
+    "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Edge, Game Informer, Dazed y más | Leonida Global 305", "Las ediciones de Edge, Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
     "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
     "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 y el Extended Look | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6 y el Extended Look de 27 minutos, con lo que muestra cada uno.", True),
     "musica-radios-gta-6.html": (musica, "Radios y canciones de GTA 6 y GTA VI: The Album | Leonida Global 305", "Todas las radios confirmadas de GTA 6 con sus locutores y canciones, y todo sobre GTA VI: The Album, el disco oficial de 34 canciones.", True),
@@ -1134,13 +1168,13 @@ CREDITOS = {
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming"],
-    "revistas-gta-6.html": ["Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
+    "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever"],
 }
 def creditos(slug):
