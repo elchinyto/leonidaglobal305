@@ -245,7 +245,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 29 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 31 de octubre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -829,7 +829,7 @@ LUGARES = [
   ("juego", "Hotel de Collins Avenue", "Loews Miami Beach Hotel", "1601 Collins Ave, Miami Beach", 25.7881, -80.1291, "Hotel de Collins Avenue identificado en el juego."),
   ("juego", "Effluvia (comparación de fans)", "Juvia (cerrado)", "1111 Lincoln Rd, Miami Beach", 25.7908, -80.1405, "El rooftop bar de Effluvia que se vio en el Extended Look recuerda a Juvia, el rooftop de Lincoln Road que ya cerró."),
   ("juego", "Puente de los Cayos de Leonida", "Seven Mile Bridge", "Overseas Hwy, Cayos de Florida", 24.7039, -81.1530, "El puente que une los Cayos sale en el tráiler y es la entrada a los Cayos de Leonida."),
-  ("marketing", "Letrero \"Welcome to Vice City\"", "Techo del Kaseya Center", "601 Biscayne Blvd, Miami", 25.7818, -80.1865, "Letrero iluminado en rosa sobre el techo de la arena. Según reportes, el acuerdo ronda los $975,000."),
+  ("marketing", "Letrero \"Welcome to Vice City\"", "Techo del Kaseya Center", "601 Biscayne Blvd, Miami", 25.7818, -80.1865, "Letrero iluminado en rosa sobre el techo de la arena. El condado de Miami-Dade confirmó que este acuerdo es de $975,000 y que ese dinero va al parque de Dan Paul Plaza, detrás de la arena."),
   ("marketing", "A Night in Vice City", "Kaseya Center", "601 Biscayne Blvd, Miami", 25.7810, -80.1875, "El 18 de noviembre, Heat vs. Bucks con cancha y uniformes de Vice City. Dentro de la arena ya funcionan un Burger Shot y un Cluckin' Bell que sirven comida de verdad (el Burger Shot ocupa el puesto que antes era de Skinny Louie), y la tienda de los Heat vende camisetas y gorras de Vice City."),
   ("marketing", "Sombrillas y tumbonas de Vice City", "Playa de Miami Beach", "South Beach, Miami Beach", 25.7838, -80.1283, "Desde el 15 de octubre y hasta el 31 de diciembre, las sillas, sombrillas y cabañas de Boucher Brothers en la playa llevan la marca de Vice City."),
   ("marketing", "Banners de GTA 6", "Zona de eventos del downtown", "Downtown Miami (zona aproximada)", 25.7752, -80.1920, "Desde el 15 de octubre, la ciudad permite banners de GTA 6 en una zona del downtown, por un máximo de 56 días. Por estas calles también circulan autobuses con \"I ♥ Vice City\"."),
@@ -842,6 +842,8 @@ LUGARES = [
   ("marketing", "Y Hotel (planeado)", "W South Beach", "2201 Collins Ave, Miami Beach", 25.7969, -80.1279, "Según documentos de la ciudad de Miami Beach, el hotel W se convierte en el Y Hotel del juego: lona en la fachada y una \"Y\" gigante en lugar de la \"W\" de la terraza del spa, hasta el 31 de diciembre. El acuerdo es de $650,000 y depende de los permisos de la ciudad."),
   ("marketing", "Letrero \"Vice Beach\" (planeado)", "Lummus Park", "1130 Ocean Dr, Miami Beach", 25.7812, -80.1294, "Un letrero rosa de unos 10 metros de ancho, como el del techo del Kaseya Center. Según los planos presentados a la ciudad, se instala del 26 al 31 de octubre y queda a la vista desde el 1 de noviembre hasta mediados de enero."),
   ("marketing", "Muscle Beach en rosa (planeado)", "Muscle Beach South Beach", "873 Ocean Dr, Miami Beach", 25.7779, -80.1297, "Los planes incluyen pintar de rosa los aparatos del gimnasio al aire libre y poner la marca Vice Beach. Las obras son del 26 al 31 de octubre, de noche, y debería verse así desde el 1 de noviembre."),
+  ("marketing", "Iluminación de Vice City en el aeropuerto (planeado)", "Aeropuerto Internacional de Miami (MIA)", "2100 NW 42nd Ave, Miami", 25.7953, -80.2775, "Parte del paquete de $3.9 millones que anunció el condado de Miami-Dade el 28 de octubre: iluminación temática y anuncios de GTA 6 en los pasillos que unen los garajes con las terminales. Los diseños aún necesitan la aprobación del condado."),
+  ("marketing", "Iluminación de Vice City en el puerto (planeado)", "PortMiami", "Dodge Island, Miami", 25.7720, -80.1640, "El mismo paquete del condado incluye iluminación temática y anuncios en PortMiami. Rockstar paga la instalación, el mantenimiento y el retiro."),
   ("marketing", "Columnas del Metrorail", "Metrorail de Miami", "Downtown Miami (zona aproximada)", 25.7740, -80.1962, "Columnas del Metrorail forradas con los colores de GTA 6."),
 ]
 _lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
@@ -867,13 +869,14 @@ mapa_real = f"""
 <div id="mapa" role="region" aria-label="Mapa interactivo de Miami"></div>
 <p class="updated">Ubicaciones aproximadas. Toca un punto o un lugar de la lista para ver los detalles.</p>
 <ul class="lugares" id="lista">{''.join(_item(i, l) for i, l in enumerate(LUGARES))}</ul>
-<div class="note"><strong>De dónde salen estos datos.</strong> Las comparaciones vienen de los tráilers, el Extended Look y del mapeo de la comunidad. Algunas son de fans y Rockstar no las ha confirmado una por una. El marketing sale de anuncios de las ciudades de Miami y Miami Beach y de lo que han reportado medios y gente en la calle.</div>
+<div class="note"><strong>De dónde salen estos datos.</strong> Las comparaciones vienen de los tráilers, el Extended Look y del mapeo de la comunidad. Algunas son de fans y Rockstar no las ha confirmado una por una. El marketing sale de anuncios del condado de Miami-Dade, de las ciudades de Miami y Miami Beach y de lo que han reportado medios y gente en la calle.</div>
 {AD}
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
   <dt>¿Vice City es Miami?</dt><dd>Sí. Vice City es la versión de Rockstar de Miami, y Leonida es su versión de Florida. Muchos edificios reales aparecen recreados con otros nombres.</dd>
   <dt>¿Dónde está el letrero de Vice City en Miami?</dt><dd>En el techo del Kaseya Center, la arena de los Miami Heat en Biscayne Boulevard.</dd>
   <dt>¿Dónde va a estar el letrero de Vice Beach?</dt><dd>En Lummus Park, frente al 1130 de Ocean Drive, en Miami Beach. Según los planos presentados a la ciudad, se instala a finales de octubre y estaría listo el 1 de noviembre, siempre que la ciudad dé los permisos.</dd>
+  <dt>¿Cuánto paga Rockstar al condado de Miami-Dade?</dt><dd>Unos $3.9 millones, según anunció la alcaldesa Daniella Levine Cava el 28 de octubre. Incluye el letrero del Kaseya Center ($975,000), iluminación temática en el aeropuerto y en PortMiami, anuncios en los pasillos del aeropuerto y gabinetes de semáforos forrados con la marca del juego en todo el condado. Los diseños dependen de la aprobación del condado, y varios comisionados y la sheriff criticaron que no se votara en la comisión.</dd>
   <dt>¿Qué pasa el 18 de noviembre en Miami?</dt><dd>Los Heat juegan "A Night in Vice City" contra los Bucks en el Kaseya Center, con cancha y uniformes temáticos, la noche antes del lanzamiento.</dd>
 </dl>
 {AFF}
@@ -1213,7 +1216,7 @@ CREDITOS = {
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
-    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever"],
+    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL"],
 }
 def creditos(slug):
     c = CREDITOS.get(slug)
