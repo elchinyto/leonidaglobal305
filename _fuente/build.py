@@ -79,6 +79,10 @@ td.num{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
 .faq dd{margin:2px 0 0;color:var(--fg)}
 footer{border-top:3px solid var(--fg);padding-block:18px 30px;font-size:.88rem;color:var(--muted)}
 footer p{margin:.3em 0;max-width:70ch}
+.fotos-visita{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:14px 0 6px}
+.fotos-visita figure{margin:0;min-width:0}
+.fotos-visita img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--line)}
+.fotos-visita figcaption{font-size:.8rem;color:var(--muted);margin-top:5px}
 .score-fotos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0 6px}
 .score-fotos figure{margin:0;min-width:0}
 .score-fotos img{width:100%;height:auto;display:block;border:1px solid var(--line)}
@@ -845,6 +849,7 @@ LUGARES = [
   ("marketing", "Iluminación de Vice City en el aeropuerto (planeado)", "Aeropuerto Internacional de Miami (MIA)", "2100 NW 42nd Ave, Miami", 25.7953, -80.2775, "Parte del paquete de $3.9 millones que anunció el condado de Miami-Dade el 28 de octubre: iluminación temática y anuncios de GTA 6 en los pasillos que unen los garajes con las terminales. Los diseños aún necesitan la aprobación del condado."),
   ("marketing", "Iluminación de Vice City en el puerto (planeado)", "PortMiami", "Dodge Island, Miami", 25.7720, -80.1640, "El mismo paquete del condado incluye iluminación temática y anuncios en PortMiami. Rockstar paga la instalación, el mantenimiento y el retiro."),
   ("marketing", "Columnas del Metrorail", "Metrorail de Miami", "Downtown Miami (zona aproximada)", 25.7740, -80.1962, "Columnas del Metrorail forradas con los colores de GTA 6."),
+  ("marketing", "Cervezas de GTA 6", "Tripping Animals Brewing", "2685 NW 105th Ave, Doral", 25.8008, -80.3683, "La cervecería de Doral fabrica Pißwasser, Patriot y No Mames Vice City, las cervezas del juego. Las venden en su taproom, que está decorado con la marca de GTA 6."),
 ]
 _lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
 
@@ -869,6 +874,22 @@ mapa_real = f"""
 <div id="mapa" role="region" aria-label="Mapa interactivo de Miami"></div>
 <p class="updated">Ubicaciones aproximadas. Toca un punto o un lugar de la lista para ver los detalles.</p>
 <ul class="lugares" id="lista">{''.join(_item(i, l) for i, l in enumerate(LUGARES))}</ul>
+<h2>Lo visitamos: las cervezas de GTA 6 en Tripping Animals</h2>
+<p>En Tripping Animals Brewing, una cervecería de Doral (2685 NW 105th Ave), venden las versiones reales de las cervezas del juego. Fuimos y estas son nuestras fotos.</p>
+<ul>
+  <li><strong>Pißwasser</strong>, una pils, y <strong>Patriot</strong>, de 4.2 % de alcohol: las dos cervezas de siempre de la saga.</li>
+  <li><strong>No Mames Vice City</strong>, una lager de 6 % con un chihuahua con gafas y cadena de Vice City en la lata.</li>
+  <li>En las ventanas del local están los logos de Pißwasser, Patriot y el "VI" de GTA 6, y dentro hay pelotas de playa con el logo y la mascota de la cervecería.</li>
+  <li>Allí también conseguimos fundas para latas y pegatinas de "I ♥ Vice City" con la marca de GTA VI.</li>
+</ul>
+<div class="fotos-visita">
+  <figure><img src="img/miami/tripping-animals-fachada.jpg" width="900" height="1200" loading="lazy" alt="Fachada de Tripping Animals Brewing en Doral con los logos de Pißwasser, Patriot y VI en las ventanas"><figcaption>La fachada, con Pißwasser, Patriot y el VI en las ventanas.</figcaption></figure>
+  <figure><img src="img/miami/tripping-animals-latas.jpg" width="900" height="1200" loading="lazy" alt="Latas de Patriot Beer y No Mames Vice City Lager"><figcaption>Patriot y No Mames Vice City.</figcaption></figure>
+  <figure><img src="img/miami/tripping-animals-merch.jpg" width="900" height="1200" loading="lazy" alt="Latas de No Mames Vice City con pegatinas I love Vice City de GTA VI"><figcaption>Las pegatinas de "I ♥ Vice City".</figcaption></figure>
+  <figure><img src="img/miami/tripping-animals-pelota-vi.jpg" width="900" height="1200" loading="lazy" alt="Pelota de playa con el logo VI de GTA 6 junto a la mascota chihuahua de la cervecería"><figcaption>La pelota de playa con el logo VI.</figcaption></figure>
+</div>
+<p class="credito-img">Fotos: Leonida Global 305. Solo para mayores de 21 años; bebe con responsabilidad.</p>
+
 <div class="note"><strong>De dónde salen estos datos.</strong> Las comparaciones vienen de los tráilers, el Extended Look y del mapeo de la comunidad. Algunas son de fans y Rockstar no las ha confirmado una por una. El marketing sale de anuncios del condado de Miami-Dade, de las ciudades de Miami y Miami Beach y de lo que han reportado medios y gente en la calle.</div>
 {AD}
 <h2>Preguntas frecuentes</h2>
