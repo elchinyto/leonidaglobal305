@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 31 de octubre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 1 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -818,7 +818,7 @@ LUGARES = [
   ("juego", "Megamundo", "One Biscayne Tower", "2 S Biscayne Blvd, Miami", 25.7741, -80.1872, "Rascacielos del downtown recreado en el juego como Megamundo."),
   ("juego", "Heath Tower", "Miami Tower", "100 SE 2nd St, Miami", 25.7726, -80.1916, "El rascacielos que cambia de color por la noche, uno de los más reconocibles del skyline."),
   ("juego", "Arcadia Towers", "Vizcayne", "244 Biscayne Blvd, Miami", 25.7766, -80.1878, "Las torres gemelas de condos frente al Bayside, en pleno downtown."),
-  ("juego", "NINE1NINE", "E11EVEN Miami", "29 NE 11th St, Miami", 25.7849, -80.1919, "La discoteca 24 horas más famosa de Miami. En el juego se llama NINE1NINE."),
+  ("juego", "NINE1NINE", "E11EVEN Miami", "29 NE 11th St, Miami", 25.7849, -80.1919, "La discoteca 24 horas más famosa de Miami. En el juego se llama NINE1NINE. El viernes 6 de noviembre de 2026 el club se cambia el nombre a NINE1NINE por una noche, con Flo Rida de cabeza de cartel (mayores de 21, entradas en la web del club). Es una promoción del propio E11EVEN, no un evento de Rockstar."),
   ("juego", "The Sumerian", "Marriott Miami Biscayne Bay", "1633 N Bayshore Dr, Miami", 25.7920, -80.1866, "El hotel de la bahía recreado como The Sumerian."),
   ("juego", "Sahara HQ", "Brickell Arch", "1395 Brickell Ave, Miami", 25.7593, -80.1925, "El edificio de arco en Brickell, el distrito financiero."),
   ("juego", "Torre de Brickell en el tráiler", "Brickell on the River", "31 SE 5th St, Miami", 25.7697, -80.1913, "Las torres junto al río Miami que se ven en el tráiler."),
