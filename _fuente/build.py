@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 1 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 3 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -320,7 +320,7 @@ index = f"""
   <p class="updated">19 de noviembre de 2026, 00:00 (hora de Miami).</p>
 </div>
 <div class="cd-row">
-  <div class="cd cd-sm" id="precarga" data-t="2026-11-12T05:00:00Z" data-q="para la precarga de GTA 6" data-y="¡Ya se puede precargar GTA 6!">
+  <div class="cd cd-sm" id="precarga" data-t="2026-11-10T05:00:00Z" data-q="para la precarga de GTA 6" data-y="¡Ya se puede precargar GTA 6!">
     <p class="cd-label">Precarga</p>
     <div class="count">
       <div><b data-u="d">--</b><small>días</small></div>
@@ -329,7 +329,7 @@ index = f"""
     </div>
     <p class="cd-done" hidden>¡Ya puedes precargar!</p>
     <a class="share-x" href="https://x.com/intent/post" target="_blank" rel="noopener">Compartir en X</a>
-    <p class="updated">12 de noviembre. Rockstar confirmó el día pero no la hora; contamos hasta la medianoche de Miami.</p>
+    <p class="updated">10 de noviembre a medianoche en PS5, hora de cada país (contamos con la de Miami). En Xbox empieza a la vez en todo el mundo: 9 de noviembre a las 7:00 p.&nbsp;m. en Miami.</p>
   </div>
   <div class="cd cd-sm" id="nueva-zelanda" data-t="2026-11-18T11:00:00Z" data-q="para que Nueva Zelanda sea el primer país en jugar GTA 6" data-y="¡Nueva Zelanda ya está jugando GTA 6!">
     <p class="cd-label">Primero en jugar: Nueva Zelanda</p>
@@ -392,8 +392,11 @@ fecha = f"""
   <thead><tr><th>Qué</th><th>Fecha</th><th>Estado</th></tr></thead>
   <tbody>
     <tr><td>Preventas</td><td class="num">25 jun 2026</td><td><span class="tag ok">Abiertas</span></td></tr>
-    <tr><td>Precarga (digital y caja con código)</td><td class="num">12 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
-    <tr><td>Tamaño de descarga (PS5)</td><td class="num">Unos 210 GB, sin parche del primer día</td><td><span class="tag no">Reportado</span></td></tr>
+    <tr><td>Precarga digital en PS5 (medianoche, hora local)</td><td class="num">10 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Precarga digital en Xbox (00:00 GMT en todo el mundo)</td><td class="num">10 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Caja con código en tiendas</td><td class="num">12 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Tamaño de la precarga</td><td class="num">Hasta 212 GB, según la consola</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Póster oficial y mapa de Leonida para descargar gratis</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Reseñas de la prensa</td><td class="num">18 nov 2026</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
@@ -409,7 +412,15 @@ fecha = f"""
     <tr><td>Ultimate</td><td class="num">~$100</td><td>Todo lo anterior más contenido extra ligado a Jason y Lucia, como armas, vehículos y ropa.</td></tr>
   </tbody>
 </table></div>
-<div class="note"><strong>Ojo con la edición física.</strong> La caja de tienda trae un código de descarga, no un disco con el juego. Si lo que quieres es jugar el primer día, la compra digital te deja precargar desde el 12 de noviembre sin depender del envío.</div>
+<div class="note"><strong>Ojo con la edición física.</strong> La caja de tienda trae un código de descarga, no un disco con el juego. Si lo que quieres es jugar el primer día, la compra digital te deja precargar desde el 10 de noviembre sin depender del envío. La caja con código llega a las tiendas el 12.</div>
+<h2>Lo nuevo de Rockstar (3 de noviembre)</h2>
+<ul>
+  <li><strong>La precarga se adelanta al martes 10 de noviembre.</strong> En PS5 empieza a la medianoche de cada país; en Xbox, a las 00:00 GMT en todo el mundo, que en Miami son las 7:00 p.&nbsp;m. del lunes 9.</li>
+  <li>La caja con código estará en las tiendas desde el 12 de noviembre.</li>
+  <li>La precarga ocupa <strong>hasta 212 GB</strong>, según la consola. Rockstar recomienda dejar espacio libre cuanto antes.</li>
+  <li>El 19 de noviembre la web oficial publicará gratis, para descargar e imprimir, el <strong>póster de la portada y el mapa de Leonida</strong>.</li>
+  <li>Poco después del lanzamiento, la Rockstar Store venderá ese póster en físico, a doble cara, por <strong>$0.99</strong>, o lo regalará con cualquier compra.</li>
+</ul>
 {COLECCIONISTA}
 {AD}
 <h2>Preguntas frecuentes</h2>
@@ -772,7 +783,7 @@ equipo = f"""
 </div>
 
 <h2>Almacenamiento</h2>
-<p>Rockstar no ha dicho oficialmente cuánto pesa el juego, pero se reporta que la versión de PS5 ocupa unos <strong>210 GB</strong>, sin contar el parche del primer día. Con una PS5 de 1 TB casi llena, vas a necesitar más espacio antes de la precarga del 12 de noviembre.</p>
+<p>Rockstar confirmó que la precarga ocupa <strong>hasta 212 GB</strong>, según la consola. Con una PS5 de 1 TB casi llena, vas a necesitar más espacio antes de la precarga del 10 de noviembre.</p>
 <div class="picks">
   {pick("PS5", "1 a 2 TB", "SSD M.2 PCIe 4.0 con disipador", "Sony pide un SSD Gen4 con disipador. Modelos como el WD_BLACK SN850X o el Samsung 990 Pro con disipador se instalan en minutos.", "WD_BLACK SN850X heatsink PS5 2TB")}
   {pick("Xbox Series X|S", "1 a 2 TB", "Tarjeta de expansión de almacenamiento", "La forma oficial de ampliar la memoria rápida de Xbox: se conecta atrás y listo.", "Xbox Series X storage expansion card 2TB")}
@@ -793,7 +804,7 @@ equipo = f"""
   {pick("Mando Xbox económico", "menos de $50", "GameSir G7 SE", "Mando con licencia oficial de Xbox, con sticks Hall Effect que no sufren drift y botones traseros programables. Funciona en Xbox Series X|S y PC.", "GameSir G7 SE Xbox controller")}
   {pick("Mando Xbox con estilo", "unos $90", "Turtle Beach Pacific Skyline", "Inalámbrico, con palmeras y colores pastel muy a tono con Vice City, luces RGB, sticks TMR sin drift y dos botones traseros. Funciona en Xbox Series X|S, Xbox One y PC.", "Turtle Beach Pacific Skyline wireless controller")}
   {pick("Audio", "", "Audífonos gaming", "Para escuchar la radio de Vice City y los diálogos de los NPC sin molestar a nadie en casa.", "PS5 Xbox gaming headset wireless")}
-  {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargar el 12 de noviembre.", "PlayStation Store gift card")}
+  {pick("Tarjetas", "", "Tarjeta de PlayStation Store o Xbox", "Para comprar la versión digital y precargarla desde el 10 de noviembre.", "PlayStation Store gift card")}
 </div>
 <div class="note"><strong>Mandos oficiales de edición limitada.</strong> Sony vende dos DualSense de GTA VI, uno negro (la noche de Vice City) y otro blanco (el amanecer), con acabado tornasolado, palmeras en relieve y el logo del juego. Cuestan $84.99 (€84.99, £74.99) y salen a partir del 19 de noviembre. Son de stock limitado: el blanco se vende en PlayStation Direct y tiendas participantes, y el negro sobre todo en PlayStation Direct.</div>
 <h2>Libros y cómics</h2>
@@ -1078,10 +1089,10 @@ hora = f"""
 
 <h2>Precarga, Xbox y edición en caja</h2>
 <ul>
-  <li><strong>Precarga:</strong> si compraste la versión digital o la caja con código, puedes descargar el juego desde el 12 de noviembre. El día del lanzamiento solo esperas a que se desbloquee.</li>
+  <li><strong>Precarga:</strong> en PS5 empieza el 10 de noviembre a la medianoche de cada país. En Xbox empieza a la vez en todo el mundo el 10 de noviembre a las 00:00 GMT, que en Miami es el 9 a las 7:00 p.&nbsp;m. La caja con código llega a las tiendas el 12. El día del lanzamiento solo esperas a que se desbloquee.</li>
   <li><strong>Xbox:</strong> la Microsoft Store confirma el 19 de noviembre, pero todavía no muestra un horario por país. Lo normal es que se parezca al de PlayStation, aunque no está confirmado.</li>
   <li><strong>Caja de tienda:</strong> trae un código de descarga, no el juego en disco, así que se desbloquea a la misma hora que la versión digital y necesitas internet para bajarlo.</li>
-  <li><strong>Espacio:</strong> se reporta que el juego ocupa unos 210 GB en PS5, sin contar el parche del primer día. Rockstar no lo ha confirmado. Deja libre bastante más que eso antes del 12 de noviembre.</li>
+  <li><strong>Espacio:</strong> Rockstar confirmó que la precarga ocupa hasta 212 GB, según la consola. Déjalo libre antes del 10 de noviembre.</li>
 </ul>
 
 <h2>Preguntas frecuentes</h2>
