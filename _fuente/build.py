@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 3 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 6 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -398,7 +398,7 @@ fecha = f"""
     <tr><td>Tamaño de la precarga</td><td class="num">Hasta 212 GB, según la consola</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Póster oficial y mapa de Leonida para descargar gratis</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
-    <tr><td>Reseñas de la prensa</td><td class="num">18 nov 2026</td><td><span class="tag no">Reportado</span></td></tr>
+    <tr><td>Reseñas de la prensa (se reporta que las copias ya llegaron a los medios)</td><td class="num">18 nov 2026</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Versión de PC</td><td class="num">Sin fecha (reportado: primer trimestre de 2027)</td><td><span class="tag no">No anunciado</span></td></tr>
     <tr><td>Nuevo GTA Online</td><td class="num">Sin fecha</td><td><span class="tag no">No anunciado</span></td></tr>
@@ -673,6 +673,17 @@ conf = f"""
   <li>Un perro hace sus necesidades en la arena y Jason recoge la bolsa con el excremento para lanzársela a un NPC. Es la primera vez que se ve en acción esta mecánica.</li>
   <li>Si la persona se defiende, la bolsa sirve como arma improvisada.</li>
 </ul>
+
+<h2>Galería de lanzamiento (5 de noviembre)</h2>
+<p>A dos semanas del estreno, Rockstar subió a la web oficial de GTA VI una galería con casi 40 capturas nuevas de "Vice City y más allá". Lo que se ve en ellas:</p>
+<ul>
+  <li>Jason con equipo táctico bajando de un avión militar en medio de un tiroteo, con un perro con chaleco de combate al fondo.</li>
+  <li>Jason y Lucia armados, redadas policiales y persecuciones a toda velocidad.</li>
+  <li>Discotecas, bares de muelle y fiestas llenas de gente.</li>
+  <li>Buceo en el mar, un caimán y un atardecer en el campo.</li>
+  <li>Personajes nuevos sin nombre todavía, como un hombre con cicatrices y un ojo de cada color que sostiene dos reptiles muertos, o un tipo con mullet que amenaza a Jason con un cuchillo.</li>
+</ul>
+<p>Rockstar no puso textos ni nombres en las capturas, así que de estos personajes aún no se sabe quiénes son.</p>
 
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
 <p>Rockstar invitó a TGG, elrubius, Davy Jones y Mike ShowSha a ver gameplay en Edimburgo sin jugarlo. Estos detalles salen de lo que contaron ellos:</p>
@@ -1241,7 +1252,7 @@ CREDITOS = {
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC"],
