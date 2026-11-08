@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 6 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 8 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -396,6 +396,7 @@ fecha = f"""
     <tr><td>Precarga digital en Xbox (00:00 GMT en todo el mundo)</td><td class="num">10 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Caja con código en tiendas</td><td class="num">12 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Tamaño de la precarga</td><td class="num">Hasta 212 GB, según la consola</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Tamaño en Xbox Series X|S, según la base de datos de Microsoft</td><td class="num">209.86 GiB (unos 225 GB)</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Póster oficial y mapa de Leonida para descargar gratis</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Reseñas de la prensa (se reporta que las copias ya llegaron a los medios)</td><td class="num">18 nov 2026</td><td><span class="tag no">Reportado</span></td></tr>
@@ -431,6 +432,7 @@ fecha = f"""
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
   <dt>¿Cuándo sale GTA 6 en PC?</dt><dd>Rockstar no lo ha anunciado. GamesBeat reportó, citando fuentes propias, que la versión de PC llegaría en el primer trimestre de 2027, pero no está confirmado.</dd>
   <dt>¿Habrá reseñas antes del lanzamiento?</dt><dd>Rockstar no ha anunciado cuándo se publican las reseñas. Insider Gaming reportó el 27 de octubre que ya se están enviando copias a algunos medios, y el insider NateTheHate dice que el embargo de reseñas termina el 18 de noviembre, un día antes del lanzamiento. Nada de eso es oficial.</dd>
+  <dt>¿Cuánto espacio necesito para GTA 6?</dt><dd>Rockstar dice que hasta 212 GB, según la consola. El 6 de noviembre, la base de datos de la tienda de Microsoft se actualizó y lista la versión de Xbox Series X|S en 209.86 GiB, que son unos 225 GB en la unidad que usan las consolas. Esa cifra no la dio Rockstar y puede cambiar con un parche del primer día, así que lo prudente es dejar libres unos 230 GB.</dd>
   <dt>¿Viene GTA Online incluido?</dt><dd>Rockstar no ha anunciado un modo online para el día del lanzamiento. El lanzamiento confirmado es de un jugador.</dd>
 </dl>
 {AFF}"""
@@ -1249,7 +1251,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown"],
