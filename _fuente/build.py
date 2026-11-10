@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 8 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 10 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -396,6 +396,7 @@ fecha = f"""
     <tr><td>Precarga digital en Xbox (00:00 GMT en todo el mundo)</td><td class="num">10 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Caja con código en tiendas</td><td class="num">12 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Tamaño de la precarga</td><td class="num">Hasta 212 GB, según la consola</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Tamaño de la descarga en PS5 al abrir la precarga</td><td class="num">209.8 GB</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Tamaño en Xbox Series X|S, según la base de datos de Microsoft</td><td class="num">209.86 GiB (unos 225 GB)</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Póster oficial y mapa de Leonida para descargar gratis</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
@@ -422,6 +423,15 @@ fecha = f"""
   <li>El 19 de noviembre la web oficial publicará gratis, para descargar e imprimir, el <strong>póster de la portada y el mapa de Leonida</strong>.</li>
   <li>Poco después del lanzamiento, la Rockstar Store venderá ese póster en físico, a doble cara, por <strong>$0.99</strong>, o lo regalará con cualquier compra.</li>
 </ul>
+<h2>Lo que dijo Take-Two (9 de noviembre)</h2>
+<p>En su último informe de resultados antes del estreno, Take-Two volvió a confirmar el 19 de noviembre y dejó varios datos:</p>
+<ul>
+  <li>Su CEO, Strauss Zelnick, dijo que <strong>Rockstar ya terminó el desarrollo de GTA VI</strong>. El juego está listo para salir en la fecha prevista.</li>
+  <li>Las reservas van <strong>muy por encima de lo que la empresa esperaba</strong>. Zelnick habló de niveles "sin precedentes", pero no dio cifras.</li>
+  <li>Take-Two mantiene su previsión de ingresos por reservas netas de <strong>8,000 a 8,200 millones de dólares</strong> para su año fiscal, que termina en marzo de 2027 y ya incluye el lanzamiento.</li>
+  <li>No hubo novedades sobre la versión de PC ni sobre el nuevo GTA Online. Zelnick dijo que Rockstar contará lo que viene cuando lo decida.</li>
+</ul>
+<div class="note"><strong>La precarga ya está abierta.</strong> Desde el 10 de noviembre puedes descargar el juego si lo compraste en digital. Al abrirse en PS5, la descarga marcaba unos 209.8 GB, según GTA BOOM. Se juega hasta que se desbloquee el 19.</div>
 {COLECCIONISTA}
 {AD}
 <h2>Preguntas frecuentes</h2>
@@ -687,6 +697,13 @@ conf = f"""
 </ul>
 <p>Rockstar no puso textos ni nombres en las capturas, así que de estos personajes aún no se sabe quiénes son.</p>
 
+<h2>Desarrollo terminado y un festival en Miami (9 y 10 de noviembre)</h2>
+<ul>
+  <li>En la llamada con inversores del 9 de noviembre, Strauss Zelnick, CEO de Take-Two, dijo que <strong>Rockstar terminó el desarrollo de GTA VI</strong> y que las reservas van muy por encima de lo esperado.</li>
+  <li>La <strong>precarga</strong> se abrió el 10 de noviembre en PS5 y Xbox Series X|S.</li>
+  <li>Rockstar y PlayStation anunciaron <strong>GTA VI: The Festival</strong>, un concierto el 21 de noviembre en Mana Wynwood, Miami, con Travis Scott, Cardi B, Justice, Metro Boomin y otros artistas del juego. Los detalles están en la <a href="musica-radios-gta-6.html">página de música</a>.</li>
+</ul>
+
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
 <p>Rockstar invitó a TGG, elrubius, Davy Jones y Mike ShowSha a ver gameplay en Edimburgo sin jugarlo. Estos detalles salen de lo que contaron ellos:</p>
 <ul>
@@ -873,6 +890,7 @@ LUGARES = [
   ("marketing", "Iluminación de Vice City en el aeropuerto (planeado)", "Aeropuerto Internacional de Miami (MIA)", "2100 NW 42nd Ave, Miami", 25.7953, -80.2775, "Parte del paquete de $3.9 millones que anunció el condado de Miami-Dade el 28 de octubre: iluminación temática y anuncios de GTA 6 en los pasillos que unen los garajes con las terminales. Los diseños aún necesitan la aprobación del condado."),
   ("marketing", "Iluminación de Vice City en el puerto (planeado)", "PortMiami", "Dodge Island, Miami", 25.7720, -80.1640, "El mismo paquete del condado incluye iluminación temática y anuncios en PortMiami. Rockstar paga la instalación, el mantenimiento y el retiro."),
   ("marketing", "Columnas del Metrorail", "Metrorail de Miami", "Downtown Miami (zona aproximada)", 25.7740, -80.1962, "Columnas del Metrorail forradas con los colores de GTA 6."),
+  ("marketing", "GTA VI: The Festival (21 de noviembre)", "Mana Wynwood", "318 NW 23rd St, Miami", 25.7993, -80.1990, "Rockstar y PlayStation celebran el lanzamiento con un festival el sábado 21 de noviembre: Travis Scott, Cardi B, Justice, Metro Boomin, Tainy, Rauw and Friends y más. Las entradas solo se compran con el código del sorteo oficial. Mayores de 17 años."),
   ("marketing", "Cervezas de GTA 6", "Tripping Animals Brewing", "2685 NW 105th Ave, Doral", 25.8008, -80.3683, "La cervecería de Doral fabrica Pißwasser, Patriot y No Mames Vice City, las cervezas del juego. Las venden en su taproom, que está decorado con la marca de GTA 6."),
 ]
 _lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
@@ -1034,9 +1052,20 @@ musica = f"""
 </div>
 <p class="credito-img">Imágenes: Rockstar Games.</p>
 
+<h2>GTA VI: The Festival (21 de noviembre, Miami)</h2>
+<p>Rockstar Games y PlayStation organizan un festival de música en vivo para celebrar el lanzamiento, dos días después de que salga el juego. Es un evento real, no dentro del juego.</p>
+<ul>
+  <li><strong>Cuándo:</strong> sábado 21 de noviembre de 2026. La hora y el horario de cada artista aún no se han publicado.</li>
+  <li><strong>Dónde:</strong> Mana Wynwood, 318 NW 23rd St, Miami. Puedes verlo en el <a href="mapa-miami-real.html">mapa de Miami real</a>.</li>
+  <li><strong>Cartel:</strong> Travis Scott (Cactus Jack presenta, con Don Toliver, Kodak Black y SoFaygo), Cardi B, Ca7riel y Paco Amoroso, Justice (DJ set), Metro Boomin, Nick León b2b DJ Python, Prospa b2b Skream, Rauw and Friends, Suero, Tainy y The Dare b2b Fcukers (DJ set).</li>
+  <li><strong>Entradas:</strong> no se venden al público general. Hubo un sorteo gratuito en la web oficial del festival, abierto hasta el 10 de noviembre a las 4:00 p.&nbsp;m. hora de Miami, una inscripción por persona. Los ganadores reciben un código por SMS para comprar entradas el 11 de noviembre a las 12:00 p.&nbsp;m., por orden de llegada. Tener código no garantiza entrada.</li>
+  <li>Hay que tener <strong>17 años o más</strong>.</li>
+</ul>
+<div class="note"><strong>Cuidado con la reventa.</strong> Los códigos son de un solo uso y no se pueden vender ni pasar a otra persona. Si alguien te ofrece uno o entradas por redes sociales, lo más probable es que sea una estafa.</div>
 
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
+  <dt>¿Cómo consigo entradas para GTA VI: The Festival?</dt><dd>Solo con el código del sorteo oficial, que cerró el 10 de noviembre. Con el código se compran las entradas desde el 11 de noviembre a las 12:00 p.&nbsp;m. hora de Miami, hasta agotarse.</dd>
   <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
   <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
   <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Siete canciones ya están en streaming.</dd>
@@ -1251,17 +1280,17 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
-    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
-    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL"],
+    "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL", "Forbes"],
 }
 def creditos(slug):
     c = CREDITOS.get(slug)
