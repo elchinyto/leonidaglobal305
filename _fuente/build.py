@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 11 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 12 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -297,6 +297,7 @@ document.querySelectorAll(".yt-btn").forEach(function(b){b.addEventListener("cli
 });});
 </script>"""
 TRAILERS = [
+    ("_yl5ELcmugI", "Tráiler de precarga", "10 de noviembre de 2026", "Un clip de unos 30 segundos con escenas de Jason y Lucia, grabado en PS5, que Rockstar publicó el día que se abrió la precarga. Suena \"Blood in Your Eyes\", de Tove Lo, una canción nueva de GTA VI: The Album."),
     ("rz1B4B2yBZY", "Tráiler de lanzamiento", "15 de octubre de 2026", "Grabado dentro del juego en PS5. Un golpe fácil sale mal y Jason y Lucia terminan metidos en una conspiración que cruza todo Leonida. Suena \"Flower in a Hurricane\", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard."),
     ("tJbzMqJGH4k", "An Extended Look", "27 de agosto de 2026", "Unos 27 minutos de juego y escenas sin cortes, estrenados primero en Netflix. Jason y Lucia escapan de una redada con la droga, cenan con Brian Heder, hacen de conductores de fuga para Raul Bautista y trabajan de seguridad en una fiesta. Todo lo que se vio está en <a href=\"todo-lo-confirmado.html\">Todo lo confirmado</a>."),
     ("VQRLujxTm3c", "Tráiler 2", "6 de mayo de 2025", "Presentó por su nombre a Jason Duval y Lucia Caminos, y al reparto: Cal Hampton, Brian Heder, Boobie Ike, Dre'Quan Priest, Real Dimez y Raul Bautista."),
@@ -617,7 +618,7 @@ conf = f"""
 <ul>
   <li>Sin microtransacciones en el modo historia. Esto no aplica al futuro modo online.</li>
   <li>Rockstar dice que no usó IA generativa en el desarrollo.</li>
-  <li>La demo corría en una PS5 base a 30 FPS. No hay modo a 60 FPS confirmado ni detalles de mejoras para PS5 Pro.</li>
+  <li>Rockstar confirmó que el juego apunta a <strong>30 FPS en todas las consolas</strong>, incluida la PS5 Pro. No anunció un modo a 60 FPS. Lo detallamos más abajo.</li>
   <li>La interfaz se puede personalizar para mostrar muy poca información en pantalla.</li>
 </ul>
 
@@ -716,6 +717,17 @@ conf = f"""
   <li>Rockstar y PlayStation anunciaron <strong>GTA VI: The Festival</strong>, un concierto el 21 de noviembre en Mana Wynwood, Miami, con Travis Scott, Cardi B, Justice, Metro Boomin y otros artistas del juego. Los detalles están en la <a href="musica-radios-gta-6.html">página de música</a>.</li>
 </ul>
 
+<h2>30 FPS y mejoras en PS5 Pro (10 de noviembre)</h2>
+<p>Con la apertura de la precarga, Rockstar publicó los datos técnicos del juego en consolas:</p>
+<ul>
+  <li><strong>30 FPS como objetivo</strong> en PS5 y Xbox Series X|S. Rockstar dice que busca exprimir al máximo las dos plataformas. No anunció un modo rendimiento ni a 60 FPS.</li>
+  <li><strong>PS5 Pro:</strong> también a 30 FPS, pero con imagen más nítida gracias a <strong>PSSR</strong> (el reescalado de Sony) y <strong>sombras con trazado de rayos</strong>, que solo tiene esta consola.</li>
+  <li><strong>PS5 y PS5 Pro:</strong> vibración háptica del DualSense en todo el juego, audio 3D Tempest y cargas más rápidas. Rockstar repite que el juego "se juega mejor" en PS5.</li>
+  <li>Hay <strong>Remote Play</strong> en PlayStation y Xbox. En Xbox Cloud Gaming (incluida Xbox One) corre con los ajustes de la Xbox Series S.</li>
+  <li>Rockstar no dio cifras de resolución.</li>
+</ul>
+<p>Ese mismo día salió un <a href="trailers-gta-6.html">tráiler corto de la precarga</a>, con "Blood in Your Eyes" de Tove Lo.</p>
+
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
 <p>Rockstar invitó a TGG, elrubius, Davy Jones y Mike ShowSha a ver gameplay en Edimburgo sin jugarlo. Estos detalles salen de lo que contaron ellos:</p>
 <ul>
@@ -805,7 +817,7 @@ equipo = f"""
 <p class="lede">Tele, monitor, almacenamiento, sillas, accesorios, libros y merch para tener todo listo antes del 19 de noviembre, con opciones económicas y de gama alta.</p>
 <p class="disclosure">Como afiliado de Amazon, este sitio gana una comisión por compras que califiquen, sin costo extra para ti. Los precios cambian a menudo: revisa el precio final en la tienda.</p>
 
-<div class="note"><strong>Antes de comprar, esto importa.</strong> En la demo de prensa GTA 6 corría a 30 FPS en una PS5 normal, y Rockstar no ha confirmado un modo a 60 FPS. Por eso, para este juego pesa más una buena imagen (HDR, contraste, colores) que una tasa de refresco altísima. Aun así, busca HDMI 2.1 y VRR: son los que te dejan aprovechar un posible modo rendimiento o la PS5 Pro.</div>
+<div class="note"><strong>Antes de comprar, esto importa.</strong> Rockstar confirmó que GTA 6 apunta a 30 FPS en todas las consolas, incluida la PS5 Pro, sin modo a 60 FPS anunciado. Por eso, para este juego pesa más una buena imagen (HDR, contraste, colores) que una tasa de refresco altísima. Aun así, HDMI 2.1 y VRR te sirven para otros juegos y por si llega un modo rendimiento más adelante. Si tienes PS5 Pro, ganas imagen más nítida (PSSR) y sombras con trazado de rayos.</div>
 
 <h2>Televisores</h2>
 <div class="picks">
@@ -1028,6 +1040,7 @@ musica = f"""
   <li>Se puede reservar en <strong>vinilo</strong> (normal y edición limitada) y <strong>CD</strong>, y guardar en las plataformas de streaming.</li>
   <li>La canción de Travis Scott la produjo Guy-Manuel de Homem-Christo, de Daft Punk.</li>
   <li><strong>Justice</strong> compuso la banda sonora original (el score) del juego. Su sencillo "Flower in a Hurricane", con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard, suena en el tráiler de lanzamiento del 15 de octubre y está incluido en el álbum.</li>
+  <li>El tráiler de la precarga, del 10 de noviembre, adelantó otra canción del álbum: <strong>"Blood in Your Eyes", de Tove Lo</strong>.</li>
 </ul>
 <h3>Los 7 sencillos que ya están en streaming</h3>
 <div class="tbl"><table>
@@ -1166,15 +1179,16 @@ trailers = f"""
 <span class="mile">Videos</span>
 <h1>Todos los tráilers de GTA 6 y el Extended Look</h1>
 {UPD}
-<p class="lede">Los tres tráilers oficiales de Rockstar y el Extended Look, el video de casi media hora con gameplay, del más nuevo al más antiguo. Toca uno para verlo aquí mismo.</p>
+<p class="lede">Los tráilers oficiales de Rockstar, incluido el corto de la precarga, y el Extended Look, el video de casi media hora con gameplay, del más nuevo al más antiguo. Toca uno para verlo aquí mismo.</p>
 {_tr}
 {AD}
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
-  <dt>¿Cuántos tráilers tiene GTA 6?</dt><dd>Tres oficiales: el tráiler 1 (diciembre de 2023), el tráiler 2 (mayo de 2025) y el tráiler de lanzamiento (15 de octubre de 2026). Además está el Extended Look (27 de agosto de 2026), un video más largo con gameplay.</dd>
+  <dt>¿Cuántos tráilers tiene GTA 6?</dt><dd>Cuatro oficiales: el tráiler 1 (diciembre de 2023), el tráiler 2 (mayo de 2025), el tráiler de lanzamiento (15 de octubre de 2026) y el corto de la precarga (10 de noviembre de 2026). Además está el Extended Look (27 de agosto de 2026), un video más largo con gameplay.</dd>
+  <dt>¿Qué canción suena en el tráiler de la precarga?</dt><dd>"Blood in Your Eyes", de Tove Lo, una de las canciones nuevas de GTA VI: The Album.</dd>
   <dt>¿Dónde ver el Extended Look de GTA 6?</dt><dd>Se estrenó en Netflix y seis horas después llegó gratis al canal de YouTube de Rockstar. Lo puedes ver en esta misma página.</dd>
   <dt>¿Qué canción suena en el tráiler de lanzamiento?</dt><dd>"Flower in a Hurricane", de Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard. Justice también compuso la banda sonora original del juego.</dd>
-  <dt>¿Los tráilers están grabados en el juego?</dt><dd>Sí. Rockstar indica que el tráiler 2 y el de lanzamiento se capturaron dentro del juego en una PS5.</dd>
+  <dt>¿Los tráilers están grabados en el juego?</dt><dd>Sí. Rockstar indica que el tráiler 2, el de lanzamiento y el de la precarga se capturaron dentro del juego en una PS5.</dd>
 </dl>
 {YT_JS}
 {AFF}"""
@@ -1296,11 +1310,11 @@ CREDITOS = {
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
-    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming"],
-    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom"],
-    "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia"],
+    "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer"],
+    "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL", "Forbes"],
