@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 12 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 13 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -1163,8 +1163,24 @@ hora = f"""
   <li><strong>Espacio:</strong> Rockstar confirmó que la precarga ocupa hasta 212 GB, según la consola. Déjalo libre antes del 10 de noviembre.</li>
 </ul>
 
+<h2>Directo de 24 horas en YouTube</h2>
+<p>YouTube anunció un directo de 24 horas para el lanzamiento en su canal oficial (@YouTube), con más de 30 creadores de más de una docena de países jugando GTA VI, programas en vivo y cobertura desde Miami. Es un evento de YouTube, no de Rockstar.</p>
+<div class="tbl"><table>
+  <thead><tr><th>Lugar</th><th>Previa (con RDCWorld)</th><th>Empieza el maratón</th></tr></thead>
+  <tbody>
+    <tr><td>Miami / EE.UU. costa este</td><td class="num">23:00 · 18 nov</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>México (centro)</td><td class="num">22:00 · 18 nov</td><td class="num">23:00 · 18 nov</td></tr>
+    <tr><td>Colombia, Perú y Ecuador</td><td class="num">23:00 · 18 nov</td><td class="num">00:00 · 19 nov</td></tr>
+    <tr><td>Argentina y Chile</td><td class="num">01:00 · 19 nov</td><td class="num">02:00 · 19 nov</td></tr>
+    <tr><td>España (península)</td><td class="num">05:00 · 19 nov</td><td class="num">06:00 · 19 nov</td></tr>
+    <tr><td>UTC</td><td class="num">04:00 · 19 nov</td><td class="num">05:00 · 19 nov</td></tr>
+  </tbody>
+</table></div>
+<p>Entre los creadores anunciados están JuanSGuarnizo y Rivers, además de Caylus, Jelly, Zhong, Jake Baldino, Cinna, Loserfruit, Kinda Funny Games y Total Gaming. YouTube también dio sus cifras: más de 40.000 millones de vistas en videos de GTA VI antes del lanzamiento.</p>
+
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
+  <dt>¿A qué hora empieza el directo de 24 horas de GTA 6 en YouTube?</dt><dd>La previa empieza el 18 de noviembre a las 11:00 p.&nbsp;m. hora de Miami y el maratón de 24 horas arranca a la medianoche del 19, en el canal oficial de YouTube.</dd>
   <dt>¿A qué hora sale GTA 6 en México?</dt><dd>A las 00:00 del 19 de noviembre, hora del centro de México, según la PlayStation Store.</dd>
   <dt>¿A qué hora sale GTA 6 en España?</dt><dd>A las 00:00 del 19 de noviembre en la península; en Canarias, a las 23:00 del 18.</dd>
   <dt>¿A qué hora sale GTA 6 en Argentina, Colombia o Chile?</dt><dd>A las 00:00 del 19 de noviembre, hora local, según la PlayStation Store.</dd>
@@ -1315,7 +1331,7 @@ CREDITOS = {
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
-    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire"],
+    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL", "Forbes"],
 }
