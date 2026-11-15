@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 14 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 15 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -356,7 +356,7 @@ index = f"""
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
   <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales y el Extended Look.</p></a></li>
   <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Edge, Game Informer, Dazed, TROISCOULEURS y LOVE: qué trae cada una y cómo conseguirlas.</p></a></li>
-  <li><a href="musica-radios-gta-6.html"><span class="mile">Música</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, The Album y el Original Score de Justice.</p></a></li>
+  <li><a href="musica-radios-gta-6.html"><span class="mile">Nuevo</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, la lista filtrada de las 34 canciones de The Album y el Original Score de Justice.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
   <li><a href="equipo-gta-6.html"><span class="mile">Equipo</span><h3>Equipo para GTA 6</h3><p>Teles, monitores y SSD económicos y de gama alta.</p></a></li>
@@ -1051,6 +1051,47 @@ musica = f"""
   <tbody>{_singles}</tbody>
 </table></div>
 
+<h3>La lista completa de The Album (filtrada, sin confirmar)</h3>
+<p>El 14 de noviembre se filtró la lista de las 34 canciones. Según NME, una tienda de discos vendió un vinilo antes de tiempo y las fotos de la contraportada se difundieron en redes. Rockstar no ha publicado la lista oficial, así que tómala como <span class="tag no">Reportado</span> hasta el 19 de noviembre. Las canciones que ya se conocían aparecen en el orden filtrado, lo que le da credibilidad.</p>
+<p>Estos son los artistas que aparecen, en el orden de la lista filtrada:</p>
+<ol>
+  <li>Justice con Michael McDonald</li>
+  <li>Yung Lean con Future y Metro Boomin ("That's It")</li>
+  <li>Playboi Carti</li>
+  <li>Travis Scott ("RHYNO")</li>
+  <li>CA7RIEL y Paco Amoroso, PinkPantheress, Fred again.. y Étienne de Crécy ("Sexy Magic")</li>
+  <li>Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard ("Flower in a Hurricane")</li>
+  <li>Dua Lipa</li>
+  <li>Morgan Wallen ("Last Thing You Need")</li>
+  <li>Jhayco</li>
+  <li>Fuerza Regida</li>
+  <li>Rauw Alejandro ("Macacoa 2000")</li>
+  <li>A Boogie Wit Da Hoodie con Elkan</li>
+  <li>Burna Boy</li>
+  <li>Gunna</li>
+  <li>Kodak Black y Don Toliver</li>
+  <li>Young Thug</li>
+  <li>Tee Grizzley</li>
+  <li>Don Toliver</li>
+  <li>Cardi B</li>
+  <li>JT</li>
+  <li>Jennie</li>
+  <li>Tove Lo ("Blood in Your Eyes")</li>
+  <li>Zara Larsson</li>
+  <li>Camila Cabello</li>
+  <li>Fcukers</li>
+  <li>Arca</li>
+  <li>Rina Sawayama</li>
+  <li>Rose Gray</li>
+  <li>Lana Del Rey</li>
+  <li>Kali Uchis y Helado Negro</li>
+  <li>Omar Apollo</li>
+  <li>Keith Richards ("Bright Lights, Big City")</li>
+  <li>Jesse Johnson y Dâm-Funk</li>
+  <li>Stanley Clarke, Yussef Dayes y Robert Glasper</li>
+</ol>
+<div class="note"><strong>Mucho latino en la lista.</strong> Si la filtración es correcta, además de Rauw Alejandro y CA7RIEL y Paco Amoroso, el álbum trae a Jhayco, Fuerza Regida, Arca, Kali Uchis con Helado Negro y Omar Apollo. NME cuenta que el tema de Lana Del Rey es una canción suya que llevaba más de diez años sin publicar.</div>
+
 <div class="picks">
   {pick("Vinilo", "", "GTA VI: The Album en vinilo", "Para coleccionistas: el disco oficial con las 34 canciones originales del juego.", "Grand Theft Auto VI The Album vinyl")}
   {pick("CD", "", "GTA VI: The Album en CD", "La opción más económica en físico para tener la banda sonora.", "Grand Theft Auto VI The Album CD")}
@@ -1097,6 +1138,7 @@ musica = f"""
   <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
   <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
   <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Siete canciones ya están en streaming.</dd>
+  <dt>¿Qué artistas salen en GTA VI: The Album?</dt><dd>Rockstar ha confirmado a Travis Scott, Morgan Wallen, Rauw Alejandro, Yung Lean, Keith Richards, Tove Lo, Justice y CA7RIEL y Paco Amoroso, entre otros. La lista filtrada el 14 de noviembre suma a Dua Lipa, Playboi Carti, Cardi B, Jennie, Camila Cabello, Lana Del Rey, Fuerza Regida y Jhayco, pero no es oficial hasta que salga el álbum.</dd>
   <dt>¿Quién hace la música original de GTA 6?</dt><dd>El dúo electrónico Justice compuso la banda sonora original. Rockstar lo dio a conocer con el tráiler de lanzamiento.</dd>
   <dt>¿Cuándo sale el Original Score de GTA 6?</dt><dd>El 11 de diciembre de 2026, en streaming, CD y vinilo. El tema "Pusher", con Gesaffelstein, ya se puede escuchar.</dd>
   <dt>¿Qué diferencia hay entre The Album y el Original Score?</dt><dd>The Album trae 34 canciones de artistas como Travis Scott o Rauw Alejandro y sale el 19 de noviembre. El Original Score es la música instrumental del juego hecha por Justice y sale el 11 de diciembre.</dd>
@@ -1333,7 +1375,7 @@ CREDITOS = {
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
-    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
     "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
