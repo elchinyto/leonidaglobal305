@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 15 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 16 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -730,6 +730,16 @@ conf = f"""
 
 <h2>Macca &amp; Friends, la serie animada del juego (13 de noviembre)</h2>
 <p>Rockstar publicó un teaser de <strong>Macca &amp; Friends</strong>, una serie de dibujos animados que existe dentro del mundo de GTA VI. Sigue las aventuras de Macca, un caimán, y sus amigos de los pantanos por todo Leonida. Es el primer adelanto de la tele del juego, igual que en GTA V había programas para ver en el sofá de casa. Rockstar no dijo en qué canal sale ni dio más detalles.</p>
+
+<h2>¿Cuánto dura GTA 6? (reportado, 15 de noviembre)</h2>
+<p>Rockstar no ha dado una duración oficial. Esto es lo que hay a tres días del estreno:</p>
+<ul>
+  <li><strong>Lo único que viene de Rockstar:</strong> en una entrevista con The New York Times en agosto, Rob Nelson, codirector de Rockstar North, contó que <strong>su propia partida le llevó unas 80 horas</strong>, contando la historia y algunos objetivos opcionales con consecuencias en la trama. Es su experiencia personal, no una cifra oficial del juego.</li>
+  <li><strong>Historia principal: unas 50 horas</strong> sin actividades secundarias ni misiones opcionales, según Insider Gaming (Tom Henderson), que dice haber hablado con gente que ya lo jugó. <span class="tag no">Sin confirmar</span></li>
+  <li><strong>Casi 100 misiones principales repartidas en cinco capítulos</strong>, según el mismo reporte. Como referencia, GTA V tenía unas 70. <span class="tag no">Sin confirmar</span></li>
+  <li><strong>Platino o 100 %: cerca de 200 horas</strong>, en buena parte por tener que fotografiar las más de 170 especies de animales de Leonida, al estilo de RDR2. <span class="tag no">Sin confirmar</span></li>
+</ul>
+<p>Si se cumple, la historia de GTA VI duraría más que la de GTA V (unas 32-35 horas) y quedaría a la par de Red Dead Redemption 2.</p>
 
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
 <p>Rockstar invitó a TGG, elrubius, Davy Jones y Mike ShowSha a ver gameplay en Edimburgo sin jugarlo. Estos detalles salen de lo que contaron ellos:</p>
@@ -1372,7 +1382,7 @@ CREDITOS = {
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu", "The New York Times", "Notebookcheck", "Tech4Gamers"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+"],
