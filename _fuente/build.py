@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 16 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 17 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -436,7 +436,7 @@ fecha = f"""
 <h2>Récord de reservas y Xbox One por la nube (10 de noviembre)</h2>
 <ul>
   <li><strong>Sony y Microsoft confirmaron que GTA 6 es el juego más reservado de la historia</strong> en sus tiendas: PlayStation lo dijo en el PlayStation Blog y Microsoft en Xbox Wire, donde lo llama el título más reservado de todos los tiempos en la Microsoft Store.</li>
-  <li>Ninguna de las dos dio cifras. La firma de análisis Sensor Tower estima unos <strong>9.7 millones de reservas</strong> y unos 942 millones de dólares, cerca de tres de cada cuatro en PS5. Es una estimación, no un dato oficial.</li>
+  <li>Ninguna de las dos dio cifras. La firma de análisis Sensor Tower estimaba unos 9.7 millones de reservas el 10 de noviembre. Su cálculo más reciente, del 16 de noviembre, sube a <strong>unos 14.94 millones de reservas digitales</strong> y unos <strong>1,450 millones de dólares</strong> entre PS5 y Xbox Series X|S. Es una estimación, no un dato oficial: Take-Two sigue sin dar cifras.</li>
   <li><strong>Se podrá jugar en Xbox One</strong>, pero solo en streaming por <strong>Xbox Cloud Gaming</strong>, desde el 19 de noviembre a la 1:00 a.&nbsp;m. hora de Miami (ET). También se puede jugar por la nube en Xbox Series X|S. En la nube corre con los ajustes gráficos de la Xbox Series S.</li>
   <li>El juego hay que comprarlo aparte. Desde el 11 de noviembre, en los países donde está disponible, Microsoft vende tiempo de juego en la nube sin necesidad de suscripción a Game Pass. La disponibilidad cambia según el país y el dispositivo.</li>
   <li>No hay versión nativa para PS4 ni Xbox One, y Microsoft no mencionó el streaming en PC ni en el navegador.</li>
@@ -448,7 +448,7 @@ fecha = f"""
 <dl class="faq">
   <dt>¿Hay edición de coleccionista de GTA 6?</dt><dd>Hay una caja de coleccionista de $399.99 en la Rockstar Store, pero no incluye el juego. Las ediciones del juego son solo la estándar y la Ultimate.</dd>
   <dt>¿GTA 6 sale en PS4 o Xbox One?</dt><dd>En PS4, no. En Xbox One no hay versión instalable, pero Microsoft confirmó que se podrá jugar en streaming por Xbox Cloud Gaming desde el 19 de noviembre a la 1:00 a.&nbsp;m. hora de Miami. Necesitas comprar el juego y tener acceso a la nube de Xbox (Game Pass o tiempo de juego en la nube, donde se venda). Las versiones nativas son solo para PS5 y Xbox Series X|S.</dd>
-  <dt>¿Cuántas reservas tiene GTA 6?</dt><dd>Sony y Microsoft confirmaron que es el juego más reservado de la historia en la PlayStation Store y en la Microsoft Store, pero no dieron cifras. Sensor Tower estima unos 9.7 millones de reservas entre las dos plataformas.</dd>
+  <dt>¿Cuántas reservas tiene GTA 6?</dt><dd>Sony y Microsoft confirmaron que es el juego más reservado de la historia en la PlayStation Store y en la Microsoft Store, pero no dieron cifras. Sensor Tower estima unos 14.94 millones de reservas digitales entre las dos plataformas al 16 de noviembre, por unos 1,450 millones de dólares. Es una estimación, no una cifra oficial.</dd>
   <dt>¿A qué hora se desbloquea?</dt><dd>Según las fichas de la PlayStation Store, a medianoche del 19 de noviembre en la hora de cada tienda: en Miami y Nueva York a las 00:00, en España a las 00:00 y en México a las 00:00. Rockstar no lo ha anunciado de forma oficial. Tienes la tabla completa en <a href="hora-de-salida-gta-6.html">hora de salida por país</a>.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
   <dt>¿Cuándo sale GTA 6 en PC?</dt><dd>Rockstar no lo ha anunciado. GamesBeat reportó, citando fuentes propias, que la versión de PC llegaría en el primer trimestre de 2027, pero no está confirmado.</dd>
@@ -740,6 +740,16 @@ conf = f"""
   <li><strong>Platino o 100 %: cerca de 200 horas</strong>, en buena parte por tener que fotografiar las más de 170 especies de animales de Leonida, al estilo de RDR2. <span class="tag no">Sin confirmar</span></li>
 </ul>
 <p>Si se cumple, la historia de GTA VI duraría más que la de GTA V (unas 32-35 horas) y quedaría a la par de Red Dead Redemption 2.</p>
+
+<h2>Vice City llega a NBA 2K27 (16 de noviembre)</h2>
+<p>2K, que pertenece a Take-Two igual que Rockstar, anunció el primer crossover entre las dos casas: la <strong>Temporada 3 de NBA 2K27</strong> gira alrededor de Vice City.</p>
+<ul>
+  <li><strong>Fechas:</strong> del 27 de noviembre al 15 de enero.</li>
+  <li><strong>Qué trae:</strong> un parque en la playa de Vice City con hoteles pastel, superautos y una estatua de Macca the Gator, la cancha del Sahara Arena, camisetas de Vice City y Los Santos, uniformes de Burger Shot y Cluckin' Bell, y eventos por tiempo limitado como "Conquer Leonida" y un 5 contra 5 llamado "Neon vs Noir".</li>
+  <li><strong>NBA 2K27 Vice City Edition:</strong> $39.99, con Bam Adebayo en la portada. Incluye el Pro Pass de la Temporada 3 y potenciadores.</li>
+  <li><strong>Miembros de GTA+</strong> en PS5 y Xbox Series X|S: acceso gratis a NBA 2K27 edición estándar durante la temporada, 20 % de descuento en una compra y un paquete de objetos.</li>
+  <li>No se puede jugar nada de GTA VI dentro de NBA 2K27: es contenido de ropa, canchas y eventos.</li>
+</ul>
 
 <h2>Reportado por creadores (sin confirmación oficial)</h2>
 <p>Rockstar invitó a TGG, elrubius, Davy Jones y Mike ShowSha a ver gameplay en Edimburgo sin jugarlo. Estos detalles salen de lo que contaron ellos:</p>
@@ -1240,7 +1250,7 @@ hora = f"""
   <dt>¿A qué hora sale GTA 6 en México?</dt><dd>A las 00:00 del 19 de noviembre, hora del centro de México, según la PlayStation Store.</dd>
   <dt>¿A qué hora sale GTA 6 en España?</dt><dd>A las 00:00 del 19 de noviembre en la península; en Canarias, a las 23:00 del 18.</dd>
   <dt>¿A qué hora sale GTA 6 en Argentina, Colombia o Chile?</dt><dd>A las 00:00 del 19 de noviembre, hora local, según la PlayStation Store.</dd>
-  <dt>¿Se puede jugar antes cambiando la región a Nueva Zelanda?</dt><dd>El juego se desbloquea según la región de la cuenta y de la tienda donde lo compraste. Cambiar de región no está garantizado que funcione y puede darte problemas con la compra, así que no lo recomendamos.</dd>
+  <dt>¿Se puede jugar antes cambiando la región a Nueva Zelanda?</dt><dd>El juego se desbloquea según la región de la cuenta y de la tienda donde lo compraste. Cambiar de región no está garantizado que funcione y puede darte problemas con la compra, así que no lo recomendamos. El 17 de noviembre se reportaron algunas cuentas de PlayStation suspendidas (error WS-116331-5) entre gente que probó el truco de Nueva Zelanda, aunque no está claro que la causa sea el cambio de región. Sony no ha comentado nada.</dd>
   <dt>¿Rockstar confirmó estos horarios?</dt><dd>No. Rockstar solo ha confirmado la fecha del 19 de noviembre. Los horarios son los que aparecen en la PlayStation Store y pueden cambiar.</dd>
 </dl>
 {AFF}"""
@@ -1379,15 +1389,15 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
-    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu", "The New York Times", "Notebookcheck", "Tech4Gamers"],
+    "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu", "The New York Times", "Notebookcheck", "Tech4Gamers", "2K", "Beebom", "ComicBook.com"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
-    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak"],
+    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak", "VGTimes", "SourceVI"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL", "Forbes"],
 }
