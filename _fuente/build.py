@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 17 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 18 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="notas-resenas-gta-6.html"><span class="mile">Nuevo</span><h3>Reseñas y notas de GTA 6</h3><p>99 en Metacritic: las notas de IGN, GameSpot, Game Informer, Edge y más, y lo que critica la prensa.</p></a></li>
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
   <li><a href="hora-de-salida-gta-6.html"><span class="mile">Nuevo</span><h3>Hora de salida por país</h3><p>A qué hora se desbloquea GTA 6 en tu país según la PlayStation Store.</p></a></li>
   <li><a href="mapa-leonida.html"><span class="mile">Mapa</span><h3>Mapa de Leonida</h3><p>Las seis regiones confirmadas y su versión real en Florida.</p></a></li>
@@ -401,7 +402,7 @@ fecha = f"""
     <tr><td>Tamaño en Xbox Series X|S, según la base de datos de Microsoft</td><td class="num">209.86 GiB (unos 225 GB)</td><td><span class="tag no">Reportado</span></td></tr>
     <tr><td>Póster oficial y mapa de Leonida para descargar gratis</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
-    <tr><td>Reseñas de la prensa (se reporta que las copias ya llegaron a los medios)</td><td class="num">18 nov 2026</td><td><span class="tag no">Reportado</span></td></tr>
+    <tr><td>Reseñas de la prensa (<a href="notas-resenas-gta-6.html">ver las notas</a>)</td><td class="num">18 nov 2026</td><td><span class="tag ok">Publicadas</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Xbox Cloud Gaming en Xbox One y Xbox Series X|S (1:00 a.&nbsp;m. hora de Miami)</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Versión de PC</td><td class="num">Sin fecha (reportado: primer trimestre de 2027)</td><td><span class="tag no">No anunciado</span></td></tr>
@@ -452,7 +453,7 @@ fecha = f"""
   <dt>¿A qué hora se desbloquea?</dt><dd>Según las fichas de la PlayStation Store, a medianoche del 19 de noviembre en la hora de cada tienda: en Miami y Nueva York a las 00:00, en España a las 00:00 y en México a las 00:00. Rockstar no lo ha anunciado de forma oficial. Tienes la tabla completa en <a href="hora-de-salida-gta-6.html">hora de salida por país</a>.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
   <dt>¿Cuándo sale GTA 6 en PC?</dt><dd>Rockstar no lo ha anunciado. GamesBeat reportó, citando fuentes propias, que la versión de PC llegaría en el primer trimestre de 2027, pero no está confirmado.</dd>
-  <dt>¿Habrá reseñas antes del lanzamiento?</dt><dd>Rockstar no ha anunciado cuándo se publican las reseñas. Insider Gaming reportó el 27 de octubre que ya se están enviando copias a algunos medios, y el insider NateTheHate dice que el embargo de reseñas termina el 18 de noviembre, un día antes del lanzamiento. Nada de eso es oficial.</dd>
+  <dt>¿Ya hay reseñas de GTA 6?</dt><dd>Sí. Las reseñas de la prensa salieron el 18 de noviembre, un día antes del lanzamiento, y el juego tiene un 99 en Metacritic. Tienes las notas de cada medio en <a href="notas-resenas-gta-6.html">reseñas y notas de GTA 6</a>.</dd>
   <dt>¿Cuánto espacio necesito para GTA 6?</dt><dd>Rockstar dice que hasta 212 GB, según la consola. El 6 de noviembre, la base de datos de la tienda de Microsoft se actualizó y lista la versión de Xbox Series X|S en 209.86 GiB, que son unos 225 GB en la unidad que usan las consolas. Esa cifra no la dio Rockstar y puede cambiar con un parche del primer día, así que lo prudente es dejar libres unos 230 GB.</dd>
   <dt>¿Viene GTA Online incluido?</dt><dd>Rockstar no ha anunciado un modo online para el día del lanzamiento. El lanzamiento confirmado es de un jugador.</dd>
 </dl>
@@ -1373,7 +1374,69 @@ revistas = f"""
 </dl>
 {AFF}"""
 
+# ---------- Reseñas ----------
+resenas = f"""
+<span class="mile">Reseñas</span>
+<h1>Reseñas de GTA 6: 99 en Metacritic</h1>
+{UPD}
+<p class="lede">Las reseñas de GTA VI salieron el <strong>18 de noviembre</strong>, un día antes del lanzamiento, y la nota media en Metacritic quedó en <strong>99 sobre 100</strong>. Es la nota más alta de la página, empatada con The Legend of Zelda: Ocarina of Time (1998).</p>
+<div class="note"><strong>Ojo:</strong> la media de Metacritic puede moverse unas décimas mientras entran más reseñas. Por lo que se ha publicado, los medios analizaron la versión de PS5. Todavía no hay reseñas centradas en Xbox Series X|S.</div>
+
+<h2>Las notas de cada medio</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Medio</th><th>Nota</th></tr></thead>
+  <tbody>
+    <tr><td>IGN</td><td class="num">10/10</td></tr>
+    <tr><td>GameSpot</td><td class="num">10/10</td></tr>
+    <tr><td>Game Informer</td><td class="num">10/10</td></tr>
+    <tr><td>Edge</td><td class="num">10/10</td></tr>
+    <tr><td>Push Square</td><td class="num">10/10</td></tr>
+    <tr><td>GAMINGbible</td><td class="num">10/10</td></tr>
+    <tr><td>Eurogamer</td><td class="num">5/5</td></tr>
+    <tr><td>GamesRadar+</td><td class="num">5/5</td></tr>
+    <tr><td>VGC</td><td class="num">5/5</td></tr>
+    <tr><td>The Guardian</td><td class="num">5/5</td></tr>
+    <tr><td>Giant Bomb</td><td class="num">5/5</td></tr>
+    <tr><td>TheSixthAxis</td><td class="num">9/10</td></tr>
+    <tr><td>The New York Times</td><td class="num">Sin nota ("Critic's Pick")</td></tr>
+  </tbody>
+</table></div>
+<p>Según GAMINGbible, las notas individuales recogidas en Metacritic van del 9 al 10. Ninguna de las grandes reseñas le pone menos de un 9.</p>
+
+{AD}
+
+<h2>Lo que más gusta</h2>
+<ul>
+  <li><strong>Jason y Lucia.</strong> Es lo más repetido. Edge dice que su relación está movida por el amor y no por el miedo, y The New York Times la describe como un juego sobre el amor y las relaciones de pareja.</li>
+  <li><strong>El mundo abierto.</strong> Push Square lo llama el mundo abierto más profundo y denso desde Red Dead Redemption 2. GameSpot destaca el nivel de detalle de Leonida.</li>
+  <li><strong>Todo mejora respecto a GTA V.</strong> GamesRadar+ dice que no hay una parte de la jugabilidad de la saga que no haya mejorado. VGC lo llama una obra maestra moderna en historia, jugabilidad, gráficos, música y tecnología.</li>
+  <li><strong>Más parecido a Red Dead Redemption 2.</strong> Respec dice que se siente más como una secuela de Red Dead Redemption 2 que de GTA V.</li>
+</ul>
+
+<h2>Lo que se critica</h2>
+<p>Las pegas son pocas y menores:</p>
+<ul>
+  <li><strong>Rendimiento:</strong> VGC habla de pequeños problemas de rendimiento que no estropean la experiencia.</li>
+  <li><strong>Historia muy larga:</strong> TheSixthAxis dice que, en una historia tan larga, la necesidad de subir siempre la apuesta le quita algo de impacto.</li>
+  <li><strong>Sin GTA Online todavía:</strong> el juego sale sin modo online nuevo. Rockstar no le ha puesto fecha.</li>
+</ul>
+
+<h2>¿Cuánto dura?</h2>
+<p>Las reseñas no dan una duración oficial de la historia. Lo que sí cuentan los críticos son sus horas de juego: el de GAMINGbible pasó de las 70 horas y algunos medios hablan de 100 o más sin haber visto todo el mapa. La duración de 50 horas de historia que se reportó antes del lanzamiento sigue sin confirmar; la tienes en <a href="todo-lo-confirmado.html">todo lo confirmado</a>.</p>
+
+<h2>Nominado a Juego del Año en The Game Awards</h2>
+<p>Las nominaciones de The Game Awards 2026 se anunciaron el 17 de noviembre, antes de que el juego saliera, y GTA VI está entre los candidatos a <strong>Juego del Año</strong>. Según PC Gamer y Tom's Guide, suma <strong>8 nominaciones</strong> en total. La gala es el <strong>10 de diciembre</strong> en Los Ángeles, y el público puede votar hasta el 9 de diciembre.</p>
+
+<dl class="faq">
+  <dt>¿Qué nota tiene GTA 6 en Metacritic?</dt><dd>99 sobre 100, la más alta de la página, empatada con Ocarina of Time. La media puede variar un poco mientras se suman reseñas.</dd>
+  <dt>¿Qué nota le dio IGN a GTA 6?</dt><dd>Un 10/10. GameSpot, Game Informer y Edge también le dieron un 10.</dd>
+  <dt>¿Las reseñas hablan de la versión de Xbox?</dt><dd>Por ahora no. Los medios analizaron la versión de PS5. Cuando haya análisis de Xbox Series X|S, sobre todo de la Series S, lo añadimos aquí.</dd>
+  <dt>¿Cuándo sale GTA 6?</dt><dd>El 19 de noviembre de 2026 en PS5 y Xbox Series X|S. Mira <a href="hora-de-salida-gta-6.html">a qué hora sale en tu país</a>.</dd>
+</dl>
+{AFF}"""
+
 pages = {
+    "notas-resenas-gta-6.html": (resenas, "Reseñas de GTA 6: notas de IGN, GameSpot y Metacritic | Leonida Global 305", "GTA 6 tiene un 99 en Metacritic. Las notas de IGN, GameSpot, Game Informer, Edge, Eurogamer y más, lo que gusta y lo que critica la prensa.", True),
     "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Edge, Game Informer, Dazed y más | Leonida Global 305", "Las ediciones de Edge, Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
     "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
     "trailers-gta-6.html": (trailers, "Todos los tráilers de GTA 6 y el Extended Look | Leonida Global 305", "Mira los tres tráilers oficiales de GTA 6 y el Extended Look de 27 minutos, con lo que muestra cada uno.", True),
@@ -1389,6 +1452,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "notas-resenas-gta-6.html": ["Metacritic", "PC Gamer", "GAMINGbible", "Forbes", "Tom's Guide", "ABC7"],
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
