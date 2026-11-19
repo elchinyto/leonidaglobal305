@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("trofeos-logros-gta-6.html", "Trofeos"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 18 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 19 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="trofeos-logros-gta-6.html"><span class="mile">Nuevo</span><h3>Trofeos y logros de GTA 6</h3><p>Los 55 trofeos: el platino, los más difíciles y cómo se consigue cada uno.</p></a></li>
   <li><a href="notas-resenas-gta-6.html"><span class="mile">Nuevo</span><h3>Reseñas y notas de GTA 6</h3><p>99 en Metacritic: las notas de IGN, GameSpot, Game Informer, Edge y más, y lo que critica la prensa.</p></a></li>
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
   <li><a href="hora-de-salida-gta-6.html"><span class="mile">Nuevo</span><h3>Hora de salida por país</h3><p>A qué hora se desbloquea GTA 6 en tu país según la PlayStation Store.</p></a></li>
@@ -1434,8 +1435,140 @@ resenas = f"""
   <dt>¿Cuándo sale GTA 6?</dt><dd>El 19 de noviembre de 2026 en PS5 y Xbox Series X|S. Mira <a href="hora-de-salida-gta-6.html">a qué hora sale en tu país</a>.</dd>
 </dl>
 {AFF}"""
+trofeos = f"""
+<span class="mile">Guía</span>
+<h1>Trofeos y logros de GTA 6: la lista completa de los 55</h1>
+{UPD}
+<p class="lede">GTA VI tiene <strong>55 trofeos</strong> en PS5: <strong>1 platino, 2 de oro, 6 de plata y 46 de bronce</strong>. En Xbox Series X|S son los mismos 55 logros y suman <strong>1.000 de Gamerscore</strong>. 28 están ocultos porque destripan la historia.</p>
+<div class="note"><strong>Ojo:</strong> la lista viene de las guías de trofeos publicadas el 18 de noviembre, que coinciden en nombres, cantidad y grados. Rockstar no la publicó en su web. Dejamos los nombres originales en inglés, que son los que verás en la consola, y la condición traducida.</div>
+
+<h2>Resumen rápido</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Tipo</th><th>Cantidad</th></tr></thead>
+  <tbody>
+    <tr><td>Platino</td><td class="num">1</td></tr>
+    <tr><td>Oro</td><td class="num">2</td></tr>
+    <tr><td>Plata</td><td class="num">6</td></tr>
+    <tr><td>Bronce</td><td class="num">46</td></tr>
+    <tr><td>Ocultos (historia y secretos)</td><td class="num">28</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Los trofeos más difíciles</h2>
+<ul>
+  <li><strong>A Long Road (oro):</strong> llegar al 100% del juego. Es el más largo de todos.</li>
+  <li><strong>You Gotta Know When to Get Off (oro):</strong> terminar la historia (la misión final).</li>
+  <li><strong>Cunning Stunts (plata):</strong> 250 saltos de acrobacia repartidos por el mapa.</li>
+  <li><strong>You WAiNKer! (plata):</strong> hacer WAiNK It en 100 lugares.</li>
+  <li><strong>Maximum Withdrawal (plata):</strong> robar 5 cámaras acorazadas de bancos y escapar.</li>
+</ul>
+
+{AD}
+
+<h2>Trofeos sin spoilers</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Trofeo</th><th>Grado</th><th>Cómo se consigue</th></tr></thead>
+  <tbody>
+    <tr><td>Vice Got a Price!</td><td>Platino</td><td>Consigue todos los demás trofeos.</td></tr>
+    <tr><td>A Long Road</td><td>Oro</td><td>Llega al 100% del juego.</td></tr>
+    <tr><td>Cunning Stunts</td><td>Plata</td><td>Completa 250 acrobacias (saltos de acrobacia).</td></tr>
+    <tr><td>The Shootist</td><td>Plata</td><td>Saca medalla de oro en todos los desafíos del campo de tiro.</td></tr>
+    <tr><td>Strangers &amp; Freaks</td><td>Plata</td><td>Completa 8 cadenas de misiones de desconocidos por Leonida.</td></tr>
+    <tr><td>Don't Touch My Deck</td><td>Plata</td><td>Completa 3 colecciones de cartas coleccionables.</td></tr>
+    <tr><td>You WAiNKer!</td><td>Plata</td><td>Haz WAiNK It en 100 lugares.</td></tr>
+    <tr><td>Maximum Withdrawal</td><td>Plata</td><td>Roba 5 cámaras acorazadas de bancos y escapa.</td></tr>
+    <tr><td>Master of None</td><td>Bronce</td><td>Prueba cada tipo de actividad una vez.</td></tr>
+    <tr><td>Top Fun</td><td>Bronce</td><td>Gana una carrera de drones Top Fun en cada ubicación.</td></tr>
+    <tr><td>Earn Cash, Not Kudos</td><td>Bronce</td><td>Gana 20 carreras distintas.</td></tr>
+    <tr><td>Baited My Tackle</td><td>Bronce</td><td>Gánale a Cal en un desafío de pesca.</td></tr>
+    <tr><td>Stick Fiddler</td><td>Bronce</td><td>Completa un juego de arcade.</td></tr>
+    <tr><td>Positive Mental Attitude</td><td>Bronce</td><td>Medita en todos los puntos de meditación de Leonida.</td></tr>
+    <tr><td>One Last Thing</td><td>Bronce</td><td>Completa 50 desafíos.</td></tr>
+    <tr><td>Hot Together</td><td>Bronce</td><td>Quítate un nivel de búsqueda de 4 estrellas junto a tu pareja.</td></tr>
+    <tr><td>Retail Therapy</td><td>Bronce</td><td>Roba 3 tiendas seguidas con tu pareja sin perder el nivel de búsqueda.</td></tr>
+    <tr><td>Whip It Good</td><td>Bronce</td><td>Descubre 100 vehículos.</td></tr>
+    <tr><td>Gunslinger</td><td>Bronce</td><td>Elimina a 5 enemigos en un solo uso del Combat Focus.</td></tr>
+    <tr><td>Sneakthief</td><td>Bronce</td><td>Roba una joyería sin que te detecten.</td></tr>
+    <tr><td>A Classic Blitz Play</td><td>Bronce</td><td>Roba un camión blindado y escapa.</td></tr>
+    <tr><td>The Goodtime State</td><td>Bronce</td><td>Explora todo Leonida.</td></tr>
+    <tr><td>Pest Control</td><td>Bronce</td><td>Roba una operación ilegal de cada banda.</td></tr>
+    <tr><td>Dime on the Dollar</td><td>Bronce</td><td>Gana 250.000 $ blanqueando billetes marcados con tus contactos.</td></tr>
+    <tr><td>Treat Yo Self</td><td>Bronce</td><td>Gasta 100.000 $ en tiendas.</td></tr>
+    <tr><td>Little Boxes</td><td>Bronce</td><td>Compra todas las propiedades de garaje.</td></tr>
+    <tr><td>On the Spot</td><td>Bronce</td><td>Registra 10 vehículos en la app Scooter Bros.</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Trofeos ocultos de la historia (spoilers)</h2>
+<p>Estos llevan nombres de capítulos y misiones. Si no quieres saber nada de la historia, sáltate esta sección.</p>
+<details><summary>Mostrar los trofeos de la historia</summary>
+<div class="tbl"><table>
+  <thead><tr><th>Trofeo</th><th>Grado</th><th>Cómo se consigue</th></tr></thead>
+  <tbody>
+    <tr><td>You Gotta Know When to Get Off</td><td>Oro</td><td>Termina la historia (misión final).</td></tr>
+    <tr><td>Just Like Paradise</td><td>Bronce</td><td>Completa "Gone Fishing".</td></tr>
+    <tr><td>Paradise Lost</td><td>Bronce</td><td>Completa el capítulo 1.</td></tr>
+    <tr><td>T**s Ass Drug Money</td><td>Bronce</td><td>Completa el capítulo 2.</td></tr>
+    <tr><td>Vice City, Baby!</td><td>Bronce</td><td>Completa el capítulo 3.</td></tr>
+    <tr><td>Top of the World, Ma</td><td>Bronce</td><td>Completa el capítulo 4.</td></tr>
+    <tr><td>Trust</td><td>Bronce</td><td>Completa "Breakfast Run".</td></tr>
+    <tr><td>Break the Bank</td><td>Bronce</td><td>Completa "The Cartel Heist".</td></tr>
+    <tr><td>Family Matters</td><td>Bronce</td><td>Completa "Child's Play".</td></tr>
+    <tr><td>DWNFALL</td><td>Bronce</td><td>Completa "Headliners".</td></tr>
+    <tr><td>Hi-Jacked</td><td>Bronce</td><td>Completa "VCIA Takedown".</td></tr>
+    <tr><td>Snow Storm</td><td>Bronce</td><td>Completa "Operation Savage Glory".</td></tr>
+    <tr><td>Road to Rehabilitation</td><td>Bronce</td><td>Completa la última misión de Andy.</td></tr>
+    <tr><td>This Was No Boat Accident</td><td>Bronce</td><td>Completa la última misión de Kenton.</td></tr>
+    <tr><td>The Lone Rider</td><td>Bronce</td><td>Completa la última misión de Billy.</td></tr>
+    <tr><td>Supply &amp; Demand</td><td>Bronce</td><td>Completa la última misión de Randy.</td></tr>
+    <tr><td>Spin On This!</td><td>Bronce</td><td>Completa la última misión de Tyrone.</td></tr>
+    <tr><td>Fair Game</td><td>Bronce</td><td>Caza un animal único para Bret.</td></tr>
+  </tbody>
+</table></div>
+</details>
+
+<h2>Trofeos ocultos secretos (spoilers)</h2>
+<p>Estos tienen pistas en vez de instrucciones. Las guías todavía no explican cómo se sacan varios de ellos; los iremos completando cuando estén comprobados.</p>
+<details><summary>Mostrar los trofeos secretos</summary>
+<div class="tbl"><table>
+  <thead><tr><th>Trofeo</th><th>Grado</th><th>Pista</th></tr></thead>
+  <tbody>
+    <tr><td>Catch Me If You Can</td><td>Bronce</td><td>Haz una "salida no programada" en el aeropuerto VCIA.</td></tr>
+    <tr><td>Challenging Tank</td><td>Bronce</td><td>"Hace calor en estos Rhinos" (los tanques de la saga).</td></tr>
+    <tr><td>In The Beginning...</td><td>Bronce</td><td>Tómate un cóctel con vistas en Ocean Beach.</td></tr>
+    <tr><td>Capital Offense</td><td>Bronce</td><td>Sal rompiendo el escaparate de un concesionario, al estilo clásico.</td></tr>
+    <tr><td>Let's Go Bowling</td><td>Bronce</td><td>Algo que pasa en la bolera de Kolt &amp; Associates.</td></tr>
+    <tr><td>Personal Best</td><td>Bronce</td><td>"Una sociedad con atractivo para las masas."</td></tr>
+    <tr><td>Actions Speak Louder</td><td>Bronce</td><td>"Decisiones tomadas (para bien o para mal)."</td></tr>
+    <tr><td>Bad Luck, I Guess</td><td>Bronce</td><td>"A la segunda va la vencida."</td></tr>
+    <tr><td>The Truth Is Out There</td><td>Bronce</td><td>"¿Qué demonios acaba de pasar?"</td></tr>
+    <tr><td>Ten Pin</td><td>Bronce</td><td>Derriba a alguien con un ataque cuerpo a cuerpo desde un vehículo.</td></tr>
+  </tbody>
+</table></div>
+</details>
+
+{AD}
+
+<h2>¿Hay trofeos que se pueden perder?</h2>
+<p>Por ahora ninguna guía ha confirmado trofeos que se pierdan para siempre. Algunas avisan de que las cadenas de misiones de desconocidos podrían depender del avance de la historia, pero no está comprobado. Mientras tanto, lo prudente es:</p>
+<ul>
+  <li>Guardar a mano antes de las misiones grandes de la historia y de los golpes.</li>
+  <li>Hacer las misiones de desconocidos en cuanto aparezcan en el mapa.</li>
+  <li>Ir apuntando lo que llevas de los trofeos de "todos los lugares" (drones, meditación, WAiNK It, campo de tiro), que son los que más se olvidan.</li>
+</ul>
+
+<dl class="faq">
+  <dt>¿Cuántos trofeos tiene GTA 6?</dt><dd>55: 1 platino, 2 de oro, 6 de plata y 46 de bronce. En Xbox son 55 logros que suman 1.000 de Gamerscore.</dd>
+  <dt>¿Cómo se llama el platino de GTA 6?</dt><dd>"Vice Got a Price!". Se consigue al tener los otros 54 trofeos.</dd>
+  <dt>¿Hay que llegar al 100% para el platino?</dt><dd>Sí. "A Long Road" pide el 100% del juego, así que sin el 100% no hay platino.</dd>
+  <dt>¿Hay trofeos de GTA Online?</dt><dd>No. GTA VI salió sin modo online y los 55 trofeos son del modo historia.</dd>
+  <dt>¿Cuánto se tarda en sacar el platino?</dt><dd>Todavía no hay una cifra fiable. Los críticos pasaron de 70 horas sin ver todo el mapa, así que cuenta con bastante más que eso.</dd>
+</dl>
+{AFF}"""
+
 
 pages = {
+    "trofeos-logros-gta-6.html": (trofeos, "Trofeos y logros de GTA 6: lista completa de los 55 | Leonida Global 305", "Los 55 trofeos y logros de GTA 6: platino, oros, platas y bronces, cómo se consigue cada uno y los ocultos de la historia.", True),
     "notas-resenas-gta-6.html": (resenas, "Reseñas de GTA 6: notas de IGN, GameSpot y Metacritic | Leonida Global 305", "GTA 6 tiene un 99 en Metacritic. Las notas de IGN, GameSpot, Game Informer, Edge, Eurogamer y más, lo que gusta y lo que critica la prensa.", True),
     "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Edge, Game Informer, Dazed y más | Leonida Global 305", "Las ediciones de Edge, Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
     "hora-de-salida-gta-6.html": (hora, "¿A qué hora sale GTA 6? Hora de desbloqueo por país | Leonida Global 305", "A qué hora se desbloquea GTA 6 el 19 de noviembre en España, México, Argentina, Colombia, EE.UU. y más países, según la PlayStation Store.", True),
@@ -1452,6 +1585,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "trofeos-logros-gta-6.html": ["PC Gamer", "CULTR", "TechWiser", "Of Zen and Computing"],
     "notas-resenas-gta-6.html": ["Metacritic", "PC Gamer", "GAMINGbible", "Forbes", "Tom's Guide", "ABC7"],
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
