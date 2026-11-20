@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("trofeos-logros-gta-6.html", "Trofeos"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -245,11 +245,11 @@ function gtInit(){{new google.translate.TranslateElement({{pageLanguage:"es",aut
             + head + '</head><body>' + page + '</body></html>')
 
 AFF = """<aside class="aff" aria-label="Recomendados">
-  <strong>Prepárate para el 19 de noviembre</strong>
+  <strong>Saca el máximo a GTA 6</strong>
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 19 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 20 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="guia-principiantes-gta-6.html"><span class="mile">Nuevo</span><h3>Guía para empezar GTA 6</h3><p>Las 22 misiones del Capítulo 1, cómo no perder tu dinero y las primeras formas de ganar plata.</p></a></li>
   <li><a href="trofeos-logros-gta-6.html"><span class="mile">Nuevo</span><h3>Trofeos y logros de GTA 6</h3><p>Los 55 trofeos: el platino, los más difíciles y cómo se consigue cada uno.</p></a></li>
   <li><a href="notas-resenas-gta-6.html"><span class="mile">Nuevo</span><h3>Reseñas y notas de GTA 6</h3><p>99 en Metacritic: las notas de IGN, GameSpot, Game Informer, Edge y más, y lo que critica la prensa.</p></a></li>
   <li><a href="fecha-precio-ediciones.html"><span class="mile">Lanzamiento</span><h3>Fecha, precio y ediciones</h3><p>Cuánto cuesta, qué trae cada edición y cuándo se puede precargar.</p></a></li>
@@ -1567,7 +1568,93 @@ trofeos = f"""
 {AFF}"""
 
 
+principiantes = f"""
+<span class="mile">Guía</span>
+<h1>Guía para empezar GTA 6: misiones del Capítulo 1, dinero y consejos</h1>
+{UPD}
+<p class="lede">Lo que conviene saber en tus primeras horas en Leonida: las <strong>22 misiones del Capítulo 1</strong> en orden, cómo <strong>no perder tu dinero</strong>, cómo moverte sin teletransporte, cómo quedarte con los autos que robas y las primeras formas de ganar plata. Sin spoilers de la trama.</p>
+<div class="note"><strong>Ojo:</strong> todo lo de esta guía aparece en al menos dos de las guías publicadas tras el lanzamiento. Lo que solo decía una fuente lo dejamos fuera. Los nombres de misiones y apps van en inglés, que es como salen en el juego.</div>
+
+<h2>Las misiones del Capítulo 1 en orden</h2>
+<p>El Capítulo 1 tiene <strong>22 misiones de historia</strong>. Las guías coinciden en nombres y orden:</p>
+<div class="tbl"><table>
+  <thead><tr><th>#</th><th>Misión</th></tr></thead>
+  <tbody>
+    <tr><td class="num">1</td><td>Prologue</td></tr>
+    <tr><td class="num">2</td><td>Gone Fishing</td></tr>
+    <tr><td class="num">3</td><td>Gear Up</td></tr>
+    <tr><td class="num">4</td><td>Just a Scratch</td></tr>
+    <tr><td class="num">5</td><td>Lab Fees</td></tr>
+    <tr><td class="num">6</td><td>Unwanted Attention</td></tr>
+    <tr><td class="num">7</td><td>Pipework</td></tr>
+    <tr><td class="num">8</td><td>Hey Arnold!</td></tr>
+    <tr><td class="num">9</td><td>Island Dreams</td></tr>
+    <tr><td class="num">10</td><td>Feng Shui</td></tr>
+    <tr><td class="num">11</td><td>Coming Home</td></tr>
+    <tr><td class="num">12</td><td>Buck Me</td></tr>
+    <tr><td class="num">13</td><td>Clean Up After Donnie</td></tr>
+    <tr><td class="num">14</td><td>Down To Earth</td></tr>
+    <tr><td class="num">15</td><td>Clear Skies</td></tr>
+    <tr><td class="num">16</td><td>Day Release</td></tr>
+    <tr><td class="num">17</td><td>Swamped</td></tr>
+    <tr><td class="num">18</td><td>Don Gone</td></tr>
+    <tr><td class="num">19</td><td>Recalibration</td></tr>
+    <tr><td class="num">20</td><td>Tourist Trap</td></tr>
+    <tr><td class="num">21</td><td>Home Sweet Home</td></tr>
+    <tr><td class="num">22</td><td>Discharge Time</td></tr>
+  </tbody>
+</table></div>
+<p>El Capítulo 2 empieza con <strong>What's In The Bag?</strong> y <strong>Ambulance Chaser</strong>.</p>
+<div class="note"><strong>Punto sin retorno:</strong> las guías avisan de que el Capítulo 1 tiene un punto sin retorno hacia el final. Si quieres explorar o hacer actividades de la zona inicial, hazlo antes de las últimas misiones del capítulo.</div>
+{AD}
+
+<h2>No pierdas tu dinero: guárdalo en el banco</h2>
+<ul>
+  <li><strong>El efectivo que llevas encima se pierde</strong> si te matan o te arrestan. Es el error más común de las primeras horas.</li>
+  <li>En la misión <strong>Buck Me</strong> (la 12 del Capítulo 1) se desbloquea <strong>BuckMe</strong>, la app del banco en el teléfono. Desde ahí puedes buscar el cajero más cercano y depositar.</li>
+  <li>Lo que está en la cuenta de BuckMe no se pierde al morir ni al ser arrestado. Pasa por un cajero cada vez que juntes una cantidad que te dolería perder.</li>
+</ul>
+
+<h2>Cómo moverte: no hay viaje rápido clásico</h2>
+<p>GTA VI no tiene el viaje rápido de otros juegos. La alternativa es <strong>RydeMe</strong>, la app de viajes del teléfono: pides un auto y puedes ir sentado o <strong>saltarte el trayecto pagando 100 dólares</strong> extra.</p>
+
+<h2>Quédate con los autos que robas</h2>
+<p>Un auto robado no es tuyo para siempre. Para quedártelo, llévalo a un <strong>Pay 'n' Spray</strong> y regístralo como vehículo personal. Algunos autos de gama alta pueden pedir más avance en la historia antes de dejarte registrarlos.</p>
+
+<h2>Usa el modo Focus antes de entrar</h2>
+<p>Con el modo Focus activo, las <strong>puertas conectadas a la alarma se ven en rojo</strong>. Míralas antes de colarte en un edificio o de dar un golpe para no hacer saltar la alarma sin querer.</p>
+
+<h2>Primeras formas de ganar dinero</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Método</th><th>Qué saber</th></tr></thead>
+  <tbody>
+    <tr><td>Robar tiendas</td><td>La forma más directa al principio. Las tiendas pequeñas pagan poco, unos pocos miles como mucho, pero se pueden hacer desde el inicio.</td></tr>
+    <tr><td>Vender a peristas</td><td>Los objetos robados se venden a peristas (fences). Cada uno paga distinto según el tipo de mercancía, así que compara antes de vender.</td></tr>
+    <tr><td>Buscar tesoros bajo el agua</td><td>El buceo de tesoros con Kenton se presenta en el Capítulo 1 (misión Island Dreams) y las guías lo recomiendan como dinero fácil al empezar.</td></tr>
+    <tr><td>Robar y vender autos</td><td>Los autos robados se pueden vender o registrar en un Pay 'n' Spray para quedártelos.</td></tr>
+    <tr><td>Bancos</td><td>Son los golpes que más pagan, pero es mejor dejarlos para más adelante en la historia.</td></tr>
+  </tbody>
+</table></div>
+<p>Y lo de siempre: deposita en BuckMe después de cada golpe.</p>
+
+<h2>¿Y los trucos?</h2>
+<p>GTA VI tiene trucos, pero <strong>no funcionan al empezar</strong>: la lista se desbloquea al terminar la historia, y cada truco pide además cumplir una condición. Entre ellos hay uno de <strong>250.000 dólares</strong>, que se desbloquea al acabar la historia de Jason y Lucia. Para tus primeras horas, olvídate de ellos.</p>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuántas misiones tiene el Capítulo 1 de GTA 6?</dt><dd>22 misiones de historia, desde Prologue hasta Discharge Time.</dd>
+  <dt>¿Se pierde el dinero al morir en GTA 6?</dt><dd>Sí, el efectivo que llevas encima. El dinero depositado en BuckMe está a salvo.</dd>
+  <dt>¿Cuándo se desbloquea el banco BuckMe?</dt><dd>En la misión Buck Me, la número 12 del Capítulo 1.</dd>
+  <dt>¿GTA 6 tiene viaje rápido?</dt><dd>No como en otros juegos. Con la app RydeMe puedes pedir un auto y pagar 100 dólares para saltarte el viaje.</dd>
+  <dt>¿Cómo me quedo un auto robado?</dt><dd>Regístralo en un Pay 'n' Spray como vehículo personal.</dd>
+  <dt>¿Se pueden usar trucos desde el principio?</dt><dd>No. Los trucos se desbloquean después de terminar la historia.</dd>
+</dl>
+<p>¿Vas a por el platino? Mira la <a href="trofeos-logros-gta-6.html">lista de los 55 trofeos</a>.</p>
+{AFF}"""
+
+
 pages = {
+    "guia-principiantes-gta-6.html": (principiantes, "Guía para empezar GTA 6: misiones del Capítulo 1 y dinero | Leonida Global 305", "Las 22 misiones del Capítulo 1 de GTA 6 en orden, cómo no perder tu dinero con BuckMe, RydeMe, Pay 'n' Spray y las primeras formas de ganar dinero.", True),
     "trofeos-logros-gta-6.html": (trofeos, "Trofeos y logros de GTA 6: lista completa de los 55 | Leonida Global 305", "Los 55 trofeos y logros de GTA 6: platino, oros, platas y bronces, cómo se consigue cada uno y los ocultos de la historia.", True),
     "notas-resenas-gta-6.html": (resenas, "Reseñas de GTA 6: notas de IGN, GameSpot y Metacritic | Leonida Global 305", "GTA 6 tiene un 99 en Metacritic. Las notas de IGN, GameSpot, Game Informer, Edge, Eurogamer y más, lo que gusta y lo que critica la prensa.", True),
     "revistas-gta-6.html": (revistas, "Las revistas de GTA 6: Edge, Game Informer, Dazed y más | Leonida Global 305", "Las ediciones de Edge, Game Informer, Dazed, TROISCOULEURS y LOVE dedicadas a GTA 6: fotos de los ejemplares, qué trae cada una y cómo conseguirlas.", True),
@@ -1585,6 +1672,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "guia-principiantes-gta-6.html": ["Push Square", "VGC", "Kotaku", "GTABase", "NoobFeed", "Beebom", "GTA BOOM"],
     "trofeos-logros-gta-6.html": ["PC Gamer", "CULTR", "TechWiser", "Of Zen and Computing"],
     "notas-resenas-gta-6.html": ["Metacritic", "PC Gamer", "GAMINGbible", "Forbes", "Tom's Guide", "ABC7"],
     "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase"],
