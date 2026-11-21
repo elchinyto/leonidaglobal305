@@ -164,7 +164,7 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 20 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 21 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="trucos-gta-6.html"><span class="mile">Nuevo</span><h3>Trucos de GTA 6</h3><p>Cómo se desbloquean los 61 trucos, cómo meterlos y los códigos conocidos, incluido el de 250,000 dólares.</p></a></li>
   <li><a href="guia-principiantes-gta-6.html"><span class="mile">Nuevo</span><h3>Guía para empezar GTA 6</h3><p>Las 22 misiones del Capítulo 1, cómo no perder tu dinero y las primeras formas de ganar plata.</p></a></li>
   <li><a href="trofeos-logros-gta-6.html"><span class="mile">Nuevo</span><h3>Trofeos y logros de GTA 6</h3><p>Los 55 trofeos: el platino, los más difíciles y cómo se consigue cada uno.</p></a></li>
   <li><a href="notas-resenas-gta-6.html"><span class="mile">Nuevo</span><h3>Reseñas y notas de GTA 6</h3><p>99 en Metacritic: las notas de IGN, GameSpot, Game Informer, Edge y más, y lo que critica la prensa.</p></a></li>
@@ -406,6 +407,7 @@ fecha = f"""
     <tr><td>Resultados de Take-Two (último informe antes del lanzamiento)</td><td class="num">9 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Reseñas de la prensa (<a href="notas-resenas-gta-6.html">ver las notas</a>)</td><td class="num">18 nov 2026</td><td><span class="tag ok">Publicadas</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Primeras ventas oficiales: 3,790 millones de dólares el primer día</td><td class="num">20 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Xbox Cloud Gaming en Xbox One y Xbox Series X|S (1:00 a.&nbsp;m. hora de Miami)</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Versión de PC</td><td class="num">Sin fecha (reportado: primer trimestre de 2027)</td><td><span class="tag no">No anunciado</span></td></tr>
     <tr><td>Nuevo GTA Online</td><td class="num">Sin fecha</td><td><span class="tag no">No anunciado</span></td></tr>
@@ -427,6 +429,15 @@ fecha = f"""
   <li>La precarga ocupa <strong>hasta 212 GB</strong>, según la consola. Rockstar recomienda dejar espacio libre cuanto antes.</li>
   <li>El 19 de noviembre la web oficial publicará gratis, para descargar e imprimir, el <strong>póster de la portada y el mapa de Leonida</strong>.</li>
   <li>Poco después del lanzamiento, la Rockstar Store venderá ese póster en físico, a doble cara, por <strong>$0.99</strong>, o lo regalará con cualquier compra.</li>
+</ul>
+<h2>Ventas del primer día: 3,790 millones de dólares (20 de noviembre)</h2>
+<p>Take-Two publicó un comunicado oficial con las primeras cifras del lanzamiento:</p>
+<ul>
+  <li>Las ventas en tienda del primer día llegaron a <strong>3,790 millones de dólares</strong> en todo el mundo, según estimaciones de la propia empresa hasta el final del 19 de noviembre.</li>
+  <li>Antes del lanzamiento ya se habían vendido <strong>32.5 millones de unidades</strong>, un récord en todas las plataformas.</li>
+  <li>Take-Two lo presenta como <strong>el mayor lanzamiento de la historia del entretenimiento</strong>, por encima de cualquier película, disco o juego.</li>
+  <li>Sam Houser, fundador de Rockstar, dijo que el estudio entra en "un nuevo capítulo" con GTA VI y que están "muy agradecidos" por la respuesta de los jugadores.</li>
+  <li>No hubo cifras de jugadores ni ventas en unidades del día del lanzamiento.</li>
 </ul>
 <h2>Lo que dijo Take-Two (9 de noviembre)</h2>
 <p>En su último informe de resultados antes del estreno, Take-Two volvió a confirmar el 19 de noviembre y dejó varios datos:</p>
@@ -451,7 +462,8 @@ fecha = f"""
 <dl class="faq">
   <dt>¿Hay edición de coleccionista de GTA 6?</dt><dd>Hay una caja de coleccionista de $399.99 en la Rockstar Store, pero no incluye el juego. Las ediciones del juego son solo la estándar y la Ultimate.</dd>
   <dt>¿GTA 6 sale en PS4 o Xbox One?</dt><dd>En PS4, no. En Xbox One no hay versión instalable, pero Microsoft confirmó que se podrá jugar en streaming por Xbox Cloud Gaming desde el 19 de noviembre a la 1:00 a.&nbsp;m. hora de Miami. Necesitas comprar el juego y tener acceso a la nube de Xbox (Game Pass o tiempo de juego en la nube, donde se venda). Las versiones nativas son solo para PS5 y Xbox Series X|S.</dd>
-  <dt>¿Cuántas reservas tiene GTA 6?</dt><dd>Sony y Microsoft confirmaron que es el juego más reservado de la historia en la PlayStation Store y en la Microsoft Store, pero no dieron cifras. Sensor Tower estima unos 14.94 millones de reservas digitales entre las dos plataformas al 16 de noviembre, por unos 1,450 millones de dólares. Es una estimación, no una cifra oficial.</dd>
+  <dt>¿Cuánto vendió GTA 6 el primer día?</dt><dd>Según Take-Two, 3,790 millones de dólares en ventas en tienda el primer día, y 32.5 millones de unidades vendidas antes del lanzamiento. Es el mayor estreno de la historia del entretenimiento.</dd>
+  <dt>¿Cuántas reservas tiene GTA 6?</dt><dd>Take-Two confirmó 32.5 millones de unidades vendidas antes del lanzamiento. Sony y Microsoft confirmaron que es el juego más reservado de la historia en la PlayStation Store y en la Microsoft Store, pero no dieron cifras. Sensor Tower estima unos 14.94 millones de reservas digitales entre las dos plataformas al 16 de noviembre, por unos 1,450 millones de dólares. Es una estimación, no una cifra oficial.</dd>
   <dt>¿A qué hora se desbloquea?</dt><dd>Según las fichas de la PlayStation Store, a medianoche del 19 de noviembre en la hora de cada tienda: en Miami y Nueva York a las 00:00, en España a las 00:00 y en México a las 00:00. Rockstar no lo ha anunciado de forma oficial. Tienes la tabla completa en <a href="hora-de-salida-gta-6.html">hora de salida por país</a>.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
   <dt>¿Cuándo sale GTA 6 en PC?</dt><dd>Rockstar no lo ha anunciado. GamesBeat reportó, citando fuentes propias, que la versión de PC llegaría en el primer trimestre de 2027, pero no está confirmado.</dd>
@@ -1638,7 +1650,7 @@ principiantes = f"""
 <p>Y lo de siempre: deposita en BuckMe después de cada golpe.</p>
 
 <h2>¿Y los trucos?</h2>
-<p>GTA VI tiene trucos, pero <strong>no funcionan al empezar</strong>: la lista se desbloquea al terminar la historia, y cada truco pide además cumplir una condición. Entre ellos hay uno de <strong>250.000 dólares</strong>, que se desbloquea al acabar la historia de Jason y Lucia. Para tus primeras horas, olvídate de ellos.</p>
+<p>GTA VI tiene trucos, pero <strong>no funcionan al empezar</strong>: la lista se desbloquea al terminar la historia, y cada truco pide además cumplir una condición. Entre ellos hay uno de <strong>250.000 dólares</strong>, que se desbloquea al acabar la historia de Jason y Lucia. Para tus primeras horas, olvídate de ellos. Cuando llegues, tienes <a href="trucos-gta-6.html">todos los códigos aquí</a>.</p>
 
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
@@ -1653,7 +1665,88 @@ principiantes = f"""
 {AFF}"""
 
 
+trucos = f"""
+<span class="mile">Guía</span>
+<h1>Trucos de GTA 6: todos los códigos y cómo desbloquearlos</h1>
+{UPD}
+<p class="lede">GTA VI tiene <strong>61 trucos</strong>, pero no se pueden usar desde el principio: primero hay que <strong>terminar la historia</strong> y después cumplir el reto de cada truco. Aquí tienes cómo se meten, los <strong>18 códigos</strong> que ya se conocen y qué pide cada uno.</p>
+<div class="note"><strong>Ojo:</strong> solo ponemos los códigos que coinciden en al menos cuatro guías publicadas tras el lanzamiento. Los demás todavía no se han descubierto, y aquí los marcamos como "sin descubrir". Los nombres de los trucos y vehículos van en inglés, que es como salen en el juego.</div>
+
+<h2>Cómo se desbloquean</h2>
+<ul>
+  <li>Los trucos <strong>solo aparecen al terminar la historia principal</strong>. Al pasar los créditos se abre una pestaña nueva, <strong>Cheats</strong>, dentro del menú <strong>Progress</strong>.</li>
+  <li>Cuatro trucos se desbloquean solo con acabar la historia: <strong>$250,000, Unlimited Focus, Attack Force y Cycle Weather</strong>.</li>
+  <li>El resto pide un reto propio: hacer 100 entrenamientos, ganar medallas en los campos de tiro, escapar de la policía muchas veces, completar desafíos de cada categoría, etc. En el menú Progress se ve cuánto te falta.</li>
+  <li>Si metes un código que aún no has desbloqueado, no pasa nada.</li>
+</ul>
+
+<h2>Cómo se meten los códigos</h2>
+<ol>
+  <li>Saca el teléfono con <strong>arriba en la cruceta</strong>.</li>
+  <li>Con el teléfono fuera, mantén <strong>L1 y pulsa R1</strong> en PS5, o <strong>LB y RB</strong> en Xbox Series X|S.</li>
+  <li>Sin soltar, mete la combinación con la cruceta. Los códigos son los mismos en las dos consolas.</li>
+</ol>
+<p>No hay trucos marcando números de teléfono como en GTA V. Y son solo para el modo historia.</p>
+
+<div class="note"><strong>Antes de usar un truco, guarda la partida.</strong> Según las guías, al activar un truco <strong>no puedes guardar</strong> y se <strong>desactivan los trofeos y logros</strong> durante esa sesión. Haz un guardado manual antes y vuelve a cargarlo cuando termines. Eso también significa que el dinero del truco de $250,000 no se queda en tu partida.</div>
+{AD}
+
+<h2>Los códigos que ya se conocen</h2>
+<p>A = arriba, B = abajo, I = izquierda, D = derecha, en la cruceta.</p>
+<div class="tbl"><table>
+  <thead><tr><th>Truco</th><th>Código</th><th>Cómo se desbloquea</th></tr></thead>
+  <tbody>
+    <tr><td>$250,000</td><td>A, D, B, I, A, I, B, D</td><td>Terminar la historia</td></tr>
+    <tr><td>Unlimited Focus (Focus infinito)</td><td>B, A, A, B, A, B, A, B, A, D</td><td>Terminar la historia</td></tr>
+    <tr><td>Attack Force</td><td>B, A, I, I, D, B, B, A, B</td><td>Terminar la historia</td></tr>
+    <tr><td>Cycle Weather (cambiar el clima)</td><td>B, D, A, B, D, A, D</td><td>Terminar la historia</td></tr>
+    <tr><td>Body Armor (chaleco)</td><td>B, A, I, A, A, A, A, A, B, B</td><td>Hacer 100 entrenamientos</td></tr>
+    <tr><td>Raise Heat Level</td><td>I, B, D, B, A, B, A</td><td>Escapar 25 veces de un nivel de búsqueda de 3 estrellas</td></tr>
+    <tr><td>Raise Wanted Level (subir búsqueda)</td><td>I, B, D, B, A, D, A</td><td>Escapar 50 veces de un nivel de búsqueda de 3 estrellas</td></tr>
+    <tr><td>Max Ammo (munición al máximo)</td><td>B, A, D, B, I, I, A, A, B, I</td><td>25 medallas de bronce o mejor en los campos de tiro</td></tr>
+    <tr><td>Infinite Ammo (munición infinita)</td><td>B, A, D, B, I, I, A, B, B, B</td><td>25 medallas de plata o mejor en los campos de tiro</td></tr>
+    <tr><td>No Reload (sin recargar)</td><td>B, A, D, B, I, I, A, B, B, A</td><td>25 medallas de oro en los campos de tiro</td></tr>
+    <tr><td>Exploding Balls</td><td>B, A, I, I, D, B, B, A, D</td><td>Dañar a 20 enemigos con explosivos</td></tr>
+    <tr><td>Vehicle Force</td><td>B, A, I, I, D, B, I, A, B</td><td>Matar a 25 enemigos atropellándolos</td></tr>
+    <tr><td>HVY Bulldozer</td><td>I, A, D, B, I, D, D, B</td><td>Descubrir la excavadora en el menú Progress</td></tr>
+    <tr><td>MTL Pumper (camión de bomberos)</td><td>I, A, D, B, I, D, D, A</td><td>Descubrir el camión de bomberos en el menú Progress</td></tr>
+    <tr><td>Maibatsu Boomazoom</td><td>I, A, D, B, I, I, A, I</td><td>Completar 5 desafíos de compras (Shopping)</td></tr>
+    <tr><td>Filtro Cataclysm</td><td>B, B, A, D, D, A, I, I, D, D</td><td>Descubrir el Martha's Vamos en el menú Progress</td></tr>
+    <tr><td>Filtro Dollhouse</td><td>B, B, A, D, D, A, I, I, B, D</td><td>Pasar 8 horas con tu pareja</td></tr>
+    <tr><td>Filtro Faded Glory</td><td>B, B, A, D, D, A, I, I, I, D</td><td>Robar 50 tiendas con tu pareja</td></tr>
+  </tbody>
+</table></div>
+<p>Ojo con los códigos que se parecen: Max Ammo, Infinite Ammo y No Reload solo cambian en los últimos botones, igual que los filtros. Mira bien el final antes de meterlos.</p>
+
+<h2>Los que faltan por descubrir</h2>
+<p>El resto de trucos ya se ve en la lista del juego con su reto, pero su código todavía no se conoce. Lo que pide cada grupo:</p>
+<div class="tbl"><table>
+  <thead><tr><th>Tipo</th><th>Trucos y reto</th></tr></thead>
+  <tbody>
+    <tr><td>Jugador</td><td>Drunk (gastar 2,500 dólares en alcohol), No Fall Damage (sobrevivir 20 caídas de 40 pies), Parachute (50 saltos en paracaídas o BASE desde 300 pies), Repair Vehicle (ganar 10 carreras en Gellhorn Raceway, Thrillbilly Mud Club y Boone Speedway), Unlimited Nitrous (50 saltos acrobáticos).</td></tr>
+    <tr><td>Combate</td><td>All Explosive Weapons (lanzar 100 granadas), Exploding Bottles (lanzar 100 molotov), Explosive Shotgun (dañar a 100 enemigos con explosivos), Hauners H-AT (destruir 100 vehículos), Incendiary Ammo (quemar a 100 enemigos).</td></tr>
+    <tr><td>Vehículos</td><td>La mayoría se consiguen completando 5 desafíos de una categoría o todos los de una categoría (Survival, Combat, Sports, Fitness, Criminal, Exploration, Vehicle, Shopping). El Hauners P-996 Lazer pide completar todos los desafíos, y el Inflatable Flamingo, destruir 50 flamencos de cocaína.</td></tr>
+    <tr><td>Clima y hora</td><td>Move Time Forward (encontrar 10 relojes coleccionables) y Pause Time of Day (encontrar 20).</td></tr>
+    <tr><td>Filtros</td><td>Golden Hour (4 horas de la mano con tu pareja), Bubblegum (las 24 cartas de Vice City Flamingos), Fisheye (pescar 100 peces), Fast Forward (meditar 50 veces), Dark Mirror (ganar 500,000 dólares vendiendo vehículos), Pixel Art (250,000 dólares vendiendo coleccionables), Hellscape (robar 100 vehículos de policía), Migraine (aguantar 6 minutos con 6 estrellas), entre otros.</td></tr>
+  </tbody>
+</table></div>
+<p>Iremos sumando códigos a la tabla a medida que se confirmen.</p>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuántos trucos tiene GTA 6?</dt><dd>61, repartidos entre jugador, combate, vehículos, clima y hora, y filtros de pantalla.</dd>
+  <dt>¿Cómo se ponen los trucos en GTA 6?</dt><dd>Saca el teléfono con arriba en la cruceta, mantén L1 y pulsa R1 (LB y RB en Xbox) y mete la combinación con la cruceta.</dd>
+  <dt>¿Se pueden usar trucos desde el principio?</dt><dd>No. Se desbloquean al terminar la historia, y cada uno pide además cumplir su propio reto.</dd>
+  <dt>¿Cuál es el truco de dinero de GTA 6?</dt><dd>$250,000: arriba, derecha, abajo, izquierda, arriba, izquierda, abajo, derecha. Se desbloquea al terminar la historia. Como no se puede guardar con trucos activos, ese dinero no se queda en tu partida.</dd>
+  <dt>¿Los trucos desactivan los trofeos?</dt><dd>Sí, según las guías: durante la sesión en la que los usas no se ganan trofeos ni logros y no se puede guardar. Guarda antes y recarga después.</dd>
+  <dt>¿Hay trucos con número de teléfono?</dt><dd>No. En GTA VI todos los trucos se meten con la cruceta.</dd>
+</dl>
+<p>¿Todavía no acabas la historia? Empieza por la <a href="guia-principiantes-gta-6.html">guía para empezar</a> y la <a href="trofeos-logros-gta-6.html">lista de trofeos</a>.</p>
+{AFF}"""
+
+
 pages = {
+    "trucos-gta-6.html": (trucos, "Trucos de GTA 6: todos los códigos para PS5 y Xbox | Leonida Global 305", "Los 61 trucos de GTA 6: cómo se desbloquean, cómo meter los códigos en PS5 y Xbox y los 18 códigos conocidos, incluido el de 250,000 dólares.", True),
     "guia-principiantes-gta-6.html": (principiantes, "Guía para empezar GTA 6: misiones del Capítulo 1 y dinero | Leonida Global 305", "Las 22 misiones del Capítulo 1 de GTA 6 en orden, cómo no perder tu dinero con BuckMe, RydeMe, Pay 'n' Spray y las primeras formas de ganar dinero.", True),
     "trofeos-logros-gta-6.html": (trofeos, "Trofeos y logros de GTA 6: lista completa de los 55 | Leonida Global 305", "Los 55 trofeos y logros de GTA 6: platino, oros, platas y bronces, cómo se consigue cada uno y los ocultos de la historia.", True),
     "notas-resenas-gta-6.html": (resenas, "Reseñas de GTA 6: notas de IGN, GameSpot y Metacritic | Leonida Global 305", "GTA 6 tiene un 99 en Metacritic. Las notas de IGN, GameSpot, Game Informer, Edge, Eurogamer y más, lo que gusta y lo que critica la prensa.", True),
@@ -1672,6 +1765,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "trucos-gta-6.html": ["VICE", "Red Bull", "Beebom", "SVG", "Gamer Tweak"],
     "guia-principiantes-gta-6.html": ["Push Square", "VGC", "Kotaku", "GTABase", "NoobFeed", "Beebom", "GTA BOOM"],
     "trofeos-logros-gta-6.html": ["PC Gamer", "CULTR", "TechWiser", "Of Zen and Computing"],
     "notas-resenas-gta-6.html": ["Metacritic", "PC Gamer", "GAMINGbible", "Forbes", "Tom's Guide", "ABC7"],
