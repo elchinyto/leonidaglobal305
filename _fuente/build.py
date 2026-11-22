@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 21 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 22 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="robos-atracos-gta-6.html"><span class="mile">Nuevo</span><h3>Robos y atracos de GTA 6</h3><p>Tiendas, joyerías, bancos y cámaras acorazadas de hasta 205,000 dólares, y los dos grandes golpes de la historia.</p></a></li>
   <li><a href="trucos-gta-6.html"><span class="mile">Nuevo</span><h3>Trucos de GTA 6</h3><p>Cómo se desbloquean los 61 trucos, cómo meterlos y los códigos conocidos, incluido el de 250,000 dólares.</p></a></li>
   <li><a href="guia-principiantes-gta-6.html"><span class="mile">Nuevo</span><h3>Guía para empezar GTA 6</h3><p>Las 22 misiones del Capítulo 1, cómo no perder tu dinero y las primeras formas de ganar plata.</p></a></li>
   <li><a href="trofeos-logros-gta-6.html"><span class="mile">Nuevo</span><h3>Trofeos y logros de GTA 6</h3><p>Los 55 trofeos: el platino, los más difíciles y cómo se consigue cada uno.</p></a></li>
@@ -1745,7 +1746,96 @@ trucos = f"""
 {AFF}"""
 
 
+robos = f"""
+<span class="mile">Guía</span>
+<h1>Robos y atracos de GTA 6: tiendas, bancos, cámaras acorazadas y golpes</h1>
+{UPD}
+<p class="lede">En GTA VI se puede robar casi cualquier negocio de Leonida: tiendas, casas de empeño, joyerías, prestamistas, bancos pequeños y las <strong>cámaras acorazadas</strong> de los bancos grandes, que dan hasta <strong>205,000 dólares</strong>. Aquí tienes cuándo se desbloquea cada tipo, cuánto pagan, cómo hacerlos sin que te pillen y los dos grandes golpes de la historia.</p>
+<div class="note"><strong>Ojo:</strong> solo ponemos lo que coincide en varias guías publicadas tras el lanzamiento. Las cantidades son las que reportan los jugadores, no cifras de Rockstar, y pueden variar en tu partida. Los nombres de misiones y negocios van en inglés, como salen en el juego.</div>
+
+<h2>Tipos de robo y cuándo se desbloquean</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Tipo</th><th>Cuántos hay</th><th>Cuándo se desbloquea</th><th>Botín aproximado</th></tr></thead>
+  <tbody>
+    <tr><td>Atracos a tiendas (stick-ups)</td><td class="num">91</td><td>Desde el principio</td><td>Poco, unos pocos miles</td></tr>
+    <tr><td>Casas de empeño (Smash 'n' Grab)</td><td class="num">15</td><td>Capítulo 2, tras la misión "Coffee Break"</td><td>1,000 a 12,000 dólares</td></tr>
+    <tr><td>Joyerías (Smash 'n' Grab)</td><td class="num">20</td><td>Capítulo 3, tras "Yasmani's Jewelry Jobs"</td><td>Hasta 25,000 dólares</td></tr>
+    <tr><td>Prestamistas (Payday Loans)</td><td class="num">7</td><td>Capítulo 3, tras "Credit Check"</td><td>Hasta 25,000 dólares</td></tr>
+    <tr><td>Bancos pequeños</td><td class="num">14</td><td>Capítulo 3, tras "Credit Check"</td><td>5,000 a 45,000 dólares</td></tr>
+    <tr><td>Cámaras acorazadas de bancos grandes</td><td class="num">8</td><td>Final del Capítulo 4, tras la misión opcional "That's Where The Money Is…"</td><td>65,000 a 205,000 dólares</td></tr>
+    <tr><td>Escondites de pandillas (Illegal Operations)</td><td class="num">39</td><td>Se van abriendo con la historia</td><td>Efectivo y droga para vender</td></tr>
+  </tbody>
+</table></div>
+<p>Cada negocio tiene un nivel de seguridad (bajo, medio o alto) que se ve antes de entrar. Para el 100% no hace falta robarlos todos: según las guías bastan 50 de los 91 atracos a tiendas.</p>
+{AD}
+
+<h2>Cómo hacer un robo paso a paso</h2>
+<ol>
+  <li><strong>Revisa el sitio antes.</strong> Mira en el mapa el nivel de seguridad y localiza entradas, cámaras y guardias.</li>
+  <li><strong>Controla a la gente.</strong> Amenaza al personal y apunta a los guardias armados hasta que suelten el arma. Amenazar no te baja la reputación criminal; la violencia innecesaria, sí.</li>
+  <li><strong>Desactiva la alarma.</strong> Es un panel blanco, casi siempre en la trastienda; el modo Focus lo resalta. Si rompes las vitrinas antes de apagarla, puede saltar.</li>
+  <li><strong>Saca el botín.</strong> En los bancos pequeños hay dos objetivos, la caja y la caja fuerte, y hay que vaciar los dos.</li>
+  <li><strong>Borra las grabaciones.</strong> Las cámaras te graban aunque la policía no llegue al momento, y ese video sirve para identificarte. Rompe las cámaras o destruye la grabación. En los sitios de seguridad alta el video se guarda en la nube y no se puede borrar después.</li>
+  <li><strong>Escapa y cámbiate.</strong> Al salir, cambia de ropa o de vehículo para que no te reconozcan.</li>
+</ol>
+
+<h2>Cajas fuertes, botín y dónde venderlo</h2>
+<ul>
+  <li><strong>No te fíes de las listas de códigos.</strong> En la mayoría de tiendas y bancos la combinación de la caja fuerte cambia en cada partida, así que una lista de internet no te sirve. Si no tienes el código, puedes forzarla, pero parte del botín sale dañado.</li>
+  <li><strong>Snap Gun:</strong> se consigue en el Capítulo 3 y abre cerraduras sin que salte la alarma, así que puedes entrar por la puerta de atrás.</li>
+  <li><strong>Billetes marcados:</strong> el dinero de los bancos puede traer paquetes de tinta. El <strong>Dye Pack Jammer</strong>, que se consigue en la misión "Credit Check" del Capítulo 3, sirve para no perder ese dinero.</li>
+  <li><strong>El botín no es dinero todavía.</strong> Las joyas y los objetos van en una bolsa que puedes guardar en el maletero, y se convierten en efectivo al venderlos a un comprador ("fence"). Si te atrapan, puedes perder la bolsa.</li>
+  <li><strong>Yasmani</strong> compra joyas y billetes marcados.</li>
+  <li>El efectivo que llevas encima se pierde si te arrestan, así que deposítalo pronto. Más detalles en la <a href="guia-principiantes-gta-6.html">guía para empezar</a>.</li>
+</ul>
+
+<h2>Cámaras acorazadas: el robo que más paga</h2>
+<p>Los ocho bancos grandes son la mejor fuente de dinero fuera de la historia. Así funcionan:</p>
+<ol>
+  <li>Termina los trabajos previos de Yasmani, incluido robar dos Payday Loans, y la misión opcional "That's Where The Money Is…" al final del Capítulo 4.</li>
+  <li>Yasmani te vende el soplo de cada cámara por <strong>10,000 dólares</strong>.</li>
+  <li>Sigue al <strong>camión blindado</strong> hasta el banco. La cámara solo se abre mientras el guardia mete el dinero: ese es el momento de entrar. No se puede abrir con ganzúa ni con explosivos.</li>
+  <li>Al robarla te cae <strong>4 estrellas de búsqueda</strong> de golpe. Lleva una moto rápida para la huida y cambia de vehículo en cuanto puedas.</li>
+</ol>
+<p>Las que más pagan, hasta <strong>205,000 dólares</strong> cada una según los jugadores, son <strong>Lombank Downtown</strong> y <strong>Lombank Ocean Beach</strong>. Robar cinco cámaras y escapar da el trofeo de plata <strong>Maximum Withdrawal</strong> (lista completa en <a href="trofeos-logros-gta-6.html">trofeos y logros</a>).</p>
+{AD}
+
+<h2>Robar en pareja</h2>
+<ul>
+  <li>Hacer robos juntos sube la relación entre Jason y Lucia.</li>
+  <li>Uno puede vigilar a los rehenes mientras el otro vacía la caja, y en la huida uno maneja y el otro dispara.</li>
+</ul>
+
+<h2>Los dos grandes golpes de la historia</h2>
+<div class="note"><strong>Spoilers leves:</strong> solo nombres de misiones y lugares, nada del argumento. Estos golpes <strong>no se pueden repetir</strong>, así que prepáralos bien.</div>
+<p>Además de muchos trabajos pequeños, la historia tiene <strong>dos golpes grandes</strong>, los dos planeados con <strong>Raul Bautista</strong>, al que conoces en las misiones "Car Service", "First Impressions" y "Credit Check".</p>
+<div class="tbl"><table>
+  <thead><tr><th>Golpe</th><th>Capítulo</th><th>Objetivo</th><th>Preparación</th></tr></thead>
+  <tbody>
+    <tr><td><strong>The Cartel Heist</strong></td><td>3</td><td>Sinfrontera National Bank</td><td>Security Expert, Heist Planning, Safe Word (practicar con una caja fuerte) e Hidden Charges (poner explosivos en torres de telefonía)</td></tr>
+    <tr><td><strong>VCIA Takedown</strong></td><td>4</td><td>Aeropuerto Internacional de Vice City</td><td>Fully Catered y Heist Plans in Place</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li><strong>The Cartel Heist:</strong> con las tres torres listas tienes casi <strong>11 minutos</strong> para el golpe final. Los jugadores reportan unos <strong>120,000 dólares</strong> de botín, aunque hay quien habla de 150,000. Completarlo da el trofeo <strong>Break the Bank</strong>.</li>
+  <li><strong>VCIA Takedown:</strong> completarlo da el trofeo <strong>Hi-Jacked</strong>. El botín todavía no está claro.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuál es el robo que más dinero da en GTA 6?</dt><dd>Las cámaras acorazadas de los bancos grandes, sobre todo Lombank Downtown y Lombank Ocean Beach, con hasta 205,000 dólares cada una según los jugadores. Se desbloquean al final del Capítulo 4.</dd>
+  <dt>¿Cuándo se pueden robar bancos en GTA 6?</dt><dd>Los bancos pequeños, en el Capítulo 3 tras la misión "Credit Check". Las cámaras acorazadas, al final del Capítulo 4 tras "That's Where The Money Is…".</dd>
+  <dt>¿Cuántos golpes tiene GTA 6?</dt><dd>Dos golpes grandes en la historia, The Cartel Heist y VCIA Takedown, más muchos trabajos pequeños y cientos de robos libres por el mapa.</dd>
+  <dt>¿Hay códigos fijos para las cajas fuertes?</dt><dd>En la mayoría de tiendas y bancos no: la combinación cambia en cada partida. Si no la tienes, puedes forzar la caja, aunque parte del botín se daña.</dd>
+  <dt>¿Se pueden repetir los golpes?</dt><dd>No. Ni los golpes ni las misiones de la historia se pueden repetir, así que no hay forma de farmear sus botines.</dd>
+  <dt>¿Cómo evito que la policía me reconozca después de un robo?</dt><dd>Rompe las cámaras o borra la grabación antes de salir, y al escapar cambia de ropa o de vehículo.</dd>
+</dl>
+<p>¿Buscas atajos? Mira los <a href="trucos-gta-6.html">trucos de GTA 6</a>, aunque solo funcionan al terminar la historia.</p>
+{AFF}"""
+
+
 pages = {
+    "robos-atracos-gta-6.html": (robos, "Robos y atracos de GTA 6: bancos, cámaras acorazadas y golpes | Leonida Global 305", "Cómo robar tiendas, joyerías y bancos en GTA 6, cuándo se desbloquea cada robo, cuánto pagan las cámaras acorazadas y los dos grandes golpes de la historia.", True),
     "trucos-gta-6.html": (trucos, "Trucos de GTA 6: todos los códigos para PS5 y Xbox | Leonida Global 305", "Los 61 trucos de GTA 6: cómo se desbloquean, cómo meter los códigos en PS5 y Xbox y los 18 códigos conocidos, incluido el de 250,000 dólares.", True),
     "guia-principiantes-gta-6.html": (principiantes, "Guía para empezar GTA 6: misiones del Capítulo 1 y dinero | Leonida Global 305", "Las 22 misiones del Capítulo 1 de GTA 6 en orden, cómo no perder tu dinero con BuckMe, RydeMe, Pay 'n' Spray y las primeras formas de ganar dinero.", True),
     "trofeos-logros-gta-6.html": (trofeos, "Trofeos y logros de GTA 6: lista completa de los 55 | Leonida Global 305", "Los 55 trofeos y logros de GTA 6: platino, oros, platas y bronces, cómo se consigue cada uno y los ocultos de la historia.", True),
@@ -1765,6 +1855,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "robos-atracos-gta-6.html": ["Respawndex", "Timesaver", "ViceCityHQ", "HappyGamer", "MetaForge"],
     "trucos-gta-6.html": ["VICE", "Red Bull", "Beebom", "SVG", "Gamer Tweak"],
     "guia-principiantes-gta-6.html": ["Push Square", "VGC", "Kotaku", "GTABase", "NoobFeed", "Beebom", "GTA BOOM"],
     "trofeos-logros-gta-6.html": ["PC Gamer", "CULTR", "TechWiser", "Of Zen and Computing"],
