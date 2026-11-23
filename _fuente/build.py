@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 22 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 23 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="dinero-rapido-gta-6.html"><span class="mile">Nuevo</span><h3>Dinero rápido en GTA 6</h3><p>Cómo ganar dinero capítulo a capítulo, por qué no farmear en el Capítulo 1 y en qué no gastarlo.</p></a></li>
   <li><a href="robos-atracos-gta-6.html"><span class="mile">Nuevo</span><h3>Robos y atracos de GTA 6</h3><p>Tiendas, joyerías, bancos y cámaras acorazadas de hasta 205,000 dólares, y los dos grandes golpes de la historia.</p></a></li>
   <li><a href="trucos-gta-6.html"><span class="mile">Nuevo</span><h3>Trucos de GTA 6</h3><p>Cómo se desbloquean los 61 trucos, cómo meterlos y los códigos conocidos, incluido el de 250,000 dólares.</p></a></li>
   <li><a href="guia-principiantes-gta-6.html"><span class="mile">Nuevo</span><h3>Guía para empezar GTA 6</h3><p>Las 22 misiones del Capítulo 1, cómo no perder tu dinero y las primeras formas de ganar plata.</p></a></li>
@@ -953,7 +954,7 @@ LUGARES = [
   ("marketing", "Iluminación de Vice City en el aeropuerto (planeado)", "Aeropuerto Internacional de Miami (MIA)", "2100 NW 42nd Ave, Miami", 25.7953, -80.2775, "Parte del paquete de $3.9 millones que anunció el condado de Miami-Dade el 28 de octubre: iluminación temática y anuncios de GTA 6 en los pasillos que unen los garajes con las terminales. Los diseños aún necesitan la aprobación del condado."),
   ("marketing", "Iluminación de Vice City en el puerto (planeado)", "PortMiami", "Dodge Island, Miami", 25.7720, -80.1640, "El mismo paquete del condado incluye iluminación temática y anuncios en PortMiami. Rockstar paga la instalación, el mantenimiento y el retiro."),
   ("marketing", "Columnas del Metrorail", "Metrorail de Miami", "Downtown Miami (zona aproximada)", 25.7740, -80.1962, "Columnas del Metrorail forradas con los colores de GTA 6."),
-  ("marketing", "GTA VI: The Festival (21 de noviembre)", "Mana Wynwood", "318 NW 23rd St, Miami", 25.7993, -80.1990, "Rockstar y PlayStation celebran el lanzamiento con un festival el sábado 21 de noviembre: Travis Scott, Cardi B, Justice, Metro Boomin, Tainy, Rauw and Friends y más. Las entradas solo se compran con el código del sorteo oficial. Mayores de 17 años."),
+  ("marketing", "GTA VI: The Festival (21 de noviembre)", "Mana Wynwood", "318 NW 23rd St, Miami", 25.7993, -80.1990, "Rockstar y PlayStation celebraron el lanzamiento con un festival el sábado 21 de noviembre: Travis Scott, Cardi B, Justice, Metro Boomin, Tainy, Rauw and Friends y más. Las entradas solo se vendían con el código del sorteo oficial. Mayores de 17 años."),
   ("marketing", "Cervezas de GTA 6", "Tripping Animals Brewing", "2685 NW 105th Ave, Doral", 25.8008, -80.3683, "La cervecería de Doral fabrica Pißwasser, Patriot y No Mames Vice City, las cervezas del juego. Las venden en su taproom, que está decorado con la marca de GTA 6."),
 ]
 _lugares_js = _json.dumps([dict(t=t, g=g, r=r, a=a, lat=la, lng=ln, d=d) for (t, g, r, a, la, ln, d) in LUGARES], ensure_ascii=False)
@@ -1158,19 +1159,18 @@ musica = f"""
 <p class="credito-img">Imágenes: Rockstar Games.</p>
 
 <h2>GTA VI: The Festival (21 de noviembre, Miami)</h2>
-<p>Rockstar Games y PlayStation organizan un festival de música en vivo para celebrar el lanzamiento, dos días después de que salga el juego. Es un evento real, no dentro del juego.</p>
+<p>Rockstar Games y PlayStation organizaron un festival de música en vivo para celebrar el lanzamiento, dos días después de la salida del juego. Fue un evento real, no dentro del juego, y ya se celebró.</p>
 <ul>
-  <li><strong>Cuándo:</strong> sábado 21 de noviembre de 2026. La hora y el horario de cada artista aún no se han publicado.</li>
+  <li><strong>Cuándo:</strong> sábado 21 de noviembre de 2026.</li>
   <li><strong>Dónde:</strong> Mana Wynwood, 318 NW 23rd St, Miami. Puedes verlo en el <a href="mapa-miami-real.html">mapa de Miami real</a>.</li>
   <li><strong>Cartel:</strong> Travis Scott (Cactus Jack presenta, con Don Toliver, Kodak Black y SoFaygo), Cardi B, Ca7riel y Paco Amoroso, Justice (DJ set), Metro Boomin, Nick León b2b DJ Python, Prospa b2b Skream, Rauw and Friends, Suero, Tainy y The Dare b2b Fcukers (DJ set).</li>
   <li><strong>Entradas:</strong> no se venden al público general. Hubo un sorteo gratuito en la web oficial del festival, abierto hasta el 10 de noviembre a las 4:00 p.&nbsp;m. hora de Miami, una inscripción por persona. Los ganadores reciben un código por SMS para comprar entradas el 11 de noviembre a las 12:00 p.&nbsp;m., por orden de llegada. Tener código no garantiza entrada.</li>
   <li>Hay que tener <strong>17 años o más</strong>.</li>
 </ul>
-<div class="note"><strong>Cuidado con la reventa.</strong> Los códigos son de un solo uso y no se pueden vender ni pasar a otra persona. Si alguien te ofrece uno o entradas por redes sociales, lo más probable es que sea una estafa.</div>
 
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
-  <dt>¿Cómo consigo entradas para GTA VI: The Festival?</dt><dd>Solo con el código del sorteo oficial, que cerró el 10 de noviembre. Con el código se compran las entradas desde el 11 de noviembre a las 12:00 p.&nbsp;m. hora de Miami, hasta agotarse.</dd>
+  <dt>¿Todavía se pueden conseguir entradas para GTA VI: The Festival?</dt><dd>No. El festival fue el 21 de noviembre y las entradas solo se vendían con el código del sorteo oficial.</dd>
   <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
   <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
   <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Siete canciones ya están en streaming.</dd>
@@ -1243,6 +1243,7 @@ hora = f"""
   <li><strong>Caja de tienda:</strong> trae un código de descarga, no el juego en disco, así que se desbloquea a la misma hora que la versión digital y necesitas internet para bajarlo.</li>
   <li><strong>Espacio:</strong> Rockstar confirmó que la precarga ocupa hasta 212 GB, según la consola. Déjalo libre antes del 10 de noviembre.</li>
   <li><strong>Primer parche (reportado):</strong> desde el 13 de noviembre se está descargando la <strong>actualización 1.002.000</strong>, de alrededor de 1 GB en PS5 según usuarios que siguen las descargas. Llega por tandas, así que puede que aún no te salga. Rockstar no publicó notas del parche ni explicó qué cambia. Deja la consola encendida o en reposo con internet para tenerla lista antes del 19.</li>
+  <li><strong>Primera actualización tras el lanzamiento (reportado):</strong> el 23 de noviembre empezó a llegar la <strong>1.002.002</strong>, de unos 604 MB en PS5 y 1.6 GB en Xbox según quienes siguen las descargas. Es la tercera actualización desde el 13 de noviembre (la 1.002.001 salió el 16). Rockstar tampoco publicó notas esta vez, así que no se sabe qué arregla: si ves que alguien asegura que quita un truco de dinero o cierres del juego, no está confirmado.</li>
 </ul>
 
 <h2>Directo de 24 horas en YouTube</h2>
@@ -1627,6 +1628,7 @@ principiantes = f"""
   <li>En la misión <strong>Buck Me</strong> (la 12 del Capítulo 1) se desbloquea <strong>BuckMe</strong>, la app del banco en el teléfono. Desde ahí puedes buscar el cajero más cercano y depositar.</li>
   <li>Lo que está en la cuenta de BuckMe no se pierde al morir ni al ser arrestado. Pasa por un cajero cada vez que juntes una cantidad que te dolería perder.</li>
 </ul>
+<div class="note"><strong>Pero ojo con el final del Capítulo 1:</strong> según varias guías, al terminar el capítulo pierdes el efectivo, el escondite de Jason y el saldo normal de BuckMe. Solo se conserva lo que metas en el ahorro familiar de BuckMe (Family Savings), hasta unos 5,000 dólares. Por eso no vale la pena farmear dinero en el Capítulo 1. Más en la <a href="dinero-rapido-gta-6.html">guía de dinero</a>.</div>
 
 <h2>Cómo moverte: no hay viaje rápido clásico</h2>
 <p>GTA VI no tiene el viaje rápido de otros juegos. La alternativa es <strong>RydeMe</strong>, la app de viajes del teléfono: pides un auto y puedes ir sentado o <strong>saltarte el trayecto pagando 100 dólares</strong> extra.</p>
@@ -1656,7 +1658,7 @@ principiantes = f"""
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
   <dt>¿Cuántas misiones tiene el Capítulo 1 de GTA 6?</dt><dd>22 misiones de historia, desde Prologue hasta Discharge Time.</dd>
-  <dt>¿Se pierde el dinero al morir en GTA 6?</dt><dd>Sí, el efectivo que llevas encima. El dinero depositado en BuckMe está a salvo.</dd>
+  <dt>¿Se pierde el dinero al morir en GTA 6?</dt><dd>Sí, el efectivo que llevas encima. El dinero depositado en BuckMe está a salvo, aunque al final del Capítulo 1 solo se conserva lo que tengas en el ahorro familiar (Family Savings).</dd>
   <dt>¿Cuándo se desbloquea el banco BuckMe?</dt><dd>En la misión Buck Me, la número 12 del Capítulo 1.</dd>
   <dt>¿GTA 6 tiene viaje rápido?</dt><dd>No como en otros juegos. Con la app RydeMe puedes pedir un auto y pagar 100 dólares para saltarte el viaje.</dd>
   <dt>¿Cómo me quedo un auto robado?</dt><dd>Regístralo en un Pay 'n' Spray como vehículo personal.</dd>
@@ -1834,7 +1836,89 @@ robos = f"""
 {AFF}"""
 
 
+# ---------- Dinero rápido ----------
+dinero = f"""
+<span class="mile">Guía</span>
+<h1>Cómo ganar dinero rápido en GTA 6: los mejores métodos por capítulo</h1>
+{UPD}
+<p class="lede">En GTA VI el dinero se abre por capítulos: lo que da más plata al principio deja de valer la pena en cuanto se desbloquea lo siguiente. Aquí tienes qué hacer en cada parte de la historia, cuánto paga cada método, el error que te puede dejar sin nada al final del Capítulo 1 y en qué no gastar.</p>
+<div class="note"><strong>Ojo:</strong> solo ponemos lo que coincide en varias guías publicadas tras el lanzamiento. Las cantidades las reportan los jugadores, no Rockstar, y cambian según tu partida. Los nombres de misiones y apps van en inglés, como salen en el juego.</div>
+
+<h2>Resumen: el mejor método en cada capítulo</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Capítulo</th><th>Mejor método</th><th>Pago aproximado</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Ninguno: avanza la historia y guarda hasta 5,000 dólares en Family Savings</td><td>No farmear</td></tr>
+    <tr><td>2</td><td>Vender autos a Moses</td><td>Desde unos 1,000 dólares por auto</td></tr>
+    <tr><td>3</td><td>Joyerías y la lista de autos de Randy</td><td>10,000 a 25,000 por joyería; más de 30,000 por auto de Randy</td></tr>
+    <tr><td>Final del 4 y después de la historia</td><td>Cámaras acorazadas de los bancos grandes</td><td>Hasta 205,000 dólares</td></tr>
+  </tbody>
+</table></div>
+{AD}
+
+<h2>Capítulo 1: no farmees, guarda en Family Savings</h2>
+<div class="note"><strong>El error más caro del juego:</strong> según varias guías, al terminar el Capítulo 1 se pierde el efectivo que llevas, el escondite bajo el suelo de Jason y el saldo normal de BuckMe. Solo pasa al Capítulo 2 lo que tengas en <strong>Family Savings</strong>, el ahorro familiar de la app BuckMe, y ahí caben unos 5,000 dólares en ese momento.</div>
+<ul>
+  <li>Junta unos 5,000 dólares y métalos en Family Savings antes de las últimas misiones del capítulo. Lo que sobre se pierde, así que no pases horas robando tiendas.</li>
+  <li>Para juntarlos bastan los pagos de las misiones y algunos atracos a tiendas, gasolineras o restaurantes: apuntas al cajero y te llevas la caja. Pagan poco, entre unos cientos y unos pocos miles.</li>
+  <li>Asaltar a peatones da todavía menos, unos cientos de dólares, y las guías lo ponen entre los peores métodos.</li>
+  <li>BuckMe se desbloquea en la misión <strong>Buck Me</strong>. Desde la app ves el cajero más cercano. Lo que está en el banco no se pierde si mueres o te arrestan; el efectivo, sí.</li>
+</ul>
+
+<h2>Capítulo 2: vender autos a Moses</h2>
+<p>En el Capítulo 2 conoces a Moses, que compra autos robados. Es el primer método que las guías recomiendan repetir.</p>
+<ul>
+  <li>El auto <strong>no puede tener rastreador</strong>. Antes de llevarlo, escanéalo con la app <strong>WAiNK</strong> del teléfono.</li>
+  <li>Moses no acepta autos robados cerca de su taller. Róbalos en la carretera principal de Port Gellhorn y llévaselos.</li>
+  <li>Paga desde unos <strong>1,000 dólares</strong> por auto, más si es un modelo bueno. Los golpes bajan el precio, así que maneja con cuidado.</li>
+  <li>Hay una espera de unos <strong>2 minutos</strong> entre una venta y la siguiente.</li>
+  <li>En cuanto se abran las joyerías y Randy en el Capítulo 3, deja a Moses: pagan mucho más.</li>
+</ul>
+
+<h2>Capítulo 3: joyerías y los autos de Randy</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Método</th><th>Cuándo se abre</th><th>Pago aproximado</th><th>Qué saber</th></tr></thead>
+  <tbody>
+    <tr><td>Joyerías</td><td>Misión "Yasmani's Jewelry Jobs"</td><td>10,000 a 25,000 dólares</td><td>Abre la caja fuerte de la trastienda y roba varias seguidas. Las tiendas se reponen con el tiempo.</td></tr>
+    <tr><td>Lista de deseos de Randy</td><td>Capítulo 3, cuando consigues el clonador de llaves (Key Cloner)</td><td>Más de 30,000 dólares por auto en buen estado</td><td>Son 18 autos de gama alta. Las pistas de cada uno aparecen en la app de recordatorios del teléfono.</td></tr>
+    <tr><td>Bancos pequeños y prestamistas</td><td>Misión "Credit Check"</td><td>Miles de dólares en billetes marcados</td><td>Necesitas el Dye Pack Jammer para que la tinta no arruine el dinero.</td></tr>
+  </tbody>
+</table></div>
+<p>Los detalles de cada robo, cámaras y escapadas están en la <a href="robos-atracos-gta-6.html">guía de robos y atracos</a>.</p>
+
+<h2>Final del Capítulo 4: las cámaras acorazadas</h2>
+<p>Es el método que más paga de todo el juego y se puede repetir después de acabar la historia.</p>
+<ul>
+  <li>Se abre con la misión opcional <strong>"That's Where The Money Is…"</strong>, al final del Capítulo 4.</li>
+  <li>Sigue al <strong>camión blindado</strong> hasta el banco y entra en la cámara mientras está abierta. Una vuelta suele dar entre <strong>100,000 y 200,000 dólares</strong>, con un máximo de unos 205,000, en unos cinco minutos.</li>
+  <li>Te cae de inmediato un nivel de búsqueda de <strong>4 estrellas</strong>. Escapa en una moto rápida y cambia de vehículo en cuanto puedas.</li>
+  <li>Entrega el dinero a Yasmani, que también vende pistas sobre los camiones por 10,000 dólares.</li>
+</ul>
+{AD}
+
+<h2>En qué gastar (y en qué no)</h2>
+<ul>
+  <li><strong>Family Savings</strong> es donde más dinero se va. Sirve para subir el límite de tu cuenta, pero lo que metes ahí no se puede sacar, así que no lo llenes de golpe al principio.</li>
+  <li><strong>Garajes:</strong> según las guías, son la única propiedad que se compra. No hay negocios que den ingresos pasivos como en GTA Online.</li>
+  <li><strong>Armas:</strong> con una pistola, una escopeta y un rifle vas bien. No te gastes todo en el armero al empezar.</li>
+  <li>En las tiendas solo puedes pagar en efectivo compras pequeñas, de hasta unos 1,000 dólares. Lo más caro sale de la cuenta de BuckMe.</li>
+  <li>No vendas autos chocados, no robes con la misma ropa con la que te vieron y no entres con mucho efectivo encima a los escondites de pandillas: si mueres, lo pierdes.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuál es la forma más rápida de ganar dinero en GTA 6?</dt><dd>Las cámaras acorazadas de los bancos grandes, con hasta 205,000 dólares por robo. Se abren al final del Capítulo 4. Antes de eso, las joyerías y los autos de Randy en el Capítulo 3.</dd>
+  <dt>¿Se pierde el dinero al terminar el Capítulo 1?</dt><dd>Sí, según varias guías: solo se conserva lo que tengas en Family Savings, hasta unos 5,000 dólares. El efectivo y el saldo normal de BuckMe se pierden.</dd>
+  <dt>¿GTA 6 tiene bolsa de valores?</dt><dd>Ninguna de las guías publicadas hasta ahora documenta una bolsa como la de GTA V ni inversiones en cripto, así que no cuentes con eso.</dd>
+  <dt>¿Hay truco de dinero en GTA 6?</dt><dd>Sí, uno de 250,000 dólares, pero se desbloquea al terminar la historia y con trucos activos no se puede guardar, así que el dinero no se queda. Mira los <a href="trucos-gta-6.html">trucos de GTA 6</a>.</dd>
+  <dt>¿Se pueden comprar negocios en GTA 6?</dt><dd>Según las guías, no. Solo se compran garajes.</dd>
+</dl>
+<p>¿Acabas de empezar? Mira la <a href="guia-principiantes-gta-6.html">guía para empezar GTA 6</a>.</p>
+{AFF}"""
+
+
 pages = {
+    "dinero-rapido-gta-6.html": (dinero, "Cómo ganar dinero rápido en GTA 6: mejores métodos | Leonida Global 305", "Cómo ganar dinero rápido en GTA 6 capítulo a capítulo: Moses, joyerías, los autos de Randy y las cámaras acorazadas, y por qué no farmear en el Capítulo 1.", True),
     "robos-atracos-gta-6.html": (robos, "Robos y atracos de GTA 6: bancos, cámaras acorazadas y golpes | Leonida Global 305", "Cómo robar tiendas, joyerías y bancos en GTA 6, cuándo se desbloquea cada robo, cuánto pagan las cámaras acorazadas y los dos grandes golpes de la historia.", True),
     "trucos-gta-6.html": (trucos, "Trucos de GTA 6: todos los códigos para PS5 y Xbox | Leonida Global 305", "Los 61 trucos de GTA 6: cómo se desbloquean, cómo meter los códigos en PS5 y Xbox y los 18 códigos conocidos, incluido el de 250,000 dólares.", True),
     "guia-principiantes-gta-6.html": (principiantes, "Guía para empezar GTA 6: misiones del Capítulo 1 y dinero | Leonida Global 305", "Las 22 misiones del Capítulo 1 de GTA 6 en orden, cómo no perder tu dinero con BuckMe, RydeMe, Pay 'n' Spray y las primeras formas de ganar dinero.", True),
@@ -1855,6 +1939,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "dinero-rapido-gta-6.html": ["PowerPyx", "GTABase", "GamesRadar+", "KeenGamer", "MetaForge", "OutputLag", "GamerBolt", "G2A News"],
     "robos-atracos-gta-6.html": ["Respawndex", "Timesaver", "ViceCityHQ", "HappyGamer", "MetaForge"],
     "trucos-gta-6.html": ["VICE", "Red Bull", "Beebom", "SVG", "Gamer Tweak"],
     "guia-principiantes-gta-6.html": ["Push Square", "VGC", "Kotaku", "GTABase", "NoobFeed", "Beebom", "GTA BOOM"],
@@ -1868,7 +1953,7 @@ CREDITOS = {
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
-    "hora-de-salida-gta-6.html": ["PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak", "VGTimes", "SourceVI"],
+    "hora-de-salida-gta-6.html": ["HappyGamer", "Beebom", "LibertyCity", "PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak", "VGTimes", "SourceVI"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL", "Forbes"],
 }
