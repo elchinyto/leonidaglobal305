@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 23 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 24 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="coleccionables-gta-6.html"><span class="mile">Nuevo</span><h3>Coleccionables de GTA 6</h3><p>Flamencos de cocaína, cartas, WAiNK, tesoros de Kenton y meditación: cuántos hay, cuántos pide el 100% y cuál se pierde.</p></a></li>
   <li><a href="dinero-rapido-gta-6.html"><span class="mile">Nuevo</span><h3>Dinero rápido en GTA 6</h3><p>Cómo ganar dinero capítulo a capítulo, por qué no farmear en el Capítulo 1 y en qué no gastarlo.</p></a></li>
   <li><a href="robos-atracos-gta-6.html"><span class="mile">Nuevo</span><h3>Robos y atracos de GTA 6</h3><p>Tiendas, joyerías, bancos y cámaras acorazadas de hasta 205,000 dólares, y los dos grandes golpes de la historia.</p></a></li>
   <li><a href="trucos-gta-6.html"><span class="mile">Nuevo</span><h3>Trucos de GTA 6</h3><p>Cómo se desbloquean los 61 trucos, cómo meterlos y los códigos conocidos, incluido el de 250,000 dólares.</p></a></li>
@@ -410,6 +411,7 @@ fecha = f"""
     <tr><td>Reseñas de la prensa (<a href="notas-resenas-gta-6.html">ver las notas</a>)</td><td class="num">18 nov 2026</td><td><span class="tag ok">Publicadas</span></td></tr>
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Primeras ventas oficiales: 3,790 millones de dólares el primer día</td><td class="num">20 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Sony: más de 39 millones de jugadores en PS5 en cuatro días</td><td class="num">23 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Xbox Cloud Gaming en Xbox One y Xbox Series X|S (1:00 a.&nbsp;m. hora de Miami)</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Versión de PC</td><td class="num">Sin fecha (reportado: primer trimestre de 2027)</td><td><span class="tag no">No anunciado</span></td></tr>
     <tr><td>Nuevo GTA Online</td><td class="num">Sin fecha</td><td><span class="tag no">No anunciado</span></td></tr>
@@ -431,6 +433,13 @@ fecha = f"""
   <li>La precarga ocupa <strong>hasta 212 GB</strong>, según la consola. Rockstar recomienda dejar espacio libre cuanto antes.</li>
   <li>El 19 de noviembre la web oficial publicará gratis, para descargar e imprimir, el <strong>póster de la portada y el mapa de Leonida</strong>.</li>
   <li>Poco después del lanzamiento, la Rockstar Store venderá ese póster en físico, a doble cara, por <strong>$0.99</strong>, o lo regalará con cualquier compra.</li>
+</ul>
+<h2>El primer fin de semana: 39 millones de jugadores en PS5 (23 de noviembre)</h2>
+<ul>
+  <li><strong>Sony confirmó</strong> que más de <strong>39 millones de jugadores</strong> distintos jugaron GTA VI en PS5 en sus primeros cuatro días, y lo llama el mayor lanzamiento de la historia de PlayStation.</li>
+  <li>Según Sony, en ese tiempo se jugaron <strong>683 millones de horas</strong>, unas 17 horas de media por jugador, y fue el primer juego que se abrió en el 70% de las PS5 nuevas.</li>
+  <li>Son jugadores, no copias vendidas: Sony no dio cifras de ventas.</li>
+  <li><strong>Estimación, no oficial:</strong> la firma de análisis Alinea Analytics calcula unos <strong>45 millones de copias</strong> vendidas al cierre del fin de semana (unos 33.7 millones en PS5 y 11.2 millones en Xbox Series X|S), más de 4,000 millones de dólares y unos 40.8 millones de jugadores el domingo 22. Take-Two no ha confirmado esas cifras.</li>
 </ul>
 <h2>Ventas del primer día: 3,790 millones de dólares (20 de noviembre)</h2>
 <p>Take-Two publicó un comunicado oficial con las primeras cifras del lanzamiento:</p>
@@ -464,7 +473,7 @@ fecha = f"""
 <dl class="faq">
   <dt>¿Hay edición de coleccionista de GTA 6?</dt><dd>Hay una caja de coleccionista de $399.99 en la Rockstar Store, pero no incluye el juego. Las ediciones del juego son solo la estándar y la Ultimate.</dd>
   <dt>¿GTA 6 sale en PS4 o Xbox One?</dt><dd>En PS4, no. En Xbox One no hay versión instalable, pero Microsoft confirmó que se podrá jugar en streaming por Xbox Cloud Gaming desde el 19 de noviembre a la 1:00 a.&nbsp;m. hora de Miami. Necesitas comprar el juego y tener acceso a la nube de Xbox (Game Pass o tiempo de juego en la nube, donde se venda). Las versiones nativas son solo para PS5 y Xbox Series X|S.</dd>
-  <dt>¿Cuánto vendió GTA 6 el primer día?</dt><dd>Según Take-Two, 3,790 millones de dólares en ventas en tienda el primer día, y 32.5 millones de unidades vendidas antes del lanzamiento. Es el mayor estreno de la historia del entretenimiento.</dd>
+  <dt>¿Cuánto vendió GTA 6 el primer día?</dt><dd>Según Take-Two, 3,790 millones de dólares en ventas en tienda el primer día, y 32.5 millones de unidades vendidas antes del lanzamiento. Es el mayor estreno de la historia del entretenimiento. Después, Sony confirmó más de 39 millones de jugadores en PS5 en los primeros cuatro días. Alinea Analytics estima unos 45 millones de copias tras el primer fin de semana, pero esa cifra no es oficial.</dd>
   <dt>¿Cuántas reservas tiene GTA 6?</dt><dd>Take-Two confirmó 32.5 millones de unidades vendidas antes del lanzamiento. Sony y Microsoft confirmaron que es el juego más reservado de la historia en la PlayStation Store y en la Microsoft Store, pero no dieron cifras. Sensor Tower estima unos 14.94 millones de reservas digitales entre las dos plataformas al 16 de noviembre, por unos 1,450 millones de dólares. Es una estimación, no una cifra oficial.</dd>
   <dt>¿A qué hora se desbloquea?</dt><dd>Según las fichas de la PlayStation Store, a medianoche del 19 de noviembre en la hora de cada tienda: en Miami y Nueva York a las 00:00, en España a las 00:00 y en México a las 00:00. Rockstar no lo ha anunciado de forma oficial. Tienes la tabla completa en <a href="hora-de-salida-gta-6.html">hora de salida por país</a>.</dd>
   <dt>¿Qué es el Vintage Vice City Pack?</dt><dd>Un paquete de objetos con estética del Vice City clásico. Lo recibe cualquiera que reserve o compre el juego antes del 20 de noviembre.</dd>
@@ -1243,7 +1252,7 @@ hora = f"""
   <li><strong>Caja de tienda:</strong> trae un código de descarga, no el juego en disco, así que se desbloquea a la misma hora que la versión digital y necesitas internet para bajarlo.</li>
   <li><strong>Espacio:</strong> Rockstar confirmó que la precarga ocupa hasta 212 GB, según la consola. Déjalo libre antes del 10 de noviembre.</li>
   <li><strong>Primer parche (reportado):</strong> desde el 13 de noviembre se está descargando la <strong>actualización 1.002.000</strong>, de alrededor de 1 GB en PS5 según usuarios que siguen las descargas. Llega por tandas, así que puede que aún no te salga. Rockstar no publicó notas del parche ni explicó qué cambia. Deja la consola encendida o en reposo con internet para tenerla lista antes del 19.</li>
-  <li><strong>Primera actualización tras el lanzamiento (reportado):</strong> el 23 de noviembre empezó a llegar la <strong>1.002.002</strong>, de unos 604 MB en PS5 y 1.6 GB en Xbox según quienes siguen las descargas. Es la tercera actualización desde el 13 de noviembre (la 1.002.001 salió el 16). Rockstar tampoco publicó notas esta vez, así que no se sabe qué arregla: si ves que alguien asegura que quita un truco de dinero o cierres del juego, no está confirmado.</li>
+  <li><strong>Primera actualización tras el lanzamiento:</strong> el 23 de noviembre empezó a llegar la <strong>1.002.002</strong>, de unos 604 MB en PS5 y 1.6 GB en Xbox. Es la tercera desde el 13 de noviembre (la 1.002.001 salió el 16) y la primera con notas, publicadas en la web de soporte de Rockstar. Arregla: varios cierres del juego, el clima que se quedaba sin cambiar durante mucho tiempo, el <strong>autoguardado que no funcionaba bien</strong>, llamadas que no saltaban (incluidas las que hacen avanzar la historia o abren misiones), no poder perder el nivel de búsqueda, la barra de peso muerto del gimnasio y que tu pareja no te pasara las bolsas para venderlas al perista. Si se te atascó la historia porque no llegaba una llamada, actualiza y prueba de nuevo.</li>
 </ul>
 
 <h2>Directo de 24 horas en YouTube</h2>
@@ -1917,7 +1926,92 @@ dinero = f"""
 {AFF}"""
 
 
+coleccionables = f"""
+<span class="mile">Guía</span>
+<h1>Coleccionables de GTA 6: cuántos hay, cuántos pide el 100% y cuál se pierde</h1>
+{UPD}
+<p class="lede">GTA VI está lleno de cosas que buscar: flamencos de cocaína, cartas, lugares para escanear con la app WAiNK, tesoros bajo el agua, libros, relojes y puntos de meditación. Lo bueno: para el 100% no hace falta encontrarlo todo. Aquí tienes cuántos hay de cada tipo, cuántos cuentan para el 100%, cómo se encuentran y el único que se puede perder.</p>
+<div class="note"><strong>Ojo:</strong> solo ponemos lo que coincide en varias guías publicadas tras el lanzamiento. Rockstar no ha publicado una lista oficial. Los nombres van en inglés, como salen en el juego.</div>
+
+<h2>Resumen: cuántos hay y cuántos cuentan para el 100%</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Coleccionable</th><th>Total</th><th>Para el 100%</th></tr></thead>
+  <tbody>
+    <tr><td>Collectible Card Sets (cartas)</td><td class="num">480 cartas en 18 colecciones</td><td class="num">15 colecciones</td></tr>
+    <tr><td>Cocaine Flamingos</td><td class="num">125</td><td class="num">100</td></tr>
+    <tr><td>WAiNK (lugares para escanear)</td><td class="num">108</td><td class="num">100</td></tr>
+    <tr><td>Estilos (revistas, tatuajes y relojes)</td><td class="num">79</td><td class="num">70</td></tr>
+    <tr><td>Underwater Discoveries (tesoros de Kenton)</td><td class="num">33</td><td class="num">Todos</td></tr>
+    <tr><td>Revistas, libros y cómics</td><td class="num">34 (27 + 7 intercambios de libros)</td><td class="num">30</td></tr>
+    <tr><td>Meditación</td><td class="num">18</td><td class="num">15</td></tr>
+    <tr><td>Animales (estudiar especies)</td><td class="num">255</td><td class="num">100</td></tr>
+  </tbody>
+</table></div>
+<p>Todo se lleva en el menú del mapa, en la pestaña <strong>Progress</strong>, dentro de Collections. Algunas categorías no aparecen hasta que encuentras la primera pieza.</p>
+{AD}
+
+<h2>El único que se puede perder: la meditación del Capítulo 1</h2>
+<div class="note"><strong>Haz esto antes de pasar al Capítulo 2:</strong> en el Capítulo 1 te invitan a meditar, y según las guías una de las meditaciones solo está disponible en ese capítulo. Para el 100% bastan 15 de 18, pero el trofeo <strong>Positive Mental Attitude</strong> pide meditar en todos los puntos, así que si vas a por el platino no la dejes pasar.</div>
+
+<h2>Cocaine Flamingos (flamencos de cocaína)</h2>
+<ul>
+  <li>Hay <strong>125</strong> repartidos por Leonida y el 100% pide <strong>100</strong>.</li>
+  <li>Dispárales: al romperse sueltan un paquete de cocaína y el flamenco cuenta en tu progreso.</li>
+  <li>Fíjate en el pico: los que cuentan tienen el <strong>pico blanco y negro</strong>. Los de pico amarillo y negro son decoración y no se rompen.</li>
+  <li>La cocaína se puede vender a un perista para sacar dinero, aunque no hace falta para completarlos.</li>
+  <li>Romper 50 desbloquea el truco del <strong>Inflatable Flamingo</strong> (ver <a href="trucos-gta-6.html">trucos</a>).</li>
+</ul>
+
+<h2>Cartas coleccionables</h2>
+<ul>
+  <li>Son <strong>480 cartas en 18 colecciones</strong>. Para el 100% hay que completar 15 colecciones.</li>
+  <li>Completar 3 colecciones da el trofeo <strong>Don't Touch My Deck</strong>, y la colección de Vice City Flamingos (24 cartas) desbloquea el filtro Bubblegum.</li>
+  <li>Empieza pronto con las colecciones grandes, porque las cartas de una misma serie están muy repartidas.</li>
+</ul>
+
+<h2>WAiNK: lugares para escanear</h2>
+<ul>
+  <li>Se escanean con la app <strong>WAiNK</strong> del teléfono. Hay 108 en cinco tipos: Landmarks (31), Curiosities (35), Sculptures (23), Peewees Billboards (4) y No Flusher Tags (15).</li>
+  <li>El 100% pide 100 escaneos, y el trofeo <strong>You WAiNKer!</strong> también pide 100.</li>
+  <li>Cuando vas a pie, el juego te avisa si tienes uno cerca.</li>
+</ul>
+
+<h2>Tesoros bajo el agua con Kenton</h2>
+<ul>
+  <li>Hay <strong>33 Underwater Discoveries</strong> y el 100% los pide todos.</li>
+  <li>Te los presenta <strong>Kenton Rees</strong> en el Capítulo 1, con la misión Island Dreams. Además de contar para el 100%, las guías lo recomiendan como dinero fácil al principio (ver <a href="dinero-rapido-gta-6.html">dinero rápido</a>).</li>
+  <li>Su última misión da el trofeo This Was No Boat Accident.</li>
+</ul>
+
+<h2>Estilos: revistas, tatuajes y relojes</h2>
+<ul>
+  <li>Son <strong>79</strong> y el 100% pide 70: estilos de revista de Jason (13) y de Lucia (15), tatuajes de revista (17) y <strong>34 relojes de lujo</strong>.</li>
+  <li>Los relojes suelen estar en sitios de operaciones ilegales. Encontrar 10 y 20 desbloquea los trucos Move Time Forward y Pause Time of Day.</li>
+</ul>
+
+<h2>Revistas, libros y meditación</h2>
+<ul>
+  <li><strong>Revistas, libros y cómics:</strong> 27, más 7 intercambios de libros. El 100% pide 30 de los 34. Las copias repetidas no cuentan.</li>
+  <li><strong>Meditación:</strong> 18 en total. Para el 100% bastan 15, pero el trofeo pide todas. Una solo está en el Capítulo 1 (ver arriba).</li>
+</ul>
+{AD}
+
+<h2>Lo que no cuenta para el 100%</h2>
+<p>Las <strong>397 acrobacias</strong> (130 saltos, 202 pasos bajo puentes, 40 vuelos a filo y 25 saltos BASE) tienen su propia lista, pero no están entre los coleccionables que pide el 100%. Los animales sí cuentan: hay 255 especies y bastan 100.</p>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuántos coleccionables tiene GTA 6?</dt><dd>Según las guías: 480 cartas, 125 flamencos de cocaína, 108 lugares de WAiNK, 79 estilos, 33 tesoros bajo el agua, 34 revistas y libros y 18 meditaciones, además de 255 animales para estudiar.</dd>
+  <dt>¿Hay que encontrar todos los coleccionables para el 100%?</dt><dd>No. Solo hace falta una parte de cada tipo: por ejemplo, 100 de 125 flamencos o 15 de 18 colecciones de cartas. Los tesoros de Kenton sí van todos.</dd>
+  <dt>¿Se puede perder algún coleccionable?</dt><dd>Según las guías, una meditación solo está disponible en el Capítulo 1. El resto se puede buscar después de la historia.</dd>
+  <dt>¿Dónde veo cuántos llevo?</dt><dd>En el mapa, pestaña Progress, dentro de Collections.</dd>
+  <dt>¿Para qué sirven los flamencos de cocaína?</dt><dd>Cuentan para el 100%, la cocaína se vende a un perista y romper 50 desbloquea el truco del Inflatable Flamingo.</dd>
+</dl>
+<p>¿Vas a por el platino? Mira la <a href="trofeos-logros-gta-6.html">lista de trofeos</a> y los <a href="trucos-gta-6.html">trucos</a> que se desbloquean con estos coleccionables.</p>
+{AFF}"""
+
 pages = {
+    "coleccionables-gta-6.html": (coleccionables, "Coleccionables de GTA 6: cuántos hay y cuántos pide el 100% | Leonida Global 305", "Todos los coleccionables de GTA 6: flamencos de cocaína, cartas, WAiNK, tesoros de Kenton, libros, estilos y meditación. Cuántos hay, cuántos cuentan para el 100% y cuál se pierde.", True),
     "dinero-rapido-gta-6.html": (dinero, "Cómo ganar dinero rápido en GTA 6: mejores métodos | Leonida Global 305", "Cómo ganar dinero rápido en GTA 6 capítulo a capítulo: Moses, joyerías, los autos de Randy y las cámaras acorazadas, y por qué no farmear en el Capítulo 1.", True),
     "robos-atracos-gta-6.html": (robos, "Robos y atracos de GTA 6: bancos, cámaras acorazadas y golpes | Leonida Global 305", "Cómo robar tiendas, joyerías y bancos en GTA 6, cuándo se desbloquea cada robo, cuánto pagan las cámaras acorazadas y los dos grandes golpes de la historia.", True),
     "trucos-gta-6.html": (trucos, "Trucos de GTA 6: todos los códigos para PS5 y Xbox | Leonida Global 305", "Los 61 trucos de GTA 6: cómo se desbloquean, cómo meter los códigos en PS5 y Xbox y los 18 códigos conocidos, incluido el de 250,000 dólares.", True),
@@ -1939,13 +2033,14 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "coleccionables-gta-6.html": ["PowerPyx", "GameTrek", "The Games Wiki", "VICE", "Red Bull"],
     "dinero-rapido-gta-6.html": ["PowerPyx", "GTABase", "GamesRadar+", "KeenGamer", "MetaForge", "OutputLag", "GamerBolt", "G2A News"],
     "robos-atracos-gta-6.html": ["Respawndex", "Timesaver", "ViceCityHQ", "HappyGamer", "MetaForge"],
     "trucos-gta-6.html": ["VICE", "Red Bull", "Beebom", "SVG", "Gamer Tweak"],
     "guia-principiantes-gta-6.html": ["Push Square", "VGC", "Kotaku", "GTABase", "NoobFeed", "Beebom", "GTA BOOM"],
     "trofeos-logros-gta-6.html": ["PC Gamer", "CULTR", "TechWiser", "Of Zen and Computing"],
     "notas-resenas-gta-6.html": ["Metacritic", "PC Gamer", "GAMINGbible", "Forbes", "Tom's Guide", "ABC7"],
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase", "Gematsu", "TweakTown", "Wccftech", "Rectify Gaming"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu", "The New York Times", "Notebookcheck", "Tech4Gamers", "2K", "Beebom", "ComicBook.com"],
@@ -1953,7 +2048,7 @@ CREDITOS = {
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
     "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
-    "hora-de-salida-gta-6.html": ["HappyGamer", "Beebom", "LibertyCity", "PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak", "VGTimes", "SourceVI"],
+    "hora-de-salida-gta-6.html": ["HappyGamer", "Beebom", "LibertyCity", "PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak", "VGTimes", "SourceVI", "Game Rant"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
     "mapa-miami-real.html": ["GTA BOOM", "Miami New Times", "Kotaku", "VGC", "GamesRadar", "Portal Viciados y @samchrme", "GTAVice.net", "Beebom", "Dexerto", "Sole Retriever", "Condado de Miami-Dade", "WLRN", "RockstarINTEL", "Forbes"],
 }
