@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"), ("armas-gta-6.html", "Armas"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"armas-gta-6.html": "2026-11-25", "coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 24 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 25 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="armas-gta-6.html"><span class="mile">Nuevo</span><h3>Armas de GTA 6</h3><p>Ammu-Nation, el casillero y el maletero, y las más de cien armas únicas de icono amarillo.</p></a></li>
   <li><a href="coleccionables-gta-6.html"><span class="mile">Nuevo</span><h3>Coleccionables de GTA 6</h3><p>Flamencos de cocaína, cartas, WAiNK, tesoros de Kenton y meditación: cuántos hay, cuántos pide el 100% y cuál se pierde.</p></a></li>
   <li><a href="dinero-rapido-gta-6.html"><span class="mile">Nuevo</span><h3>Dinero rápido en GTA 6</h3><p>Cómo ganar dinero capítulo a capítulo, por qué no farmear en el Capítulo 1 y en qué no gastarlo.</p></a></li>
   <li><a href="robos-atracos-gta-6.html"><span class="mile">Nuevo</span><h3>Robos y atracos de GTA 6</h3><p>Tiendas, joyerías, bancos y cámaras acorazadas de hasta 205,000 dólares, y los dos grandes golpes de la historia.</p></a></li>
@@ -363,7 +364,7 @@ index = f"""
   <li><a href="todo-lo-confirmado.html"><span class="mile">Nuevo</span><h3>Todo lo confirmado</h3><p>Lo que contó Rockstar a IGN, Famitsu, Game Informer, Dazed, LOVE y Bloomberg.</p></a></li>
   <li><a href="trailers-gta-6.html"><span class="mile">Videos</span><h3>Todos los tráilers</h3><p>Los tres tráilers oficiales y el Extended Look.</p></a></li>
   <li><a href="revistas-gta-6.html"><span class="mile">Revistas</span><h3>Las revistas de GTA 6</h3><p>Edge, Game Informer, Dazed, TROISCOULEURS y LOVE: qué trae cada una y cómo conseguirlas.</p></a></li>
-  <li><a href="musica-radios-gta-6.html"><span class="mile">Nuevo</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, la lista filtrada de las 34 canciones de The Album y el Original Score de Justice.</p></a></li>
+  <li><a href="musica-radios-gta-6.html"><span class="mile">Nuevo</span><h3>Radios y GTA VI: The Album</h3><p>Las emisoras con Bad Bunny, Lana Del Rey y Morgan Wallen, la lista oficial de The Album con sus 57 canciones de la Deluxe y el Original Score de Justice.</p></a></li>
   <li><a href="mapa-miami-real.html"><span class="mile">Miami real</span><h3>Vice City en el Miami real</h3><p>Mapa interactivo con los lugares reales del juego y el marketing de GTA 6 en la ciudad.</p></a></li>
   <li><a href="leaks-cyberleek.html"><span class="mile">Leaks</span><h3>Los leaks de CyberLeek</h3><p>Qué filtraron, qué ya confirmó Rockstar y cómo terminó.</p></a></li>
   <li><a href="equipo-gta-6.html"><span class="mile">Equipo</span><h3>Equipo para GTA 6</h3><p>Teles, monitores y SSD económicos y de gama alta.</p></a></li>
@@ -1072,7 +1073,7 @@ musica = f"""
 <span class="mile">Música</span>
 <h1>GTA 6: radios, canciones, The Album y Original Score</h1>
 {UPD}
-<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, el 19 de noviembre sale <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales, y la banda sonora original del juego es obra del dúo francés Justice, que la lanza el 11 de diciembre.</p>
+<p class="lede">Rockstar ya mostró seis emisoras de radio de GTA 6 con locutores famosos, como Bad Bunny, Lana Del Rey y Morgan Wallen. Además, ya está en streaming <strong>Grand Theft Auto VI: The Album</strong>, con 34 canciones originales y 23 más en la Deluxe Edition, y la banda sonora original del juego es obra del dúo francés Justice, que la lanza el 11 de diciembre.</p>
 
 <h2>Las radios confirmadas</h2>
 <p>Estas son las emisoras que Rockstar presentó el 8 de octubre en su web oficial. Es solo un adelanto: el juego tendrá más.</p>
@@ -1084,59 +1085,85 @@ musica = f"""
 
 <h2>GTA VI: The Album</h2>
 <ul>
-  <li><strong>Sale el 19 de noviembre de 2026</strong>, el mismo día que el juego.</li>
-  <li><strong>34 canciones originales</strong> hechas para GTA 6.</li>
-  <li>Se puede reservar en <strong>vinilo</strong> (normal y edición limitada) y <strong>CD</strong>, y guardar en las plataformas de streaming.</li>
+  <li><strong>Ya salió</strong>, junto con el juego, y está en las plataformas de streaming. Lo lanzan Rockstar Games y Atlantic Records.</li>
+  <li><strong>34 canciones originales</strong> hechas para GTA 6. Hay vinilo (normal y edición limitada) y CD.</li>
   <li>La canción de Travis Scott la produjo Guy-Manuel de Homem-Christo, de Daft Punk.</li>
-  <li><strong>Justice</strong> compuso la banda sonora original (el score) del juego. Su sencillo "Flower in a Hurricane", con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard, suena en el tráiler de lanzamiento del 15 de octubre y está incluido en el álbum.</li>
-  <li>El tráiler de la precarga, del 10 de noviembre, adelantó otra canción del álbum: <strong>"Blood in Your Eyes", de Tove Lo</strong>.</li>
+  <li><strong>Justice</strong> compuso la banda sonora original (el score) del juego y abre el álbum. Su sencillo "Flower in a Hurricane", con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard, sonó en el tráiler de lanzamiento.</li>
+  <li>La lista que se filtró el 14 de noviembre, cuando una tienda vendió un vinilo antes de tiempo, era correcta: la oficial tiene los mismos artistas en el mismo orden.</li>
 </ul>
-<h3>Los 7 sencillos que ya están en streaming</h3>
-<div class="tbl"><table>
-  <thead><tr><th>Artista</th><th>Canción</th></tr></thead>
-  <tbody>{_singles}</tbody>
-</table></div>
 
-<h3>La lista completa de The Album (filtrada, sin confirmar)</h3>
-<p>El 14 de noviembre se filtró la lista de las 34 canciones. Según NME, una tienda de discos vendió un vinilo antes de tiempo y las fotos de la contraportada se difundieron en redes. Rockstar no ha publicado la lista oficial, así que tómala como <span class="tag no">Reportado</span> hasta el 19 de noviembre. Las canciones que ya se conocían aparecen en el orden filtrado, lo que le da credibilidad.</p>
-<p>Estos son los artistas que aparecen, en el orden de la lista filtrada:</p>
-<ol>
-  <li>Justice con Michael McDonald</li>
-  <li>Yung Lean con Future y Metro Boomin ("That's It")</li>
-  <li>Playboi Carti</li>
-  <li>Travis Scott ("RHYNO")</li>
-  <li>CA7RIEL y Paco Amoroso, PinkPantheress, Fred again.. y Étienne de Crécy ("Sexy Magic")</li>
-  <li>Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard ("Flower in a Hurricane")</li>
-  <li>Dua Lipa</li>
-  <li>Morgan Wallen ("Last Thing You Need")</li>
-  <li>Jhayco</li>
-  <li>Fuerza Regida</li>
-  <li>Rauw Alejandro ("Macacoa 2000")</li>
-  <li>A Boogie Wit Da Hoodie con Elkan</li>
-  <li>Burna Boy</li>
-  <li>Gunna</li>
-  <li>Kodak Black y Don Toliver</li>
-  <li>Young Thug</li>
-  <li>Tee Grizzley</li>
-  <li>Don Toliver</li>
-  <li>Cardi B</li>
-  <li>JT</li>
-  <li>Jennie</li>
-  <li>Tove Lo ("Blood in Your Eyes")</li>
-  <li>Zara Larsson</li>
-  <li>Camila Cabello</li>
-  <li>Fcukers</li>
-  <li>Arca</li>
-  <li>Rina Sawayama</li>
-  <li>Rose Gray</li>
-  <li>Lana Del Rey</li>
-  <li>Kali Uchis y Helado Negro</li>
-  <li>Omar Apollo</li>
-  <li>Keith Richards ("Bright Lights, Big City")</li>
-  <li>Jesse Johnson y Dâm-Funk</li>
-  <li>Stanley Clarke, Yussef Dayes y Robert Glasper</li>
-</ol>
-<div class="note"><strong>Mucho latino en la lista.</strong> Si la filtración es correcta, además de Rauw Alejandro y CA7RIEL y Paco Amoroso, el álbum trae a Jhayco, Fuerza Regida, Arca, Kali Uchis con Helado Negro y Omar Apollo. NME cuenta que el tema de Lana Del Rey es una canción suya que llevaba más de diez años sin publicar.</div>
+<h3>La lista oficial de The Album (34 canciones)</h3>
+<div class="tbl"><table>
+  <thead><tr><th>#</th><th>Artista</th><th>Canción</th></tr></thead>
+  <tbody>
+    <tr><td class="num">1</td><td>Justice con Michael McDonald</td><td>Starting From Zero</td></tr>
+    <tr><td class="num">2</td><td>Yung Lean con Future y Metro Boomin</td><td>That&#39;s It</td></tr>
+    <tr><td class="num">3</td><td>Playboi Carti</td><td>AHH YEA</td></tr>
+    <tr><td class="num">4</td><td>Travis Scott</td><td>RHYNO</td></tr>
+    <tr><td class="num">5</td><td>CA7RIEL y Paco Amoroso, PinkPantheress, Fred again.. y Etienne de Crécy</td><td>Sexy Magic</td></tr>
+    <tr><td class="num">6</td><td>Justice con Tame Impala, SZA y King Gizzard &amp; The Lizard Wizard</td><td>Flower In A Hurricane</td></tr>
+    <tr><td class="num">7</td><td>Dua Lipa</td><td>Go Easy</td></tr>
+    <tr><td class="num">8</td><td>Morgan Wallen</td><td>Last Thing You Need</td></tr>
+    <tr><td class="num">9</td><td>JHAYCO</td><td>X</td></tr>
+    <tr><td class="num">10</td><td>Fuerza Regida</td><td>Suzuki</td></tr>
+    <tr><td class="num">11</td><td>Rauw Alejandro</td><td>Macacoa 2000</td></tr>
+    <tr><td class="num">12</td><td>A Boogie Wit da Hoodie con elkan</td><td>Dance With Me</td></tr>
+    <tr><td class="num">13</td><td>Burna Boy</td><td>Bigger</td></tr>
+    <tr><td class="num">14</td><td>Gunna</td><td>COUNT UP</td></tr>
+    <tr><td class="num">15</td><td>Kodak Black y Don Toliver</td><td>Let&#39;s Rock</td></tr>
+    <tr><td class="num">16</td><td>Young Thug</td><td>WAKIN UP FLEX</td></tr>
+    <tr><td class="num">17</td><td>Tee Grizzley</td><td>IKYFL</td></tr>
+    <tr><td class="num">18</td><td>Don Toliver</td><td>TF?</td></tr>
+    <tr><td class="num">19</td><td>Cardi B</td><td>Don&#39;t Chart</td></tr>
+    <tr><td class="num">20</td><td>JT</td><td>GMA</td></tr>
+    <tr><td class="num">21</td><td>JENNIE</td><td>Power Trip</td></tr>
+    <tr><td class="num">22</td><td>Tove Lo</td><td>Blood In Your Eyes</td></tr>
+    <tr><td class="num">23</td><td>Zara Larsson</td><td>Fast Emotion</td></tr>
+    <tr><td class="num">24</td><td>Camila Cabello</td><td>Sweet Like Candy</td></tr>
+    <tr><td class="num">25</td><td>Fcukers</td><td>Only One</td></tr>
+    <tr><td class="num">26</td><td>Arca</td><td>Sandunguea</td></tr>
+    <tr><td class="num">27</td><td>Rina Sawayama</td><td>TRDWFE</td></tr>
+    <tr><td class="num">28</td><td>Rose Gray</td><td>All Again</td></tr>
+    <tr><td class="num">29</td><td>Lana Del Rey</td><td>Crazy For You</td></tr>
+    <tr><td class="num">30</td><td>Kali Uchis y Helado Negro</td><td>Largate</td></tr>
+    <tr><td class="num">31</td><td>Omar Apollo</td><td>NO ME BUSQUES</td></tr>
+    <tr><td class="num">32</td><td>Keith Richards</td><td>Bright Lights, Big City</td></tr>
+    <tr><td class="num">33</td><td>Jesse Johnson y DāM-FunK</td><td>Stone Kold Krazy Luuv</td></tr>
+    <tr><td class="num">34</td><td>Stanley Clarke, Yussef Dayes y Robert Glasper</td><td>Overtown Lights</td></tr>
+  </tbody>
+</table></div>
+<div class="note"><strong>Mucho latino en el disco.</strong> Además de Rauw Alejandro y CA7RIEL y Paco Amoroso, están JHAYCO, Fuerza Regida, Arca, Kali Uchis con Helado Negro y Omar Apollo. El tema de Lana Del Rey es una canción suya que llevaba más de diez años sin publicar, según NME.</div>
+
+<h2>The Album (Deluxe Edition): 23 canciones más</h2>
+<p>Pocos días después del lanzamiento, Rockstar y Atlantic sacaron por sorpresa una <strong>Deluxe Edition</strong> en streaming con <strong>23 canciones extra</strong>, así que el álbum completo llega a <strong>57</strong>. La abre Travis Scott y trae cinco temas de Overmono, entre ellos "Welcome to Leonida". Florida se nota: Kodak Black, Denzel Curry y Pooh Shiesty son de allí.</p>
+<div class="tbl"><table>
+  <thead><tr><th>#</th><th>Artista</th><th>Canción</th></tr></thead>
+  <tbody>
+    <tr><td class="num">35</td><td>Travis Scott</td><td>Burn This Shit Down</td></tr>
+    <tr><td class="num">36</td><td>Slayyyter</td><td>internet $tar</td></tr>
+    <tr><td class="num">37</td><td>The Dare</td><td>Interesting</td></tr>
+    <tr><td class="num">38</td><td>Anitta</td><td>Touch &amp; Go</td></tr>
+    <tr><td class="num">39</td><td>Offset</td><td>I Just Came To Pop It</td></tr>
+    <tr><td class="num">40</td><td>HXG, tana y Quavo</td><td>RCKSTRL!VING</td></tr>
+    <tr><td class="num">41</td><td>21 Savage</td><td>Cookin</td></tr>
+    <tr><td class="num">42</td><td>Pooh Shiesty</td><td>Got Dat</td></tr>
+    <tr><td class="num">43</td><td>Young Nudy</td><td>Don Da Da</td></tr>
+    <tr><td class="num">44</td><td>SoFaygo</td><td>CASHOUT</td></tr>
+    <tr><td class="num">45</td><td>Real Dimez y Sexyy Red</td><td>Cooties (Remix)</td></tr>
+    <tr><td class="num">46</td><td>Latto con Flo Milli</td><td>50 Bands</td></tr>
+    <tr><td class="num">47</td><td>Kodak Black y Michaël Brun</td><td>Tèt Kale Bobis</td></tr>
+    <tr><td class="num">48</td><td>Denzel Curry con 454</td><td>FLA Flow</td></tr>
+    <tr><td class="num">49</td><td>NEIL FRANCES</td><td>You Move Me</td></tr>
+    <tr><td class="num">50</td><td>CHRIS STASSY y KETTAMA</td><td>Don&#39;t Play Around</td></tr>
+    <tr><td class="num">51</td><td>HEALTH</td><td>NIGHTMARE</td></tr>
+    <tr><td class="num">52</td><td>Power Trip</td><td>Mutual Death Warrant</td></tr>
+    <tr><td class="num">53</td><td>Overmono</td><td>Granforma</td></tr>
+    <tr><td class="num">54</td><td>Overmono</td><td>Windsor Drop</td></tr>
+    <tr><td class="num">55</td><td>Overmono</td><td>Eighty Eight Comet</td></tr>
+    <tr><td class="num">56</td><td>Overmono</td><td>Banshee</td></tr>
+    <tr><td class="num">57</td><td>Overmono</td><td>Welcome to Leonida</td></tr>
+  </tbody>
+</table></div>
 
 <div class="picks">
   {pick("Vinilo", "", "GTA VI: The Album en vinilo", "Para coleccionistas: el disco oficial con las 34 canciones originales del juego.", "Grand Theft Auto VI The Album vinyl")}
@@ -1182,11 +1209,12 @@ musica = f"""
   <dt>¿Todavía se pueden conseguir entradas para GTA VI: The Festival?</dt><dd>No. El festival fue el 21 de noviembre y las entradas solo se vendían con el código del sorteo oficial.</dd>
   <dt>¿Bad Bunny sale en GTA 6?</dt><dd>Sí. Es locutor de Cocoteo FM, la emisora de música latina, con el nombre de El Martillo, y suena su canción "EoO".</dd>
   <dt>¿Vuelven Flash FM o V-Rock?</dt><dd>Flash FM vuelve, ahora con pop actual. V-Rock no está entre las seis emisoras presentadas hasta ahora.</dd>
-  <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>El 19 de noviembre de 2026, junto con el juego. Siete canciones ya están en streaming.</dd>
-  <dt>¿Qué artistas salen en GTA VI: The Album?</dt><dd>Rockstar ha confirmado a Travis Scott, Morgan Wallen, Rauw Alejandro, Yung Lean, Keith Richards, Tove Lo, Justice y CA7RIEL y Paco Amoroso, entre otros. La lista filtrada el 14 de noviembre suma a Dua Lipa, Playboi Carti, Cardi B, Jennie, Camila Cabello, Lana Del Rey, Fuerza Regida y Jhayco, pero no es oficial hasta que salga el álbum.</dd>
+  <dt>¿Cuándo sale el álbum de GTA 6?</dt><dd>Ya salió, junto con el juego, y está en streaming. Después llegó la Deluxe Edition con 23 canciones extra, 57 en total.</dd>
+  <dt>¿Qué trae la Deluxe Edition de GTA VI: The Album?</dt><dd>23 canciones nuevas de artistas como Travis Scott, 21 Savage, Offset, Anitta, Latto, Denzel Curry, Kodak Black y Overmono, que suman 57 con las 34 del álbum original.</dd>
+  <dt>¿Qué artistas salen en GTA VI: The Album?</dt><dd>Travis Scott, Dua Lipa, Playboi Carti, Morgan Wallen, Rauw Alejandro, Cardi B, JENNIE, Camila Cabello, Lana Del Rey, Fuerza Regida, JHAYCO, Justice y muchos más: la lista completa de 34 canciones está arriba.</dd>
   <dt>¿Quién hace la música original de GTA 6?</dt><dd>El dúo electrónico Justice compuso la banda sonora original. Rockstar lo dio a conocer con el tráiler de lanzamiento.</dd>
   <dt>¿Cuándo sale el Original Score de GTA 6?</dt><dd>El 11 de diciembre de 2026, en streaming, CD y vinilo. El tema "Pusher", con Gesaffelstein, ya se puede escuchar.</dd>
-  <dt>¿Qué diferencia hay entre The Album y el Original Score?</dt><dd>The Album trae 34 canciones de artistas como Travis Scott o Rauw Alejandro y sale el 19 de noviembre. El Original Score es la música instrumental del juego hecha por Justice y sale el 11 de diciembre.</dd>
+  <dt>¿Qué diferencia hay entre The Album y el Original Score?</dt><dd>The Album trae 34 canciones de artistas como Travis Scott o Rauw Alejandro (57 con la Deluxe Edition) y ya está en streaming. El Original Score es la música instrumental del juego hecha por Justice y sale el 11 de diciembre.</dd>
 </dl>
 {AFF}"""
 
@@ -2010,7 +2038,78 @@ coleccionables = f"""
 <p>¿Vas a por el platino? Mira la <a href="trofeos-logros-gta-6.html">lista de trofeos</a> y los <a href="trucos-gta-6.html">trucos</a> que se desbloquean con estos coleccionables.</p>
 {AFF}"""
 
+armas = f"""
+<span class="mile">Guía</span>
+<h1>Armas de GTA 6: Ammu-Nation, armas únicas y cómo no perderlas</h1>
+{UPD}
+<p class="lede">En GTA VI las armas ya no se guardan todas en el bolsillo ni se pierden para siempre si te mueres. Hay armas que compras, armas que recoges en la calle y más de cien variantes únicas escondidas por Leonida o en las vitrinas de las armerías. Aquí te explicamos cómo funciona todo: qué tipos hay, cómo comprar en Ammu-Nation, dónde se guardan y qué tienen de especial las armas únicas.</p>
+<div class="note"><strong>Ojo:</strong> solo ponemos lo que coincide en varias guías publicadas tras el lanzamiento. Rockstar no ha publicado una lista oficial de armas. Los nombres van en inglés, como salen en el juego.</div>
+
+<h2>Lo básico: cómo funcionan las armas en GTA VI</h2>
+<ul>
+  <li><strong>No todo va encima.</strong> Las armas largas (rifles, escopetas) van en el <strong>maletero de tu auto</strong> o en un casillero de Ammu-Nation, no en el bolsillo. Rockstar ya lo había adelantado antes del lanzamiento.</li>
+  <li><strong>Armas compradas y armas recogidas no son lo mismo.</strong> Lo que compras en Ammu-Nation pasa a ser tuyo: si lo pierdes, lo recuperas. Lo que le quitas a un enemigo solo te dura un rato, aunque puedes dejarlo de forma temporal en el maletero.</li>
+  <li><strong>El casillero de armas</strong> (weapon locker) está en todas las Ammu-Nation. Desde ahí cambias tu equipo completo y recuperas las armas que hayas perdido.</li>
+  <li><strong>Jason y Lucia comparten armas</strong>, pero cada uno equipa y modifica las suyas por separado.</li>
+</ul>
+{AD}
+
+<h2>Tipos de armas y modelos que verás</h2>
+<p>Las guías coinciden en estas categorías. Cada modelo base tiene además variantes únicas con otro nombre (por ejemplo, la Sand Storm ES9 es una Girardi ES9 especial).</p>
+<div class="tbl"><table>
+  <thead><tr><th>Tipo</th><th>Algunos modelos</th></tr></thead>
+  <tbody>
+    <tr><td>Pistolas</td><td>Girardi ES9, Klose K17, Nipper .38</td></tr>
+    <tr><td>Revólveres</td><td>Mustang .357</td></tr>
+    <tr><td>Subfusiles</td><td>Vatra, W-10</td></tr>
+    <tr><td>Escopetas</td><td>Moreland 850, AZ1200, Drifter, Comshot 12</td></tr>
+    <tr><td>Rifles de asalto</td><td>Duke 556, KZ-59</td></tr>
+    <tr><td>Rifles de francotirador</td><td>Laird 350, SM-69</td></tr>
+    <tr><td>Ametralladoras y lanzadores</td><td>LMG, lanzagranadas y lanzacohetes (en las tiendas grandes)</td></tr>
+    <tr><td>Cuerpo a cuerpo</td><td>Cuchillos, bate, bastón y puño americano</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Ammu-Nation: cómo comprar armas</h2>
+<ul>
+  <li>Ammu-Nation es la forma legal de conseguir armas. Además de armas venden <strong>munición, chalecos antibalas y paracaídas</strong>.</li>
+  <li>No todas las tiendas son iguales. En el mapa se separan por tipo, y las <strong>tiendas grandes</strong> tienen más armas y más personalización, incluidas las pesadas. Las de caza venden sobre todo rifles.</li>
+  <li>Algunas que conviene conocer: <strong>Phil's Ammu-Nation</strong>, <strong>Big Shots</strong>, <strong>Prestige Firearms</strong>, <strong>Iron &amp; Oak</strong>, <strong>Woodhatch</strong> y <strong>Black Eagle</strong>.</li>
+  <li>Lo que compras (munición, blindaje y explosivos incluidos) se manda al <strong>maletero de tu auto personal</strong>.</li>
+  <li>En las armerías se personalizan las armas con accesorios como miras y cargadores. Las armas únicas no se pueden modificar.</li>
+  <li>Para encontrar las tiendas que ya descubriste, abre el índice del mapa y entra en el apartado de armas.</li>
+</ul>
+{AD}
+
+<h2>Armas únicas: qué son y dónde están</h2>
+<p>Son versiones especiales de las armas normales, con su propio nombre y diseño. Se reconocen por el <strong>icono amarillo</strong>, tanto en el mundo como en tu equipo.</p>
+<ul>
+  <li><strong>Hay más de cien.</strong> Las guías todavía no coinciden en el total exacto, porque se siguen encontrando.</li>
+  <li><strong>En las vitrinas de las armerías:</strong> cada Ammu-Nation vende al menos una variante única, que cuesta más que el modelo normal.</li>
+  <li><strong>Gratis por el mapa:</strong> muchas están tiradas en el mundo, algunas bajo el agua, y otras se consiguen como botín en los sitios de <strong>operaciones ilegales</strong> de las bandas.</li>
+  <li><strong>Por la historia:</strong> algunas no aparecen hasta que avanzas ciertas misiones.</li>
+  <li><strong>No se pierden:</strong> una vez recogida, es tuya para siempre y la comparten Jason y Lucia. Si la sueltas, la recuperas en el casillero de cualquier Ammu-Nation o en el maletero.</li>
+  <li><strong>No se modifican:</strong> no aceptan accesorios, colores ni acabados.</li>
+</ul>
+<div class="note"><strong>Consejo:</strong> antes de gastar en una vitrina, explora. Muchas armas únicas buenas están gratis por el mapa, y el dinero del principio rinde más en otras cosas (mira la guía de <a href="dinero-rapido-gta-6.html">dinero rápido</a>).</div>
+
+<h2>Armas de las ediciones y reservas</h2>
+<p>La edición Ultimate trae armas exclusivas con acabados de Jason y Lucia, y quienes reservaron recibieron el Vintage Vice City Pack, con un acabado de palmeras para casi todas las armas. Desde el armario de armas puedes cambiar entre la versión normal y estas versiones especiales. Todo lo que incluye cada edición está en <a href="fecha-precio-ediciones.html">fecha, precio y ediciones</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Dónde se compran armas en GTA 6?</dt><dd>En Ammu-Nation. Hay tiendas de distintos tipos por todo Leonida, y las más grandes tienen más armas, incluidas las pesadas.</dd>
+  <dt>¿Se pierden las armas al morir en GTA 6?</dt><dd>Las que compraste y las armas únicas no: las recuperas en el casillero de cualquier Ammu-Nation o en el maletero de tu auto. Las que recoges de los enemigos sí se pueden perder.</dd>
+  <dt>¿Dónde se guardan los rifles y las escopetas?</dt><dd>En el maletero de tu auto o en el casillero de Ammu-Nation. Ya no se llevan todas las armas encima.</dd>
+  <dt>¿Qué son las armas amarillas?</dt><dd>Son armas únicas: variantes especiales con nombre propio. No se pueden modificar, pero no se pierden y las comparten Jason y Lucia.</dd>
+  <dt>¿Cuántas armas únicas hay en GTA 6?</dt><dd>Más de cien, según las guías publicadas. Unas se compran en las vitrinas de las armerías y otras están gratis por el mapa o en los sitios de operaciones ilegales.</dd>
+  <dt>¿Jason y Lucia tienen armas distintas?</dt><dd>Comparten las armas que compras y las únicas, pero cada uno elige su equipo y sus accesorios.</dd>
+</dl>
+<p>¿Vas a por todo? Mira los <a href="coleccionables-gta-6.html">coleccionables</a>, los <a href="robos-atracos-gta-6.html">robos</a> y los <a href="trucos-gta-6.html">trucos</a>.</p>
+{AFF}"""
+
 pages = {
+    "armas-gta-6.html": (armas, "Armas de GTA 6: Ammu-Nation, armas únicas y casilleros | Leonida Global 305", "Cómo funcionan las armas en GTA 6: tipos y modelos, cómo comprar en Ammu-Nation, el casillero y el maletero, y qué son las más de cien armas únicas de icono amarillo.", True),
     "coleccionables-gta-6.html": (coleccionables, "Coleccionables de GTA 6: cuántos hay y cuántos pide el 100% | Leonida Global 305", "Todos los coleccionables de GTA 6: flamencos de cocaína, cartas, WAiNK, tesoros de Kenton, libros, estilos y meditación. Cuántos hay, cuántos cuentan para el 100% y cuál se pierde.", True),
     "dinero-rapido-gta-6.html": (dinero, "Cómo ganar dinero rápido en GTA 6: mejores métodos | Leonida Global 305", "Cómo ganar dinero rápido en GTA 6 capítulo a capítulo: Moses, joyerías, los autos de Randy y las cámaras acorazadas, y por qué no farmear en el Capítulo 1.", True),
     "robos-atracos-gta-6.html": (robos, "Robos y atracos de GTA 6: bancos, cámaras acorazadas y golpes | Leonida Global 305", "Cómo robar tiendas, joyerías y bancos en GTA 6, cuándo se desbloquea cada robo, cuánto pagan las cámaras acorazadas y los dos grandes golpes de la historia.", True),
@@ -2033,6 +2132,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "armas-gta-6.html": ["Insider Gaming", "PowerPyx", "Dexerto", "GTABase", "GamesRadar+", "AllGTAWorld"],
     "coleccionables-gta-6.html": ["PowerPyx", "GameTrek", "The Games Wiki", "VICE", "Red Bull"],
     "dinero-rapido-gta-6.html": ["PowerPyx", "GTABase", "GamesRadar+", "KeenGamer", "MetaForge", "OutputLag", "GamerBolt", "G2A News"],
     "robos-atracos-gta-6.html": ["Respawndex", "Timesaver", "ViceCityHQ", "HappyGamer", "MetaForge"],
@@ -2046,7 +2146,7 @@ CREDITOS = {
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu", "The New York Times", "Notebookcheck", "Tech4Gamers", "2K", "Beebom", "ComicBook.com"],
     "leaks-cyberleek.html": ["Dexerto", "iGeeksBlog", "Tech Insider", "BBC"],
     "equipo-gta-6.html": ["RTINGS", "TechRadar", "GamesRadar", "Windows Central", "Turtle Beach", "PC Gamer", "PlayStation Blog", "Kotaku", "Insider Gaming", "Game Informer", "VGC"],
-    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+"],
+    "musica-radios-gta-6.html": ["Rockstar Games", "Forbes", "Kotaku", "Consequence", "G2A News", "Insider Gaming", "Stereogum", "VICE", "VGC", "Revolt", "Beebom", "VideoGamer", "NME", "Dexerto", "GamesRadar+", "Variety", "DancehallMag"],
     "trailers-gta-6.html": ["Rockstar Games", "Insider Gaming", "Pure Xbox", "VICE", "Wikipedia", "VideoGamer"],
     "hora-de-salida-gta-6.html": ["HappyGamer", "Beebom", "LibertyCity", "PlayStation Store", "GTA BOOM", "Inven Global", "MP1st", "All Things How", "Kotaku", "Insider Gaming", "Xbox Wire", "YouTube", "Notebookcheck", "Streams Charts", "VICE", "tbreak", "VGTimes", "SourceVI", "Game Rant"],
     "revistas-gta-6.html": ["Edge", "GamesRadar+", "Game Informer", "Dazed", "TROISCOULEURS", "mk2", "LOVE", "GTA Intel", "Beebom", "GTAVice.net"],
