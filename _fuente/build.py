@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"), ("armas-gta-6.html", "Armas"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"), ("armas-gta-6.html", "Armas"), ("casas-seguras-garajes-gta-6.html", "Garajes"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"armas-gta-6.html": "2026-11-25", "coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"casas-seguras-garajes-gta-6.html": "2026-11-26", "armas-gta-6.html": "2026-11-25", "coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 25 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 26 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="casas-seguras-garajes-gta-6.html"><span class="mile">Nuevo</span><h3>Casas seguras y garajes de GTA 6</h3><p>Dónde viven Jason y Lucia en cada capítulo, los ocho garajes con sus precios y el trofeo Little Boxes.</p></a></li>
   <li><a href="armas-gta-6.html"><span class="mile">Nuevo</span><h3>Armas de GTA 6</h3><p>Ammu-Nation, el casillero y el maletero, y las más de cien armas únicas de icono amarillo.</p></a></li>
   <li><a href="coleccionables-gta-6.html"><span class="mile">Nuevo</span><h3>Coleccionables de GTA 6</h3><p>Flamencos de cocaína, cartas, WAiNK, tesoros de Kenton y meditación: cuántos hay, cuántos pide el 100% y cuál se pierde.</p></a></li>
   <li><a href="dinero-rapido-gta-6.html"><span class="mile">Nuevo</span><h3>Dinero rápido en GTA 6</h3><p>Cómo ganar dinero capítulo a capítulo, por qué no farmear en el Capítulo 1 y en qué no gastarlo.</p></a></li>
@@ -1936,7 +1937,7 @@ dinero = f"""
 <h2>En qué gastar (y en qué no)</h2>
 <ul>
   <li><strong>Family Savings</strong> es donde más dinero se va. Sirve para subir el límite de tu cuenta, pero lo que metes ahí no se puede sacar, así que no lo llenes de golpe al principio.</li>
-  <li><strong>Garajes:</strong> según las guías, son la única propiedad que se compra. No hay negocios que den ingresos pasivos como en GTA Online.</li>
+  <li><strong>Garajes:</strong> según las guías, son la única propiedad que se compra (precios y ubicaciones en la guía de <a href="casas-seguras-garajes-gta-6.html">casas seguras y garajes</a>). No hay negocios que den ingresos pasivos como en GTA Online.</li>
   <li><strong>Armas:</strong> con una pistola, una escopeta y un rifle vas bien. No te gastes todo en el armero al empezar.</li>
   <li>En las tiendas solo puedes pagar en efectivo compras pequeñas, de hasta unos 1,000 dólares. Lo más caro sale de la cuenta de BuckMe.</li>
   <li>No vendas autos chocados, no robes con la misma ropa con la que te vieron y no entres con mucho efectivo encima a los escondites de pandillas: si mueres, lo pierdes.</li>
@@ -2108,7 +2109,106 @@ armas = f"""
 <p>¿Vas a por todo? Mira los <a href="coleccionables-gta-6.html">coleccionables</a>, los <a href="robos-atracos-gta-6.html">robos</a> y los <a href="trucos-gta-6.html">trucos</a>.</p>
 {AFF}"""
 
+garajes = f"""
+<span class="mile">Guía</span>
+<h1>Casas seguras y garajes de GTA 6: dónde vives y cómo guardar tus autos</h1>
+{UPD}
+<p class="lede">En GTA VI no compras casas. Jason y Lucia van cambiando de casa segura según avanza la historia, y lo único que se compra son garajes para guardar autos. Aquí tienes las casas seguras de cada capítulo, qué puedes hacer en ellas, los ocho garajes que se compran con sus precios, los que te regalan y cuántos autos puedes tener.</p>
+<div class="note"><strong>Ojo:</strong> solo ponemos lo que coincide en varias guías publicadas tras el lanzamiento. Rockstar no ha publicado una lista oficial. Los nombres van en inglés, como salen en el juego.</div>
+
+<h2>Lo básico</h2>
+<ul>
+  <li><strong>Las casas seguras no se compran.</strong> Te las da la historia, y cambian con cada capítulo, como los campamentos de Red Dead Redemption 2. Cuando te mudas, la anterior deja de estar disponible.</li>
+  <li><strong>Lo que sí se compra son garajes</strong>, desde la app <strong>Vice City Real Estate</strong> del teléfono.</li>
+  <li><strong>No hay negocios</strong> que den dinero pasivo como en GTA Online.</li>
+</ul>
+{AD}
+
+<h2>Las casas seguras de cada capítulo</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Capítulo</th><th>Casa segura</th><th>Dónde</th><th>Cuándo</th></tr></thead>
+  <tbody>
+    <tr><td class="num">1</td><td>La casa de Jason</td><td>Key Lento, Leonida Keys</td><td>Desde el principio. Es la casa de Brian, que se la deja a Jason a cambio de que le ayude con sus negocios. Se pierde al terminar el Capítulo 1.</td></tr>
+    <tr><td class="num">2</td><td>Starlet Motel</td><td>Port Gellhorn, Kelly County</td><td>Al empezar el Capítulo 2. Se pierde en la misión Checking Out.</td></tr>
+    <tr><td class="num">3</td><td>Apartamento de Bayside</td><td>Catalan Boulevard, Bayside, Vice City</td><td>En la misión Welcome to Vice City. Es el primer piso que comparten Jason y Lucia en la ciudad.</td></tr>
+    <tr><td class="num">4</td><td>The Y (hotel)</td><td>Ocean Beach, Vice Beach</td><td>En la misión Ocean Beach.</td></tr>
+  </tbody>
+</table></div>
+<p>Para el Capítulo 5 las guías todavía no coinciden, así que no lo ponemos hasta que esté claro.</p>
+
+<h2>Qué puedes hacer en casa</h2>
+<ul>
+  <li><strong>Armario:</strong> cambiarte de ropa y probarte conjuntos.</li>
+  <li><strong>Cama:</strong> dormir para pasar el tiempo.</li>
+  <li><strong>Escondite de dinero:</strong> en la casa de Jason hay uno bajo el suelo, junto a la cama, para guardar y sacar efectivo.</li>
+  <li><strong>Nevera:</strong> bebidas y comida que suben la salud o el foco.</li>
+  <li><strong>Pelo:</strong> en casa solo puedes cortarte o raparte. Para un peinado nuevo hay que ir a una peluquería o barbería.</li>
+</ul>
+<div class="note"><strong>Cuidado con el escondite de Jason:</strong> según varias guías, al terminar el Capítulo 1 se pierde lo que haya dentro, igual que el efectivo y el saldo normal de BuckMe. Lo explicamos en la <a href="dinero-rapido-gta-6.html">guía de dinero</a>.</div>
+{AD}
+
+<h2>Cómo comprar garajes</h2>
+<p>Al terminar la misión <strong>Daily Driver</strong> del Capítulo 2, el encargo de Moses, te dan gratis el <strong>Port Gellhorn Station Garage</strong> y se instala en el teléfono la app <strong>Vice City Real Estate</strong>. Desde ahí ves en el mapa los garajes en venta, su precio y si los que ya tienes están llenos. Cada garaje comprado tiene <strong>una plaza</strong>, o sea, un auto más.</p>
+<div class="tbl"><table>
+  <thead><tr><th>Garaje</th><th>Zona</th><th>Precio</th></tr></thead>
+  <tbody>
+    <tr><td>Mitchell Auto Center</td><td>Kelly County</td><td class="num">$4,000</td></tr>
+    <tr><td>Persistence Road Garage</td><td>Belville, Leonard County</td><td class="num">$7,600</td></tr>
+    <tr><td>7th Avenue Garage</td><td>Salton, Vice City</td><td class="num">$12,000</td></tr>
+    <tr><td>Store n' Bolt</td><td>Ambrosia, Kelly County</td><td class="num">$16,800</td></tr>
+    <tr><td>Wyatt Motors</td><td>Ambrosia</td><td class="num">$21,600</td></tr>
+    <tr><td>Vela Rota Drive Garage</td><td>Capri, Mariana County</td><td class="num">$24,000</td></tr>
+    <tr><td>Bonita Court Garage</td><td>Vice Beach</td><td class="num">$34,000</td></tr>
+    <tr><td>Atlantic Court Garage</td><td>Ocean Beach, Vice Beach</td><td class="num">$40,000</td></tr>
+    <tr><td><strong>Total</strong></td><td></td><td class="num"><strong>$160,000</strong></td></tr>
+  </tbody>
+</table></div>
+<p>Una de las guías da precios un 25% más altos para cada garaje. Antes de ahorrar para uno, mira el precio que te sale en la app.</p>
+<p>Comprar los ocho da el trofeo <strong>Little Boxes</strong> (bronce). Los garajes gratis y los de las ediciones no cuentan. Los demás trofeos están en la <a href="trofeos-logros-gta-6.html">lista de trofeos</a>.</p>
+<div class="note"><strong>Consejo:</strong> empieza por el Mitchell Auto Center, que es el más barato, y deja los de Vice Beach para cuando tengas más dinero, por ejemplo después de los robos grandes (mira la <a href="robos-atracos-gta-6.html">guía de robos</a>).</div>
+
+<h2>Garajes gratis de la historia</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Garaje</th><th>Zona</th><th>Plazas</th><th>Cómo se consigue</th></tr></thead>
+  <tbody>
+    <tr><td>Port Gellhorn Station Garage</td><td>Port Gellhorn</td><td class="num">1</td><td>Misión Daily Driver (Capítulo 2)</td></tr>
+    <tr><td>Thompson Court Garage</td><td>Ocean Beach</td><td class="num">2</td><td>Misión Company Cars (Capítulo 4)</td></tr>
+    <tr><td>NE 15th Street Garage</td><td>Stockyard, Vice City</td><td class="num">2</td><td>Misión Operation Savage Glory (Capítulo 5)</td></tr>
+    <tr><td>Pegassi Residences Garage</td><td>Tequesta Retreat, Vice City</td><td class="num">3</td><td>Misión Operation Savage Glory (Capítulo 5)</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Garajes de las ediciones y de GTA+</h2>
+<ul>
+  <li><strong>Shore Court Garage</strong> (Shore Drive, Ocean Beach): viene con el Vintage Vice City Pack, el regalo por reservar.</li>
+  <li><strong>Paradise Garage</strong> (Watson Bay): solo en la edición Ultimate.</li>
+  <li><strong>Crosstown Garage</strong> (Crosstown, Vice City): para miembros de GTA+, a partir del Capítulo 3.</li>
+</ul>
+<p>Cada uno tiene una plaza y trae su propio auto. Qué incluye cada edición está en <a href="fecha-precio-ediciones.html">fecha, precio y ediciones</a>.</p>
+{AD}
+
+<h2>Cuántos autos puedes tener</h2>
+<ul>
+  <li>Con los ocho garajes comprados y los cuatro gratis de la historia tienes <strong>16 plazas</strong>. Sumando los autos personales que dejas aparcados fuera, las guías hablan de unos <strong>18 autos</strong> en total sin contar los garajes de las ediciones. Rockstar no ha dado un máximo oficial.</li>
+  <li>Un auto robado no es tuyo hasta que lo registras en un <strong>Pay 'n' Spray</strong>. Si tienes un garaje, puedes guardarlo ahí mientras tanto.</li>
+  <li>También puedes dejar un auto en la plaza de aparcamiento de tu casa segura para no perderlo.</li>
+  <li>Si abandonas un auto personal después de un delito, la policía puede quedarse vigilándolo o llevárselo al depósito.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Se pueden comprar casas en GTA 6?</dt><dd>No. Las casas seguras te las da la historia y cambian con cada capítulo. Lo único que se compra son garajes.</dd>
+  <dt>¿Cuándo se desbloquean los garajes en GTA 6?</dt><dd>Al terminar la misión Daily Driver del Capítulo 2. Te regalan el garaje de Port Gellhorn y se abre la app Vice City Real Estate para comprar los demás.</dd>
+  <dt>¿Cuántos garajes hay en GTA 6?</dt><dd>Ocho que se compran, cuatro que te da la historia y tres de las ediciones y GTA+.</dd>
+  <dt>¿Cuánto cuestan todos los garajes?</dt><dd>Unos 160,000 dólares los ocho, desde 4,000 el más barato hasta 40,000 el de Ocean Beach, según la mayoría de las guías.</dd>
+  <dt>¿Cómo se consigue el trofeo Little Boxes?</dt><dd>Comprando los ocho garajes de la app Vice City Real Estate. Los gratis y los de las ediciones no cuentan.</dd>
+  <dt>¿Dónde está la casa segura de Lucia?</dt><dd>Desde el Capítulo 2 Jason y Lucia comparten casa: primero el Starlet Motel de Port Gellhorn, luego el piso de Bayside y después el hotel The Y en Ocean Beach.</dd>
+</dl>
+<p>¿Ya tienes dónde guardar los autos? Ahora llénalos de <a href="armas-gta-6.html">armas</a> y sal a por <a href="dinero-rapido-gta-6.html">dinero</a>.</p>
+{AFF}"""
+
 pages = {
+    "casas-seguras-garajes-gta-6.html": (garajes, "Casas seguras y garajes de GTA 6: ubicaciones y precios | Leonida Global 305", "Las casas seguras de GTA 6 en cada capítulo, los ocho garajes que se compran con sus precios, los garajes gratis, el trofeo Little Boxes y cuántos autos puedes tener.", True),
     "armas-gta-6.html": (armas, "Armas de GTA 6: Ammu-Nation, armas únicas y casilleros | Leonida Global 305", "Cómo funcionan las armas en GTA 6: tipos y modelos, cómo comprar en Ammu-Nation, el casillero y el maletero, y qué son las más de cien armas únicas de icono amarillo.", True),
     "coleccionables-gta-6.html": (coleccionables, "Coleccionables de GTA 6: cuántos hay y cuántos pide el 100% | Leonida Global 305", "Todos los coleccionables de GTA 6: flamencos de cocaína, cartas, WAiNK, tesoros de Kenton, libros, estilos y meditación. Cuántos hay, cuántos cuentan para el 100% y cuál se pierde.", True),
     "dinero-rapido-gta-6.html": (dinero, "Cómo ganar dinero rápido en GTA 6: mejores métodos | Leonida Global 305", "Cómo ganar dinero rápido en GTA 6 capítulo a capítulo: Moses, joyerías, los autos de Randy y las cámaras acorazadas, y por qué no farmear en el Capítulo 1.", True),
@@ -2132,6 +2232,7 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "casas-seguras-garajes-gta-6.html": ["GTABase", "Game Rant", "Timesaver", "FinalBoss", "BoostBase", "GTA BOOM", "Insider Gaming", "GTA Wiki"],
     "armas-gta-6.html": ["Insider Gaming", "PowerPyx", "Dexerto", "GTABase", "GamesRadar+", "AllGTAWorld"],
     "coleccionables-gta-6.html": ["PowerPyx", "GameTrek", "The Games Wiki", "VICE", "Red Bull"],
     "dinero-rapido-gta-6.html": ["PowerPyx", "GTABase", "GamesRadar+", "KeenGamer", "MetaForge", "OutputLag", "GamerBolt", "G2A News"],
