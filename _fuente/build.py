@@ -164,12 +164,12 @@ body{top:0!important}
 .disclosure{font-size:.85rem;color:var(--muted)}
 """
 
-NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"), ("armas-gta-6.html", "Armas"), ("casas-seguras-garajes-gta-6.html", "Garajes"),
+NAV = [("index.html", "Inicio"), ("fecha-precio-ediciones.html", "Fecha y precio"), ("hora-de-salida-gta-6.html", "Hora de salida"), ("notas-resenas-gta-6.html", "Reseñas"), ("guia-principiantes-gta-6.html", "Para empezar"), ("misiones-gta-6.html", "Misiones"), ("trofeos-logros-gta-6.html", "Trofeos"), ("trucos-gta-6.html", "Trucos"), ("robos-atracos-gta-6.html", "Robos"), ("dinero-rapido-gta-6.html", "Dinero"), ("coleccionables-gta-6.html", "Coleccionables"), ("armas-gta-6.html", "Armas"), ("casas-seguras-garajes-gta-6.html", "Garajes"),
        ("mapa-leonida.html", "Mapa"), ("personajes.html", "Personajes"), ("todo-lo-confirmado.html", "Lo confirmado"), ("leaks-cyberleek.html", "Leaks"), ("mapa-miami-real.html", "Miami real"), ("trailers-gta-6.html", "Tráilers"), ("revistas-gta-6.html", "Revistas"), ("musica-radios-gta-6.html", "Música"), ("equipo-gta-6.html", "Equipo")]
 
 # Datos estructurados para Google (JSON-LD)
 import json as _jsonld, datetime as _dt
-PUBLICADO = {"casas-seguras-garajes-gta-6.html": "2026-11-26", "armas-gta-6.html": "2026-11-25", "coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
+PUBLICADO = {"misiones-gta-6.html": "2026-11-27", "casas-seguras-garajes-gta-6.html": "2026-11-26", "armas-gta-6.html": "2026-11-25", "coleccionables-gta-6.html": "2026-11-24", "dinero-rapido-gta-6.html": "2026-11-23", "robos-atracos-gta-6.html": "2026-11-22", "guia-principiantes-gta-6.html": "2026-11-20", "trofeos-logros-gta-6.html": "2026-11-19", "notas-resenas-gta-6.html": "2026-11-18", "revistas-gta-6.html": "2026-10-25", "trailers-gta-6.html": "2026-10-24", "hora-de-salida-gta-6.html": "2026-10-25"}
 def jsonld(slug, title, desc):
     url = f"{DOMAIN}/{'' if slug == 'index.html' else slug}"
     hoy = _dt.date.today().isoformat()
@@ -249,7 +249,7 @@ AFF = """<aside class="aff" aria-label="Recomendados">
   <p style="margin:.3em 0 0">Teles, monitores, SSD y accesorios para GTA 6, con opciones económicas y de gama alta: <a href="equipo-gta-6.html">ver el equipo recomendado</a>.</p>
 </aside>"""
 AD = '<div class="ad" aria-hidden="true">Espacio publicitario</div>'
-UPD = '<p class="updated">Actualizado: 26 de noviembre de 2026</p>'
+UPD = '<p class="updated">Actualizado: 27 de noviembre de 2026</p>'
 
 COLECCIONISTA = """
 <h2>Caja de coleccionista: The Goodtime State – Vice City Collection</h2>
@@ -350,6 +350,7 @@ index = f"""
 {YT_JS}
 <h2>Guías disponibles</h2>
 <ul class="guides">
+  <li><a href="misiones-gta-6.html"><span class="mile">Nuevo</span><h3>Misiones de GTA 6</h3><p>Las 91 misiones de los 5 capítulos en orden, cuáles son de Jason o Lucia y las secundarias que se pierden.</p></a></li>
   <li><a href="casas-seguras-garajes-gta-6.html"><span class="mile">Nuevo</span><h3>Casas seguras y garajes de GTA 6</h3><p>Dónde viven Jason y Lucia en cada capítulo, los ocho garajes con sus precios y el trofeo Little Boxes.</p></a></li>
   <li><a href="armas-gta-6.html"><span class="mile">Nuevo</span><h3>Armas de GTA 6</h3><p>Ammu-Nation, el casillero y el maletero, y las más de cien armas únicas de icono amarillo.</p></a></li>
   <li><a href="coleccionables-gta-6.html"><span class="mile">Nuevo</span><h3>Coleccionables de GTA 6</h3><p>Flamencos de cocaína, cartas, WAiNK, tesoros de Kenton y meditación: cuántos hay, cuántos pide el 100% y cuál se pierde.</p></a></li>
@@ -414,6 +415,7 @@ fecha = f"""
     <tr><td>Lanzamiento PS5 y Xbox Series X|S</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Primeras ventas oficiales: 3,790 millones de dólares el primer día</td><td class="num">20 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Sony: más de 39 millones de jugadores en PS5 en cuatro días</td><td class="num">23 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
+    <tr><td>Cartas coleccionables físicas de Panini (<a href="#panini">ver abajo</a>)</td><td class="num">Diciembre de 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Xbox Cloud Gaming en Xbox One y Xbox Series X|S (1:00 a.&nbsp;m. hora de Miami)</td><td class="num">19 nov 2026</td><td><span class="tag ok">Confirmado</span></td></tr>
     <tr><td>Versión de PC</td><td class="num">Sin fecha (reportado: primer trimestre de 2027)</td><td><span class="tag no">No anunciado</span></td></tr>
     <tr><td>Nuevo GTA Online</td><td class="num">Sin fecha</td><td><span class="tag no">No anunciado</span></td></tr>
@@ -436,6 +438,15 @@ fecha = f"""
   <li>El 19 de noviembre la web oficial publicará gratis, para descargar e imprimir, el <strong>póster de la portada y el mapa de Leonida</strong>.</li>
   <li>Poco después del lanzamiento, la Rockstar Store venderá ese póster en físico, a doble cara, por <strong>$0.99</strong>, o lo regalará con cualquier compra.</li>
 </ul>
+<h2 id="panini">Cartas de Panini de GTA VI (24 de noviembre)</h2>
+<ul>
+  <li><strong>Panini America anunció con Rockstar</strong> una colección de cartas coleccionables de GTA VI que sale en <strong>diciembre de 2026</strong>, sin día concreto todavía.</li>
+  <li>Son la versión física de las cartas deportivas que se coleccionan dentro del juego. No dan nada en GTA VI.</li>
+  <li>Cada caja de cuatro sobres trae de media 2 Rookies, 1 Retro, 1 Illustrated y 4 Special Silvers, con versiones numeradas en bronce (49 copias), plata (25) y una única de oro.</li>
+  <li>Es el primer producto oficial nuevo tras el lanzamiento. De contenido para el juego, ni GTA Online ni expansiones, no hay nada anunciado.</li>
+</ul>
+<p>Las 480 cartas del juego, en la guía de <a href="coleccionables-gta-6.html">coleccionables</a>.</p>
+
 <h2>El primer fin de semana: 39 millones de jugadores en PS5 (23 de noviembre)</h2>
 <ul>
   <li><strong>Sony confirmó</strong> que más de <strong>39 millones de jugadores</strong> distintos jugaron GTA VI en PS5 en sus primeros cuatro días, y lo llama el mayor lanzamiento de la historia de PlayStation.</li>
@@ -1656,7 +1667,7 @@ principiantes = f"""
     <tr><td class="num">22</td><td>Discharge Time</td></tr>
   </tbody>
 </table></div>
-<p>El Capítulo 2 empieza con <strong>What's In The Bag?</strong> y <strong>Ambulance Chaser</strong>.</p>
+<p>El Capítulo 2 empieza con <strong>What's In The Bag?</strong> y <strong>Ambulance Chaser</strong>. Las 91 misiones de los cinco capítulos están en la <a href="misiones-gta-6.html">lista completa de misiones</a>.</p>
 <div class="note"><strong>Punto sin retorno:</strong> las guías avisan de que el Capítulo 1 tiene un punto sin retorno hacia el final. Si quieres explorar o hacer actividades de la zona inicial, hazlo antes de las últimas misiones del capítulo.</div>
 {AD}
 
@@ -1771,7 +1782,7 @@ trucos = f"""
     <tr><td>Filtros</td><td>Golden Hour (4 horas de la mano con tu pareja), Bubblegum (las 24 cartas de Vice City Flamingos), Fisheye (pescar 100 peces), Fast Forward (meditar 50 veces), Dark Mirror (ganar 500,000 dólares vendiendo vehículos), Pixel Art (250,000 dólares vendiendo coleccionables), Hellscape (robar 100 vehículos de policía), Migraine (aguantar 6 minutos con 6 estrellas), entre otros.</td></tr>
   </tbody>
 </table></div>
-<p>Iremos sumando códigos a la tabla a medida que se confirmen.</p>
+<p>Algunas webs ya publican los 61 códigos, pero la mayoría de las guías siguen marcando estos como "sin descubrir" y no hemos encontrado otras que los confirmen. Por eso no los ponemos todavía: si metes un código mal, no pasa nada, pero tampoco funciona. Iremos sumando códigos a la tabla a medida que se confirmen.</p>
 
 <h2>Preguntas frecuentes</h2>
 <dl class="faq">
@@ -2207,7 +2218,85 @@ garajes = f"""
 <p>¿Ya tienes dónde guardar los autos? Ahora llénalos de <a href="armas-gta-6.html">armas</a> y sal a por <a href="dinero-rapido-gta-6.html">dinero</a>.</p>
 {AFF}"""
 
+misiones = f"""
+<span class="mile">Guía</span>
+<h1>Misiones de GTA 6: lista completa de los 5 capítulos en orden</h1>
+{UPD}
+<p class="lede">La historia de GTA VI tiene <strong>5 capítulos y 91 misiones principales</strong>, y según las guías lleva entre <strong>60 y 80 horas</strong>. Aquí tienes todas en orden, cuáles son solo de Jason o de Lucia, los puntos sin retorno y las misiones secundarias que se pueden perder.</p>
+<div class="note"><strong>Ojo:</strong> la lista coincide en varias guías publicadas tras el lanzamiento. Algunas cuentan más de 110 entradas porque separan cada paso (como "ir a ver a alguien" o "pagar a Abe"), pero las misiones con nombre son estas 91. Los nombres van en inglés, como salen en el juego, y el orden puede cambiar un poco según lo que hagas primero.</div>
+
+<h2>Lo que tienes que saber antes de empezar</h2>
+<ul>
+  <li><strong>No se pueden repetir misiones.</strong> No hay menú de repetición ni medallas de oro por misión como en GTA V.</li>
+  <li><strong>Guarda a mano</strong> al empezar y al terminar cada capítulo. Es la única forma de volver atrás.</li>
+  <li>Las misiones de historia salen en el mapa con su icono. Si no aparece la siguiente, haz otra cosa o <strong>duerme</strong> para que pase el tiempo.</li>
+  <li>Desde el Capítulo 3 puedes cambiar entre Jason y Lucia, pero algunas misiones solo las puede empezar uno de los dos. En las tablas las marcamos con su nombre.</li>
+  <li>En el menú <strong>Progress</strong> ves qué misiones llevas hechas.</li>
+</ul>
+
+<h2>Resumen por capítulo</h2>
+<div class="tbl"><table>
+  <thead><tr><th>Capítulo</th><th>Misiones</th><th>Termina con</th></tr></thead>
+  <tbody>
+    <tr><td>1. Just Like Paradise</td><td class="num">22</td><td>Discharge Time</td></tr>
+    <tr><td>2. Paradise Lost</td><td class="num">11</td><td>Checking Out (mudanza a Vice City)</td></tr>
+    <tr><td>3. Tits, Ass, Drug Money</td><td class="num">26</td><td>The Cartel Heist</td></tr>
+    <tr><td>4. Vice City, Baby</td><td class="num">25</td><td>Starting from Zero</td></tr>
+    <tr><td>5. Top of the World, Ma</td><td class="num">7</td><td>The End of the Road</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Capítulo 1: Just Like Paradise (22 misiones)</h2>
+<p>Empieza con Lucia en la cárcel y sigue con Jason en los Cayos y Port Gellhorn.</p>
+<div class="tbl"><table><thead><tr><th>#</th><th>Misión</th></tr></thead><tbody><tr><td class="num">1</td><td>Prologue</td></tr><tr><td class="num">2</td><td>Gone Fishing</td></tr><tr><td class="num">3</td><td>Gear Up</td></tr><tr><td class="num">4</td><td>Just a Scratch</td></tr><tr><td class="num">5</td><td>Lab Fees</td></tr><tr><td class="num">6</td><td>Unwanted Attention</td></tr><tr><td class="num">7</td><td>Pipework</td></tr><tr><td class="num">8</td><td>Hey Arnold!</td></tr><tr><td class="num">9</td><td>Island Dreams</td></tr><tr><td class="num">10</td><td>Feng Shui</td></tr><tr><td class="num">11</td><td>Coming Home</td></tr><tr><td class="num">12</td><td>Buck Me</td></tr><tr><td class="num">13</td><td>Clean Up After Donnie</td></tr><tr><td class="num">14</td><td>Down to Earth</td></tr><tr><td class="num">15</td><td>Clear Skies</td></tr><tr><td class="num">16</td><td>Day Release</td></tr><tr><td class="num">17</td><td>Swamped</td></tr><tr><td class="num">18</td><td>Don Gone</td></tr><tr><td class="num">19</td><td>Recalibration</td></tr><tr><td class="num">20</td><td>Tourist Trap</td></tr><tr><td class="num">21</td><td>Home Sweet Home</td></tr><tr><td class="num">22</td><td>Discharge Time</td></tr></tbody></table></div>
+<h2>Capítulo 2: Paradise Lost (11 misiones)</h2>
+<p>Lucia toma el mando mientras Jason se recupera, con tobillera electrónica y en un motel de Port Gellhorn.</p>
+<div class="tbl"><table><thead><tr><th>#</th><th>Misión</th></tr></thead><tbody><tr><td class="num">1</td><td>What's in the Bag?</td></tr><tr><td class="num">2</td><td>Ambulance Chaser</td></tr><tr><td class="num">3</td><td>Just Moved In</td></tr><tr><td class="num">4</td><td>Girls' Trip</td></tr><tr><td class="num">5</td><td>Moses</td></tr><tr><td class="num">6</td><td>Daily Driver</td></tr><tr><td class="num">7</td><td>Slam Dunk</td></tr><tr><td class="num">8</td><td>Breakfast Run</td></tr><tr><td class="num">9</td><td>Coffee Break</td></tr><tr><td class="num">10</td><td>Afternoon Delight</td></tr><tr><td class="num">11</td><td>Checking Out</td></tr></tbody></table></div>
+{AD}
+<h2>Capítulo 3: Tits, Ass, Drug Money (26 misiones)</h2>
+<p>La pareja llega a Vice City y desde aquí ya puedes cambiar entre Jason y Lucia. Termina con el golpe al banco del cártel.</p>
+<div class="tbl"><table><thead><tr><th>#</th><th>Misión</th></tr></thead><tbody><tr><td class="num">1</td><td>Welcome to Vice City</td></tr><tr><td class="num">2</td><td>Dealer's Choice (Jason)</td></tr><tr><td class="num">3</td><td>Meet the Heders</td></tr><tr><td class="num">4</td><td>Dubious Provenance</td></tr><tr><td class="num">5</td><td>Mami Knows Best (Lucia)</td></tr><tr><td class="num">6</td><td>South Leonida Real Estate</td></tr><tr><td class="num">7</td><td>Tyrone (Jason)</td></tr><tr><td class="num">8</td><td>Here, Kitty Kitty</td></tr><tr><td class="num">9</td><td>Car Service (Lucia)</td></tr><tr><td class="num">10</td><td>Top Billing</td></tr><tr><td class="num">11</td><td>Boobie Time</td></tr><tr><td class="num">12</td><td>First Impressions</td></tr><tr><td class="num">13</td><td>Caught Slipping</td></tr><tr><td class="num">14</td><td>Crosstown Traffic</td></tr><tr><td class="num">15</td><td>Credit Check</td></tr><tr><td class="num">16</td><td>Steal the Zorrusso for Randy</td></tr><tr><td class="num">17</td><td>Sinfrontera National Bank</td></tr><tr><td class="num">18</td><td>Security Expert</td></tr><tr><td class="num">19</td><td>Ride or Die</td></tr><tr><td class="num">20</td><td>Company Property</td></tr><tr><td class="num">21</td><td>The Missing Link (Lucia)</td></tr><tr><td class="num">22</td><td>Safe Word</td></tr><tr><td class="num">23</td><td>Cooties</td></tr><tr><td class="num">24</td><td>Bricked Up</td></tr><tr><td class="num">25</td><td>Hidden Charges</td></tr><tr><td class="num">26</td><td>The Cartel Heist</td></tr></tbody></table></div>
+<h2>Capítulo 4: Vice City, Baby (25 misiones)</h2>
+<p>El capítulo más largo, con la preparación del golpe al aeropuerto VCIA.</p>
+<div class="tbl"><table><thead><tr><th>#</th><th>Misión</th></tr></thead><tbody><tr><td class="num">1</td><td>Ocean Beach</td></tr><tr><td class="num">2</td><td>Another Life</td></tr><tr><td class="num">3</td><td>Company Cars</td></tr><tr><td class="num">4</td><td>Lawyer Up</td></tr><tr><td class="num">5</td><td>Party Hard</td></tr><tr><td class="num">6</td><td>Heavy Lifting</td></tr><tr><td class="num">7</td><td>Photo/Shoot</td></tr><tr><td class="num">8</td><td>Making Gainz (Lucia)</td></tr><tr><td class="num">9</td><td>Watch It</td></tr><tr><td class="num">10</td><td>Cash Injections</td></tr><tr><td class="num">11</td><td>Amateur Hour</td></tr><tr><td class="num">12</td><td>Dirty Work</td></tr><tr><td class="num">13</td><td>Too Much Baggage (Jason)</td></tr><tr><td class="num">14</td><td>Adventures in Babysitting</td></tr><tr><td class="num">15</td><td>Fresh Evidence</td></tr><tr><td class="num">16</td><td>Power Play</td></tr><tr><td class="num">17</td><td>Child's Play</td></tr><tr><td class="num">18</td><td>Headliners</td></tr><tr><td class="num">19</td><td>Close Surveillance (Jason)</td></tr><tr><td class="num">20</td><td>Delivery Method (Jason)</td></tr><tr><td class="num">21</td><td>Team Building (Lucia)</td></tr><tr><td class="num">22</td><td>Fully Catered</td></tr><tr><td class="num">23</td><td>VCIA Takedown</td></tr><tr><td class="num">24</td><td>Sunset</td></tr><tr><td class="num">25</td><td>Starting from Zero</td></tr></tbody></table></div>
+<h2>Capítulo 5: Top of the World, Ma (7 misiones)</h2>
+<p>El tramo final de la historia.</p>
+<div class="tbl"><table><thead><tr><th>#</th><th>Misión</th></tr></thead><tbody><tr><td class="num">1</td><td>Bird in the Hand</td></tr><tr><td class="num">2</td><td>Taking Liberties</td></tr><tr><td class="num">3</td><td>VC Baby</td></tr><tr><td class="num">4</td><td>Doggie Bag</td></tr><tr><td class="num">5</td><td>Operation Savage Glory</td></tr><tr><td class="num">6</td><td>Protective Custody</td></tr><tr><td class="num">7</td><td>The End of the Road</td></tr></tbody></table></div>
+
+<h2>Puntos sin retorno</h2>
+<ul>
+  <li><strong>Tourist Trap (Capítulo 1):</strong> abre la recta final del capítulo y te quita la casa de Jason. Haz un guardado manual antes y mete tu dinero en el ahorro familiar de BuckMe, porque el efectivo se pierde (lo explicamos en la <a href="guia-principiantes-gta-6.html">guía para empezar</a>).</li>
+  <li><strong>Checking Out (Capítulo 2):</strong> cierra el capítulo y os muda a Vice City. El motel deja de ser vuestra casa. Termina antes lo que tengas pendiente en Port Gellhorn.</li>
+  <li><strong>The Cartel Heist y VCIA Takedown:</strong> son los dos grandes golpes de la historia. Haz antes todas sus misiones de preparación. Cómo funcionan, en la guía de <a href="robos-atracos-gta-6.html">robos y atracos</a>.</li>
+</ul>
+
+<h2>Misiones secundarias que se pueden perder</h2>
+<p>Algunas misiones opcionales salen con un <strong>icono de reloj de arena</strong> en el mapa: si avanzas en la historia sin hacerlas, desaparecen. Según las guías <strong>no afectan a los trofeos ni al 100%</strong>, pero si te gusta verlo todo, hazlas en cuanto salgan:</p>
+<div class="tbl"><table>
+  <thead><tr><th>Capítulo</th><th>Misión opcional</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Get Shirley's Rum y Steal the Scooter</td></tr>
+    <tr><td>2</td><td>Thrillbillies, Twist Wrist, Smash, Grab y Veteran Hunted (solo Jason)</td></tr>
+    <tr><td>3</td><td>Race Against Yago</td></tr>
+    <tr><td>4</td><td>This Is a Free Call From… (solo Lucia)</td></tr>
+  </tbody>
+</table></div>
+{AD}
+
+<h2>Preguntas frecuentes</h2>
+<dl class="faq">
+  <dt>¿Cuántas misiones tiene GTA 6?</dt><dd>91 misiones principales repartidas en 5 capítulos, sin contar las secundarias ni las actividades. Algunas guías dan cifras más altas porque cuentan cada paso por separado.</dd>
+  <dt>¿Cuánto dura la historia de GTA 6?</dt><dd>Según las guías, entre 60 y 80 horas. Rob Nelson, de Rockstar North, contó que su partida le llevó unas 80 horas.</dd>
+  <dt>¿Cuál es la última misión de GTA 6?</dt><dd>The End of the Road, la séptima del Capítulo 5.</dd>
+  <dt>¿Se pueden repetir misiones en GTA 6?</dt><dd>No. No hay repetición de misiones, así que guarda a mano antes de las importantes.</dd>
+  <dt>¿Cuándo se puede cambiar entre Jason y Lucia?</dt><dd>Desde el Capítulo 3, al llegar a Vice City.</dd>
+  <dt>¿Me puedo perder misiones?</dt><dd>Solo algunas secundarias con reloj de arena. Las principales no se pierden.</dd>
+</dl>
+<p>¿Buscas el platino? Mira la <a href="trofeos-logros-gta-6.html">lista de trofeos</a>, porque varios se ganan al terminar misiones de la historia.</p>
+{AFF}"""
+
 pages = {
+    "misiones-gta-6.html": (misiones, "Misiones de GTA 6: lista completa de los 5 capítulos | Leonida Global 305", "Las 91 misiones de la historia de GTA 6 en orden, capítulo a capítulo: cuáles son de Jason o Lucia, puntos sin retorno y secundarias que se pierden.", True),
     "casas-seguras-garajes-gta-6.html": (garajes, "Casas seguras y garajes de GTA 6: ubicaciones y precios | Leonida Global 305", "Las casas seguras de GTA 6 en cada capítulo, los ocho garajes que se compran con sus precios, los garajes gratis, el trofeo Little Boxes y cuántos autos puedes tener.", True),
     "armas-gta-6.html": (armas, "Armas de GTA 6: Ammu-Nation, armas únicas y casilleros | Leonida Global 305", "Cómo funcionan las armas en GTA 6: tipos y modelos, cómo comprar en Ammu-Nation, el casillero y el maletero, y qué son las más de cien armas únicas de icono amarillo.", True),
     "coleccionables-gta-6.html": (coleccionables, "Coleccionables de GTA 6: cuántos hay y cuántos pide el 100% | Leonida Global 305", "Todos los coleccionables de GTA 6: flamencos de cocaína, cartas, WAiNK, tesoros de Kenton, libros, estilos y meditación. Cuántos hay, cuántos cuentan para el 100% y cuál se pierde.", True),
@@ -2232,16 +2321,17 @@ pages = {
 }
 # Medios consultados por página: se muestran como mención, sin enlace.
 CREDITOS = {
+    "misiones-gta-6.html": ["PC Gamer", "Game Rant", "KeenGamer", "PowerPyx", "Beebom"],
     "casas-seguras-garajes-gta-6.html": ["GTABase", "Game Rant", "Timesaver", "FinalBoss", "BoostBase", "GTA BOOM", "Insider Gaming", "GTA Wiki"],
     "armas-gta-6.html": ["Insider Gaming", "PowerPyx", "Dexerto", "GTABase", "GamesRadar+", "AllGTAWorld"],
     "coleccionables-gta-6.html": ["PowerPyx", "GameTrek", "The Games Wiki", "VICE", "Red Bull"],
     "dinero-rapido-gta-6.html": ["PowerPyx", "GTABase", "GamesRadar+", "KeenGamer", "MetaForge", "OutputLag", "GamerBolt", "G2A News"],
     "robos-atracos-gta-6.html": ["Respawndex", "Timesaver", "ViceCityHQ", "HappyGamer", "MetaForge"],
-    "trucos-gta-6.html": ["VICE", "Red Bull", "Beebom", "SVG", "Gamer Tweak"],
+    "trucos-gta-6.html": ["VICE", "Red Bull", "Beebom", "SVG", "Gamer Tweak", "KeenGamer", "MeowDB", "Game Checklists"],
     "guia-principiantes-gta-6.html": ["Push Square", "VGC", "Kotaku", "GTABase", "NoobFeed", "Beebom", "GTA BOOM"],
     "trofeos-logros-gta-6.html": ["PC Gamer", "CULTR", "TechWiser", "Of Zen and Computing"],
     "notas-resenas-gta-6.html": ["Metacritic", "PC Gamer", "GAMINGbible", "Forbes", "Tom's Guide", "ABC7"],
-    "fecha-precio-ediciones.html": ["Rockstar Games", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase", "Gematsu", "TweakTown", "Wccftech", "Rectify Gaming"],
+    "fecha-precio-ediciones.html": ["Rockstar Games", "Panini America", "Screen Rant", "Take-Two Interactive", "Gfinity", "tbreak", "SVG", "GTA Intel", "GamesBeat", "Insider Gaming", "GTA BOOM", "Digit", "Kotaku", "Notebookcheck", "RockstarINTEL", "Yahoo Finance", "Xbox Wire", "PlayStation Blog", "GamesRadar+", "Sensor Tower", "NewsCase", "Gematsu", "TweakTown", "Wccftech", "Rectify Gaming"],
     "mapa-leonida.html": ["Rockstar Games", "LOVE", "Beebom", "All Things How"],
     "personajes.html": ["Rockstar Games", "TechRadar", "PC Gamer", "Dazed", "LOVE", "Associated Press", "Push Square"],
     "todo-lo-confirmado.html": ["IGN", "Famitsu", "Kinda Funny", "Game Informer", "Dazed", "LOVE", "Bloomberg (Jason Schreier)", "PC Gamer", "Kotaku", "Insider Gaming", "GTAVice.net", "iGrandTheftAuto", "Inven Global", "Edge", "GamesRadar+", "Beebom", "GTA BOOM", "Dexerto", "VICE", "TweakTown", "Yahoo Finance", "Forbes", "Xbox Wire", "PlayStation Blog", "VGC", "VideoGamer", "Gematsu", "The New York Times", "Notebookcheck", "Tech4Gamers", "2K", "Beebom", "ComicBook.com"],
